@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>Innovation — Idea Board</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Password gate (casual, client-side — hides the UI, not the data) -->
+  <div id="gate" class="gate">
+    <form id="gate-form" class="gate-card">
+      <h1>Innovation</h1>
+      <p class="muted">Private idea board. Enter the group password.</p>
+      <input id="gate-input" type="password" placeholder="Password" autocomplete="current-password" autofocus />
+      <button type="submit">Enter</button>
+      <p id="gate-error" class="gate-error" hidden>Incorrect password.</p>
+    </form>
+  </div>
+
+  <!-- App -->
+  <div id="app" hidden>
+    <header class="topbar">
+      <div class="topbar-inner">
+        <a href="#/" class="brand">Innovation</a>
+        <span class="brand-sub" id="brand-sub"></span>
+        <a href="#/submit" class="pill-link">+ Submit idea</a>
+        <button id="theme-toggle" class="ghost" title="Toggle theme" aria-label="Toggle theme">◐</button>
+        <button id="signout" class="ghost" title="Sign out">Sign out</button>
+      </div>
+    </header>
+    <main id="view" class="view"></main>
+    <footer class="foot muted">
+      Scores 1–10, higher is better · Composite is a weighted average · Weights live in <code>config.json</code>
+    </footer>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

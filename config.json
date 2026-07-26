@@ -1,0 +1,16 @@
+{
+  "contactEmail": "dave.j.wright@me.com",
+  "endpoint": "https://script.google.com/macros/s/AKfycbz-ZPFQ9Xexu0yO-9haqAIHoCqLPkTFRvZHTiTwTW1MaGVQI4XWycBBRHFE_GL0AOU_zw/exec",
+  "_endpoint_help": "Paste your Google Apps Script Web App URL here (ends in /exec). While blank, the Submit / Send buttons fall back to opening a pre-filled email.",
+  "rubric": {
+    "market":     { "label": "Market size & growth",        "weight": 1.2 },
+    "entry":      { "label": "Ease of entry",               "weight": 1.0 },
+    "cost":       { "label": "Startup cost & time-to-revenue", "weight": 1.0 },
+    "saturation": { "label": "Low saturation",              "weight": 0.8 },
+    "moat":       { "label": "Differentiation / moat",      "weight": 1.0 },
+    "margins":    { "label": "Margins & scalability",       "weight": 1.1 },
+    "founderFit": { "label": "Founder-fit",                 "weight": 1.4 },
+    "risk":       { "label": "Risk (10 = low risk)",        "weight": 1.0 }
+  },
+  "_note": "All scores are 1-10 where 10 is best (for Risk, 10 = low risk). Composite = weighted average using the weights above. Tune the weights and reload the page to re-rank ideas — no rebuild needed."
+}
