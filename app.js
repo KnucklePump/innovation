@@ -269,46 +269,48 @@ function renderDetail(idea) {
           ${bcSection("Key risks", bc.risks)}
           ${bcSection("Next steps", bc.nextSteps)}
         </div>
-        ${qs.length ? `<div class="card"><h3>Questions for the idea owner</h3>
-          <p class="muted" style="margin-top:0">Answer what you can — these go to the group to sharpen the analysis. Your typing is kept in this browser so you won't lose it on refresh.</p>
+        <div class="card"><h3>Clarify or expand this idea</h3>
+          <p class="muted" style="margin-top:0">Add detail, answer any open questions, or push back — it goes to the group to sharpen the analysis. Your typing is kept in this browser.</p>
+          ${qs.length ? `<ul class="qs">${qs.map(q => `<li>${esc(q)}</li>`).join("")}</ul>` : ""}
           <form id="answers-form">
             <div class="ans-q"><label>Your name (optional)</label><input class="ans-name" type="text" placeholder="Who's answering?" /></div>
-            ${qs.map((q, i) => `<div class="ans-q"><label>${esc(q)}</label><textarea data-qi="${i}" rows="3"></textarea></div>`).join("")}
+            <div class="ans-q"><label>Clarify / expand the idea</label><textarea id="ans-response" rows="6" placeholder="Add anything useful — context, answers to the questions above, corrections…"></textarea></div>
             <div class="ans-actions">
-              <button type="button" id="send-answers">Send answers</button>
+              <button type="button" id="send-answers">Send</button>
               <button type="button" id="copy-answers" class="ghost">Copy</button>
               <span id="ans-note" class="muted"></span>
             </div>
-          </form></div>` : ""}
+          </form></div>
       </div>
       <div>
         <div class="card"><h3>Scorecard</h3>${scoreRows}</div>
       </div>
     </div>`;
 
-  // ----- Answer form wiring -----
+  // ----- Clarify / expand form wiring -----
   const form = $("#answers-form");
   if (form) {
     const nameEl = form.querySelector(".ans-name");
-    const areas = [...form.querySelectorAll("textarea[data-qi]")];
+    const respEl = $("#ans-response");
     const K = s => `ans:${idea.id}:${s}`;
     // restore anything typed earlier in this browser
     nameEl.value = localStorage.getItem(K("name")) || "";
-    areas.forEach(t => { t.value = localStorage.getItem(K(t.dataset.qi)) || ""; });
+    respEl.value = localStorage.getItem(K("response")) || "";
     // persist as they type
     nameEl.addEventListener("input", () => localStorage.setItem(K("name"), nameEl.value));
-    areas.forEach(t => t.addEventListener("input", () => localStorage.setItem(K(t.dataset.qi), t.value)));
+    respEl.addEventListener("input", () => localStorage.setItem(K("response"), respEl.value));
 
     const buildText = () => {
-      let out = `Answers — ${idea.title}\n`;
+      let out = `Clarify / expand — ${idea.title}\n`;
       const nm = nameEl.value.trim();
       if (nm) out += `From: ${nm}\n`;
-      out += "\n" + qs.map((q, i) => `Q: ${q}\nA: ${(areas[i].value.trim()) || "(no answer)"}`).join("\n\n") + "\n";
+      out += `\n${respEl.value.trim() || "(blank)"}\n`;
       return out;
     };
     const note = (msg) => { const n = $("#ans-note"); n.textContent = msg; setTimeout(() => { n.textContent = ""; }, 3000); };
 
     $("#send-answers").addEventListener("click", async () => {
+      if (!respEl.value.trim()) { note("Add a note first."); return; }
       const btn = $("#send-answers");
       if (state.endpoint) {
         setBusy(btn, true, "Sending…");
@@ -319,14 +321,16 @@ function renderDetail(idea) {
             ideaId: idea.id,
             ideaTitle: idea.title,
             name: nameEl.value.trim(),
-            answers: qs.map((q, i) => ({ q, a: areas[i].value.trim() })),
+            answers: [{ q: "Clarify / expand", a: respEl.value.trim() }],
           });
-          note("Sent! Thanks — we'll fold these into the analysis.");
+          localStorage.removeItem(K("response"));
+          respEl.value = "";
+          note("Sent! Thanks — we'll fold this into the analysis.");
         } catch {
           note("Couldn't send — check your connection, or use Copy as a fallback.");
         } finally { setBusy(btn, false); }
       } else {
-        const subject = encodeURIComponent(`Answers: ${idea.title}`);
+        const subject = encodeURIComponent(`Clarify: ${idea.title}`);
         location.href = `mailto:${state.contactEmail}?subject=${subject}&body=${encodeURIComponent(buildText())}`;
       }
     });
