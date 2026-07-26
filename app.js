@@ -195,7 +195,7 @@ function renderList() {
 /* ---------- 2x2 quadrant (attractiveness vs ease of entry, bubble = founder-fit) ---------- */
 function quadrant(rows) {
   const W = 760, H = 440, pad = 46;
-  const attractiveness = i => avg([i.scores?.market?.score, i.scores?.margins?.score, i.scores?.moat?.score]);
+  const attractiveness = i => avg([i.scores?.market?.score, i.scores?.margins?.score, i.scores?.moat?.score, i.scores?.saturation?.score, i.scores?.risk?.score]);
   const ease = i => avg([i.scores?.entry?.score, i.scores?.cost?.score]);
   const x = v => pad + ((v - 1) / 9) * (W - pad * 2);
   const y = v => (H - pad) - ((v - 1) / 9) * (H - pad * 2);
