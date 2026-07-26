@@ -2,41 +2,41 @@
   "meta": {
     "title": "Innovation — Idea Board",
     "subtitle": "Private business-idea evaluation",
-    "generated": "2026-07-19"
+    "generated": "2026-07-26"
   },
   "ideas": [
     {
-      "id": "alpine-mind",
-      "title": "Alpine Mind — performance coaching for amateur alpine athletes",
-      "owner": "Sample",
-      "sample": true,
+      "id": "night-golf",
+      "title": "Night Golf",
+      "owner": "Dave",
       "status": "analyzed",
-      "oneLiner": "Blended mental + physical performance coaching for serious amateur skiers and sliding-sport athletes — online programme with premium in-person camps.",
-      "tags": ["sports", "coaching", "subscription"],
+      "oneLiner": "Glowing balls, lit greens and neon course features that let courses run fun, party-atmosphere golf after dark — unlocking off-peak evening revenue.",
+      "tags": ["sports", "experiential", "leisure", "B2B"],
       "scores": {
-        "market":     { "score": 6, "confidence": "low", "why": "Global ski/snowsports participation is large but the 'serious amateur willing to pay for coaching' slice is a niche; sliding sports (skeleton/luge) are tiny. Real TAM sizing needed before committing.", "sources": [] },
-        "entry":      { "score": 8, "confidence": "low", "why": "Low regulatory barrier; can launch with a landing page, a coaching curriculum and a booking calendar. Credibility is the main gate, which the team can supply.", "sources": [] },
-        "cost":       { "score": 8, "confidence": "low", "why": "Digital-first keeps startup cost low (sub-CAD $20k to a paid pilot). In-person camps add cost but only once demand is proven.", "sources": [] },
-        "saturation": { "score": 5, "confidence": "low", "why": "General online fitness coaching is crowded; alpine-specific + sport-psychology positioning is far less contested. Differentiation carries the score.", "sources": [] },
-        "moat":       { "score": 6, "confidence": "low", "why": "Moat is credibility + proprietary curriculum + community, not technology. Defensible if a brand and results are built early, weak otherwise.", "sources": [] },
-        "margins":    { "score": 7, "confidence": "low", "why": "Digital coaching margins are high; camps are lower-margin but strong for brand and lifetime value. Blended margin attractive.", "sources": [] },
-        "founderFit": { "score": 9, "confidence": "med", "why": "Unusually strong: the team combines elite alpine/sliding-sport experience, sport-psychology depth, and business/finance skills — a rare, credible pairing for exactly this niche.", "sources": [] },
-        "risk":       { "score": 6, "confidence": "low", "why": "Main risks are niche demand and founder time (part-time, distributed team). Low capital-at-risk keeps downside contained.", "sources": [] }
+        "market":     { "score": 7, "confidence": "med", "why": "US golf is in a genuine boom — ~16,000 courses at 14,000 facilities, 28M on-course golfers in 2024 and 48M total participants in 2025, up 41% since 2019, with new-course development at its highest since 2011. Experiential and off-course formats (incl. night play) are the growth edge, and 100+ lit courses were in development as of early 2025. The specific 'night golf' spend is still a niche slice of that — sizing it precisely is the open question.", "sources": ["https://www.ngf.org/short-game/golfs-growth-era-the-road-to-50-million-golfers/", "https://stackerinc.com/blog/night-golf/"] },
+        "entry":      { "score": 8, "confidence": "med", "why": "Low barriers on the lean path: glow gear is a commodity you can source cheaply, portable LED event kits are inexpensive, and there's no regulation. You can launch as a mobile night-golf events service in one region for a few thousand dollars. (Permanently lighting courses is the high-barrier version — avoid early.)", "sources": ["https://glowproducts.com/us/night-golf", "https://www.glowvibegolf.com/"] },
+        "cost":       { "score": 7, "confidence": "med", "why": "Cheap to first revenue if you run mobile events / sell self-run kits: a few thousand dollars of portable LED gear plus glow inventory, and you can book paid event nights quickly. Costs balloon only if you pursue permanent course lighting ($5,000–$20,000 per light, six figures per course).", "sources": ["https://blog.feslighting.com/golf-course-lighting"] },
+        "saturation": { "score": 4, "confidence": "med", "why": "The weak spot. Glow-in-the-dark golf balls are a heavily commoditised category (Premier Glow, Crestgolf, Sundown, THIODOON, plus Amazon/Walmart/Dick's) at $14–40 a pack. The experiential-events angle is more open but already has a scaled leader — Glow Vibe Golf has run 1,500+ events across 36 states since 2014.", "sources": ["https://www.golfmonthly.com/buying-advice/best-glow-in-the-dark-golf-balls", "https://www.glowvibegolf.com/"] },
+        "moat":       { "score": 4, "confidence": "med", "why": "Inherently low. The gear is commodity and events are replicable. Thin defensibility is possible via brand, exclusive course contracts/territories, or a productised self-serve kit with recurring consumables — but nothing structurally protects it.", "sources": ["https://www.glowvibegolf.com/services"] },
+        "margins":    { "score": 6, "confidence": "low", "why": "Mixed. Commodity consumables (glow balls, markers) are low-margin but recurring; staffed experiences and event bookings carry higher service margins. Blended margin is moderate and scales through a kit/franchise model rather than manufacturing.", "sources": ["https://golfincmagazine.com/content/golf-courses-and-country-clubs-diversify-their-revenue-streams/"] },
+        "founderFit": { "score": 6, "confidence": "med", "why": "Good fit for a sourcing-and-marketing-led experiential product: the team brings overseas manufacturing/sourcing access (low-cost glow gear), strong experiential-marketing and sports/events instinct, product engineering, and B2B/finance skills for selling to course operators. The gap: no golf-industry insiders or existing course relationships, which matters for B2B adoption.", "sources": [] },
+        "risk":       { "score": 5, "confidence": "med", "why": "Moderate. Headwinds: a scaled incumbent, commodity/low-moat economics, outdoor seasonality and weather, and dependence on relatively conservative course operators choosing to adopt. Upside: capital-at-risk is low on the lean path, so the downside is contained.", "sources": ["https://www.glowvibegolf.com/"] }
       },
       "businessCase": {
-        "summary": "A premium coaching brand for amateur alpine athletes who want to get measurably better — pairing physical technique with the mental/psychology side that most coaching ignores. Recurring online revenue, with high-margin in-person camps as the flagship experience and brand engine.",
-        "customer": "Serious amateur skiers, ski-racers, and sliding-sport athletes (25–55) who already spend on gear, travel and lift passes and are frustrated by plateauing performance.",
-        "market": "Snowsports participation is large and affluent; the paid-coaching and performance-camp segment is smaller but high-value. This needs real sizing — flagged low-confidence until researched.",
-        "model": "Tiered subscription for the online programme (technique library, structured plans, mental-performance modules, group calls) + paid seasonal in-person camps + 1:1 upsell.",
-        "goToMarket": "Founder credibility and content marketing (social + YouTube), partnerships with clubs and resorts, and camps as a high-touch acquisition funnel.",
-        "costs": "Curriculum production, video, coaching time, a booking/community platform, and camp logistics. Low fixed cost until camps scale.",
-        "risks": "Niche demand ceiling; seasonality; reliance on part-time founder attention; brand depends on demonstrable athlete results.",
-        "nextSteps": "Validate willingness-to-pay with 20 target athletes; size the paid-coaching segment properly; run one small paid pilot cohort before building anything."
+        "summary": "Night Golf turns unused after-dark hours into a fun, party-atmosphere revenue stream for golf courses. There are two layers: a commodity glow-gear product (saturated, weak) and the real opportunity — a turnkey experiential night-golf offering (events + a self-run kit) that helps the ~16,000 US courses monetise off-peak evenings and reach the fast-growing experience-seeking crowd. Demand is rising, but an established leader (Glow Vibe Golf) is already scaling it, so this is a fast-follower play, not a blue ocean.",
+        "customer": "Two-sided. The paying B2B buyer is the golf-course / driving-range operator — especially public, municipal and resort courses chasing off-peak and event revenue. The end users are casual and social golfers, corporate outings, charity fundraisers, date-night/party groups, and juniors — the fastest-growing, experience-led segments of the game.",
+        "market": "US golf is booming: ~16,000 courses / 14,000 facilities, on-course golfers up to 28M (2024) and 48M total participants (2025), +41% since 2019, with course development at a post-2011 high and record-low closures. Experiential and night formats are a growth edge (100+ lit courses in development in early 2025). The night-golf sub-segment specifically is a niche of that whole — real TAM sizing is the key unknown (flagged low-confidence).",
+        "model": "Layered revenue: (1) mobile, turnkey glow-golf event nights sold per-event to courses (the proven Glow Vibe model); (2) a 'night-golf-in-a-box' kit sold or leased to courses so they self-run events, generating upfront hardware plus recurring consumables (glow balls, markers, cart lights); (3) recurring replenishment revenue on those consumables; optionally (4) higher-tier permanent lighting installs later (capital-heavy).",
+        "goToMarket": "Land regional courses with a couple of paid pilot event nights, then convert them to a recurring kit + consumables relationship. Lean hard on experiential/social marketing — glow-golf content is highly shareable — and target high-value corporate outings and charity fundraisers. Expand territory by territory, prioritising areas the incumbent doesn't cover.",
+        "costs": "Lean path is cheap: a few thousand dollars of portable LED gear and glow inventory (cheaply sourced overseas) to run the first events. Ongoing costs are inventory, event staffing/labour and logistics. The expensive path — permanently lighting courses at $5k–$20k per light — should be avoided until demand is proven.",
+        "risks": "A scaled competitor (Glow Vibe Golf) already owns the experiential niche; the gear is a commodity with weak defensibility; outdoor play is weather- and season-dependent; and success hinges on conservative course operators adopting. The literal 'manufacture and sell glow balls' interpretation is a race to the bottom and should be avoided.",
+        "nextSteps": "1) Decide the layer — events/kit for courses, NOT manufacturing balls. 2) Run 2–3 paid pilot nights with local courses to test willingness-to-pay and rebooking. 3) Price a self-serve kit + consumables model. 4) Map where Glow Vibe Golf is absent. 5) Validate the overseas-sourced gear cost advantage."
       },
       "clarifyingQuestions": [
-        "Which segment leads — mainstream skiers (bigger market) or sliding sports (tiny but uniquely defensible for this team)?",
-        "Online-first with camps as upsell, or camps-first with online as retention?",
-        "Which geographies for the first camps, and who owns delivery given the team is distributed?"
+        "Which layer are we actually building — the commodity glow-ball product, staffed mobile events, or a self-serve 'night-golf kit + consumables' for courses? They're very different businesses.",
+        "Is the paying customer the golf course (B2B) or the end golfer (B2C), and where does the recurring revenue come from?",
+        "How do we differentiate from Glow Vibe Golf, who already run 1,500+ night-golf events across 36 states?",
+        "Do any of us have relationships with golf courses or operators we could use to land the first pilots?"
       ]
     }
   ]
