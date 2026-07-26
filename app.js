@@ -301,11 +301,13 @@ function renderDetail(idea) {
     nameEl.addEventListener("input", () => localStorage.setItem(K("name"), nameEl.value));
     respEl.addEventListener("input", () => localStorage.setItem(K("response"), respEl.value));
 
+    const questionsAsked = qs.length ? qs.map((q, i) => `${i + 1}. ${q}`).join("  •  ") : "(none)";
     const buildText = () => {
       let out = `Clarify / expand — ${idea.title}\n`;
       const nm = nameEl.value.trim();
       if (nm) out += `From: ${nm}\n`;
-      out += `\n${respEl.value.trim() || "(blank)"}\n`;
+      if (qs.length) out += `\nQuestions asked:\n${qs.map((q, i) => `${i + 1}. ${q}`).join("\n")}\n`;
+      out += `\nResponse:\n${respEl.value.trim() || "(blank)"}\n`;
       return out;
     };
     const note = (msg) => { const n = $("#ans-note"); n.textContent = msg; setTimeout(() => { n.textContent = ""; }, 3000); };
@@ -322,7 +324,10 @@ function renderDetail(idea) {
             ideaId: idea.id,
             ideaTitle: idea.title,
             name: nameEl.value.trim(),
-            answers: [{ q: "Clarify / expand", a: respEl.value.trim() }],
+            answers: [
+              { q: "Questions asked", a: questionsAsked },
+              { q: "Response", a: respEl.value.trim() },
+            ],
           });
           localStorage.removeItem(K("response"));
           respEl.value = "";
