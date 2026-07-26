@@ -342,7 +342,6 @@ function renderDetail(idea) {
 /* ---------- Submit-an-idea view ---------- */
 const SUBMIT_FIELDS = [
   { k: "name",  label: "Your name",                     type: "input",    ph: "" },
-  { k: "email", label: "Your email",                    type: "input",    ph: "so we can send follow-up questions" },
   { k: "title", label: "Idea title",                    type: "input",    ph: "e.g. Alpine Mind — coaching for amateur athletes" },
   { k: "pitch", label: "One-line pitch",                type: "input",    ph: "the idea in a single sentence" },
   { k: "who",   label: "Who is it for?",                type: "textarea", ph: "the target customer" },
