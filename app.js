@@ -4,9 +4,9 @@
    contain the group's private founder descriptions. Keep those in /analysis
    (which is never deployed). Casual protection only — good enough for a friends group. */
 
-// SHA-256 hex of the group password. Default password is "innovation".
+// SHA-256 hex of the group password (the plaintext is never stored here).
 // To change it: run  printf '%s' 'YOUR-PASSWORD' | shasum -a 256  and paste the hash here.
-const PASSWORD_HASH = "6611032577e5a7b3a146e7b2111117b71a2a7b0fa4ef2861353816730a4f4a02";
+const PASSWORD_HASH = "2ecfd1b8a9c8e6f2f97748fd28ab531c0491e152108690abab45421d68c35551";
 
 const $ = (s, el = document) => el.querySelector(s);
 const state = { ideas: [], rubric: {}, sort: { key: "composite", asc: false } };
