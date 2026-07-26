@@ -269,22 +269,23 @@ function renderDetail(idea) {
           ${bcSection("Key risks", bc.risks)}
           ${bcSection("Next steps", bc.nextSteps)}
         </div>
-        <div class="card"><h3>Clarify or expand this idea</h3>
-          <p class="muted" style="margin-top:0">Add detail, answer any open questions, or push back — it goes to the group to sharpen the analysis. Your typing is kept in this browser.</p>
-          ${qs.length ? `<ul class="qs">${qs.map(q => `<li>${esc(q)}</li>`).join("")}</ul>` : ""}
-          <form id="answers-form">
-            <div class="ans-q"><label>Your name (optional)</label><input class="ans-name" type="text" placeholder="Who's answering?" /></div>
-            <div class="ans-q"><label>Clarify / expand the idea</label><textarea id="ans-response" rows="6" placeholder="Add anything useful — context, answers to the questions above, corrections…"></textarea></div>
-            <div class="ans-actions">
-              <button type="button" id="send-answers">Send</button>
-              <button type="button" id="copy-answers" class="ghost">Copy</button>
-              <span id="ans-note" class="muted"></span>
-            </div>
-          </form></div>
       </div>
       <div>
         <div class="card"><h3>Scorecard</h3>${scoreRows}</div>
       </div>
+    </div>
+    <div class="card"><h3>Clarify or expand this idea</h3>
+      <p class="muted" style="margin-top:0">Add detail, answer any open questions, or push back — it goes to the group to sharpen the analysis. Your typing is kept in this browser.</p>
+      ${qs.length ? `<ul class="qs">${qs.map(q => `<li>${esc(q)}</li>`).join("")}</ul>` : ""}
+      <form id="answers-form">
+        <div class="ans-q"><label>Your name (optional)</label><input class="ans-name" type="text" placeholder="Who's answering?" /></div>
+        <div class="ans-q"><label>Clarify / expand the idea</label><textarea id="ans-response" rows="6" placeholder="Add anything useful — context, answers to the questions above, corrections…"></textarea></div>
+        <div class="ans-actions">
+          <button type="button" id="send-answers">Send</button>
+          <button type="button" id="copy-answers" class="ghost">Copy</button>
+          <span id="ans-note" class="muted"></span>
+        </div>
+      </form>
     </div>`;
 
   // ----- Clarify / expand form wiring -----
