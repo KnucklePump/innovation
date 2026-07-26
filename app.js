@@ -352,7 +352,7 @@ function renderSubmit() {
     <a class="back" href="#/">← All ideas</a>
     <div class="detail-head"><h2>Submit a new idea</h2></div>
     <p class="one-liner muted">Fill this in and send — your idea goes to the group to be researched and scored. Your answers are saved in this browser so you won't lose them.</p>
-    <div class="card" style="max-width:680px">
+    <div class="card">
       <form id="submit-form">
         ${SUBMIT_FIELDS.map(f => `<div class="ans-q"><label>${esc(f.label)}</label>${
           f.type === "textarea"
