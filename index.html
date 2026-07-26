@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="robots" content="noindex, nofollow" />
   <title>Innovation — Idea Board</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -23,11 +26,12 @@
   <div id="app" hidden>
     <header class="topbar">
       <div class="topbar-inner">
-        <a href="#/" class="brand">Innovation</a>
+        <a href="#/" class="brand"><span class="wm-accent">I</span>nnovation</a>
         <span class="brand-sub" id="brand-sub"></span>
-        <a href="#/submit" class="pill-link">+ Submit idea</a>
-        <button id="theme-toggle" class="ghost" title="Toggle theme" aria-label="Toggle theme">◐</button>
-        <button id="signout" class="ghost" title="Sign out">Sign out</button>
+        <nav class="nav-actions">
+          <a href="#/submit" class="pill-link">+ Submit idea</a>
+          <button id="signout" class="ghost" title="Sign out">Sign out</button>
+        </nav>
       </div>
     </header>
     <main id="view" class="view"></main>

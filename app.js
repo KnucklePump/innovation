@@ -95,19 +95,6 @@ $("#gate-form").addEventListener("submit", (e) => {
 });
 if (sessionStorage.getItem("unlocked") === "1") unlock();
 
-/* ---------- Theme ---------- */
-$("#theme-toggle").addEventListener("click", () => {
-  const cur = document.documentElement.getAttribute("data-theme");
-  const next = cur === "dark" ? "light" : cur === "light" ? "dark"
-    : (matchMedia("(prefers-color-scheme: dark)").matches ? "light" : "dark");
-  document.documentElement.setAttribute("data-theme", next);
-  localStorage.setItem("theme", next);
-});
-{
-  const saved = localStorage.getItem("theme");
-  if (saved) document.documentElement.setAttribute("data-theme", saved);
-}
-
 /* ---------- Data + scoring ---------- */
 async function boot() {
   const [ideasRes, cfgRes] = await Promise.all([
