@@ -341,14 +341,10 @@ function renderDetail(idea) {
 }
 /* ---------- Submit-an-idea view ---------- */
 const SUBMIT_FIELDS = [
-  { k: "name",  label: "Your name",                     type: "input",    ph: "" },
-  { k: "title", label: "Idea title",                    type: "input",    ph: "e.g. Alpine Mind — coaching for amateur athletes" },
-  { k: "pitch", label: "One-line pitch",                type: "input",    ph: "the idea in a single sentence" },
-  { k: "who",   label: "Who is it for?",                type: "textarea", ph: "the target customer" },
-  { k: "why",   label: "Why now?",                      type: "textarea", ph: "what makes it timely / not already done to death" },
-  { k: "start", label: "What would it take to start?",  type: "textarea", ph: "rough cost, skills, time" },
-  { k: "bring", label: "What do you bring to this one?", type: "textarea", ph: "skills, assets or contacts you'd contribute" },
-  { k: "else",  label: "Anything else? (optional)",     type: "textarea", ph: "" },
+  { k: "name",        label: "Your name",       type: "input",    ph: "" },
+  { k: "title",       label: "Idea title",      type: "input",    ph: "e.g. Alpine Mind — coaching for amateur athletes" },
+  { k: "pitch",       label: "One-line pitch",  type: "input",    ph: "the idea in a single sentence" },
+  { k: "description", label: "Idea description", type: "textarea", rows: 7, ph: "Describe the idea in as much detail as you like — who it's for, why now, how it might make money, and what it would take to get started." },
 ];
 function renderSubmit() {
   const view = $("#view");
@@ -360,7 +356,7 @@ function renderSubmit() {
       <form id="submit-form">
         ${SUBMIT_FIELDS.map(f => `<div class="ans-q"><label>${esc(f.label)}</label>${
           f.type === "textarea"
-            ? `<textarea data-k="${f.k}" rows="3" placeholder="${esc(f.ph)}"></textarea>`
+            ? `<textarea data-k="${f.k}" rows="${f.rows || 3}" placeholder="${esc(f.ph)}"></textarea>`
             : `<input data-k="${f.k}" type="text" placeholder="${esc(f.ph)}" />`}</div>`).join("")}
         <div class="ans-actions">
           <button type="button" id="send-idea">Submit idea</button>
