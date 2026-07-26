@@ -150,6 +150,8 @@ svg { display: block; width: 100%; height: auto; }
 .detail-meta { display: flex; gap: 12px; align-items: center; flex-wrap: wrap; color: var(--muted); font-size: 13px; }
 .detail-meta strong { color: var(--ink); }
 .one-liner { font-size: 17px; color: var(--muted-bright); margin: 12px 0 26px; max-width: 760px; }
+.card.prop { margin-top: 18px; }
+.card.prop p { font-size: 17px; color: var(--muted-bright); margin: 0; }
 
 .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; align-items: start; }
 @media (max-width: 760px){ .grid2 { grid-template-columns: 1fr; } }

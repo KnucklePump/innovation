@@ -256,7 +256,7 @@ function renderDetail(idea) {
         ${idea.status ? `<span>·</span><span class="badge">${esc(idea.status)}</span>` : ""}
       </div>
     </div>
-    <p class="one-liner">${esc(idea.oneLiner || "")}</p>
+    <div class="card prop"><h3>Proposition</h3><p>${esc(idea.oneLiner || "")}</p></div>
     <div class="grid2">
       <div>
         ${bc.summary ? `<div class="card"><h3>The opportunity</h3><p>${esc(bc.summary)}</p></div>` : ""}
