@@ -159,6 +159,7 @@ function renderList() {
       <div><h2>Idea Board</h2><p class="muted">${state.ideas.length} idea${state.ideas.length > 1 ? "s" : ""} · click any row for the full business case</p></div>
       <a href="#/submit" class="btn-primary">+ Submit an idea</a>
     </div>
+    ${quadrant(rows)}
     <div class="table-wrap"><table>
       <thead><tr>
         <th data-key="_title">Idea</th>
@@ -178,7 +179,6 @@ function renderList() {
           </tr>`).join("")}
       </tbody>
     </table></div>
-    ${quadrant(rows)}
   `;
 
   view.querySelectorAll("th[data-key]").forEach(el => el.addEventListener("click", () => {

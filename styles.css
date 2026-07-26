@@ -131,7 +131,7 @@ tbody tr:last-child td { border-bottom: none; }
 .s-bad  { background: var(--bad-bg);  color: var(--bad); }
 
 /* 2x2 */
-.quad { margin-top: 30px; }
+.quad { margin: 0 0 26px; }
 .quad h3 { margin: 0 0 12px; font-size: 15px; font-weight: 700; }
 .quad-box { position: relative; background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius); box-shadow: var(--shadow); padding: 6px; }
 svg { display: block; width: 100%; height: auto; }
