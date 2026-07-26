@@ -221,7 +221,7 @@ function renderList() {
 
   view.innerHTML = `
     <div class="list-head">
-      <div><h2>Idea Board</h2><p class="muted">${state.ideas.length} idea${state.ideas.length > 1 ? "s" : ""} · click any row for the full business case</p></div>
+      <div><h2>Idea Board</h2><p class="muted">${state.ideas.length} idea${state.ideas.length > 1 ? "s" : ""}. The chart plots each idea by <strong>attractiveness</strong> (higher up = more attractive) against <strong>ease of entry</strong> (further right = easier to enter); <strong>bubble size</strong> is the team's average vote. Click any bubble or table row for the full business case.</p></div>
       <a href="#/submit" class="btn-primary">+ Submit an idea</a>
     </div>
     ${quadrant(rows)}
@@ -270,16 +270,17 @@ function quadrant(rows) {
   const y = v => (H - pad) - ((v - 1) / 9) * (H - pad * 2);
 
   const dots = rows.map(({ idea }) => {
-    const ff = idea.scores?.founderFit?.score ?? 5;
-    const cx = x(ease(idea)), cy = y(attractiveness(idea)), r = 7 + ff * 1.6;
+    const vote = teamVotes(idea.id).avg;      // bubble size reflects the team's average vote
+    const sizeVal = vote == null ? 3 : vote;  // unvoted ideas show as small bubbles
+    const cx = x(ease(idea)), cy = y(attractiveness(idea)), r = 7 + sizeVal * 1.6;
     return `<g class="dot" data-id="${esc(idea.id)}">
-      <circle cx="${cx}" cy="${cy}" r="${r}" fill="var(--accent)" fill-opacity="0.28" stroke="var(--accent)"></circle>
+      <circle cx="${cx}" cy="${cy}" r="${r}" fill="var(--team)" fill-opacity="0.28" stroke="var(--team)"></circle>
       <text class="dot-label" x="${cx}" y="${cy - r - 5}" text-anchor="middle">${esc(shortTitle(idea.title))}</text>
     </g>`;
   }).join("");
 
   return `<div class="quad">
-    <h3>Attractiveness vs. ease of entry <span class="muted">— bubble size = founder-fit</span></h3>
+    <h3>Attractiveness vs. ease of entry <span class="muted">— bubble size = team's average vote</span></h3>
     <div class="quad-box"><svg viewBox="0 0 ${W} ${H}" role="img">
       <line x1="${W/2}" y1="${pad}" x2="${W/2}" y2="${H-pad}" stroke="var(--line)"></line>
       <line x1="${pad}" y1="${H/2}" x2="${W-pad}" y2="${H/2}" stroke="var(--line)"></line>
@@ -341,7 +342,6 @@ function renderDetail(idea) {
         <div class="card"><h3>Scorecard</h3>${scoreRows}</div>
       </div>
     </div>
-    ${teamCardHtml(idea)}
     <div class="card"><h3>Clarify or expand this idea</h3>
       <p class="muted" style="margin-top:0">Add detail, answer any open questions, or push back — it goes to the group to sharpen the analysis. Your typing is kept in this browser.</p>
       ${qs.length ? `<ul class="qs">${qs.map(q => `<li>${esc(q)}</li>`).join("")}</ul>` : ""}
@@ -354,7 +354,8 @@ function renderDetail(idea) {
           <span id="ans-note" class="muted"></span>
         </div>
       </form>
-    </div>`;
+    </div>
+    ${teamCardHtml(idea)}`;
 
   // ----- Clarify / expand form wiring -----
   const form = $("#answers-form");

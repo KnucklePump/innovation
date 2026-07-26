@@ -107,6 +107,8 @@ button.ghost:hover, .ghost:hover { color: var(--ink); border-color: var(--accent
 /* List header */
 .list-head { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin-bottom: 22px; flex-wrap: wrap; }
 .list-head h2 { margin: 0; font-size: clamp(24px, 3.4vw, 32px); font-weight: 800; letter-spacing: -0.6px; }
+.list-head p { max-width: 680px; }
+.list-head p strong { color: var(--muted-bright); font-weight: 700; }
 
 /* Table */
 .table-wrap { overflow-x: auto; border: 1px solid var(--line); border-radius: var(--radius); background: var(--panel); box-shadow: var(--shadow); }
