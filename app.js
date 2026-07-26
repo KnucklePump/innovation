@@ -221,7 +221,7 @@ function renderList() {
 
   view.innerHTML = `
     <div class="list-head">
-      <div><h2>Idea Board</h2><p class="muted">${state.ideas.length} idea${state.ideas.length > 1 ? "s" : ""}. The chart plots each idea by <strong>attractiveness</strong> (higher up = more attractive) against <strong>ease of entry</strong> (further right = easier to enter); <strong>bubble size</strong> is the team's average vote. Click any bubble or table row for the full business case.</p></div>
+      <div><h2>Idea Board</h2><p class="muted">The chart plots each idea by <strong>attractiveness</strong> (higher up = more attractive) against <strong>ease of entry</strong> (further right = easier to enter); <strong>bubble size</strong> is the team's average vote. Click any bubble or table row for the full business case.</p></div>
       <a href="#/submit" class="btn-primary">+ Submit an idea</a>
     </div>
     ${quadrant(rows)}
