@@ -190,6 +190,8 @@ function renderList() {
   }));
   view.querySelectorAll("tbody tr").forEach(tr =>
     tr.addEventListener("click", () => { location.hash = `#/idea/${encodeURIComponent(tr.dataset.id)}`; }));
+  view.querySelectorAll(".dot").forEach(g =>
+    g.addEventListener("click", () => { location.hash = `#/idea/${encodeURIComponent(g.dataset.id)}`; }));
 }
 
 /* ---------- 2x2 quadrant (attractiveness vs ease of entry, bubble = founder-fit) ---------- */
