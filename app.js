@@ -151,8 +151,8 @@ function renderList() {
     return asc ? av - bv : bv - av;
   });
 
-  const cols = ["market", "entry", "founderFit", "risk"]; // compact set of sub-scores in the table
-  const th = k => `<th data-key="${k}" class="${key === k ? "sorted " + (asc ? "asc" : "") : ""}">${esc(state.rubric[k]?.label || k)}</th>`;
+  const cols = Object.keys(state.rubric); // all scorecard metrics
+  const th = k => `<th data-key="${k}" class="num ${key === k ? "sorted " + (asc ? "asc" : "") : ""}" title="${esc(state.rubric[k]?.label || k)}">${esc(state.rubric[k]?.short || state.rubric[k]?.label || k)}</th>`;
 
   view.innerHTML = `
     <div class="list-head">
@@ -163,7 +163,7 @@ function renderList() {
     <div class="table-wrap"><table>
       <thead><tr>
         <th data-key="_title">Idea</th>
-        <th data-key="composite" class="${key === "composite" ? "sorted " + (asc ? "asc" : "") : ""}">Composite</th>
+        <th data-key="composite" class="num ${key === "composite" ? "sorted " + (asc ? "asc" : "") : ""}">Composite</th>
         ${cols.map(th).join("")}
       </tr></thead>
       <tbody>
@@ -171,10 +171,10 @@ function renderList() {
           <tr data-id="${esc(idea.id)}">
             <td class="idea-title">${esc(idea.title)}${idea.sample ? ' <span class="badge sample">sample</span>' : ""}
               <small>${esc(idea.oneLiner || "")}</small></td>
-            <td><span class="composite">${c.toFixed(1)}</span></td>
+            <td class="num"><span class="composite">${c.toFixed(1)}</span></td>
             ${cols.map(k => {
               const s = idea.scores?.[k]?.score;
-              return `<td>${s == null ? "—" : `<span class="score-pill ${scoreClass(s)}">${s}</span>`}</td>`;
+              return `<td class="num">${s == null ? "—" : `<span class="score-pill ${scoreClass(s)}">${s}</span>`}</td>`;
             }).join("")}
           </tr>`).join("")}
       </tbody>

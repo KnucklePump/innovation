@@ -115,6 +115,7 @@ th { font-size: 11px; text-transform: uppercase; letter-spacing: .08em; color: v
 th.sorted { color: var(--accent); }
 th.sorted::after { content: " ▾"; }
 th.asc::after { content: " ▴"; }
+th.num, td.num { text-align: center; padding-left: 9px; padding-right: 9px; }
 tbody tr { cursor: pointer; transition: background var(--ease); }
 tbody tr:hover { background: var(--panel2); }
 tbody tr:last-child td { border-bottom: none; }
