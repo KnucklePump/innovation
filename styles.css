@@ -200,6 +200,8 @@ ul.qs li { margin: 6px 0; }
 /* Team voting */
 .voter-pick { background: var(--bg); color: var(--ink); border: 1px solid var(--line); border-radius: 999px; font: 600 13px/1 var(--font); padding: 7px 12px; cursor: pointer; }
 .voter-pick:focus { outline: none; border-color: var(--accent); }
+.voter-select { max-width: 280px; padding: 11px 13px; border: 1px solid var(--line); border-radius: var(--radius-sm); background: var(--bg); color: var(--ink); font: inherit; cursor: pointer; }
+.voter-select:focus { outline: none; border-color: var(--accent); }
 .team-score { color: var(--team); }
 .vote-summary { display: flex; align-items: baseline; gap: 8px; margin-bottom: 14px; }
 .vote-summary .team-score { font-size: 28px; }

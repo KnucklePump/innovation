@@ -115,16 +115,22 @@ async function boot() {
 window.addEventListener("hashchange", route);
 
 /* ---------- Team voting ---------- */
+// Single source of truth for "who am I" — used by the top picker, both forms, and voting.
+function setVoter(name) {
+  state.voter = name || "";
+  localStorage.setItem("voterName", state.voter);
+  const top = $("#voter-pick"); if (top && top.value !== state.voter) top.value = state.voter;
+}
+function voterOptions(placeholder) {
+  const cur = state.voter || "";
+  return `<option value="">${esc(placeholder || "Select your name…")}</option>` +
+    state.voters.map(n => `<option value="${esc(n)}"${n === cur ? " selected" : ""}>${esc(n)}</option>`).join("");
+}
 function setupVoter() {
   const sel = $("#voter-pick");
   state.voter = localStorage.getItem("voterName") || "";
-  sel.innerHTML = `<option value="">Who are you?</option>` +
-    state.voters.map(n => `<option value="${esc(n)}"${n === state.voter ? " selected" : ""}>${esc(n)}</option>`).join("");
-  sel.addEventListener("change", () => {
-    state.voter = sel.value;
-    localStorage.setItem("voterName", state.voter);
-    route();
-  });
+  sel.innerHTML = voterOptions("Who are you?");
+  sel.addEventListener("change", () => { setVoter(sel.value); route(); });
 }
 // Read live vote tallies from the Apps Script via JSONP (bypasses CORS on a static site).
 function loadVotes() {
@@ -346,7 +352,7 @@ function renderDetail(idea) {
       <p class="muted" style="margin-top:0">Add detail, answer any open questions, or push back — it goes to the group to sharpen the analysis. Your typing is kept in this browser.</p>
       ${qs.length ? `<ul class="qs">${qs.map(q => `<li>${esc(q)}</li>`).join("")}</ul>` : ""}
       <form id="answers-form">
-        <div class="ans-q"><label>Your name (optional)</label><input class="ans-name" type="text" placeholder="Who's answering?" /></div>
+        <div class="ans-q"><label>Your name</label><select class="ans-name voter-select">${voterOptions()}</select></div>
         <div class="ans-q"><label>Clarify / expand the idea</label><textarea id="ans-response" rows="6" placeholder="Add anything useful — context, answers to the questions above, corrections…"></textarea></div>
         <div class="ans-actions">
           <button type="button" id="send-answers">Send</button>
@@ -363,11 +369,10 @@ function renderDetail(idea) {
     const nameEl = form.querySelector(".ans-name");
     const respEl = $("#ans-response");
     const K = s => `ans:${idea.id}:${s}`;
-    // restore anything typed earlier in this browser
-    nameEl.value = localStorage.getItem(K("name")) || "";
+    // name is the shared identity; the response is drafted per-idea in this browser
+    nameEl.value = state.voter || "";
     respEl.value = localStorage.getItem(K("response")) || "";
-    // persist as they type
-    nameEl.addEventListener("input", () => localStorage.setItem(K("name"), nameEl.value));
+    nameEl.addEventListener("change", () => setVoter(nameEl.value));
     respEl.addEventListener("input", () => localStorage.setItem(K("response"), respEl.value));
 
     const questionsAsked = qs.length ? qs.map((q, i) => `${i + 1}. ${q}`).join("  •  ") : "(none)";
@@ -443,7 +448,7 @@ function renderDetail(idea) {
 }
 /* ---------- Submit-an-idea view ---------- */
 const SUBMIT_FIELDS = [
-  { k: "name",        label: "Your name",       type: "input",    ph: "" },
+  { k: "name",        label: "Your name",       type: "voter" },
   { k: "title",       label: "Idea title",      type: "input",    ph: "e.g. Alpine Mind — coaching for amateur athletes" },
   { k: "pitch",       label: "One-line pitch",  type: "input",    ph: "the idea in a single sentence" },
   { k: "description", label: "Idea description", type: "textarea", rows: 7, ph: "Describe the idea in as much detail as you like — who it's for, why now, how it might make money, and what it would take to get started." },
@@ -457,9 +462,11 @@ function renderSubmit() {
     <div class="card">
       <form id="submit-form">
         ${SUBMIT_FIELDS.map(f => `<div class="ans-q"><label>${esc(f.label)}</label>${
-          f.type === "textarea"
-            ? `<textarea data-k="${f.k}" rows="${f.rows || 3}" placeholder="${esc(f.ph)}"></textarea>`
-            : `<input data-k="${f.k}" type="text" placeholder="${esc(f.ph)}" />`}</div>`).join("")}
+          f.type === "voter"
+            ? `<select data-k="${f.k}" class="voter-select voter-field">${voterOptions()}</select>`
+            : f.type === "textarea"
+            ? `<textarea data-k="${f.k}" rows="${f.rows || 3}" placeholder="${esc(f.ph || "")}"></textarea>`
+            : `<input data-k="${f.k}" type="text" placeholder="${esc(f.ph || "")}" />`}</div>`).join("")}
         <div class="ans-actions">
           <button type="button" id="send-idea">Submit idea</button>
           <button type="button" id="copy-idea" class="ghost">Copy</button>
@@ -472,8 +479,13 @@ function renderSubmit() {
   const els = [...form.querySelectorAll("[data-k]")];
   const K = k => `newidea:${k}`;
   els.forEach(e => {
-    e.value = localStorage.getItem(K(e.dataset.k)) || "";
-    e.addEventListener("input", () => localStorage.setItem(K(e.dataset.k), e.value));
+    if (e.classList.contains("voter-field")) {
+      e.value = state.voter || "";
+      e.addEventListener("change", () => setVoter(e.value));
+    } else {
+      e.value = localStorage.getItem(K(e.dataset.k)) || "";
+      e.addEventListener("input", () => localStorage.setItem(K(e.dataset.k), e.value));
+    }
   });
   const val = k => (form.querySelector(`[data-k="${k}"]`).value || "").trim();
   const buildText = () => "New business idea\n\n" + SUBMIT_FIELDS.map(f => `${f.label}: ${val(f.k) || "(blank)"}`).join("\n\n") + "\n";
@@ -491,7 +503,7 @@ function renderSubmit() {
           ...Object.fromEntries(SUBMIT_FIELDS.map(f => [f.k, val(f.k)])),
         });
         SUBMIT_FIELDS.forEach(f => localStorage.removeItem(K(f.k)));
-        els.forEach(e => { e.value = ""; });
+        els.forEach(e => { if (!e.classList.contains("voter-field")) e.value = ""; });
         note("Sent! The group will review it. Thank you.");
       } catch {
         note("Couldn't send — check your connection, or use Copy as a fallback.");
