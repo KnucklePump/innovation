@@ -9,7 +9,8 @@
 const PASSWORD_HASH = "2ecfd1b8a9c8e6f2f97748fd28ab531c0491e152108690abab45421d68c35551";
 
 const $ = (s, el = document) => el.querySelector(s);
-const state = { ideas: [], rubric: {}, sort: { key: "composite", asc: false } };
+const state = { ideas: [], rubric: {}, votes: {}, voters: [], voter: "", sort: { key: "composite", asc: false } };
+let voteCbSeq = 0;
 
 /* ---------- Password gate ----------
    Self-contained SHA-256 (works on file://, IP, localhost or https alike — no
@@ -105,10 +106,72 @@ async function boot() {
   state.rubric = cfgRes.rubric || {};
   state.contactEmail = cfgRes.contactEmail || "";
   state.endpoint = cfgRes.endpoint || "";
+  state.voters = cfgRes.voters || [];
   $("#brand-sub").textContent = (ideasRes.meta && ideasRes.meta.subtitle) || "";
+  setupVoter();
   route();
+  loadVotes().then(route); // fill in live tallies without blocking first paint
 }
 window.addEventListener("hashchange", route);
+
+/* ---------- Team voting ---------- */
+function setupVoter() {
+  const sel = $("#voter-pick");
+  state.voter = localStorage.getItem("voterName") || "";
+  sel.innerHTML = `<option value="">Who are you?</option>` +
+    state.voters.map(n => `<option value="${esc(n)}"${n === state.voter ? " selected" : ""}>${esc(n)}</option>`).join("");
+  sel.addEventListener("change", () => {
+    state.voter = sel.value;
+    localStorage.setItem("voterName", state.voter);
+    route();
+  });
+}
+// Read live vote tallies from the Apps Script via JSONP (bypasses CORS on a static site).
+function loadVotes() {
+  return new Promise((resolve) => {
+    if (!state.endpoint) { state.votes = {}; return resolve(); }
+    const cb = "__votes_cb_" + (++voteCbSeq);
+    let done = false;
+    const s = document.createElement("script");
+    const finish = (v) => { if (done) return; done = true; if (v) state.votes = v; try { s.remove(); } catch {} delete window[cb]; resolve(); };
+    window[cb] = (data) => finish((data && data.votes) || {});
+    s.onerror = () => finish({});
+    s.src = `${state.endpoint}?action=votes&callback=${cb}&_=${Date.now()}`;
+    document.body.appendChild(s);
+    setTimeout(() => finish(null), 6000);
+  });
+}
+function teamVotes(ideaId) {
+  const arr = (state.votes && state.votes[ideaId]) || [];
+  const valid = arr.filter(v => v.score > 0);
+  const avg = valid.length ? valid.reduce((a, b) => a + b.score, 0) / valid.length : null;
+  return { avg, count: valid.length, votes: arr };
+}
+function upsertVote(ideaId, name, score, comment) {
+  const arr = state.votes[ideaId] = state.votes[ideaId] || [];
+  const existing = arr.find(v => v.name === name);
+  if (existing) { existing.score = score; existing.comment = comment; }
+  else { arr.push({ name, score, comment }); }
+}
+function teamCardHtml(idea) {
+  const { avg, count, votes } = teamVotes(idea.id);
+  const mine = votes.find(v => v.name === state.voter);
+  const summary = count
+    ? `<div class="vote-summary"><span class="composite team-score">${avg.toFixed(1)}</span><span class="muted">/ 10 · ${count} vote${count > 1 ? "s" : ""}</span></div>`
+    : `<p class="muted" style="margin:0 0 4px">No team ratings yet.</p>`;
+  const list = votes.length
+    ? `<div class="vote-list">${votes.map(v => `<div class="vote-row"><span class="vote-name">${esc(v.name)}</span><span class="score-pill ${scoreClass(v.score)}">${v.score}</span>${v.comment ? `<span class="vote-comment">${esc(v.comment)}</span>` : ""}</div>`).join("")}</div>`
+    : "";
+  const mineForm = state.voter
+    ? `<form id="vote-form" class="vote-mine">
+         <label>Your rating (as ${esc(state.voter)})</label>
+         <div class="vote-slider"><input type="range" id="vote-score" min="1" max="10" step="1" value="${mine ? mine.score : 7}" /><output id="vote-val">${mine ? mine.score : 7}</output><span class="muted">/ 10</span></div>
+         <textarea id="vote-comment" rows="2" placeholder="Why? (optional)">${esc(mine ? mine.comment : "")}</textarea>
+         <div class="ans-actions"><button type="button" id="vote-save">${mine ? "Update my rating" : "Save my rating"}</button><span id="vote-note" class="muted"></span></div>
+       </form>`
+    : `<p class="muted" style="margin-bottom:0">Pick your name (top-right) to add your rating.</p>`;
+  return `<div class="card"><h3>Team rating</h3>${summary}${list}${mineForm}</div>`;
+}
 
 function composite(idea) {
   let sum = 0, w = 0;
@@ -146,8 +209,10 @@ function renderList() {
   const rows = state.ideas.map(i => ({ idea: i, composite: composite(i) }));
   const { key, asc } = state.sort;
   rows.sort((a, b) => {
-    const av = key === "composite" ? a.composite : (a.idea.scores?.[key]?.score ?? 0);
-    const bv = key === "composite" ? b.composite : (b.idea.scores?.[key]?.score ?? 0);
+    let av, bv;
+    if (key === "composite") { av = a.composite; bv = b.composite; }
+    else if (key === "team") { av = teamVotes(a.idea.id).avg ?? -1; bv = teamVotes(b.idea.id).avg ?? -1; }
+    else { av = a.idea.scores?.[key]?.score ?? 0; bv = b.idea.scores?.[key]?.score ?? 0; }
     return asc ? av - bv : bv - av;
   });
 
@@ -164,6 +229,7 @@ function renderList() {
       <thead><tr>
         <th data-key="_title">Idea</th>
         <th data-key="composite" class="num ${key === "composite" ? "sorted " + (asc ? "asc" : "") : ""}">Composite</th>
+        <th data-key="team" class="num ${key === "team" ? "sorted " + (asc ? "asc" : "") : ""}" title="Team rating (1–10 average)">Team</th>
         ${cols.map(th).join("")}
       </tr></thead>
       <tbody>
@@ -172,6 +238,7 @@ function renderList() {
             <td class="idea-title">${esc(idea.title)}${idea.sample ? ' <span class="badge sample">sample</span>' : ""}
               <small>${esc(idea.oneLiner || "")}</small></td>
             <td class="num"><span class="composite">${c.toFixed(1)}</span></td>
+            <td class="num">${teamVotes(idea.id).avg == null ? '<span class="muted">—</span>' : `<span class="composite team-score">${teamVotes(idea.id).avg.toFixed(1)}</span>`}</td>
             ${cols.map(k => {
               const s = idea.scores?.[k]?.score;
               return `<td class="num">${s == null ? "—" : `<span class="score-pill ${scoreClass(s)}">${s}</span>`}</td>`;
@@ -274,6 +341,7 @@ function renderDetail(idea) {
         <div class="card"><h3>Scorecard</h3>${scoreRows}</div>
       </div>
     </div>
+    ${teamCardHtml(idea)}
     <div class="card"><h3>Clarify or expand this idea</h3>
       <p class="muted" style="margin-top:0">Add detail, answer any open questions, or push back — it goes to the group to sharpen the analysis. Your typing is kept in this browser.</p>
       ${qs.length ? `<ul class="qs">${qs.map(q => `<li>${esc(q)}</li>`).join("")}</ul>` : ""}
@@ -346,6 +414,29 @@ function renderDetail(idea) {
       if (navigator.clipboard && navigator.clipboard.writeText) {
         navigator.clipboard.writeText(text).then(done, () => fallbackCopy(text, done));
       } else { fallbackCopy(text, done); }
+    });
+  }
+
+  // ----- Team vote wiring -----
+  const voteScore = $("#vote-score");
+  if (voteScore) {
+    const valEl = $("#vote-val"), commentEl = $("#vote-comment");
+    voteScore.addEventListener("input", () => { valEl.textContent = voteScore.value; });
+    $("#vote-save").addEventListener("click", async () => {
+      if (!state.voter) return;
+      const score = Number(voteScore.value), comment = commentEl.value.trim();
+      upsertVote(idea.id, state.voter, score, comment);
+      renderDetail(idea);
+      const n = $("#vote-note"); if (n) n.textContent = "Saving…";
+      if (state.endpoint) {
+        try {
+          await postToStore({ type: "vote", submittedAt: new Date().toISOString(), ideaId: idea.id, ideaTitle: idea.title, name: state.voter, score, comment });
+          const ok = $("#vote-note"); if (ok) ok.textContent = "Saved ✓";
+          setTimeout(async () => { await loadVotes(); if (location.hash === `#/idea/${encodeURIComponent(idea.id)}`) renderDetail(idea); }, 1500);
+        } catch {
+          const bad = $("#vote-note"); if (bad) bad.textContent = "Couldn't save — try again.";
+        }
+      }
     });
   }
 }
