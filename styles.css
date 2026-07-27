@@ -222,6 +222,9 @@ ul.qs li { margin: 6px 0; }
 .pill-link.nav-page:hover { color: var(--ink); border-color: var(--accent); background: transparent; }
 .pill-link.nav-page.active { color: var(--accent); border-color: var(--accent); background: var(--accent-soft); }
 
+/* Larger trend description (one-liner) in the trends table */
+.trends-table .idea-title small { font-size: 14.5px; line-height: 1.5; color: var(--muted-bright); margin-top: 4px; }
+
 /* Trend map: numbered bubbles + legend */
 .dot-num { font-size: 12px; font-weight: 800; fill: var(--ink); pointer-events: none; }
 .tm-legend { display: flex; flex-wrap: wrap; gap: 9px 18px; margin-top: 14px; }

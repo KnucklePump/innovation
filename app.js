@@ -504,6 +504,7 @@ function trendMap(trends) {
       const cy = y(t.signal || 5);
       const r = Math.max(12, 8 + (t.ideas ? t.ideas.length : 0) * 3);
       dots += `<g class="dot" data-id="${esc(t.id)}">
+        <title>${esc(t.title)}</title>
         <circle cx="${cx}" cy="${cy}" r="${r}" fill="${colOf(t)}" fill-opacity="0.30" stroke="${colOf(t)}"></circle>
         <text class="dot-num" x="${cx}" y="${cy}" text-anchor="middle" dominant-baseline="central">${numById.get(t.id)}</text>
       </g>`;
@@ -558,7 +559,7 @@ function renderTrends() {
       <a href="#/submit" class="btn-primary">+ Submit an idea</a>
     </div>
     ${trendMap(rows)}
-    <div class="table-wrap"><table>
+    <div class="table-wrap trends-table"><table>
       <thead><tr>
         <th data-key="_title">Trend</th>
         ${th("sector", "Sector")}
