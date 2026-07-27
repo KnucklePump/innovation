@@ -227,12 +227,10 @@ ul.qs li { margin: 6px 0; }
 /* Larger trend description (one-liner) in the trends table */
 .trends-table .idea-title small { font-size: 14.5px; line-height: 1.5; color: var(--muted-bright); margin-top: 4px; }
 
-/* Trend map: numbered bubbles + legend */
+/* Trend map: numbered bubbles + hover tooltip (numbers are keyed to the table's # column) */
 .dot-num { font-size: 12px; font-weight: 800; fill: var(--ink); pointer-events: none; }
-.tm-legend { display: flex; flex-wrap: wrap; gap: 9px 18px; margin-top: 14px; }
-.tm-leg { display: inline-flex; align-items: center; gap: 8px; font-size: 12.5px; font-weight: 600; color: var(--muted-bright); }
-.tm-leg:hover { color: var(--ink); text-decoration: none; }
 .tm-leg-num { display: inline-flex; align-items: center; justify-content: center; width: 19px; height: 19px; border-radius: 50%; color: #0a0c10; font-size: 11px; font-weight: 800; flex-shrink: 0; }
+.tm-tip { position: absolute; transform: translate(-50%, -145%); background: var(--panel2); color: var(--ink); border: 1px solid var(--line); border-radius: 8px; padding: 5px 10px; font-size: 12.5px; font-weight: 600; white-space: nowrap; pointer-events: none; z-index: 5; box-shadow: var(--shadow); }
 
 /* Trend badges */
 .badge.adj { background: rgba(34, 211, 238, 0.14); color: var(--team); }

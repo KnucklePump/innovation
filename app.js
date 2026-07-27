@@ -504,7 +504,6 @@ function trendMap(trends) {
       const cy = y(t.signal || 5);
       const r = Math.max(12, 8 + (t.ideas ? t.ideas.length : 0) * 3);
       dots += `<g class="dot" data-id="${esc(t.id)}">
-        <title>${esc(t.title)}</title>
         <circle cx="${cx}" cy="${cy}" r="${r}" fill="${colOf(t)}" fill-opacity="0.30" stroke="${colOf(t)}"></circle>
         <text class="dot-num" x="${cx}" y="${cy}" text-anchor="middle" dominant-baseline="central">${numById.get(t.id)}</text>
       </g>`;
@@ -512,8 +511,6 @@ function trendMap(trends) {
   });
   const bandLabels = bands.map((b, bi) => `<text class="axis-label" x="${bandX0(bi) + bandW / 2}" y="${H - pad + 26}" text-anchor="middle">${esc(horizonLabel(b))}</text>`).join("");
   const gridlines = [1, 2].map(i => `<line x1="${pad + (i / 3) * (W - 2 * pad)}" y1="${pad}" x2="${pad + (i / 3) * (W - 2 * pad)}" y2="${H - pad}" stroke="var(--line)"></line>`).join("");
-  const legend = trends.map(t =>
-    `<a class="tm-leg" href="#/trend/${encodeURIComponent(t.id)}"><span class="tm-leg-num" style="background:${colOf(t)}">${numById.get(t.id)}</span>${esc(t.title)}</a>`).join("");
 
   return `<div class="quad">
     <h3>Trend map <span class="muted">— opportunity signal vs. time horizon · bubble size = number of ideas · <span style="color:var(--accent)">broad</span> vs <span style="color:var(--team)">adjacent to your ideas</span></span></h3>
@@ -523,8 +520,7 @@ function trendMap(trends) {
       <text class="axis-label" x="16" y="${H / 2}" text-anchor="middle" transform="rotate(-90 16 ${H / 2})">Stronger signal →</text>
       ${bandLabels}
       ${dots}
-    </svg></div>
-    <div class="tm-legend">${legend}</div>
+    </svg><div class="tm-tip" hidden></div></div>
   </div>`;
 }
 
@@ -561,6 +557,7 @@ function renderTrends() {
     ${trendMap(rows)}
     <div class="table-wrap trends-table"><table>
       <thead><tr>
+        <th class="num">#</th>
         <th data-key="_title">Trend</th>
         ${th("sector", "Sector")}
         ${th("lens", "Lens")}
@@ -569,8 +566,9 @@ function renderTrends() {
         ${th("ideas", "Ideas", "num")}
       </tr></thead>
       <tbody>
-        ${rows.map(t => `
+        ${rows.map((t, i) => `
           <tr data-id="${esc(t.id)}">
+            <td class="num"><span class="tm-leg-num" style="background:${t.source === "adjacency" ? "var(--team)" : "var(--accent)"}">${i + 1}</span></td>
             <td class="idea-title">${esc(t.title)}${t.sample ? ' <span class="badge sample">sample</span>' : ""}${t.source === "adjacency" ? ' <span class="badge adj">adjacent</span>' : ""}
               <small>${esc(t.oneLiner || "")}</small></td>
             <td>${esc(sectorLabel(t.sector))}</td>
@@ -593,6 +591,21 @@ function renderTrends() {
     tr.addEventListener("click", () => { location.hash = `#/trend/${encodeURIComponent(tr.dataset.id)}`; }));
   view.querySelectorAll(".dot").forEach(g =>
     g.addEventListener("click", () => { location.hash = `#/trend/${encodeURIComponent(g.dataset.id)}`; }));
+
+  // Bubble hover: show the trend name in a tooltip that tracks the cursor
+  const tip = view.querySelector(".tm-tip"), box = view.querySelector(".quad-box");
+  if (tip && box) {
+    view.querySelectorAll(".dot").forEach(g => {
+      const t = state.trends.find(x => x.id === g.dataset.id);
+      g.addEventListener("mouseenter", () => { tip.textContent = t ? t.title : ""; tip.hidden = false; });
+      g.addEventListener("mousemove", e => {
+        const r = box.getBoundingClientRect();
+        tip.style.left = (e.clientX - r.left) + "px";
+        tip.style.top = (e.clientY - r.top) + "px";
+      });
+      g.addEventListener("mouseleave", () => { tip.hidden = true; });
+    });
+  }
 }
 
 /* ---------- Trends: detail view ---------- */
