@@ -150,7 +150,7 @@ svg { display: block; width: 100%; height: auto; }
 .back:hover { color: var(--accent); }
 .detail-head { margin: 14px 0 4px; }
 .detail-head h2 { margin: 8px 0 8px; font-size: clamp(24px, 3.4vw, 32px); font-weight: 800; letter-spacing: -0.6px; }
-.detail-meta { display: flex; gap: 12px; align-items: center; flex-wrap: wrap; color: var(--muted); font-size: 13px; }
+.detail-meta { display: flex; gap: 12px; align-items: center; flex-wrap: wrap; color: var(--muted); font-size: 14px; }
 .detail-meta strong { color: var(--ink); }
 .one-liner { font-size: 17px; color: var(--muted-bright); margin: 12px 0 26px; max-width: 760px; }
 .card.prop { margin-top: 18px; }
@@ -167,7 +167,9 @@ svg { display: block; width: 100%; height: auto; }
 .score-row .label { font-weight: 700; font-size: 14px; }
 .bar { height: 7px; border-radius: 999px; background: var(--line); margin: 8px 0 6px; overflow: hidden; }
 .bar > i { display: block; height: 100%; border-radius: 999px; background: var(--accent); }
-.score-why { font-size: 13px; color: var(--muted); margin: 0; line-height: 1.55; }
+/* Minimum size for readable prose (idea one-liners, "why", sources). Body/description
+   text must never render below this — bump this floor, don't hand-shrink individual spots. */
+.score-why { font-size: 14.5px; color: var(--muted); margin: 0; line-height: 1.6; }
 .score-why a { font-weight: 600; }
 .conf { font-size: 11px; padding: 1px 8px; border-radius: 999px; border: 1px solid var(--line); font-weight: 600; }
 .conf.low { color: var(--bad); } .conf.med { color: var(--mid); } .conf.high { color: var(--good); }
