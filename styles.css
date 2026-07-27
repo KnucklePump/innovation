@@ -222,6 +222,13 @@ ul.qs li { margin: 6px 0; }
 .pill-link.nav-page:hover { color: var(--ink); border-color: var(--accent); background: transparent; }
 .pill-link.nav-page.active { color: var(--accent); border-color: var(--accent); background: var(--accent-soft); }
 
+/* Trend map: numbered bubbles + legend */
+.dot-num { font-size: 12px; font-weight: 800; fill: var(--ink); pointer-events: none; }
+.tm-legend { display: flex; flex-wrap: wrap; gap: 9px 18px; margin-top: 14px; }
+.tm-leg { display: inline-flex; align-items: center; gap: 8px; font-size: 12.5px; font-weight: 600; color: var(--muted-bright); }
+.tm-leg:hover { color: var(--ink); text-decoration: none; }
+.tm-leg-num { display: inline-flex; align-items: center; justify-content: center; width: 19px; height: 19px; border-radius: 50%; color: #0a0c10; font-size: 11px; font-weight: 800; flex-shrink: 0; }
+
 /* Trend badges */
 .badge.adj { background: rgba(34, 211, 238, 0.14); color: var(--team); }
 .badge.lens { background: var(--panel2); color: var(--muted-bright); }

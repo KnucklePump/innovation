@@ -483,29 +483,37 @@ const sectorLabel = s => SECTOR_LABELS[s] || titleize(s);
 const lensLabel = s => LENS_LABELS[s] || titleize(s);
 const horizonLabel = h => HORIZON_LABELS[h] || titleize(h);
 
-/* ---------- Trends: map (signal vs. horizon, bubble = idea count) ---------- */
+/* ---------- Trends: map (signal vs. horizon, bubble = idea count) ----------
+   Bubbles are numbered and keyed to a legend below, so long titles never
+   overlap on the chart no matter how many trends a run produces. */
 function trendMap(trends) {
-  const W = 760, H = 440, pad = 52;
+  const W = 760, H = 360, pad = 52;
   const bands = ["near", "mid", "far"];
   const y = v => (H - pad) - ((v - 1) / 9) * (H - 2 * pad);
   const bandX0 = i => pad + (i / 3) * (W - 2 * pad);
   const bandW = (W - 2 * pad) / 3;
+  const colOf = t => t.source === "adjacency" ? "var(--team)" : "var(--accent)";
+  const numById = new Map();
+  trends.forEach((t, i) => numById.set(t.id, i + 1)); // number == legend order
+
   let dots = "";
   bands.forEach((b, bi) => {
     const inBand = trends.filter(t => (t.horizon || "mid") === b);
     inBand.forEach((t, idx) => {
       const cx = bandX0(bi) + bandW * ((idx + 1) / (inBand.length + 1));
       const cy = y(t.signal || 5);
-      const r = 7 + (t.ideas ? t.ideas.length : 0) * 3;
-      const col = t.source === "adjacency" ? "var(--team)" : "var(--accent)";
+      const r = Math.max(12, 8 + (t.ideas ? t.ideas.length : 0) * 3);
       dots += `<g class="dot" data-id="${esc(t.id)}">
-        <circle cx="${cx}" cy="${cy}" r="${r}" fill="${col}" fill-opacity="0.28" stroke="${col}"></circle>
-        <text class="dot-label" x="${cx}" y="${cy - r - 5}" text-anchor="middle">${esc(shortTitle(t.title))}</text>
+        <circle cx="${cx}" cy="${cy}" r="${r}" fill="${colOf(t)}" fill-opacity="0.30" stroke="${colOf(t)}"></circle>
+        <text class="dot-num" x="${cx}" y="${cy}" text-anchor="middle" dominant-baseline="central">${numById.get(t.id)}</text>
       </g>`;
     });
   });
-  const bandLabels = bands.map((b, bi) => `<text class="axis-label" x="${bandX0(bi) + bandW / 2}" y="${H - pad + 24}" text-anchor="middle">${esc(horizonLabel(b))}</text>`).join("");
+  const bandLabels = bands.map((b, bi) => `<text class="axis-label" x="${bandX0(bi) + bandW / 2}" y="${H - pad + 26}" text-anchor="middle">${esc(horizonLabel(b))}</text>`).join("");
   const gridlines = [1, 2].map(i => `<line x1="${pad + (i / 3) * (W - 2 * pad)}" y1="${pad}" x2="${pad + (i / 3) * (W - 2 * pad)}" y2="${H - pad}" stroke="var(--line)"></line>`).join("");
+  const legend = trends.map(t =>
+    `<a class="tm-leg" href="#/trend/${encodeURIComponent(t.id)}"><span class="tm-leg-num" style="background:${colOf(t)}">${numById.get(t.id)}</span>${esc(t.title)}</a>`).join("");
+
   return `<div class="quad">
     <h3>Trend map <span class="muted">— opportunity signal vs. time horizon · bubble size = number of ideas · <span style="color:var(--accent)">broad</span> vs <span style="color:var(--team)">adjacent to your ideas</span></span></h3>
     <div class="quad-box"><svg viewBox="0 0 ${W} ${H}" role="img">
@@ -515,6 +523,7 @@ function trendMap(trends) {
       ${bandLabels}
       ${dots}
     </svg></div>
+    <div class="tm-legend">${legend}</div>
   </div>`;
 }
 
