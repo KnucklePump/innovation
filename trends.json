@@ -1,0 +1,138 @@
+{
+  "meta": {
+    "subtitle": "Emerging trends & markets",
+    "coverage": [
+      { "sector": "energy-climate", "lens": "financial", "run": "2026-07-27" },
+      { "sector": "frontier", "lens": "technological", "run": "2026-07-27" },
+      { "sector": "media-entertainment", "lens": "contrarian", "run": "2026-07-27" },
+      { "seed": "wasabi-import-business", "run": "2026-07-27" },
+      { "seed": "mushroom-farm", "run": "2026-07-27" },
+      { "seed": "come-to-me-financial-product-app", "run": "2026-07-27" }
+    ]
+  },
+  "trends": [
+    {
+      "id": "virtual-power-plants",
+      "title": "Virtual power plants & grid flexibility",
+      "sector": "energy-climate",
+      "lens": "financial",
+      "source": "broad",
+      "horizon": "near",
+      "signal": 8,
+      "oneLiner": "Millions of home batteries, EV chargers and heat pumps are being aggregated into 'virtual power plants' that sell flexibility back to the grid — turning household hardware into an income stream.",
+      "why": "As rooftop solar, home batteries and EVs proliferate, grids need flexible capacity to balance renewables — and are increasingly paying consumers for it. One estimate puts the VPP market at USD 6.28B in 2025 growing to ~USD 45.7B by 2035 (~22.6% CAGR), though firm estimates vary widely. The tailwinds are structural: falling battery costs (technological/economic), volatile time-of-use tariffs, and policy pushing demand-side flexibility (political/environmental).",
+      "drivers": ["technological", "economic", "environmental", "political"],
+      "sources": ["https://www.precedenceresearch.com/virtual-power-plant-market", "https://www.grandviewresearch.com/industry-analysis/virtual-power-plant-market-report"],
+      "confidence": "med",
+      "ideas": [
+        { "title": "Flexibility-enrolment installer", "oneLiner": "Install home batteries and smart panels, then auto-enrol households into VPP and demand-response programs, keeping a share of the ongoing flexibility payments.", "pattern": "picks-and-shovels" },
+        { "title": "VPP-in-a-box for small utilities", "oneLiner": "White-label aggregation software so municipal and regional utilities can pool their customers' distributed resources without building a platform themselves.", "pattern": "platform" },
+        { "title": "Flexibility-yield app", "oneLiner": "A consumer app that optimises battery and EV charging against live tariffs and pays users the arbitrage it captures.", "pattern": "unbundling" }
+      ],
+      "createdRun": "2026-07-27"
+    },
+    {
+      "id": "humanoid-robots-physical-ai",
+      "title": "Humanoid robots & physical AI",
+      "sector": "frontier",
+      "lens": "technological",
+      "source": "broad",
+      "horizon": "mid",
+      "signal": 7,
+      "oneLiner": "AI has learned to control bodies, not just chat — kicking off a race to put general-purpose humanoid and mobile robots into warehouses, factories and eventually homes.",
+      "why": "Advances in AI control models plus a sharp drop in actuator and component costs have made general-purpose robots suddenly plausible. Goldman Sachs projects a ~USD 38B humanoid market by 2035 (~1.4M units shipped by then) and Morgan Stanley a ~USD 5T total addressable market by 2050 — though forecasts diverge enormously, signalling real uncertainty on timing. The opportunity for a small team is less the robots themselves than the picks-and-shovels around a scaling fleet (technological/economic).",
+      "drivers": ["technological", "economic", "social"],
+      "sources": ["https://www.goldmansachs.com/insights/articles/the-global-market-for-robots-could-reach-38-billion-by-2035", "https://www.morganstanley.com/insights/articles/humanoid-robot-market-5-trillion-by-2050"],
+      "confidence": "med",
+      "ideas": [
+        { "title": "Fleet skilling & teleoperation", "oneLiner": "A remote-operator and training-data service that teaches robot fleets new real-world tasks and takes over when they get stuck.", "pattern": "picks-and-shovels" },
+        { "title": "Robot supply-chain parts", "oneLiner": "Supply the high-wear precision components — actuators, rod ends, sensors — that every robot maker needs and few want to build.", "pattern": "picks-and-shovels" },
+        { "title": "Robotics-as-a-service", "oneLiner": "Lease, deploy and maintain humanoid or mobile robots for warehouses and facilities on a per-month contract instead of an upfront sale.", "pattern": "service-izing" }
+      ],
+      "createdRun": "2026-07-27"
+    },
+    {
+      "id": "verified-human-content-premium",
+      "title": "The 'verified human' premium",
+      "sector": "media-entertainment",
+      "lens": "contrarian",
+      "source": "broad",
+      "horizon": "near",
+      "signal": 6,
+      "oneLiner": "As AI-generated content floods every feed, the scarce and premium thing flips to the opposite: content that is provably made by a human, with verifiable provenance.",
+      "why": "The consensus bet is on generating ever more AI content; the second-order effect is a glut that erodes trust and makes authenticity valuable. Provenance standards are maturing fast — C2PA / Content Credentials reached v2.2 in 2025 and is being adopted by major AI platforms and device makers — creating the rails to certify origin. The contrarian opportunity is monetising the 'human-made' and 'verified-origin' signal (social/technological), though how buyers will pay for it is still unproven.",
+      "drivers": ["technological", "social"],
+      "sources": ["https://c2paviewer.com/articles/what-is-c2pa", "https://spec.c2pa.org/specifications/specifications/2.2/explainer/_attachments/Explainer.pdf"],
+      "confidence": "low",
+      "ideas": [
+        { "title": "Verified-human content mark", "oneLiner": "A certification plus toolkit that proves a photo, article or track was human-made, licensable as a trust badge to publishers and marketplaces.", "pattern": "category-creation" },
+        { "title": "Provenance-at-capture app", "oneLiner": "A camera app that embeds Content Credentials at the moment of capture — for journalists, online sellers and insurers who need to prove a shot is real.", "pattern": "picks-and-shovels" },
+        { "title": "Human-made marketplace", "oneLiner": "A curated stock library and marketplace selling certified human-made creative work at a premium over undifferentiated AI output.", "pattern": "premiumisation" }
+      ],
+      "createdRun": "2026-07-27"
+    },
+    {
+      "id": "specialty-food-provenance",
+      "title": "Provenance-verified specialty food",
+      "sector": "food-agriculture",
+      "lens": "cultural",
+      "source": "adjacency",
+      "seededBy": "wasabi-import-business",
+      "horizon": "near",
+      "signal": 6,
+      "oneLiner": "Shoppers and chefs increasingly pay up for food whose origin and authenticity are proven — opening room for brands built entirely on verified provenance rather than commodity substitutes.",
+      "why": "Trust and traceability have become buying criteria: PwC found consumers willing to pay a ~9.7% premium for sustainable foods despite cost-of-living pressure, and provenance is now mainstream — in the UK around 74% are confident their food is traceable and ~80% want retailers to stock provenance brands. Authenticity is also a defence against fraud: olive oil, honey and saffron rank among the most-adulterated ingredients, and roughly 95% of food-fraud cases involve swapping in a cheaper substitute — so verified single-origin sourcing is both a story and a moat (social/cultural/economic).",
+      "drivers": ["social", "economic", "environmental"],
+      "sources": ["https://www.foodmanufacture.co.uk/Latest/Promotional-Features/quality-and-provenance-continue-to-drive-consumers-food-and-drink-choices/", "https://www.sciencedaily.com/releases/2012/04/120405144244.htm"],
+      "confidence": "med",
+      "ideas": [
+        { "title": "Single-origin specialty importer", "oneLiner": "Import authenticated single-origin specialty foods — real wasabi, single-estate oils and spices — and sell them to premium venues with the provenance story attached.", "pattern": "geographic-arbitrage" },
+        { "title": "Verified-origin distribution brand", "oneLiner": "A distribution brand whose entire pitch is proven origin and traceability, competing on authenticity against commodity substitutes.", "pattern": "premiumisation" },
+        { "title": "Chef-direct authenticity club", "oneLiner": "A subscription connecting restaurants to rotating authenticated specialty ingredients, each with an origin dossier.", "pattern": "platform" }
+      ],
+      "createdRun": "2026-07-27"
+    },
+    {
+      "id": "functional-mushroom-wellness",
+      "title": "Functional-mushroom & adaptogen wellness",
+      "sector": "consumer-retail",
+      "lens": "social",
+      "source": "adjacency",
+      "seededBy": "mushroom-farm",
+      "horizon": "mid",
+      "signal": 7,
+      "oneLiner": "Adaptogenic mushrooms — lion's mane, reishi, cordyceps — are moving from niche supplement to mainstream food, drink and beauty ingredient sold on focus, calm and immunity.",
+      "why": "A values shift toward natural, 'food-as-medicine' wellness is pulling functional mushrooms into everyday products. The broad functional-mushroom market was ~USD 34.6B in 2025, projected to ~USD 84.8B by 2035 (~9.4% CAGR), with the adaptogenic subset alone estimated near USD 14B in 2025 and growing faster. Momentum is strongest in ready-to-drink formats and branded consumer lines rather than raw cultivation (social/economic/technological).",
+      "drivers": ["social", "economic", "technological"],
+      "sources": ["https://www.precedenceresearch.com/functional-mushroom-market", "https://www.openpr.com/news/4575364/adaptogenic-mushrooms-market-set-to-reach-usd-44-9-billion"],
+      "confidence": "med",
+      "ideas": [
+        { "title": "Functional-mushroom drinks brand", "oneLiner": "Ready-to-drink coffee, cacao and sparkling blends with lion's mane and reishi, sold on focus and calm.", "pattern": "premiumisation" },
+        { "title": "Dosed extract ingredient supplier", "oneLiner": "Standardised, lab-verified mushroom extracts sold B2B to the beverage and beauty brands riding the trend.", "pattern": "picks-and-shovels" },
+        { "title": "Adaptogen line for a subculture", "oneLiner": "A branded adaptogen range aimed at one specific group — focus blends for knowledge workers, recovery blends for endurance athletes.", "pattern": "category-creation" }
+      ],
+      "createdRun": "2026-07-27"
+    },
+    {
+      "id": "agentic-ai-financial-shopping",
+      "title": "AI agents that shop financial products",
+      "sector": "money-finance",
+      "lens": "technological",
+      "source": "adjacency",
+      "seededBy": "come-to-me-financial-product-app",
+      "horizon": "near",
+      "signal": 8,
+      "oneLiner": "Instead of consumers hunting comparison sites, AI agents will increasingly shop, compare and transact financial products on their behalf — and the payment rails to let them are already shipping.",
+      "why": "Agentic AI is moving from demos to production in finance: Mastercard launched its Agent Pay program in April 2025 with Microsoft, IBM and Salesforce and rolled 'agentic tokens' out to US cardholders by late 2025, and Mastercard and PayPal are partnering to standardise agentic commerce. This inverts the acquisition model — a demand-led, agent-mediated marketplace where institutions compete to be surfaced to a consumer's agent (technological/economic).",
+      "drivers": ["technological", "economic", "social"],
+      "sources": ["https://www.mastercard.com/global/en/news-and-trends/press/2025/april/mastercard-unveils-agent-pay-pioneering-agentic-payments-technology-to-power-commerce-in-the-age-of-ai.html", "https://newsroom.paypal-corp.com/2025-10-27-Mastercard-and-PayPal-Join-Forces-To-Accelerate-Secure-Global-Agentic-Commerce"],
+      "confidence": "med",
+      "ideas": [
+        { "title": "Agent-ready quote API for institutions", "oneLiner": "Infrastructure that lets banks and insurers expose compliant, machine-readable quotes so AI agents can shop them — the supply side of a reverse marketplace.", "pattern": "picks-and-shovels" },
+        { "title": "Personal finance agent that negotiates", "oneLiner": "An agent that continuously shops your mortgage, insurance and savings and switches you to better deals with your approval.", "pattern": "service-izing" },
+        { "title": "Agentic-commerce trust layer", "oneLiner": "Consent, tokenisation and audit tooling so consumers can safely let agents transact financial products for them.", "pattern": "platform" }
+      ],
+      "createdRun": "2026-07-27"
+    }
+  ]
+}

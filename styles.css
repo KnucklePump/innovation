@@ -217,6 +217,39 @@ ul.qs li { margin: 6px 0; }
 .vote-mine textarea { width: 100%; padding: 10px 12px; border: 1px solid var(--line); border-radius: var(--radius-sm); background: var(--bg); color: var(--ink); font: inherit; resize: vertical; }
 .vote-mine textarea:focus { outline: none; border-color: var(--accent); }
 
+/* Top-nav page links (Ideas / Trends) */
+.pill-link.nav-page { color: var(--muted); border-color: var(--line); }
+.pill-link.nav-page:hover { color: var(--ink); border-color: var(--accent); background: transparent; }
+.pill-link.nav-page.active { color: var(--accent); border-color: var(--accent); background: var(--accent-soft); }
+
+/* Trend badges */
+.badge.adj { background: rgba(34, 211, 238, 0.14); color: var(--team); }
+.badge.lens { background: var(--panel2); color: var(--muted-bright); }
+.badge.pat { background: var(--panel2); color: var(--muted); font-weight: 600; }
+.drivers { display: flex; flex-wrap: wrap; gap: 6px; margin: 10px 0 0; }
+
+/* "Inspired by your idea" chip on a trend detail page */
+.inspired {
+  display: inline-flex; align-items: center; gap: 6px; margin: 14px 0 2px;
+  font-size: 13px; font-weight: 600; padding: 7px 13px; border-radius: 999px;
+  background: rgba(34, 211, 238, 0.10); border: 1px solid rgba(34, 211, 238, 0.35); color: var(--team);
+}
+.inspired:hover { color: var(--ink); border-color: var(--team); text-decoration: none; }
+.inspired strong { color: var(--muted-bright); }
+
+/* Trend idea rows (detail page) */
+.trend-ideas { display: flex; flex-direction: column; gap: 12px; }
+.trend-idea {
+  display: flex; align-items: center; gap: 14px; justify-content: space-between;
+  padding: 14px 16px; border: 1px solid var(--line); border-radius: var(--radius-sm); background: var(--bg);
+}
+.trend-idea-main { min-width: 0; }
+.trend-idea-head { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+.trend-idea-title { font-weight: 700; color: var(--ink); font-size: 14.5px; }
+.trend-idea .score-why { margin-top: 4px; }
+.send-idea { white-space: nowrap; flex-shrink: 0; }
+.send-idea.sent { color: var(--good); border-color: var(--good); }
+
 @media (max-width: 640px) {
   body { font-size: 14.5px; }
   .topbar-inner { padding: 12px 16px; gap: 10px; }
@@ -224,6 +257,8 @@ ul.qs li { margin: 6px 0; }
   .brand-sub { display: none; }
   .pill-link { padding: 6px 12px; }
   #signout { padding: 7px 11px; }
+  .trend-idea { flex-direction: column; align-items: stretch; }
+  .send-idea { width: 100%; }
   .view { padding: 22px 16px 60px; }
   .list-head h2, .detail-head h2 { font-size: 24px; }
   .one-liner { font-size: 16px; }

@@ -9,7 +9,7 @@
 const PASSWORD_HASH = "2ecfd1b8a9c8e6f2f97748fd28ab531c0491e152108690abab45421d68c35551";
 
 const $ = (s, el = document) => el.querySelector(s);
-const state = { ideas: [], rubric: {}, votes: {}, voters: [], voter: "", sort: { key: "composite", asc: false } };
+const state = { ideas: [], rubric: {}, votes: {}, voters: [], voter: "", sort: { key: "composite", asc: false }, trends: [], trendMeta: {}, trendSort: { key: "signal", asc: false } };
 let voteCbSeq = 0;
 
 /* ---------- Password gate ----------
@@ -98,15 +98,19 @@ if (sessionStorage.getItem("unlocked") === "1") unlock();
 
 /* ---------- Data + scoring ---------- */
 async function boot() {
-  const [ideasRes, cfgRes] = await Promise.all([
+  const [ideasRes, cfgRes, trendsRes] = await Promise.all([
     fetch("ideas.json").then(r => r.json()),
     fetch("config.json").then(r => r.json()),
+    // trends.json is optional — a missing/empty file just yields no trends.
+    fetch("trends.json").then(r => r.ok ? r.json() : {}).catch(() => ({})),
   ]);
   state.ideas = ideasRes.ideas || [];
   state.rubric = cfgRes.rubric || {};
   state.contactEmail = cfgRes.contactEmail || "";
   state.endpoint = cfgRes.endpoint || "";
   state.voters = cfgRes.voters || [];
+  state.trends = (trendsRes && trendsRes.trends) || [];
+  state.trendMeta = (trendsRes && trendsRes.meta) || {};
   $("#brand-sub").textContent = (ideasRes.meta && ideasRes.meta.subtitle) || "";
   setupVoter();
   route();
@@ -194,14 +198,26 @@ const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "
 
 /* ---------- Router ---------- */
 function route() {
-  if (location.hash === "#/submit") { renderSubmit(); window.scrollTo(0, 0); return; }
-  const m = location.hash.match(/^#\/idea\/(.+)$/);
-  if (m) {
-    const idea = state.ideas.find(i => i.id === decodeURIComponent(m[1]));
-    idea ? renderDetail(idea) : renderList();
-  } else {
-    renderList();
+  const hash = location.hash;
+  let page = "board";
+  if (hash === "#/submit") { renderSubmit(); }
+  else if (hash === "#/trends") { page = "trends"; renderTrends(); }
+  else {
+    const tm = hash.match(/^#\/trend\/(.+)$/);
+    const im = hash.match(/^#\/idea\/(.+)$/);
+    if (tm) {
+      page = "trends";
+      const t = state.trends.find(x => x.id === decodeURIComponent(tm[1]));
+      t ? renderTrendDetail(t) : renderTrends();
+    } else if (im) {
+      const idea = state.ideas.find(i => i.id === decodeURIComponent(im[1]));
+      idea ? renderDetail(idea) : renderList();
+    } else {
+      renderList();
+    }
   }
+  // highlight the active top-nav page link
+  document.querySelectorAll(".nav-page").forEach(a => a.classList.toggle("active", a.dataset.match === page));
   window.scrollTo(0, 0);
 }
 
@@ -446,6 +462,196 @@ function renderDetail(idea) {
     });
   }
 }
+/* ---------- Trends: labels ---------- */
+const SECTOR_LABELS = {
+  "health-longevity": "Health & longevity", "food-agriculture": "Food & agriculture",
+  "energy-climate": "Energy & climate", "money-finance": "Money & finance",
+  "mobility-logistics": "Mobility & logistics", "built-environment": "Built environment",
+  "materials-manufacturing": "Materials & manufacturing", "media-entertainment": "Media & entertainment",
+  "education-skills": "Education & skills", "work-enterprise": "Work & enterprise",
+  "consumer-retail": "Consumer & retail", "travel-hospitality": "Travel & hospitality",
+  "security-defence": "Security & defence", "frontier": "Frontier tech",
+};
+const LENS_LABELS = {
+  technological: "Technological", financial: "Financial", cultural: "Cultural & artistic",
+  social: "Social & demographic", environmental: "Environmental & regulatory", contrarian: "Contrarian",
+};
+const HORIZON_LABELS = { near: "Near · 0–2 yr", mid: "Mid · 3–5 yr", far: "Far · 5–10 yr" };
+const HORIZON_ORDER = { near: 0, mid: 1, far: 2 };
+const titleize = s => String(s || "").replace(/-/g, " ").replace(/\b\w/g, c => c.toUpperCase());
+const sectorLabel = s => SECTOR_LABELS[s] || titleize(s);
+const lensLabel = s => LENS_LABELS[s] || titleize(s);
+const horizonLabel = h => HORIZON_LABELS[h] || titleize(h);
+
+/* ---------- Trends: map (signal vs. horizon, bubble = idea count) ---------- */
+function trendMap(trends) {
+  const W = 760, H = 440, pad = 52;
+  const bands = ["near", "mid", "far"];
+  const y = v => (H - pad) - ((v - 1) / 9) * (H - 2 * pad);
+  const bandX0 = i => pad + (i / 3) * (W - 2 * pad);
+  const bandW = (W - 2 * pad) / 3;
+  let dots = "";
+  bands.forEach((b, bi) => {
+    const inBand = trends.filter(t => (t.horizon || "mid") === b);
+    inBand.forEach((t, idx) => {
+      const cx = bandX0(bi) + bandW * ((idx + 1) / (inBand.length + 1));
+      const cy = y(t.signal || 5);
+      const r = 7 + (t.ideas ? t.ideas.length : 0) * 3;
+      const col = t.source === "adjacency" ? "var(--team)" : "var(--accent)";
+      dots += `<g class="dot" data-id="${esc(t.id)}">
+        <circle cx="${cx}" cy="${cy}" r="${r}" fill="${col}" fill-opacity="0.28" stroke="${col}"></circle>
+        <text class="dot-label" x="${cx}" y="${cy - r - 5}" text-anchor="middle">${esc(shortTitle(t.title))}</text>
+      </g>`;
+    });
+  });
+  const bandLabels = bands.map((b, bi) => `<text class="axis-label" x="${bandX0(bi) + bandW / 2}" y="${H - pad + 24}" text-anchor="middle">${esc(horizonLabel(b))}</text>`).join("");
+  const gridlines = [1, 2].map(i => `<line x1="${pad + (i / 3) * (W - 2 * pad)}" y1="${pad}" x2="${pad + (i / 3) * (W - 2 * pad)}" y2="${H - pad}" stroke="var(--line)"></line>`).join("");
+  return `<div class="quad">
+    <h3>Trend map <span class="muted">— opportunity signal vs. time horizon · bubble size = number of ideas · <span style="color:var(--accent)">broad</span> vs <span style="color:var(--team)">adjacent to your ideas</span></span></h3>
+    <div class="quad-box"><svg viewBox="0 0 ${W} ${H}" role="img">
+      ${gridlines}
+      <line x1="${pad}" y1="${H - pad}" x2="${W - pad}" y2="${H - pad}" stroke="var(--line)"></line>
+      <text class="axis-label" x="16" y="${H / 2}" text-anchor="middle" transform="rotate(-90 16 ${H / 2})">Stronger signal →</text>
+      ${bandLabels}
+      ${dots}
+    </svg></div>
+  </div>`;
+}
+
+/* ---------- Trends: list view ---------- */
+function renderTrends() {
+  const view = $("#view");
+  if (!state.trends.length) {
+    view.innerHTML = `<div class="empty"><h2>No trends yet</h2><p>Run the trends agent to research emerging markets across sectors and surface fresh business ideas.</p><p><a href="#/" class="btn-primary">← Back to the Idea Board</a></p></div>`;
+    return;
+  }
+  const rows = state.trends.slice();
+  const { key, asc } = state.trendSort;
+  const sortVal = t => {
+    switch (key) {
+      case "sector": return sectorLabel(t.sector);
+      case "lens": return lensLabel(t.lens);
+      case "horizon": return HORIZON_ORDER[t.horizon] ?? 1;
+      case "ideas": return t.ideas ? t.ideas.length : 0;
+      default: return t.signal || 0;
+    }
+  };
+  rows.sort((a, b) => {
+    const av = sortVal(a), bv = sortVal(b);
+    if (typeof av === "string") return asc ? av.localeCompare(bv) : bv.localeCompare(av);
+    return asc ? av - bv : bv - av;
+  });
+  const th = (k, label, cls) => `<th data-key="${k}" class="${cls || ""} ${key === k ? "sorted " + (asc ? "asc" : "") : ""}">${esc(label)}</th>`;
+
+  view.innerHTML = `
+    <div class="list-head">
+      <div><h2>Trends & Markets</h2><p class="muted">Emerging trends across sectors, viewed through different lenses — a scan of where opportunity is building. <strong>Broad</strong> picks span the whole economy; <strong>adjacent</strong> ones grow out of ideas your group has already posted. Click any bubble or row for the trend and its business ideas.</p></div>
+      <a href="#/submit" class="btn-primary">+ Submit an idea</a>
+    </div>
+    ${trendMap(rows)}
+    <div class="table-wrap"><table>
+      <thead><tr>
+        <th data-key="_title">Trend</th>
+        ${th("sector", "Sector")}
+        ${th("lens", "Lens")}
+        ${th("horizon", "Horizon", "num")}
+        ${th("signal", "Signal", "num")}
+        ${th("ideas", "Ideas", "num")}
+      </tr></thead>
+      <tbody>
+        ${rows.map(t => `
+          <tr data-id="${esc(t.id)}">
+            <td class="idea-title">${esc(t.title)}${t.sample ? ' <span class="badge sample">sample</span>' : ""}${t.source === "adjacency" ? ' <span class="badge adj">adjacent</span>' : ""}
+              <small>${esc(t.oneLiner || "")}</small></td>
+            <td>${esc(sectorLabel(t.sector))}</td>
+            <td>${esc(lensLabel(t.lens))}</td>
+            <td class="num">${esc((t.horizon || "").toUpperCase())}</td>
+            <td class="num"><span class="composite">${t.signal != null ? t.signal : "—"}</span></td>
+            <td class="num">${t.ideas ? t.ideas.length : 0}</td>
+          </tr>`).join("")}
+      </tbody>
+    </table></div>`;
+
+  view.querySelectorAll("th[data-key]").forEach(el => el.addEventListener("click", () => {
+    const k = el.dataset.key;
+    if (k === "_title") return;
+    if (state.trendSort.key === k) state.trendSort.asc = !state.trendSort.asc;
+    else state.trendSort = { key: k, asc: false };
+    renderTrends();
+  }));
+  view.querySelectorAll("tbody tr").forEach(tr =>
+    tr.addEventListener("click", () => { location.hash = `#/trend/${encodeURIComponent(tr.dataset.id)}`; }));
+  view.querySelectorAll(".dot").forEach(g =>
+    g.addEventListener("click", () => { location.hash = `#/trend/${encodeURIComponent(g.dataset.id)}`; }));
+}
+
+/* ---------- Trends: detail view ---------- */
+function renderTrendDetail(t) {
+  const view = $("#view");
+  const seed = t.seededBy ? state.ideas.find(i => i.id === t.seededBy) : null;
+  const drivers = (t.drivers || []).map(d => `<span class="badge">${esc(titleize(d))}</span>`).join(" ");
+  const conf = t.confidence ? `<span class="conf ${esc(t.confidence)}">${esc(t.confidence)} confidence</span>` : "";
+  const src = (t.sources && t.sources.length)
+    ? `<p class="score-why">Sources: ${t.sources.map(u => `<a href="${esc(u)}" target="_blank" rel="noopener">${esc(hostname(u))}</a>`).join(", ")}</p>` : "";
+  const seedChip = t.seededBy
+    ? `<a class="inspired" href="#/idea/${encodeURIComponent(t.seededBy)}">💡 Inspired by your idea: <strong>${esc(seed ? seed.title : titleize(t.seededBy))}</strong></a>` : "";
+  const ideas = (t.ideas || []).map((idea, idx) => `
+    <div class="trend-idea">
+      <div class="trend-idea-main">
+        <div class="trend-idea-head"><span class="trend-idea-title">${esc(idea.title)}</span>${idea.pattern ? `<span class="badge pat">${esc(titleize(idea.pattern))}</span>` : ""}</div>
+        <p class="score-why">${esc(idea.oneLiner || "")}</p>
+      </div>
+      <button type="button" class="ghost send-idea" data-idx="${idx}">Send to Idea Board</button>
+    </div>`).join("");
+
+  view.innerHTML = `
+    <a class="back" href="#/trends">← All trends</a>
+    <div class="detail-head">
+      <h2>${esc(t.title)}${t.sample ? ' <span class="badge sample">sample</span>' : ""}</h2>
+      <div class="detail-meta">
+        <span class="badge">${esc(sectorLabel(t.sector))}</span>
+        <span class="badge lens">${esc(lensLabel(t.lens))}</span>
+        <span class="badge">${esc(horizonLabel(t.horizon))}</span>
+        <span>·</span><span>Signal <strong>${t.signal != null ? t.signal : "—"}</strong>/10</span>
+      </div>
+    </div>
+    ${seedChip}
+    <div class="card prop"><h3>The trend</h3><p>${esc(t.oneLiner || "")}</p></div>
+    <div class="card"><h3>Why now</h3><p>${esc(t.why || "")} ${conf}</p>${drivers ? `<p class="drivers">${drivers}</p>` : ""}${src}</div>
+    <div class="card"><h3>Business ideas</h3>
+      <p class="muted" style="margin-top:0">Concrete plays this trend opens up. Send any to the Idea Board to have it researched and scored.</p>
+      <div class="ans-q"><label>Your name</label><select class="trend-name voter-select">${voterOptions()}</select></div>
+      <div class="trend-ideas">${ideas || '<p class="muted">No ideas listed.</p>'}</div>
+    </div>`;
+
+  const nameEl = view.querySelector(".trend-name");
+  if (nameEl) { nameEl.value = state.voter || ""; nameEl.addEventListener("change", () => setVoter(nameEl.value)); }
+
+  view.querySelectorAll(".send-idea").forEach(btn => btn.addEventListener("click", async () => {
+    const idea = (t.ideas || [])[Number(btn.dataset.idx)];
+    if (!idea) return;
+    const name = (state.voter || "").trim();
+    const title = idea.title;
+    const pitch = idea.oneLiner || "";
+    const description = `From the Trends board — trend "${t.title}" (${sectorLabel(t.sector)} · ${lensLabel(t.lens)}). ${idea.oneLiner || ""}${idea.pattern ? ` [pattern: ${titleize(idea.pattern)}]` : ""}`;
+    if (state.endpoint) {
+      setBusy(btn, true, "Sending…");
+      try {
+        await postToStore({ type: "idea", submittedAt: new Date().toISOString(), name, title, pitch, description });
+        setBusy(btn, false);
+        btn.textContent = "Sent ✓"; btn.disabled = true; btn.classList.add("sent");
+      } catch {
+        setBusy(btn, false);
+        btn.textContent = "Try again";
+      }
+    } else {
+      const subject = encodeURIComponent(`New idea: ${title}`);
+      const body = `New business idea\n\nYour name: ${name || "(blank)"}\n\nIdea title: ${title}\n\nOne-line pitch: ${pitch}\n\nIdea description: ${description}\n`;
+      location.href = `mailto:${state.contactEmail}?subject=${subject}&body=${encodeURIComponent(body)}`;
+    }
+  }));
+}
+
 /* ---------- Submit-an-idea view ---------- */
 const SUBMIT_FIELDS = [
   { k: "name",        label: "Your name",       type: "voter" },
