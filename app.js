@@ -249,14 +249,16 @@ function renderList() {
     ${quadrant(rows)}
     <div class="table-wrap"><table>
       <thead><tr>
+        <th class="num">#</th>
         <th data-key="_title">Idea</th>
         <th data-key="composite" class="num ${key === "composite" ? "sorted " + (asc ? "asc" : "") : ""}">Composite</th>
         <th data-key="team" class="num ${key === "team" ? "sorted " + (asc ? "asc" : "") : ""}" title="Team rating (1–10 average)">Team</th>
         ${cols.map(th).join("")}
       </tr></thead>
       <tbody>
-        ${rows.map(({ idea, composite: c }) => `
+        ${rows.map(({ idea, composite: c }, i) => `
           <tr data-id="${esc(idea.id)}">
+            <td class="num"><span class="tm-leg-num" style="background:var(--team)">${i + 1}</span></td>
             <td class="idea-title">${esc(idea.title)}${idea.sample ? ' <span class="badge sample">sample</span>' : ""}
               <small>${esc(idea.oneLiner || "")}</small></td>
             <td class="num"><span class="composite">${c.toFixed(1)}</span></td>
@@ -281,6 +283,21 @@ function renderList() {
     tr.addEventListener("click", () => { location.hash = `#/idea/${encodeURIComponent(tr.dataset.id)}`; }));
   view.querySelectorAll(".dot").forEach(g =>
     g.addEventListener("click", () => { location.hash = `#/idea/${encodeURIComponent(g.dataset.id)}`; }));
+
+  // Bubble hover: show the idea title in a tooltip that tracks the cursor
+  const tip = view.querySelector(".tm-tip"), box = view.querySelector(".quad-box");
+  if (tip && box) {
+    view.querySelectorAll(".dot").forEach(g => {
+      const idea = state.ideas.find(x => x.id === g.dataset.id);
+      g.addEventListener("mouseenter", () => { tip.textContent = idea ? idea.title : ""; tip.hidden = false; });
+      g.addEventListener("mousemove", e => {
+        const r = box.getBoundingClientRect();
+        tip.style.left = (e.clientX - r.left) + "px";
+        tip.style.top = (e.clientY - r.top) + "px";
+      });
+      g.addEventListener("mouseleave", () => { tip.hidden = true; });
+    });
+  }
 }
 
 /* ---------- 2x2 quadrant (attractiveness vs ease of entry, bubble = founder-fit) ---------- */
@@ -291,13 +308,14 @@ function quadrant(rows) {
   const x = v => pad + ((v - 1) / 9) * (W - pad * 2);
   const y = v => (H - pad) - ((v - 1) / 9) * (H - pad * 2);
 
-  const dots = rows.map(({ idea }) => {
+  // Bubbles are numbered and keyed to the table below, so long titles never overlap on the chart.
+  const dots = rows.map(({ idea }, i) => {
     const vote = teamVotes(idea.id).avg;      // bubble size reflects the team's average vote
     const sizeVal = vote == null ? 3 : vote;  // unvoted ideas show as small bubbles
     const cx = x(ease(idea)), cy = y(attractiveness(idea)), r = 7 + sizeVal * 1.6;
     return `<g class="dot" data-id="${esc(idea.id)}">
       <circle cx="${cx}" cy="${cy}" r="${r}" fill="var(--team)" fill-opacity="0.28" stroke="var(--team)"></circle>
-      <text class="dot-label" x="${cx}" y="${cy - r - 5}" text-anchor="middle">${esc(shortTitle(idea.title))}</text>
+      <text class="dot-num" x="${cx}" y="${cy}" text-anchor="middle" dominant-baseline="central">${i + 1}</text>
     </g>`;
   }).join("");
 
@@ -309,7 +327,7 @@ function quadrant(rows) {
       <text class="axis-label" x="${W-pad}" y="${H/2 - 8}" text-anchor="end">Easier entry →</text>
       <text class="axis-label" x="16" y="${H/2}" text-anchor="middle" transform="rotate(-90 16 ${H/2})">More attractive →</text>
       ${dots}
-    </svg></div>
+    </svg><div class="tm-tip" hidden></div></div>
   </div>`;
 }
 const avg = arr => { const v = arr.filter(n => n != null); return v.length ? v.reduce((a, b) => a + b, 0) / v.length : 5; };
