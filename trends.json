@@ -7,7 +7,13 @@
       { "sector": "media-entertainment", "lens": "contrarian", "run": "2026-07-27" },
       { "seed": "wasabi-import-business", "run": "2026-07-27" },
       { "seed": "mushroom-farm", "run": "2026-07-27" },
-      { "seed": "come-to-me-financial-product-app", "run": "2026-07-27" }
+      { "seed": "come-to-me-financial-product-app", "run": "2026-07-27" },
+      { "sector": "health-longevity", "lens": "social", "run": "2026-07-27b" },
+      { "sector": "built-environment", "lens": "environmental", "run": "2026-07-27b" },
+      { "sector": "education-skills", "lens": "cultural", "run": "2026-07-27b" },
+      { "seed": "night-golf", "run": "2026-07-27b" },
+      { "seed": "niche-brands", "run": "2026-07-27b" },
+      { "seed": "wasabi-farm", "run": "2026-07-27b" }
     ]
   },
   "trends": [
@@ -133,6 +139,129 @@
         { "title": "Agentic-commerce trust layer", "oneLiner": "Consent, tokenisation and audit tooling so consumers can safely let agents transact financial products for them.", "pattern": "platform" }
       ],
       "createdRun": "2026-07-27"
+    },
+    {
+      "id": "longevity-healthspan-consumer",
+      "title": "The longevity & healthspan consumer market",
+      "sector": "health-longevity",
+      "lens": "social",
+      "source": "broad",
+      "horizon": "near",
+      "signal": 7,
+      "oneLiner": "Staying biologically younger is becoming a consumer category — diagnostics, supplements and clinics are pulling 'longevity' out of the lab and onto the high street.",
+      "why": "An ageing population plus a cultural shift from treating illness to extending healthspan is creating a mainstream consumer market. One estimate puts the global longevity market at ~USD 27.6B in 2025 rising to ~USD 67B by 2035 (~9.4% a year), with consumers — not institutions — the largest segment (~35%). A surge in 'proactive health' shoppers buying biological-age tests, wearables and supplements is pulling the category into the mainstream (social/technological/economic).",
+      "drivers": ["social", "technological", "economic"],
+      "sources": ["https://longevity.technology/news/longevity-market-to-hit-67b-by-2035-due-to-rising-aging-concerns/", "https://www.snsinsider.com/reports/longevity-market-10022"],
+      "confidence": "med",
+      "ideas": [
+        { "title": "At-home healthspan testing + coaching", "oneLiner": "Bundle biological-age and biomarker testing with a subscription that turns the results into a personalised action plan.", "pattern": "service-izing" },
+        { "title": "Longevity-formulated food & supplements", "oneLiner": "A branded range engineered around healthspan claims — protein, metabolic, muscle-preserving — aimed at the GLP-1 and proactive-health crowd.", "pattern": "premiumisation" },
+        { "title": "Healthspan clinic franchise", "oneLiner": "A standardised, franchisable longevity clinic — diagnostics, GLP-1 management and coaching under one roof.", "pattern": "verticalisation" }
+      ],
+      "createdRun": "2026-07-27b"
+    },
+    {
+      "id": "building-electrification-retrofit",
+      "title": "The building electrification retrofit wave",
+      "sector": "built-environment",
+      "lens": "environmental",
+      "source": "broad",
+      "horizon": "mid",
+      "signal": 7,
+      "oneLiner": "Swapping gas boilers and furnaces for heat pumps is turning into one of the largest, most policy-driven retrofit waves in the economy.",
+      "why": "Electrification mandates, fossil-fuel phase-outs and volatile energy prices are pushing buildings off gas. The global heat-pump market alone is put at ~USD 87.4B in 2025 rising to ~USD 180B by 2032 (~10.9% CAGR), with electric heat pumps already the dominant category. Retrofitting the vast existing building stock is the largest addressable opportunity, and the bottleneck is delivery — financing, trained installers and hassle-free installs — not demand (environmental/political/economic).",
+      "drivers": ["environmental", "political", "economic"],
+      "sources": ["https://www.persistencemarketresearch.com/market-research/heat-pump-market.asp", "https://www.researchnester.com/reports/energy-retrofit-systems-market/5357"],
+      "confidence": "med",
+      "ideas": [
+        { "title": "Heat-pump retrofit concierge", "oneLiner": "A one-stop installer handling survey, financing, grants and install so a homeowner switches off gas without the hassle.", "pattern": "service-izing" },
+        { "title": "Retrofit financing on the energy bill", "oneLiner": "Finance the switch and let households repay it out of the energy savings, on-bill, with no upfront cost.", "pattern": "unbundling" },
+        { "title": "Installer enablement platform", "oneLiner": "Software and training that lets HVAC trades quote, size and claim grants for heat-pump retrofits quickly.", "pattern": "picks-and-shovels" }
+      ],
+      "createdRun": "2026-07-27b"
+    },
+    {
+      "id": "skills-over-degrees-learning",
+      "title": "Skills over degrees, taught by AI",
+      "sector": "education-skills",
+      "lens": "cultural",
+      "source": "broad",
+      "horizon": "near",
+      "signal": 7,
+      "oneLiner": "As employers drop degree requirements and AI tutors get cheap and good, the unit of value in education is shifting from the credential to demonstrable, verifiable skill.",
+      "why": "Skills-based hiring is going mainstream — major employers have dropped degree requirements for many roles and most now hire on skills for entry-level jobs — while AI tutoring scales fast (put at ~USD 2.15B in 2025 rising to ~USD 17.6B by 2033, ~30% CAGR). The honest caveat: dropping a degree requirement only helps if employers can trust an alternative signal, so verifiable proof-of-skill is where the real gap sits (technological/social/economic).",
+      "drivers": ["technological", "social", "economic"],
+      "sources": ["https://www.databridgemarketresearch.com/reports/global-ai-tutors-market", "https://testlify.com/skills-based-hiring-statistics/"],
+      "confidence": "med",
+      "ideas": [
+        { "title": "Verifiable skill credentials", "oneLiner": "Assessment plus a portable, employer-trusted certificate that proves a specific skill better than a transcript.", "pattern": "category-creation" },
+        { "title": "AI tutor for one in-demand trade", "oneLiner": "A vertical AI tutor that takes someone from zero to job-ready in a single high-demand skill, priced far below a course.", "pattern": "verticalisation" },
+        { "title": "Hire-for-skills assessment tool", "oneLiner": "Plug-in assessments that let employers screen on demonstrated skill instead of pedigree.", "pattern": "picks-and-shovels" }
+      ],
+      "createdRun": "2026-07-27b"
+    },
+    {
+      "id": "experiential-competitive-socialising",
+      "title": "Competitive socialising & eatertainment",
+      "sector": "travel-hospitality",
+      "lens": "social",
+      "source": "adjacency",
+      "seededBy": "night-golf",
+      "horizon": "near",
+      "signal": 7,
+      "oneLiner": "Going out is being reinvented as 'competitive socialising' — tech-enabled darts, mini-golf, simulators and eatertainment venues that sell a shared experience, not just food and drink.",
+      "why": "Consumers, especially younger ones, increasingly spend on experiences over things, and operators are modernising old games with automated scoring and gamified play to fill venues. The family-entertainment-centre market is put at ~USD 30B in 2025 rising to ~USD 57B by 2031 (~11% CAGR), with adult competitive-socialising the hot growth format. It isn't riskless — some large operators have seen same-venue sales soften — so format and unit economics matter (social/economic).",
+      "drivers": ["social", "economic"],
+      "sources": ["https://www.giiresearch.com/report/tsci2045929-family-entertainment-centers-market-global.html", "https://emerging.com/insights/emerging-fund/top-golf-momentum-slows-while-competitive-social-entertainment-fuels-industry-growth"],
+      "confidence": "med",
+      "ideas": [
+        { "title": "Off-peak experience kit for venues", "oneLiner": "A turnkey package — gear, tech and a playbook — that lets existing venues run a competitive-socialising night and fill dead hours.", "pattern": "picks-and-shovels" },
+        { "title": "Single-sport social franchise", "oneLiner": "A branded, franchisable venue built around one modernised game with automated scoring and a strong food-and-drink attach.", "pattern": "verticalisation" },
+        { "title": "Booking + scoring platform", "oneLiner": "The software layer — reservations, team play, automated scoring and leaderboards — that competitive-socialising venues run on.", "pattern": "platform" }
+      ],
+      "createdRun": "2026-07-27b"
+    },
+    {
+      "id": "creator-led-community-commerce",
+      "title": "Creator- & community-led brands",
+      "sector": "consumer-retail",
+      "lens": "cultural",
+      "source": "adjacency",
+      "seededBy": "niche-brands",
+      "horizon": "near",
+      "signal": 8,
+      "oneLiner": "Brands are increasingly born from communities and creators rather than sold to them — identity-driven labels that launch with an audience already attached.",
+      "why": "As marketing spend shifts to creators and social-commerce rails mature, the cheapest way to launch a brand is with a community that already trusts a creator. Estimates of the creator economy vary but converge on huge scale and fast growth — roughly USD 180–250B in 2025 heading toward ~USD 1.35T in the early 2030s (low-20s% CAGR). The winning shape is niche and identity-led: small brands for specific subcultures, launched and sustained by their community (social/cultural/technological).",
+      "drivers": ["social", "cultural", "technological"],
+      "sources": ["https://marketingreport.one/news/report-creator-economy-market-to-surpass-1-3-trillion-by-2033.html", "https://www.researchnester.com/reports/creator-economy-market/5691"],
+      "confidence": "med",
+      "ideas": [
+        { "title": "Community-to-brand launch studio", "oneLiner": "Partner with creators to spin their audience into a product line, handling sourcing, ops and fulfilment for a share.", "pattern": "platform" },
+        { "title": "Micro-brand operating system", "oneLiner": "The back-office stack — sourcing, small-batch production, logistics — that lets a community-led brand run lean.", "pattern": "picks-and-shovels" },
+        { "title": "Subculture-specific label", "oneLiner": "A tightly-targeted brand for one underserved subculture, designed with and sold through its community.", "pattern": "category-creation" }
+      ],
+      "createdRun": "2026-07-27b"
+    },
+    {
+      "id": "controlled-environment-specialty-crops",
+      "title": "Controlled-environment specialty crops",
+      "sector": "food-agriculture",
+      "lens": "technological",
+      "source": "adjacency",
+      "seededBy": "wasabi-farm",
+      "horizon": "mid",
+      "signal": 6,
+      "oneLiner": "Indoor growing is shifting from commodity leafy greens toward high-value specialty crops — herbs, berries and hard-to-source delicacies grown to order near the customer.",
+      "why": "Automation, better lighting and AI control are improving the economics of indoor growing, and the fastest-growing demand is for premium, nutrient-dense specialty crops rather than cheap lettuce. The broader controlled-environment-agriculture market is put at ~USD 82B in 2025 rising to ~USD 282B by 2035 (~13% CAGR), with herbs and berries the fastest segment (~16.6%). The opportunity — and the caution — is economics: indoor growing is capital- and energy-intensive, so the viable wedge is high-margin specialty crops grown near premium buyers, not commodity produce (technological/environmental/economic).",
+      "drivers": ["technological", "environmental", "economic"],
+      "sources": ["https://www.globenewswire.com/news-release/2026/07/23/3332240/0/en/Controlled-Environment-Agriculture-Market-to-Attain-282-44-Billion-by-2035-SNS-Insider.html", "https://www.imarcgroup.com/vertical-farming-market"],
+      "confidence": "med",
+      "ideas": [
+        { "title": "Grow-to-order specialty crops", "oneLiner": "Contract-grow rare, hard-to-import delicacies — real wasabi, specialty herbs — near high-end restaurants that pay a premium for freshness.", "pattern": "geographic-arbitrage" },
+        { "title": "Premium berry & herb micro-farm", "oneLiner": "A compact controlled-environment farm focused only on the fastest-growing, highest-margin categories.", "pattern": "verticalisation" },
+        { "title": "CEA-as-a-service for growers", "oneLiner": "Lease turnkey growing pods plus the control software to established food businesses instead of selling hardware.", "pattern": "service-izing" }
+      ],
+      "createdRun": "2026-07-27b"
     }
   ]
 }
