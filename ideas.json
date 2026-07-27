@@ -137,6 +137,39 @@
         "Portfolio from day one, or prove one brand first and then systematise the playbook? (Focus vs spread.)",
         "Print-on-demand (no inventory, lower margin) or small-batch China inventory (better margin, inventory risk) for the first drop?"
       ]
+    },
+    {
+      "id": "wasabi-farm",
+      "title": "Wasabi Farm",
+      "owner": "Dave",
+      "status": "analyzed",
+      "oneLiner": "Farm genuine real wasabi and sell it at a premium to high-end Canadian restaurants — most restaurant 'wasabi' is actually dyed horseradish.",
+      "tags": ["agriculture", "food", "luxury", "Canada"],
+      "scores": {
+        "market":     { "score": 5, "confidence": "med", "why": "Real wasabi is a scarce luxury — US$160–300/kg — precisely because it's so hard to grow that an estimated ~95% of restaurants serve an imitation (horseradish, mustard, dye). Demand for authenticity is real but narrow: genuine wasabi is used almost only at upscale establishments, and many diners actually prefer the sharper horseradish heat, so the addressable segment is the premium end only.", "sources": ["https://www.byfood.com/blog/culture/what-is-wasabi", "https://gemtaste.com/food/wasabi-so-expensive/"] },
+        "entry":      { "score": 2, "confidence": "high", "why": "Very high barriers. Wasabi is considered the hardest plant to grow commercially — it needs constant clean running water, shade, rocky soil and a steady 8–20°C, with stems partially submerged, and takes ~2 years to reach maturity. The specialist greenhouse know-how took the regional pioneer decades to develop.", "sources": ["https://www.byfood.com/blog/culture/what-is-wasabi", "https://nuvomagazine.com/palate/pacific-coast-wasabi"] },
+        "cost":       { "score": 2, "confidence": "med", "why": "High and front-loaded: a computer-controlled greenhouse with clean flowing-water systems and temperature/shade control, plus roughly a 2-year wait before the first harvest generates any revenue. Significant capital tied up before viability is even proven.", "sources": ["https://nuvomagazine.com/palate/pacific-coast-wasabi"] },
+        "saturation": { "score": 5, "confidence": "med", "why": "Real wasabi supply is genuinely scarce (attractive), but North America already has a single entrenched specialist — British Columbia's Pacific Coast Wasabi (now operating as Kawai BC after a New Zealand acquisition), described as North America's only commercial wasabi farm, which developed controlled-greenhouse cultivation and supplies restaurants and retailers. The 'sell to Canadian restaurants' niche is served by that one dominant incumbent on its home turf.", "sources": ["https://curiocity.com/vancouver-is-home-to-north-americas-only-wasabi-farm-heres-how-to-get-some/", "https://nuvomagazine.com/palate/pacific-coast-wasabi"] },
+        "moat":       { "score": 5, "confidence": "low", "why": "If you truly master the cultivation, the know-how plus scarcity is a genuine moat — but that's exactly the moat the incumbent already holds after decades of R&D, so a newcomer starts a long way behind rather than building a fresh advantage.", "sources": [] },
+        "margins":    { "score": 7, "confidence": "low", "why": "Real wasabi commands US$160–300/kg against a modest per-unit production cost at scale, so gross margins are high — conditional on actually growing it reliably, which is the hard part.", "sources": ["https://gemtaste.com/food/wasabi-so-expensive/"] },
+        "founderFit": { "score": 3, "confidence": "med", "why": "The core competency — growing the hardest commercial crop — is absent from the team. Engineering (controlled-environment systems) and Asian-restaurant market connections help at the margin, and the team is in the right region (Canada), but there is no agricultural or horticultural expertise, which is what this needs most.", "sources": [] },
+        "risk":       { "score": 3, "confidence": "med", "why": "Very high. Wasabi is famously the hardest commercial crop (disease, exacting conditions, frequent failure); the ~2-year payback ties up capital before viability is proven; an entrenched specialist already holds the know-how and the North American market; and demand is narrow. A lot can go wrong before any revenue arrives.", "sources": ["https://www.byfood.com/blog/culture/what-is-wasabi"] }
+      },
+      "businessCase": {
+        "summary": "Grow genuine real wasabi and sell it to high-end Canadian restaurants, trading on the fact that ~95% of restaurant 'wasabi' is actually dyed horseradish and real wasabi fetches US$160–300/kg. The scarcity and price are real — but so are the obstacles: wasabi is considered the hardest crop to grow commercially (about 2 years to maturity, exacting water/temperature/shade), the addressable market is narrow (only the premium end; mass diners accept the imitation), and British Columbia already hosts the established specialist, Pacific Coast Wasabi, which spent decades perfecting computer-controlled greenhouse cultivation and supplies restaurants worldwide. A capital- and expertise-heavy, long-payback play against an entrenched incumbent.",
+        "customer": "High-end, authenticity-focused Japanese and Asian restaurants in Canada (and possibly premium retailers and chefs) willing to pay a large premium for genuine fresh wasabi.",
+        "market": "Real wasabi is a scarce luxury at US$160–300/kg, so hard to grow that ~95% of restaurants serve an imitation. Demand for authenticity is real but narrow — genuine wasabi is used almost exclusively at upscale establishments, and many diners actually prefer the sharper horseradish heat, so the premium end is the whole addressable market.",
+        "model": "B2B supply of fresh real wasabi (rhizomes, and the leaves/stems that also sell) to restaurants at a premium on standing supply relationships, with premium retail or direct-to-chef as a possible secondary channel.",
+        "goToMarket": "Anchor a few marquee high-end sushi restaurants on the authenticity pitch, leaning on any Asian-restaurant relationships, and expand supply as production scales — bearing in mind you'd be selling into the incumbent's home market (BC/Canada).",
+        "costs": "High and front-loaded — a computer-controlled greenhouse with clean flowing-water systems and temperature/shade control, and roughly two years before the first harvest earns anything. Significant capital and specialist horticultural know-how required.",
+        "risks": "Wasabi is the hardest commercial crop (disease, exacting conditions, high failure); the ~2-year payback ties up capital before viability is proven; an entrenched specialist (Pacific Coast Wasabi) already holds the know-how and the North American market; demand is narrow; and the team has no agricultural expertise.",
+        "nextSteps": "1) Talk to growers/horticulture experts to honestly gauge whether a newcomer can master cultivation — this is the crux. 2) Validate demand: get 3–5 high-end Canadian restaurants to commit on price and volume for real wasabi. 3) Study how Pacific Coast Wasabi already serves this market and where a gap exists. 4) Cost a pilot greenhouse and the ~2-year runway honestly. 5) Consider whether importing/reselling genuine wasabi (far lower risk) is a better way to test demand than farming it."
+      },
+      "clarifyingQuestions": [
+        "Given wasabi is the hardest crop to grow commercially and BC already has a decades-established specialist (Pacific Coast Wasabi), what's our edge — and does anyone have horticulture or controlled-environment-agriculture experience?",
+        "Are we set on farming it (2-year payback, high failure risk), or would importing/reselling genuine wasabi to restaurants be a faster, lower-risk way to test demand first?",
+        "Which specific restaurants have signalled they'd pay the premium for real wasabi, and at what volume and price?"
+      ]
     }
   ]
 }
