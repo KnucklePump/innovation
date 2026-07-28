@@ -9,7 +9,7 @@
 const PASSWORD_HASH = "2ecfd1b8a9c8e6f2f97748fd28ab531c0491e152108690abab45421d68c35551";
 
 const $ = (s, el = document) => el.querySelector(s);
-const state = { ideas: [], rubric: {}, votes: {}, voters: [], voter: "", sort: { key: "composite", asc: false }, trends: [], trendMeta: {}, trendSort: { key: "signal", asc: false } };
+const state = { ideas: [], rubric: {}, votes: {}, voters: [], voter: "", sort: { key: "composite", asc: false }, trends: [], trendMeta: {}, trendSort: { key: "created", asc: false } };
 let voteCbSeq = 0;
 
 /* ---------- Password gate ----------
@@ -504,15 +504,14 @@ const horizonLabel = h => HORIZON_LABELS[h] || titleize(h);
 /* ---------- Trends: map (signal vs. horizon, bubble = idea count) ----------
    Bubbles are numbered and keyed to a legend below, so long titles never
    overlap on the chart no matter how many trends a run produces. */
-function trendMap(trends) {
+function trendMap(trends, numById) {
   const W = 760, H = 360, pad = 52;
   const bands = ["near", "mid", "far"];
   const y = v => (H - pad) - ((v - 1) / 9) * (H - 2 * pad);
   const bandX0 = i => pad + (i / 3) * (W - 2 * pad);
   const bandW = (W - 2 * pad) / 3;
   const colOf = t => t.source === "adjacency" ? "var(--team)" : "var(--accent)";
-  const numById = new Map();
-  trends.forEach((t, i) => numById.set(t.id, i + 1)); // number == legend order
+  // numById (stable creation-order numbers) is supplied by the caller (renderTrends).
 
   let dots = "";
   bands.forEach((b, bi) => {
@@ -550,9 +549,13 @@ function renderTrends() {
     return;
   }
   const rows = state.trends.slice();
+  // Stable # keyed to creation order (1 = oldest, N = newest); the table defaults to newest-first.
+  const creationNum = new Map();
+  state.trends.forEach((t, i) => creationNum.set(t.id, i + 1));
   const { key, asc } = state.trendSort;
   const sortVal = t => {
     switch (key) {
+      case "created": return creationNum.get(t.id) || 0;
       case "sector": return sectorLabel(t.sector);
       case "lens": return lensLabel(t.lens);
       case "horizon": return HORIZON_ORDER[t.horizon] ?? 1;
@@ -572,10 +575,10 @@ function renderTrends() {
       <div><h2>Trends & Markets</h2><p class="muted">Emerging trends across sectors, viewed through different lenses — a scan of where opportunity is building. <strong>Broad</strong> picks span the whole economy; <strong>adjacent</strong> ones grow out of ideas your group has already posted. Click any bubble or row for the trend and its business ideas.</p></div>
       <a href="#/submit" class="btn-primary">+ Submit an idea</a>
     </div>
-    ${trendMap(rows)}
+    ${trendMap(rows, creationNum)}
     <div class="table-wrap trends-table"><table>
       <thead><tr>
-        <th class="num">#</th>
+        ${th("created", "#", "num")}
         <th data-key="_title">Trend</th>
         ${th("sector", "Sector")}
         ${th("lens", "Lens")}
@@ -586,7 +589,7 @@ function renderTrends() {
       <tbody>
         ${rows.map((t, i) => `
           <tr data-id="${esc(t.id)}">
-            <td class="num"><span class="tm-leg-num" style="background:${t.source === "adjacency" ? "var(--team)" : "var(--accent)"}">${i + 1}</span></td>
+            <td class="num"><span class="tm-leg-num" style="background:${t.source === "adjacency" ? "var(--team)" : "var(--accent)"}">${creationNum.get(t.id)}</span></td>
             <td class="idea-title">${esc(t.title)}${t.sample ? ' <span class="badge sample">sample</span>' : ""}${t.source === "adjacency" ? ' <span class="badge adj">adjacent</span>' : ""}
               <small>${esc(t.oneLiner || "")}</small></td>
             <td>${esc(sectorLabel(t.sector))}</td>
