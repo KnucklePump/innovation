@@ -2,18 +2,87 @@
   "meta": {
     "subtitle": "Emerging trends & markets",
     "coverage": [
-      { "sector": "energy-climate", "lens": "financial", "run": "2026-07-27" },
-      { "sector": "frontier", "lens": "technological", "run": "2026-07-27" },
-      { "sector": "media-entertainment", "lens": "contrarian", "run": "2026-07-27" },
-      { "seed": "wasabi-import-business", "run": "2026-07-27" },
-      { "seed": "mushroom-farm", "run": "2026-07-27" },
-      { "seed": "come-to-me-financial-product-app", "run": "2026-07-27" },
-      { "sector": "health-longevity", "lens": "social", "run": "2026-07-27b" },
-      { "sector": "built-environment", "lens": "environmental", "run": "2026-07-27b" },
-      { "sector": "education-skills", "lens": "cultural", "run": "2026-07-27b" },
-      { "seed": "night-golf", "run": "2026-07-27b" },
-      { "seed": "niche-brands", "run": "2026-07-27b" },
-      { "seed": "wasabi-farm", "run": "2026-07-27b" }
+      {
+        "sector": "energy-climate",
+        "lens": "financial",
+        "run": "2026-07-27"
+      },
+      {
+        "sector": "frontier",
+        "lens": "technological",
+        "run": "2026-07-27"
+      },
+      {
+        "sector": "media-entertainment",
+        "lens": "contrarian",
+        "run": "2026-07-27"
+      },
+      {
+        "seed": "wasabi-import-business",
+        "run": "2026-07-27"
+      },
+      {
+        "seed": "mushroom-farm",
+        "run": "2026-07-27"
+      },
+      {
+        "seed": "come-to-me-financial-product-app",
+        "run": "2026-07-27"
+      },
+      {
+        "sector": "health-longevity",
+        "lens": "social",
+        "run": "2026-07-27b"
+      },
+      {
+        "sector": "built-environment",
+        "lens": "environmental",
+        "run": "2026-07-27b"
+      },
+      {
+        "sector": "education-skills",
+        "lens": "cultural",
+        "run": "2026-07-27b"
+      },
+      {
+        "seed": "night-golf",
+        "run": "2026-07-27b"
+      },
+      {
+        "seed": "niche-brands",
+        "run": "2026-07-27b"
+      },
+      {
+        "seed": "wasabi-farm",
+        "run": "2026-07-27b"
+      },
+      {
+        "sector": "mobility-logistics",
+        "lens": "financial",
+        "run": "2026-07-28"
+      },
+      {
+        "sector": "materials-manufacturing",
+        "lens": "environmental",
+        "run": "2026-07-28"
+      },
+      {
+        "sector": "work-enterprise",
+        "lens": "contrarian",
+        "run": "2026-07-28"
+      },
+      {
+        "seed": "verified-origin-distribution-brand",
+        "run": "2026-07-28"
+      },
+      {
+        "seed": "chef-direct-authenticity-club",
+        "run": "2026-07-28"
+      },
+      {
+        "seed": "single-sport-social-franchise",
+        "run": "2026-07-28"
+      }
     ]
   },
   "trends": [
@@ -27,13 +96,33 @@
       "signal": 8,
       "oneLiner": "Millions of home batteries, EV chargers and heat pumps are being aggregated into 'virtual power plants' that sell flexibility back to the grid — turning household hardware into an income stream.",
       "why": "As rooftop solar, home batteries and EVs proliferate, grids need flexible capacity to balance renewables — and are increasingly paying consumers for it. One estimate puts the VPP market at USD 6.28B in 2025 growing to ~USD 45.7B by 2035 (~22.6% CAGR), though firm estimates vary widely. The tailwinds are structural: falling battery costs (technological/economic), volatile time-of-use tariffs, and policy pushing demand-side flexibility (political/environmental).",
-      "drivers": ["technological", "economic", "environmental", "political"],
-      "sources": ["https://www.precedenceresearch.com/virtual-power-plant-market", "https://www.grandviewresearch.com/industry-analysis/virtual-power-plant-market-report"],
+      "drivers": [
+        "technological",
+        "economic",
+        "environmental",
+        "political"
+      ],
+      "sources": [
+        "https://www.precedenceresearch.com/virtual-power-plant-market",
+        "https://www.grandviewresearch.com/industry-analysis/virtual-power-plant-market-report"
+      ],
       "confidence": "med",
       "ideas": [
-        { "title": "Flexibility-enrolment installer", "oneLiner": "Install home batteries and smart panels, then auto-enrol households into VPP and demand-response programs, keeping a share of the ongoing flexibility payments.", "pattern": "picks-and-shovels" },
-        { "title": "VPP-in-a-box for small utilities", "oneLiner": "White-label aggregation software so municipal and regional utilities can pool their customers' distributed resources without building a platform themselves.", "pattern": "platform" },
-        { "title": "Flexibility-yield app", "oneLiner": "A consumer app that optimises battery and EV charging against live tariffs and pays users the arbitrage it captures.", "pattern": "unbundling" }
+        {
+          "title": "Flexibility-enrolment installer",
+          "oneLiner": "Install home batteries and smart panels, then auto-enrol households into VPP and demand-response programs, keeping a share of the ongoing flexibility payments.",
+          "pattern": "picks-and-shovels"
+        },
+        {
+          "title": "VPP-in-a-box for small utilities",
+          "oneLiner": "White-label aggregation software so municipal and regional utilities can pool their customers' distributed resources without building a platform themselves.",
+          "pattern": "platform"
+        },
+        {
+          "title": "Flexibility-yield app",
+          "oneLiner": "A consumer app that optimises battery and EV charging against live tariffs and pays users the arbitrage it captures.",
+          "pattern": "unbundling"
+        }
       ],
       "createdRun": "2026-07-27"
     },
@@ -47,13 +136,32 @@
       "signal": 7,
       "oneLiner": "AI has learned to control bodies, not just chat — kicking off a race to put general-purpose humanoid and mobile robots into warehouses, factories and eventually homes.",
       "why": "Advances in AI control models plus a sharp drop in actuator and component costs have made general-purpose robots suddenly plausible. Goldman Sachs projects a ~USD 38B humanoid market by 2035 (~1.4M units shipped by then) and Morgan Stanley a ~USD 5T total addressable market by 2050 — though forecasts diverge enormously, signalling real uncertainty on timing. The opportunity for a small team is less the robots themselves than the picks-and-shovels around a scaling fleet (technological/economic).",
-      "drivers": ["technological", "economic", "social"],
-      "sources": ["https://www.goldmansachs.com/insights/articles/the-global-market-for-robots-could-reach-38-billion-by-2035", "https://www.morganstanley.com/insights/articles/humanoid-robot-market-5-trillion-by-2050"],
+      "drivers": [
+        "technological",
+        "economic",
+        "social"
+      ],
+      "sources": [
+        "https://www.goldmansachs.com/insights/articles/the-global-market-for-robots-could-reach-38-billion-by-2035",
+        "https://www.morganstanley.com/insights/articles/humanoid-robot-market-5-trillion-by-2050"
+      ],
       "confidence": "med",
       "ideas": [
-        { "title": "Fleet skilling & teleoperation", "oneLiner": "A remote-operator and training-data service that teaches robot fleets new real-world tasks and takes over when they get stuck.", "pattern": "picks-and-shovels" },
-        { "title": "Robot supply-chain parts", "oneLiner": "Supply the high-wear precision components — actuators, rod ends, sensors — that every robot maker needs and few want to build.", "pattern": "picks-and-shovels" },
-        { "title": "Robotics-as-a-service", "oneLiner": "Lease, deploy and maintain humanoid or mobile robots for warehouses and facilities on a per-month contract instead of an upfront sale.", "pattern": "service-izing" }
+        {
+          "title": "Fleet skilling & teleoperation",
+          "oneLiner": "A remote-operator and training-data service that teaches robot fleets new real-world tasks and takes over when they get stuck.",
+          "pattern": "picks-and-shovels"
+        },
+        {
+          "title": "Robot supply-chain parts",
+          "oneLiner": "Supply the high-wear precision components — actuators, rod ends, sensors — that every robot maker needs and few want to build.",
+          "pattern": "picks-and-shovels"
+        },
+        {
+          "title": "Robotics-as-a-service",
+          "oneLiner": "Lease, deploy and maintain humanoid or mobile robots for warehouses and facilities on a per-month contract instead of an upfront sale.",
+          "pattern": "service-izing"
+        }
       ],
       "createdRun": "2026-07-27"
     },
@@ -67,13 +175,31 @@
       "signal": 6,
       "oneLiner": "As AI-generated content floods every feed, the scarce and premium thing flips to the opposite: content that is provably made by a human, with verifiable provenance.",
       "why": "The consensus bet is on generating ever more AI content; the second-order effect is a glut that erodes trust and makes authenticity valuable. Provenance standards are maturing fast — C2PA / Content Credentials reached v2.2 in 2025 and is being adopted by major AI platforms and device makers — creating the rails to certify origin. The contrarian opportunity is monetising the 'human-made' and 'verified-origin' signal (social/technological), though how buyers will pay for it is still unproven.",
-      "drivers": ["technological", "social"],
-      "sources": ["https://c2paviewer.com/articles/what-is-c2pa", "https://spec.c2pa.org/specifications/specifications/2.2/explainer/_attachments/Explainer.pdf"],
+      "drivers": [
+        "technological",
+        "social"
+      ],
+      "sources": [
+        "https://c2paviewer.com/articles/what-is-c2pa",
+        "https://spec.c2pa.org/specifications/specifications/2.2/explainer/_attachments/Explainer.pdf"
+      ],
       "confidence": "low",
       "ideas": [
-        { "title": "Verified-human content mark", "oneLiner": "A certification plus toolkit that proves a photo, article or track was human-made, licensable as a trust badge to publishers and marketplaces.", "pattern": "category-creation" },
-        { "title": "Provenance-at-capture app", "oneLiner": "A camera app that embeds Content Credentials at the moment of capture — for journalists, online sellers and insurers who need to prove a shot is real.", "pattern": "picks-and-shovels" },
-        { "title": "Human-made marketplace", "oneLiner": "A curated stock library and marketplace selling certified human-made creative work at a premium over undifferentiated AI output.", "pattern": "premiumisation" }
+        {
+          "title": "Verified-human content mark",
+          "oneLiner": "A certification plus toolkit that proves a photo, article or track was human-made, licensable as a trust badge to publishers and marketplaces.",
+          "pattern": "category-creation"
+        },
+        {
+          "title": "Provenance-at-capture app",
+          "oneLiner": "A camera app that embeds Content Credentials at the moment of capture — for journalists, online sellers and insurers who need to prove a shot is real.",
+          "pattern": "picks-and-shovels"
+        },
+        {
+          "title": "Human-made marketplace",
+          "oneLiner": "A curated stock library and marketplace selling certified human-made creative work at a premium over undifferentiated AI output.",
+          "pattern": "premiumisation"
+        }
       ],
       "createdRun": "2026-07-27"
     },
@@ -88,13 +214,32 @@
       "signal": 6,
       "oneLiner": "Shoppers and chefs increasingly pay up for food whose origin and authenticity are proven — opening room for brands built entirely on verified provenance rather than commodity substitutes.",
       "why": "Trust and traceability have become buying criteria: PwC found consumers willing to pay a ~9.7% premium for sustainable foods despite cost-of-living pressure, and provenance is now mainstream — in the UK around 74% are confident their food is traceable and ~80% want retailers to stock provenance brands. Authenticity is also a defence against fraud: olive oil, honey and saffron rank among the most-adulterated ingredients, and roughly 95% of food-fraud cases involve swapping in a cheaper substitute — so verified single-origin sourcing is both a story and a moat (social/cultural/economic).",
-      "drivers": ["social", "economic", "environmental"],
-      "sources": ["https://www.foodmanufacture.co.uk/Latest/Promotional-Features/quality-and-provenance-continue-to-drive-consumers-food-and-drink-choices/", "https://www.sciencedaily.com/releases/2012/04/120405144244.htm"],
+      "drivers": [
+        "social",
+        "economic",
+        "environmental"
+      ],
+      "sources": [
+        "https://www.foodmanufacture.co.uk/Latest/Promotional-Features/quality-and-provenance-continue-to-drive-consumers-food-and-drink-choices/",
+        "https://www.sciencedaily.com/releases/2012/04/120405144244.htm"
+      ],
       "confidence": "med",
       "ideas": [
-        { "title": "Single-origin specialty importer", "oneLiner": "Import authenticated single-origin specialty foods — real wasabi, single-estate oils and spices — and sell them to premium venues with the provenance story attached.", "pattern": "geographic-arbitrage" },
-        { "title": "Verified-origin distribution brand", "oneLiner": "A distribution brand whose entire pitch is proven origin and traceability, competing on authenticity against commodity substitutes.", "pattern": "premiumisation" },
-        { "title": "Chef-direct authenticity club", "oneLiner": "A subscription connecting restaurants to rotating authenticated specialty ingredients, each with an origin dossier.", "pattern": "platform" }
+        {
+          "title": "Single-origin specialty importer",
+          "oneLiner": "Import authenticated single-origin specialty foods — real wasabi, single-estate oils and spices — and sell them to premium venues with the provenance story attached.",
+          "pattern": "geographic-arbitrage"
+        },
+        {
+          "title": "Verified-origin distribution brand",
+          "oneLiner": "A distribution brand whose entire pitch is proven origin and traceability, competing on authenticity against commodity substitutes.",
+          "pattern": "premiumisation"
+        },
+        {
+          "title": "Chef-direct authenticity club",
+          "oneLiner": "A subscription connecting restaurants to rotating authenticated specialty ingredients, each with an origin dossier.",
+          "pattern": "platform"
+        }
       ],
       "createdRun": "2026-07-27"
     },
@@ -109,13 +254,32 @@
       "signal": 7,
       "oneLiner": "Adaptogenic mushrooms — lion's mane, reishi, cordyceps — are moving from niche supplement to mainstream food, drink and beauty ingredient sold on focus, calm and immunity.",
       "why": "A values shift toward natural, 'food-as-medicine' wellness is pulling functional mushrooms into everyday products. The broad functional-mushroom market was ~USD 34.6B in 2025, projected to ~USD 84.8B by 2035 (~9.4% CAGR), with the adaptogenic subset alone estimated near USD 14B in 2025 and growing faster. Momentum is strongest in ready-to-drink formats and branded consumer lines rather than raw cultivation (social/economic/technological).",
-      "drivers": ["social", "economic", "technological"],
-      "sources": ["https://www.precedenceresearch.com/functional-mushroom-market", "https://www.openpr.com/news/4575364/adaptogenic-mushrooms-market-set-to-reach-usd-44-9-billion"],
+      "drivers": [
+        "social",
+        "economic",
+        "technological"
+      ],
+      "sources": [
+        "https://www.precedenceresearch.com/functional-mushroom-market",
+        "https://www.openpr.com/news/4575364/adaptogenic-mushrooms-market-set-to-reach-usd-44-9-billion"
+      ],
       "confidence": "med",
       "ideas": [
-        { "title": "Functional-mushroom drinks brand", "oneLiner": "Ready-to-drink coffee, cacao and sparkling blends with lion's mane and reishi, sold on focus and calm.", "pattern": "premiumisation" },
-        { "title": "Dosed extract ingredient supplier", "oneLiner": "Standardised, lab-verified mushroom extracts sold B2B to the beverage and beauty brands riding the trend.", "pattern": "picks-and-shovels" },
-        { "title": "Adaptogen line for a subculture", "oneLiner": "A branded adaptogen range aimed at one specific group — focus blends for knowledge workers, recovery blends for endurance athletes.", "pattern": "category-creation" }
+        {
+          "title": "Functional-mushroom drinks brand",
+          "oneLiner": "Ready-to-drink coffee, cacao and sparkling blends with lion's mane and reishi, sold on focus and calm.",
+          "pattern": "premiumisation"
+        },
+        {
+          "title": "Dosed extract ingredient supplier",
+          "oneLiner": "Standardised, lab-verified mushroom extracts sold B2B to the beverage and beauty brands riding the trend.",
+          "pattern": "picks-and-shovels"
+        },
+        {
+          "title": "Adaptogen line for a subculture",
+          "oneLiner": "A branded adaptogen range aimed at one specific group — focus blends for knowledge workers, recovery blends for endurance athletes.",
+          "pattern": "category-creation"
+        }
       ],
       "createdRun": "2026-07-27"
     },
@@ -130,13 +294,32 @@
       "signal": 8,
       "oneLiner": "Instead of consumers hunting comparison sites, AI agents will increasingly shop, compare and transact financial products on their behalf — and the payment rails to let them are already shipping.",
       "why": "Agentic AI is moving from demos to production in finance: Mastercard launched its Agent Pay program in April 2025 with Microsoft, IBM and Salesforce and rolled 'agentic tokens' out to US cardholders by late 2025, and Mastercard and PayPal are partnering to standardise agentic commerce. This inverts the acquisition model — a demand-led, agent-mediated marketplace where institutions compete to be surfaced to a consumer's agent (technological/economic).",
-      "drivers": ["technological", "economic", "social"],
-      "sources": ["https://www.mastercard.com/global/en/news-and-trends/press/2025/april/mastercard-unveils-agent-pay-pioneering-agentic-payments-technology-to-power-commerce-in-the-age-of-ai.html", "https://newsroom.paypal-corp.com/2025-10-27-Mastercard-and-PayPal-Join-Forces-To-Accelerate-Secure-Global-Agentic-Commerce"],
+      "drivers": [
+        "technological",
+        "economic",
+        "social"
+      ],
+      "sources": [
+        "https://www.mastercard.com/global/en/news-and-trends/press/2025/april/mastercard-unveils-agent-pay-pioneering-agentic-payments-technology-to-power-commerce-in-the-age-of-ai.html",
+        "https://newsroom.paypal-corp.com/2025-10-27-Mastercard-and-PayPal-Join-Forces-To-Accelerate-Secure-Global-Agentic-Commerce"
+      ],
       "confidence": "med",
       "ideas": [
-        { "title": "Agent-ready quote API for institutions", "oneLiner": "Infrastructure that lets banks and insurers expose compliant, machine-readable quotes so AI agents can shop them — the supply side of a reverse marketplace.", "pattern": "picks-and-shovels" },
-        { "title": "Personal finance agent that negotiates", "oneLiner": "An agent that continuously shops your mortgage, insurance and savings and switches you to better deals with your approval.", "pattern": "service-izing" },
-        { "title": "Agentic-commerce trust layer", "oneLiner": "Consent, tokenisation and audit tooling so consumers can safely let agents transact financial products for them.", "pattern": "platform" }
+        {
+          "title": "Agent-ready quote API for institutions",
+          "oneLiner": "Infrastructure that lets banks and insurers expose compliant, machine-readable quotes so AI agents can shop them — the supply side of a reverse marketplace.",
+          "pattern": "picks-and-shovels"
+        },
+        {
+          "title": "Personal finance agent that negotiates",
+          "oneLiner": "An agent that continuously shops your mortgage, insurance and savings and switches you to better deals with your approval.",
+          "pattern": "service-izing"
+        },
+        {
+          "title": "Agentic-commerce trust layer",
+          "oneLiner": "Consent, tokenisation and audit tooling so consumers can safely let agents transact financial products for them.",
+          "pattern": "platform"
+        }
       ],
       "createdRun": "2026-07-27"
     },
@@ -150,13 +333,32 @@
       "signal": 7,
       "oneLiner": "Staying biologically younger is becoming a consumer category — diagnostics, supplements and clinics are pulling 'longevity' out of the lab and onto the high street.",
       "why": "An ageing population plus a cultural shift from treating illness to extending healthspan is creating a mainstream consumer market. One estimate puts the global longevity market at ~USD 27.6B in 2025 rising to ~USD 67B by 2035 (~9.4% a year), with consumers — not institutions — the largest segment (~35%). A surge in 'proactive health' shoppers buying biological-age tests, wearables and supplements is pulling the category into the mainstream (social/technological/economic).",
-      "drivers": ["social", "technological", "economic"],
-      "sources": ["https://longevity.technology/news/longevity-market-to-hit-67b-by-2035-due-to-rising-aging-concerns/", "https://www.snsinsider.com/reports/longevity-market-10022"],
+      "drivers": [
+        "social",
+        "technological",
+        "economic"
+      ],
+      "sources": [
+        "https://longevity.technology/news/longevity-market-to-hit-67b-by-2035-due-to-rising-aging-concerns/",
+        "https://www.snsinsider.com/reports/longevity-market-10022"
+      ],
       "confidence": "med",
       "ideas": [
-        { "title": "At-home healthspan testing + coaching", "oneLiner": "Bundle biological-age and biomarker testing with a subscription that turns the results into a personalised action plan.", "pattern": "service-izing" },
-        { "title": "Longevity-formulated food & supplements", "oneLiner": "A branded range engineered around healthspan claims — protein, metabolic, muscle-preserving — aimed at the GLP-1 and proactive-health crowd.", "pattern": "premiumisation" },
-        { "title": "Healthspan clinic franchise", "oneLiner": "A standardised, franchisable longevity clinic — diagnostics, GLP-1 management and coaching under one roof.", "pattern": "verticalisation" }
+        {
+          "title": "At-home healthspan testing + coaching",
+          "oneLiner": "Bundle biological-age and biomarker testing with a subscription that turns the results into a personalised action plan.",
+          "pattern": "service-izing"
+        },
+        {
+          "title": "Longevity-formulated food & supplements",
+          "oneLiner": "A branded range engineered around healthspan claims — protein, metabolic, muscle-preserving — aimed at the GLP-1 and proactive-health crowd.",
+          "pattern": "premiumisation"
+        },
+        {
+          "title": "Healthspan clinic franchise",
+          "oneLiner": "A standardised, franchisable longevity clinic — diagnostics, GLP-1 management and coaching under one roof.",
+          "pattern": "verticalisation"
+        }
       ],
       "createdRun": "2026-07-27b"
     },
@@ -170,13 +372,32 @@
       "signal": 7,
       "oneLiner": "Swapping gas boilers and furnaces for heat pumps is turning into one of the largest, most policy-driven retrofit waves in the economy.",
       "why": "Electrification mandates, fossil-fuel phase-outs and volatile energy prices are pushing buildings off gas. The global heat-pump market alone is put at ~USD 87.4B in 2025 rising to ~USD 180B by 2032 (~10.9% CAGR), with electric heat pumps already the dominant category. Retrofitting the vast existing building stock is the largest addressable opportunity, and the bottleneck is delivery — financing, trained installers and hassle-free installs — not demand (environmental/political/economic).",
-      "drivers": ["environmental", "political", "economic"],
-      "sources": ["https://www.persistencemarketresearch.com/market-research/heat-pump-market.asp", "https://www.researchnester.com/reports/energy-retrofit-systems-market/5357"],
+      "drivers": [
+        "environmental",
+        "political",
+        "economic"
+      ],
+      "sources": [
+        "https://www.persistencemarketresearch.com/market-research/heat-pump-market.asp",
+        "https://www.researchnester.com/reports/energy-retrofit-systems-market/5357"
+      ],
       "confidence": "med",
       "ideas": [
-        { "title": "Heat-pump retrofit concierge", "oneLiner": "A one-stop installer handling survey, financing, grants and install so a homeowner switches off gas without the hassle.", "pattern": "service-izing" },
-        { "title": "Retrofit financing on the energy bill", "oneLiner": "Finance the switch and let households repay it out of the energy savings, on-bill, with no upfront cost.", "pattern": "unbundling" },
-        { "title": "Installer enablement platform", "oneLiner": "Software and training that lets HVAC trades quote, size and claim grants for heat-pump retrofits quickly.", "pattern": "picks-and-shovels" }
+        {
+          "title": "Heat-pump retrofit concierge",
+          "oneLiner": "A one-stop installer handling survey, financing, grants and install so a homeowner switches off gas without the hassle.",
+          "pattern": "service-izing"
+        },
+        {
+          "title": "Retrofit financing on the energy bill",
+          "oneLiner": "Finance the switch and let households repay it out of the energy savings, on-bill, with no upfront cost.",
+          "pattern": "unbundling"
+        },
+        {
+          "title": "Installer enablement platform",
+          "oneLiner": "Software and training that lets HVAC trades quote, size and claim grants for heat-pump retrofits quickly.",
+          "pattern": "picks-and-shovels"
+        }
       ],
       "createdRun": "2026-07-27b"
     },
@@ -190,13 +411,32 @@
       "signal": 7,
       "oneLiner": "As employers drop degree requirements and AI tutors get cheap and good, the unit of value in education is shifting from the credential to demonstrable, verifiable skill.",
       "why": "Skills-based hiring is going mainstream — major employers have dropped degree requirements for many roles and most now hire on skills for entry-level jobs — while AI tutoring scales fast (put at ~USD 2.15B in 2025 rising to ~USD 17.6B by 2033, ~30% CAGR). The honest caveat: dropping a degree requirement only helps if employers can trust an alternative signal, so verifiable proof-of-skill is where the real gap sits (technological/social/economic).",
-      "drivers": ["technological", "social", "economic"],
-      "sources": ["https://www.databridgemarketresearch.com/reports/global-ai-tutors-market", "https://testlify.com/skills-based-hiring-statistics/"],
+      "drivers": [
+        "technological",
+        "social",
+        "economic"
+      ],
+      "sources": [
+        "https://www.databridgemarketresearch.com/reports/global-ai-tutors-market",
+        "https://testlify.com/skills-based-hiring-statistics/"
+      ],
       "confidence": "med",
       "ideas": [
-        { "title": "Verifiable skill credentials", "oneLiner": "Assessment plus a portable, employer-trusted certificate that proves a specific skill better than a transcript.", "pattern": "category-creation" },
-        { "title": "AI tutor for one in-demand trade", "oneLiner": "A vertical AI tutor that takes someone from zero to job-ready in a single high-demand skill, priced far below a course.", "pattern": "verticalisation" },
-        { "title": "Hire-for-skills assessment tool", "oneLiner": "Plug-in assessments that let employers screen on demonstrated skill instead of pedigree.", "pattern": "picks-and-shovels" }
+        {
+          "title": "Verifiable skill credentials",
+          "oneLiner": "Assessment plus a portable, employer-trusted certificate that proves a specific skill better than a transcript.",
+          "pattern": "category-creation"
+        },
+        {
+          "title": "AI tutor for one in-demand trade",
+          "oneLiner": "A vertical AI tutor that takes someone from zero to job-ready in a single high-demand skill, priced far below a course.",
+          "pattern": "verticalisation"
+        },
+        {
+          "title": "Hire-for-skills assessment tool",
+          "oneLiner": "Plug-in assessments that let employers screen on demonstrated skill instead of pedigree.",
+          "pattern": "picks-and-shovels"
+        }
       ],
       "createdRun": "2026-07-27b"
     },
@@ -211,13 +451,31 @@
       "signal": 7,
       "oneLiner": "Going out is being reinvented as 'competitive socialising' — tech-enabled darts, mini-golf, simulators and eatertainment venues that sell a shared experience, not just food and drink.",
       "why": "Consumers, especially younger ones, increasingly spend on experiences over things, and operators are modernising old games with automated scoring and gamified play to fill venues. The family-entertainment-centre market is put at ~USD 30B in 2025 rising to ~USD 57B by 2031 (~11% CAGR), with adult competitive-socialising the hot growth format. It isn't riskless — some large operators have seen same-venue sales soften — so format and unit economics matter (social/economic).",
-      "drivers": ["social", "economic"],
-      "sources": ["https://www.giiresearch.com/report/tsci2045929-family-entertainment-centers-market-global.html", "https://emerging.com/insights/emerging-fund/top-golf-momentum-slows-while-competitive-social-entertainment-fuels-industry-growth"],
+      "drivers": [
+        "social",
+        "economic"
+      ],
+      "sources": [
+        "https://www.giiresearch.com/report/tsci2045929-family-entertainment-centers-market-global.html",
+        "https://emerging.com/insights/emerging-fund/top-golf-momentum-slows-while-competitive-social-entertainment-fuels-industry-growth"
+      ],
       "confidence": "med",
       "ideas": [
-        { "title": "Off-peak experience kit for venues", "oneLiner": "A turnkey package — gear, tech and a playbook — that lets existing venues run a competitive-socialising night and fill dead hours.", "pattern": "picks-and-shovels" },
-        { "title": "Single-sport social franchise", "oneLiner": "A branded, franchisable venue built around one modernised game with automated scoring and a strong food-and-drink attach.", "pattern": "verticalisation" },
-        { "title": "Booking + scoring platform", "oneLiner": "The software layer — reservations, team play, automated scoring and leaderboards — that competitive-socialising venues run on.", "pattern": "platform" }
+        {
+          "title": "Off-peak experience kit for venues",
+          "oneLiner": "A turnkey package — gear, tech and a playbook — that lets existing venues run a competitive-socialising night and fill dead hours.",
+          "pattern": "picks-and-shovels"
+        },
+        {
+          "title": "Single-sport social franchise",
+          "oneLiner": "A branded, franchisable venue built around one modernised game with automated scoring and a strong food-and-drink attach.",
+          "pattern": "verticalisation"
+        },
+        {
+          "title": "Booking + scoring platform",
+          "oneLiner": "The software layer — reservations, team play, automated scoring and leaderboards — that competitive-socialising venues run on.",
+          "pattern": "platform"
+        }
       ],
       "createdRun": "2026-07-27b"
     },
@@ -232,13 +490,32 @@
       "signal": 8,
       "oneLiner": "Brands are increasingly born from communities and creators rather than sold to them — identity-driven labels that launch with an audience already attached.",
       "why": "As marketing spend shifts to creators and social-commerce rails mature, the cheapest way to launch a brand is with a community that already trusts a creator. Estimates of the creator economy vary but converge on huge scale and fast growth — roughly USD 180–250B in 2025 heading toward ~USD 1.35T in the early 2030s (low-20s% CAGR). The winning shape is niche and identity-led: small brands for specific subcultures, launched and sustained by their community (social/cultural/technological).",
-      "drivers": ["social", "cultural", "technological"],
-      "sources": ["https://marketingreport.one/news/report-creator-economy-market-to-surpass-1-3-trillion-by-2033.html", "https://www.researchnester.com/reports/creator-economy-market/5691"],
+      "drivers": [
+        "social",
+        "cultural",
+        "technological"
+      ],
+      "sources": [
+        "https://marketingreport.one/news/report-creator-economy-market-to-surpass-1-3-trillion-by-2033.html",
+        "https://www.researchnester.com/reports/creator-economy-market/5691"
+      ],
       "confidence": "med",
       "ideas": [
-        { "title": "Community-to-brand launch studio", "oneLiner": "Partner with creators to spin their audience into a product line, handling sourcing, ops and fulfilment for a share.", "pattern": "platform" },
-        { "title": "Micro-brand operating system", "oneLiner": "The back-office stack — sourcing, small-batch production, logistics — that lets a community-led brand run lean.", "pattern": "picks-and-shovels" },
-        { "title": "Subculture-specific label", "oneLiner": "A tightly-targeted brand for one underserved subculture, designed with and sold through its community.", "pattern": "category-creation" }
+        {
+          "title": "Community-to-brand launch studio",
+          "oneLiner": "Partner with creators to spin their audience into a product line, handling sourcing, ops and fulfilment for a share.",
+          "pattern": "platform"
+        },
+        {
+          "title": "Micro-brand operating system",
+          "oneLiner": "The back-office stack — sourcing, small-batch production, logistics — that lets a community-led brand run lean.",
+          "pattern": "picks-and-shovels"
+        },
+        {
+          "title": "Subculture-specific label",
+          "oneLiner": "A tightly-targeted brand for one underserved subculture, designed with and sold through its community.",
+          "pattern": "category-creation"
+        }
       ],
       "createdRun": "2026-07-27b"
     },
@@ -253,15 +530,317 @@
       "signal": 6,
       "oneLiner": "Indoor growing is shifting from commodity leafy greens toward high-value specialty crops — herbs, berries and hard-to-source delicacies grown to order near the customer.",
       "why": "Automation, better lighting and AI control are improving the economics of indoor growing, and the fastest-growing demand is for premium, nutrient-dense specialty crops rather than cheap lettuce. The broader controlled-environment-agriculture market is put at ~USD 82B in 2025 rising to ~USD 282B by 2035 (~13% CAGR), with herbs and berries the fastest segment (~16.6%). The opportunity — and the caution — is economics: indoor growing is capital- and energy-intensive, so the viable wedge is high-margin specialty crops grown near premium buyers, not commodity produce (technological/environmental/economic).",
-      "drivers": ["technological", "environmental", "economic"],
-      "sources": ["https://www.globenewswire.com/news-release/2026/07/23/3332240/0/en/Controlled-Environment-Agriculture-Market-to-Attain-282-44-Billion-by-2035-SNS-Insider.html", "https://www.imarcgroup.com/vertical-farming-market"],
+      "drivers": [
+        "technological",
+        "environmental",
+        "economic"
+      ],
+      "sources": [
+        "https://www.globenewswire.com/news-release/2026/07/23/3332240/0/en/Controlled-Environment-Agriculture-Market-to-Attain-282-44-Billion-by-2035-SNS-Insider.html",
+        "https://www.imarcgroup.com/vertical-farming-market"
+      ],
       "confidence": "med",
       "ideas": [
-        { "title": "Grow-to-order specialty crops", "oneLiner": "Contract-grow rare, hard-to-import delicacies — real wasabi, specialty herbs — near high-end restaurants that pay a premium for freshness.", "pattern": "geographic-arbitrage" },
-        { "title": "Premium berry & herb micro-farm", "oneLiner": "A compact controlled-environment farm focused only on the fastest-growing, highest-margin categories.", "pattern": "verticalisation" },
-        { "title": "CEA-as-a-service for growers", "oneLiner": "Lease turnkey growing pods plus the control software to established food businesses instead of selling hardware.", "pattern": "service-izing" }
+        {
+          "title": "Grow-to-order specialty crops",
+          "oneLiner": "Contract-grow rare, hard-to-import delicacies — real wasabi, specialty herbs — near high-end restaurants that pay a premium for freshness.",
+          "pattern": "geographic-arbitrage"
+        },
+        {
+          "title": "Premium berry & herb micro-farm",
+          "oneLiner": "A compact controlled-environment farm focused only on the fastest-growing, highest-margin categories.",
+          "pattern": "verticalisation"
+        },
+        {
+          "title": "CEA-as-a-service for growers",
+          "oneLiner": "Lease turnkey growing pods plus the control software to established food businesses instead of selling hardware.",
+          "pattern": "service-izing"
+        }
       ],
       "createdRun": "2026-07-27b"
+    },
+    {
+      "id": "driverless-freight-economics",
+      "title": "Driverless Freight Crosses to P&L",
+      "sector": "mobility-logistics",
+      "lens": "financial",
+      "source": "broad",
+      "horizon": "near",
+      "signal": 8,
+      "oneLiner": "Autonomous trucking has crossed from demos into paid, driver-out commercial hauls — attacking the single largest cost line in freight and pulling billion-dollar capital into the race.",
+      "why": "The thesis is a hard cost-curve move (Economic). Driver pay is the biggest, most inflation-exposed line in trucking — against an industry all-in average around $2.26/mile, autonomous operators target well under $1/mile by removing it. Technologically, L4 highway autonomy has crossed into real driver-out operation rather than demos: Aurora launched regular commercial deliveries with no human in the cab on the Dallas–Houston lane in 2025 and is expanding to more Sun Belt lanes. The momentum is unmistakable: Kodiak AI went public in October 2025 at roughly a $2.5B valuation, and Waabi raised a $750M round in January 2026. Politically, regulation is state-by-state (permissive across the Sun Belt), which is the key swing variable for national scale-up. The weak axis is openness — the core AV stack is capital-locked behind billion-dollar incumbents — so the buildable opportunities sit one layer off, in the services and infrastructure around driver-out freight.",
+      "drivers": [
+        "economic",
+        "technological",
+        "political"
+      ],
+      "sources": [
+        "https://www.truckingdive.com/news/aurora-says-lower-operating-costs-a-draw-to-prospective-customers/819539/",
+        "https://ir.aurora.tech/news-events/press-releases/detail/119/aurora-begins-commercial-driverless-trucking-in-texas-ushering-in-a-new-era-of-freight",
+        "https://www.freightwaves.com/news/kodiak-ai-now-a-public-company-looks-to-deliver-an-autonomous-trucking-future",
+        "https://techcrunch.com/2026/01/28/waabi-raises-1b-and-expands-into-robotaxis-with-uber/"
+      ],
+      "confidence": "high",
+      "ideas": [
+        {
+          "title": "Teleops-as-a-service desk",
+          "oneLiner": "24/7 remote human oversight and remote-guidance pods sold per-truck-hour to AV fleets — the labour that autonomy doesn't remove, it relocates.",
+          "pattern": "picks-and-shovels"
+        },
+        {
+          "title": "AV-freight underwriting & claims layer",
+          "oneLiner": "A specialist MGA/analytics business pricing driver-out risk from telemetry, since traditional truck insurers have no actuarial base for L4.",
+          "pattern": "service-izing"
+        },
+        {
+          "title": "Highway-edge transfer hubs",
+          "oneLiner": "Own and operate the terminals where driver-out linehaul hands off to human first/last mile — the physical choke point of every AV network.",
+          "pattern": "verticalisation"
+        },
+        {
+          "title": "Autonomous-capacity brokerage",
+          "oneLiner": "A spot/contract marketplace letting mid-size shippers buy autonomous lane-capacity without contracting each AV vendor directly.",
+          "pattern": "platform"
+        }
+      ],
+      "createdRun": "2026-07-28"
+    },
+    {
+      "id": "decarbonised-heavy-industry-materials",
+      "title": "Decarbonised Heavy-Industry Materials",
+      "sector": "materials-manufacturing",
+      "lens": "environmental",
+      "source": "broad",
+      "horizon": "mid",
+      "signal": 7,
+      "oneLiner": "Near-zero-CO2 cement and steel are moving from pilot to first commercial plants, pulled by a live EU carbon border tariff and hyperscaler offtake — even as US federal support pulls back.",
+      "why": "Cement (~8% of global CO2) and iron & steel (~7-8%) are the two hardest-to-abate material sectors, so any credible fix is strategically valuable (Environmental). The economics just shifted: the EU's Carbon Border Adjustment Mechanism entered its definitive period on 1 January 2026, putting a real carbon price on imported cement, steel and aluminium and structurally improving green-material margins (Political/Economic). Demand is being pre-bought — Microsoft signed a binding offtake for up to 622,500 tonnes of Sublime's low-carbon cement, and Amazon reserved volumes from Brimstone. Momentum is real on the supply side: Stegra closed a €1.4B financing round in April 2026 to finish its large-scale green-steel mill in Sweden. The honest headwind: US federal support reversed in 2025 (the DOE rescinded funding from both Sublime and Brimstone), so the 'why now' rests on EU policy pull and private offtake, not US industrial policy. Openness is low for the plants themselves — new entrants win in the shovels and software, not the furnaces.",
+      "drivers": [
+        "environmental",
+        "political",
+        "economic"
+      ],
+      "sources": [
+        "https://www.canarymedia.com/articles/clean-industry/tech-giants-look-to-low-carbon-cement-to-curb-their-huge-climate-impact",
+        "https://taxation-customs.ec.europa.eu/news/cbam-successfully-entered-force-1-january-2026-2026-01-14_en",
+        "https://www.canarymedia.com/articles/green-steel/stegra-funding-complete-mill",
+        "https://www.technologyreview.com/2025/06/05/1117855/cement-funding-slash/"
+      ],
+      "confidence": "med",
+      "ideas": [
+        {
+          "title": "CBAM compliance copilot",
+          "oneLiner": "SaaS that computes embedded carbon for imported goods and manages the authorised-declarant filings and 2027 certificate surrender — a deadline-driven, recurring-revenue wedge.",
+          "pattern": "picks-and-shovels"
+        },
+        {
+          "title": "Green-materials book-and-claim exchange",
+          "oneLiner": "A registry/marketplace for verified low-CO2 cement and steel certificates, letting buyers claim abatement so offtake demand can scale ahead of physical plants.",
+          "pattern": "category-creation"
+        },
+        {
+          "title": "Mid-market offtake aggregator",
+          "oneLiner": "Pool demand from developers and contractors too small to sign a hyperscaler-scale deal, giving green-material producers bankable volume.",
+          "pattern": "platform"
+        },
+        {
+          "title": "Embodied-carbon procurement tool",
+          "oneLiner": "A spec/procurement tool for architects and GCs that auto-substitutes CBAM-advantaged low-carbon mixes into the bill of materials.",
+          "pattern": "service-izing"
+        }
+      ],
+      "createdRun": "2026-07-28"
+    },
+    {
+      "id": "outcome-based-pricing-repricing",
+      "title": "The Great Repricing: Outcome Pricing vs Per-Seat SaaS",
+      "sector": "work-enterprise",
+      "lens": "contrarian",
+      "source": "broad",
+      "horizon": "near",
+      "signal": 8,
+      "oneLiner": "As AI agents do the work instead of humans logging in, enterprise buyers are shifting from paying per seat to paying per outcome — repricing the most durable business model in software.",
+      "why": "Consensus held that per-seat SaaS revenue is sticky and forever. The second-order effect nobody priced in: if a customer's headcount falls because agents do the work, the seat count — and the vendor's revenue — falls with it; the value doesn't vanish, it migrates from 'access' to 'outcome' — the contrarian point consensus missed. Technologically, agents now complete whole workflows autonomously, breaking the 'one human = one seat = one login' unit that per-seat pricing was built on. Economically this is already a market event, not a thesis: a February 2026 software-sector sell-off (US software fell roughly 14.5% in January, its worst month since 2008) was widely attributed to fear that AI erodes subscription models. The shift is visible in the data — seat-based pricing fell from 21% to 15% of B2B software companies in a year while hybrid rose to 41% — and live in the market: Intercom's Fin charges $0.99 per resolution, Salesforce Agentforce $2 per conversation, and Zendesk launched outcome-based pricing that only bills for issues AI resolves. Klarna's AI assistant doing the work of 700 agents is the labour-substitution proof point buyers now cite. This is enterprise pricing infrastructure, distinct from consumer AI shopping agents. It stays below the top of the scale because outcome pricing is still under ~5% adopted — loud in markets, early in practice.",
+      "drivers": [
+        "technological",
+        "economic",
+        "social"
+      ],
+      "sources": [
+        "https://www.growthunhinged.com/p/2025-state-of-b2b-monetization",
+        "https://fin.ai/pricing",
+        "https://www.zendesk.com/newsroom/articles/zendesk-outcome-based-pricing/",
+        "https://www.klarna.com/international/press/klarna-ai-assistant-handles-two-thirds-of-customer-service-chats-in-its-first-month/",
+        "https://www.euronews.com/business/2026/02/14/software-sector-selloff-which-european-companies-are-hit"
+      ],
+      "confidence": "med",
+      "ideas": [
+        {
+          "title": "Outcome Meter",
+          "oneLiner": "A billing/metering layer that lets any vendor define, track and invoice on 'outcomes delivered' with attribution and dispute logic — Stripe for outcomes.",
+          "pattern": "picks-and-shovels"
+        },
+        {
+          "title": "Margin Radar",
+          "oneLiner": "FinOps for the agent era: shows the true COGS of each agent action so outcome prices aren't set below the cost of the work.",
+          "pattern": "category-creation"
+        },
+        {
+          "title": "Repricing advisory-in-a-box",
+          "oneLiner": "A toolkit that helps seat-based SaaS companies model, pilot and migrate to hybrid/outcome pricing without wrecking existing ARR.",
+          "pattern": "service-izing"
+        },
+        {
+          "title": "Outcome-SLA verifier",
+          "oneLiner": "Third-party attestation that a billed 'resolution' was genuinely resolved, so buyer and vendor trust the outcome invoice.",
+          "pattern": "category-creation"
+        }
+      ],
+      "createdRun": "2026-07-28"
+    },
+    {
+      "id": "digital-product-passports-traceability",
+      "title": "Digital Product Passports & Cross-Industry Traceability",
+      "sector": "materials-manufacturing",
+      "lens": "technological",
+      "source": "adjacency",
+      "seededBy": "verified-origin-distribution-brand",
+      "horizon": "near",
+      "signal": 8,
+      "oneLiner": "The same 'prove the origin' promise behind provenance brands is becoming EU law for physical goods — batteries first, then textiles and electronics — creating a cross-industry compliance-and-traceability tech stack.",
+      "why": "Where a provenance brand chooses to prove an item's origin, regulation is now making item-level digital identity mandatory across industries — turning a marketing story into compliance infrastructure — the regulated layer beneath any provenance claim. This is regulation-created demand (Political, dominant): the EU Ecodesign for Sustainable Products Regulation entered into force in July 2024, and the battery passport — the first mandatory Digital Product Passport — is required from February 2027, with no passport meaning a battery cannot legally be sold. Technologically the enabling stack matured on the same clock: GS1's 'Sunrise 2027' push moves retail to web-connected 2D/QR codes, and cheap QR/NFC plus verifiable-credential tooling make per-item records feasible. Environmentally, the passport carries exactly the circular-economy data (recycled content, repairability, carbon) the rules demand. The market is small but broad and fast: one industry estimate puts the DPP software market growing ~45% a year toward ~$1.8B by 2030 (directional), while the adjacent supply-chain-traceability market is put at ~$8.6B in 2024, and vendors are already funded (TrusTrace raised a $24M growth round, Circularise a Teijin-led Series A). Revenue is gated on regulatory dates not yet passed — real timing risk — which is why it sits just below the top of the scale.",
+      "drivers": [
+        "political",
+        "technological",
+        "environmental"
+      ],
+      "sources": [
+        "https://www.circularise.com/blogs/a-guide-to-the-ecodesign-for-sustainable-products-regulation-espr",
+        "https://www.circularise.com/blogs/eu-battery-passport-regulation-requirements",
+        "https://www.gs1us.org/industries-and-insights/by-topic/sunrise-2027",
+        "https://www.prnewswire.com/news-releases/digital-product-passport-market-worth-1-780-5-million-by-2030--exclusive-report-by-marketsandmarkets-302367089.html",
+        "https://tech.eu/2024/01/18/trustrace-secures-24-million-investment-for-supply-chain-traceability/"
+      ],
+      "confidence": "med",
+      "ideas": [
+        {
+          "title": "PassportOS",
+          "oneLiner": "A turnkey DPP compliance layer that ingests BOM/PLM/supplier data and emits a regulator-valid battery or textile passport plus QR — the Stripe for DPP compliance for mid-market manufacturers.",
+          "pattern": "platform"
+        },
+        {
+          "title": "Textile-DPP supplier network",
+          "oneLiner": "A purpose-built passport tool that pre-wires tier-2/3 supplier data capture for apparel ahead of the textiles rules — solving the hardest part of compliance.",
+          "pattern": "verticalisation"
+        },
+        {
+          "title": "Passport-data-as-a-service",
+          "oneLiner": "Read passport data at end-of-life to power warranty transfer, authenticated resale and recycler feedstock sorting — monetising the passport after the point of sale.",
+          "pattern": "category-creation"
+        },
+        {
+          "title": "Sunrise-2027 migration studio",
+          "oneLiner": "Consultancy plus tooling that migrates brands from 1D UPC to GS1 Digital Link 2D codes and connects them to product data — riding a barcode transition every consumer brand faces.",
+          "pattern": "service-izing"
+        }
+      ],
+      "createdRun": "2026-07-28"
+    },
+    {
+      "id": "restaurant-procurement-foodcost-tech",
+      "title": "Restaurant Procurement & Food-Cost Tech",
+      "sector": "food-agriculture",
+      "lens": "financial",
+      "source": "adjacency",
+      "seededBy": "chef-direct-authenticity-club",
+      "horizon": "near",
+      "signal": 7,
+      "oneLiner": "AI is digitising how restaurants buy ingredients and control food cost — B2B ordering, invoice and inventory automation, menu-margin analytics and group purchasing.",
+      "why": "Where a chef ingredient club sells what an ingredient is, this trend attacks what it costs and how it's ordered — the back-of-house money layer of restaurant supply. The pull is structural margin compression (Economic, dominant): since 2019 wholesale food prices are up ~35% and restaurant wages ~41%, and 42% of operators reported their restaurant was not profitable in 2025 on thin net margins, with food and labour each historically running around a third of every sales dollar — so every point of procurement efficiency is now existential. Technologically, LLM and voice AI just crossed the threshold for messy foodservice workflows: Choco and OpenAI launched the first foodservice AI voice agent in December 2025, and MarginEdge, Pepper and Toast are repositioning AI-first. There is also a supplier-side labour squeeze (Social) as distributors struggle to staff night order desks. The market is vast (US foodservice is roughly $0.9T and one group-purchasing organisation alone runs over $100B of volume) and freshly funded (Pepper raised a $50M Series C in February 2026). Openness is only moderate — the space already has funded incumbents (Toast, Choco, MarginEdge, Buyers Edge) plus Sysco/US Foods dominance — so the greenfield is the independent long tail and AI-native automation, not blue ocean.",
+      "drivers": [
+        "economic",
+        "technological",
+        "social"
+      ],
+      "sources": [
+        "https://restaurant.org/research-and-media/research/restaurant-economic-insights/analysis-commentary/elevated-costs-continue-to-pressure-restaurant-profitability/",
+        "https://choco.com/us/press/choco-and-openai-join-forces-to-launch-the-first-ai-voice-agent-for-the-food-service-industry",
+        "https://www.mordorintelligence.com/industry-reports/us-food-service-restaurant-market",
+        "https://www.businesswire.com/news/home/20260220742173/en/Pepper-Secures-$50-Million-Series-C-to-Expand-End-to-End-Technology-Platform-for-Independent-Food-Distributors",
+        "https://diningalliance.com/"
+      ],
+      "confidence": "med",
+      "ideas": [
+        {
+          "title": "Order-capture middleware for distributors",
+          "oneLiner": "Sell a Choco-style voice-plus-OCR order-capture agent to the ~25,000 independent food distributors as white-label middleware — arm the long tail that can't build it.",
+          "pattern": "picks-and-shovels"
+        },
+        {
+          "title": "Menu-margin autopilot",
+          "oneLiner": "Continuously reprice menu items and flag margin-killers by joining live supplier-invoice costs to POS sales mix — revenue management for the menu, billed on margin recovered.",
+          "pattern": "category-creation"
+        },
+        {
+          "title": "Virtual GPO-in-a-box",
+          "oneLiner": "Aggregate 5-50-unit independents into instant buying pools with automated rebate capture and price benchmarking — enterprise-GPO leverage for smaller operators.",
+          "pattern": "platform"
+        },
+        {
+          "title": "Invoice-to-insight price index",
+          "oneLiner": "Anonymise the invoice flow into a real-time regional ingredient price index restaurants pay to benchmark against — monetising data the ordering tools already collect.",
+          "pattern": "verticalisation"
+        }
+      ],
+      "createdRun": "2026-07-28"
+    },
+    {
+      "id": "experiential-real-estate-retailtainment",
+      "title": "Experiential Real Estate & Retailtainment",
+      "sector": "built-environment",
+      "lens": "financial",
+      "source": "adjacency",
+      "seededBy": "single-sport-social-franchise",
+      "horizon": "near",
+      "signal": 7,
+      "oneLiner": "Landlords and mall REITs are re-anchoring physical real estate around entertainment and F&B tenants, repurposing dead department-store boxes into experience destinations.",
+      "why": "Where a single-sport social venue is the format, this is the property side — how space gets underwritten, leased, financed and repurposed for experiential tenants. E-commerce hollowed out goods retail, so landlords need traffic-generating tenants an online store can't replicate, and they need them just as retail supply is historically tight (Economic, dominant): weak Class B/C boxes are cheap, large and available, with mall consolidation running from roughly 1,200 US malls toward ~900 by 2028. Demand is concrete — JLL data (via Forbes, June 2026) counts 207 location-based-entertainment concepts across 4,746 operating US/Canada locations with a pipeline near 16.5M square feet, and competitive-socialising venues up ~84%. The experience economy pulls it (Social): landlords report real lifts in visits and dwell time from retailtainment tenants, and tech-enabled formats (Technological) are what make the space leasable at scale. The honest counter-signal: the flagship eatertainment operator, Topgolf's parent, is splitting the business and cutting jobs, and saturation plus heavy, long buildouts are real risks — so the durable opportunities are on the capital and leasing side, not in running another venue.",
+      "drivers": [
+        "economic",
+        "social",
+        "technological"
+      ],
+      "sources": [
+        "https://www.forbes.com/sites/naveenjaggi/2026/06/01/the-bounce-back-how-entertainment-tenants-are-rewriting-retail-real-estate/",
+        "https://capitaloneshopping.com/research/mall-closure-statistics/",
+        "https://www.icsc.com/news-and-views/icsc-exchange/retailtainment-is-having-a-moment-will-the-momentum-last",
+        "https://www.cushmanwakefield.com/en/united-states/insights/the-future-of-b-malls-transforming-challenges-into-opportunities",
+        "https://finance.yahoo.com/markets/stocks/articles/topgolf-lays-off-hundreds-following-225456746.html"
+      ],
+      "confidence": "med",
+      "ideas": [
+        {
+          "title": "Experiential-leasing brokerage",
+          "oneLiner": "A specialist brokerage and tenant-matching platform that pairs Class B/C mall boxes with vetted entertainment operators and underwrites the deal — a niche traditional retail brokers handle poorly.",
+          "pattern": "service-izing"
+        },
+        {
+          "title": "Dead-mall repurposing vehicle",
+          "oneLiner": "An acquisition-and-conversion fund buying distressed Class B/C boxes and re-tenanting them as entertainment-anchored mixed-use — buying vacancy cheap and selling dwell time.",
+          "pattern": "verticalisation"
+        },
+        {
+          "title": "Experiential fit-out financing",
+          "oneLiner": "Finance the capital-heavy, high-power, ~12-month buildouts against percentage-rent structures — solving the capex friction that stalls landlord/operator deals.",
+          "pattern": "picks-and-shovels"
+        },
+        {
+          "title": "Dwell-time underwriting data tool",
+          "oneLiner": "Sell landlords and REITs the analytics to underwrite experiential tenants on traffic and dwell externalities rather than rent-per-square-foot alone — the missing valuation layer.",
+          "pattern": "category-creation"
+        }
+      ],
+      "createdRun": "2026-07-28"
     }
   ]
 }
