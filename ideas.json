@@ -12,16 +12,76 @@
       "status": "refined",
       "refinedThrough": "2026-07-26T23:46:44.452Z",
       "oneLiner": "A self-run 'night-golf-in-a-box' kit — glow gear, lit greens and a playbook — sold B2B to Canadian courses so they can run fun, party-atmosphere evenings and unlock off-peak revenue.",
-      "tags": ["sports", "experiential", "B2B", "Canada"],
+      "tags": [
+        "sports",
+        "experiential",
+        "B2B",
+        "Canada"
+      ],
       "scores": {
-        "market":     { "score": 6, "confidence": "med", "why": "A healthy, growing market in Canada — ~2,047 golf course/club businesses, ~6M golfers, ~11M rounds posted by members in 2024, ~C$4.0B revenue growing at ~4.5% CAGR, and youth/female participation as a tailwind. But it's a much smaller market than the US in absolute terms — roughly 2,047 course/club businesses as potential B2B customers — so the addressable base is modest.", "sources": ["https://www.golfcanada.ca/articles/recreational-golf-continued-growth-in-canada-in-2024-thanks-to-youth-female-programs/", "https://www.ibisworld.com/canada/industry/golf-courses-country-clubs/1652"] },
-        "entry":      { "score": 8, "confidence": "med", "why": "Low barriers on the lean kit path — commodity-sourceable glow gear, cheap portable LED kit, no regulation. Being first with a turnkey B2B offering in Canada (the scaled US incumbent isn't operating here) makes entry easier, not harder.", "sources": ["https://www.glowvibegolf.com/", "https://ninegolfbelleville.ca/glowball/"] },
-        "cost":       { "score": 7, "confidence": "med", "why": "Cheap to first revenue on the lean kit path: an estimated few thousand dollars of portable LED gear plus glow inventory to build demo and pilot kits. The expensive alternative — permanently lighting a course (~$500–$900 per light, or roughly $30,000–$90,000 for a full facility) — is what this path avoids. Caveat: Canada's short season concentrates revenue into ~5–6 warm months, so annual economics hinge on that window.", "sources": ["https://blog.feslighting.com/golf-course-lighting"] },
-        "saturation": { "score": 6, "confidence": "med", "why": "The scaled incumbent (Glow Vibe Golf, 36 US states) shows no Canadian presence, and Canada has only scattered DIY course events (e.g. NINE Golf in Belleville, Heritage Creek, a par-3 in Ottawa) rather than a turnkey B2B provider. The niche looks open — not empty, but genuinely under-served.", "sources": ["https://www.glowvibegolf.com/", "https://ninegolfbelleville.ca/glowball/"] },
-        "moat":       { "score": 5, "confidence": "med", "why": "Structurally weak — commodity gear, replicable events — but a Canadian first-mover position, exclusive course contracts/territories, and a recurring-consumables kit could build a modest, defensible base before US operators expand north.", "sources": [] },
-        "margins":    { "score": 6, "confidence": "low", "why": "Mixed. Commodity consumables (glow balls, markers) are low-margin but recurring; the kit hardware carries better margin, and the model scales through a kit/franchise structure rather than manufacturing or labour-heavy staffed events.", "sources": ["https://golfincmagazine.com/content/golf-courses-and-country-clubs-diversify-their-revenue-streams/"] },
-        "founderFit": { "score": 6, "confidence": "med", "why": "The team has no existing golf-course relationships, which is the key drag on B2B adoption by conservative operators. Offsetting positives — the team is based in the target market (Canada), with overseas sourcing for low-cost gear, strong experiential-marketing and product-engineering skills, and B2B/finance capability for selling to operators.", "sources": [] },
-        "risk":       { "score": 5, "confidence": "med", "why": "Mixed. Lower: no scaled competitor in Canada. Higher: a smaller market, no course relationships to open doors, and pronounced seasonality — Canada's short, cold golf season squeezes outdoor night play into a few months. Capital-at-risk stays low on the lean path, so downside is contained.", "sources": ["https://www.golfcanada.ca/articles/recreational-golf-continued-growth-in-canada-in-2024-thanks-to-youth-female-programs/"] }
+        "market": {
+          "score": 6,
+          "confidence": "med",
+          "why": "A healthy, growing market in Canada — ~2,047 golf course/club businesses, ~6M golfers, ~11M rounds posted by members in 2024, ~C$4.0B revenue growing at ~4.5% CAGR, and youth/female participation as a tailwind. But it's a much smaller market than the US in absolute terms — roughly 2,047 course/club businesses as potential B2B customers — so the addressable base is modest.",
+          "sources": [
+            "https://www.golfcanada.ca/articles/recreational-golf-continued-growth-in-canada-in-2024-thanks-to-youth-female-programs/",
+            "https://www.ibisworld.com/canada/industry/golf-courses-country-clubs/1652"
+          ]
+        },
+        "entry": {
+          "score": 8,
+          "confidence": "med",
+          "why": "Low barriers on the lean kit path — commodity-sourceable glow gear, cheap portable LED kit, no regulation. Being first with a turnkey B2B offering in Canada (the scaled US incumbent isn't operating here) makes entry easier, not harder.",
+          "sources": [
+            "https://www.glowvibegolf.com/",
+            "https://ninegolfbelleville.ca/glowball/"
+          ]
+        },
+        "cost": {
+          "score": 7,
+          "confidence": "med",
+          "why": "Cheap to first revenue on the lean kit path: an estimated few thousand dollars of portable LED gear plus glow inventory to build demo and pilot kits. The expensive alternative — permanently lighting a course (~$500–$900 per light, or roughly $30,000–$90,000 for a full facility) — is what this path avoids. Caveat: Canada's short season concentrates revenue into ~5–6 warm months, so annual economics hinge on that window.",
+          "sources": [
+            "https://blog.feslighting.com/golf-course-lighting"
+          ]
+        },
+        "saturation": {
+          "score": 6,
+          "confidence": "med",
+          "why": "The scaled incumbent (Glow Vibe Golf, 36 US states) shows no Canadian presence, and Canada has only scattered DIY course events (e.g. NINE Golf in Belleville, Heritage Creek, a par-3 in Ottawa) rather than a turnkey B2B provider. The niche looks open — not empty, but genuinely under-served.",
+          "sources": [
+            "https://www.glowvibegolf.com/",
+            "https://ninegolfbelleville.ca/glowball/"
+          ]
+        },
+        "moat": {
+          "score": 5,
+          "confidence": "med",
+          "why": "Structurally weak — commodity gear, replicable events — but a Canadian first-mover position, exclusive course contracts/territories, and a recurring-consumables kit could build a modest, defensible base before US operators expand north.",
+          "sources": []
+        },
+        "margins": {
+          "score": 6,
+          "confidence": "low",
+          "why": "Mixed. Commodity consumables (glow balls, markers) are low-margin but recurring; the kit hardware carries better margin, and the model scales through a kit/franchise structure rather than manufacturing or labour-heavy staffed events.",
+          "sources": [
+            "https://golfincmagazine.com/content/golf-courses-and-country-clubs-diversify-their-revenue-streams/"
+          ]
+        },
+        "founderFit": {
+          "score": 6,
+          "confidence": "med",
+          "why": "The team has no existing golf-course relationships, which is the key drag on B2B adoption by conservative operators. Offsetting positives — the team is based in the target market (Canada), with overseas sourcing for low-cost gear, strong experiential-marketing and product-engineering skills, and B2B/finance capability for selling to operators.",
+          "sources": []
+        },
+        "risk": {
+          "score": 5,
+          "confidence": "med",
+          "why": "Mixed. Lower: no scaled competitor in Canada. Higher: a smaller market, no course relationships to open doors, and pronounced seasonality — Canada's short, cold golf season squeezes outdoor night play into a few months. Capital-at-risk stays low on the lean path, so downside is contained.",
+          "sources": [
+            "https://www.golfcanada.ca/articles/recreational-golf-continued-growth-in-canada-in-2024-thanks-to-youth-female-programs/"
+          ]
+        }
       },
       "businessCase": {
         "summary": "A self-run 'night-golf-in-a-box' kit — glow balls, lit greens and neon course features with a playbook — sold or leased B2B to Canadian golf courses so they can monetise otherwise-dead evening hours. The commodity glow-ball manufacturing path is out, and so are staffed events; the model is the kit plus recurring consumables. Canada is the target because the scaled US incumbent (Glow Vibe Golf) isn't here — genuine first-mover whitespace — though it's a smaller market with a much shorter season and the team has no course relationships yet.",
@@ -44,16 +104,75 @@
       "owner": "Dave",
       "status": "analyzed",
       "oneLiner": "A cultivation business producing psilocybin ('magic mushrooms') for the Canadian market — riding the fast-growing psychedelic-therapy wave.",
-      "tags": ["regulated", "healthcare", "high-risk", "Canada"],
+      "tags": [
+        "regulated",
+        "healthcare",
+        "high-risk",
+        "Canada"
+      ],
       "scores": {
-        "market":     { "score": 6, "confidence": "med", "why": "The legitimate opportunity — psychedelic therapeutics — is real and fast-growing: global market ~US$2.94B in 2025 heading to ~US$12.4B by 2035 (~15.5% CAGR), with psilocybin the fastest segment (~23% CAGR) and North America ~52% of it. But the lawful Canadian market for a new producer is narrow (clinical trials, research, Special Access Program) with no approved psilocybin products yet, so near-term addressable revenue is small.", "sources": ["https://www.precedenceresearch.com/psychedelic-therapeutics-market", "https://www.canada.ca/en/health-canada/services/substance-use/controlled-illegal-drugs/magic-mushrooms.html"] },
-        "entry":      { "score": 2, "confidence": "high", "why": "The lawful path has very high barriers: psilocybin is a Schedule III controlled substance, and production/sale require a Health Canada Dealer's Licence and/or Section 56 exemption — security, GMP, compliance and long timelines, held today by only a handful of entities. The low-barrier 'grey market' path (dispensaries selling openly) is simply illegal, not a real business.", "sources": ["https://substancelaw.ca/psychedelics-licence/", "https://www.canada.ca/en/health-canada/services/substance-use/controlled-illegal-drugs/magic-mushrooms.html"] },
-        "cost":       { "score": 2, "confidence": "med", "why": "The legal route is capital-heavy — a secure, GMP-grade licensed facility, security clearances, legal and regulatory spend — with a long time to (legal) revenue that depends on licensing and eventual product approval.", "sources": ["https://qualitysmartsolutions.com/services/canada-psychedelics/"] },
-        "saturation": { "score": 5, "confidence": "low", "why": "The licensed-producer space is not crowded — only a handful of Health Canada dealer-licensed players (e.g. Numinus) — but it is small and early. The illegal grey market is comparatively crowded — dozens of psilocybin dispensaries operate openly but unlawfully across major Canadian cities — but that is not a lawful market to compete in.", "sources": ["https://www.newswire.ca/news-releases/numinus-receives-health-canada-licence-amendment-to-produce-and-extract-psilocybin-from-mushrooms-885909186.html"] },
-        "moat":       { "score": 4, "confidence": "low", "why": "A Health Canada Dealer's Licence is itself a real regulatory moat — hard to obtain, and few hold it. But that moat only exists if the team actually clears the licensing bar, which is a major undertaking with no guarantee.", "sources": [] },
-        "margins":    { "score": 5, "confidence": "low", "why": "Pharma-grade psilocybin could carry high margins if products are approved and reimbursed — but that is years away and uncertain, and there are no approved psilocybin products in Canada today.", "sources": ["https://www.canada.ca/en/health-canada/services/substance-use/controlled-illegal-drugs/magic-mushrooms.html"] },
-        "founderFit": { "score": 2, "confidence": "med", "why": "Poor fit: the team has no pharmaceutical, regulatory, GMP or controlled-substance licensing experience, which is exactly what a lawful psilocybin producer needs. Finance/consulting skills help with capital-raising but are not the core competency, and the illegal retail path the idea implies is off the table.", "sources": [] },
-        "risk":       { "score": 2, "confidence": "high", "why": "Very high risk. The retail-sale path described is a criminal offence (trafficking a controlled substance). The lawful path is capital-intensive, slow, regulation-dependent, competes with funded licensed players, and hinges on product approvals that don't yet exist. Policy could shift either way.", "sources": ["https://www.canada.ca/en/health-canada/services/substance-use/controlled-illegal-drugs/magic-mushrooms.html"] }
+        "market": {
+          "score": 6,
+          "confidence": "med",
+          "why": "The legitimate opportunity — psychedelic therapeutics — is real and fast-growing: global market ~US$2.94B in 2025 heading to ~US$12.4B by 2035 (~15.5% CAGR), with psilocybin the fastest segment (~23% CAGR) and North America ~52% of it. But the lawful Canadian market for a new producer is narrow (clinical trials, research, Special Access Program) with no approved psilocybin products yet, so near-term addressable revenue is small.",
+          "sources": [
+            "https://www.precedenceresearch.com/psychedelic-therapeutics-market",
+            "https://www.canada.ca/en/health-canada/services/substance-use/controlled-illegal-drugs/magic-mushrooms.html"
+          ]
+        },
+        "entry": {
+          "score": 2,
+          "confidence": "high",
+          "why": "The lawful path has very high barriers: psilocybin is a Schedule III controlled substance, and production/sale require a Health Canada Dealer's Licence and/or Section 56 exemption — security, GMP, compliance and long timelines, held today by only a handful of entities. The low-barrier 'grey market' path (dispensaries selling openly) is simply illegal, not a real business.",
+          "sources": [
+            "https://substancelaw.ca/psychedelics-licence/",
+            "https://www.canada.ca/en/health-canada/services/substance-use/controlled-illegal-drugs/magic-mushrooms.html"
+          ]
+        },
+        "cost": {
+          "score": 2,
+          "confidence": "med",
+          "why": "The legal route is capital-heavy — a secure, GMP-grade licensed facility, security clearances, legal and regulatory spend — with a long time to (legal) revenue that depends on licensing and eventual product approval.",
+          "sources": [
+            "https://qualitysmartsolutions.com/services/canada-psychedelics/"
+          ]
+        },
+        "saturation": {
+          "score": 5,
+          "confidence": "low",
+          "why": "The licensed-producer space is not crowded — only a handful of Health Canada dealer-licensed players (e.g. Numinus) — but it is small and early. The illegal grey market is comparatively crowded — dozens of psilocybin dispensaries operate openly but unlawfully across major Canadian cities — but that is not a lawful market to compete in.",
+          "sources": [
+            "https://www.newswire.ca/news-releases/numinus-receives-health-canada-licence-amendment-to-produce-and-extract-psilocybin-from-mushrooms-885909186.html"
+          ]
+        },
+        "moat": {
+          "score": 4,
+          "confidence": "low",
+          "why": "A Health Canada Dealer's Licence is itself a real regulatory moat — hard to obtain, and few hold it. But that moat only exists if the team actually clears the licensing bar, which is a major undertaking with no guarantee.",
+          "sources": []
+        },
+        "margins": {
+          "score": 5,
+          "confidence": "low",
+          "why": "Pharma-grade psilocybin could carry high margins if products are approved and reimbursed — but that is years away and uncertain, and there are no approved psilocybin products in Canada today.",
+          "sources": [
+            "https://www.canada.ca/en/health-canada/services/substance-use/controlled-illegal-drugs/magic-mushrooms.html"
+          ]
+        },
+        "founderFit": {
+          "score": 2,
+          "confidence": "med",
+          "why": "Poor fit: the team has no pharmaceutical, regulatory, GMP or controlled-substance licensing experience, which is exactly what a lawful psilocybin producer needs. Finance/consulting skills help with capital-raising but are not the core competency, and the illegal retail path the idea implies is off the table.",
+          "sources": []
+        },
+        "risk": {
+          "score": 2,
+          "confidence": "high",
+          "why": "Very high risk. The retail-sale path described is a criminal offence (trafficking a controlled substance). The lawful path is capital-intensive, slow, regulation-dependent, competes with funded licensed players, and hinges on product approvals that don't yet exist. Policy could shift either way.",
+          "sources": [
+            "https://www.canada.ca/en/health-canada/services/substance-use/controlled-illegal-drugs/magic-mushrooms.html"
+          ]
+        }
       },
       "businessCase": {
         "summary": "A farm to cultivate psilocybin mushrooms for the Canadian market. The critical fact: selling magic mushrooms in Canada is illegal — psilocybin is a Schedule III controlled substance and sale counts as trafficking, so the visible 'grey market' of dozens of dispensaries operates unlawfully and is exposed to prosecution. The only lawful route is a Health Canada Dealer's Licence to produce psilocybin for the regulated medical and research channel: a heavily regulated, pharma-style business riding a genuinely fast-growing psychedelic-therapy market, but capital-, compliance- and time-intensive, with no approved psilocybin products in Canada yet.",
@@ -78,16 +197,75 @@
       "status": "refined",
       "refinedThrough": "2026-07-27T11:21:49.566Z",
       "oneLiner": "A demand-led financial marketplace: instead of searching comparison sites, the consumer posts what they want and institutions come to them with competing quotes.",
-      "tags": ["fintech", "marketplace", "B2B2C", "Canada"],
+      "tags": [
+        "fintech",
+        "marketplace",
+        "B2B2C",
+        "Canada"
+      ],
       "scores": {
-        "market":     { "score": 7, "confidence": "med", "why": "Large and active: Canadian financial-product comparison is a big market — RATESDOTCA alone serves 8M+ Canadians a year across car, home, travel and life insurance, mortgages and credit cards, and independent rivals like RateHub operate at scale (LowestRates is part of the RATESDOTCA group). Plenty of consumer demand and institutional spend on customer acquisition.", "sources": ["https://www.ratehub.ca/insurance", "https://www.lowestrates.ca/"] },
-        "entry":      { "score": 5, "confidence": "med", "why": "Moderate-to-hard. It's a two-sided marketplace (needs both consumers and bidding institutions), plus financial-intermediary licensing and data-privacy obligations. Not as gated as a regulated pharma play, but the cold-start plus compliance is real work.", "sources": ["https://www.sharetribe.com/create/how-to-build-marketplace-for-financial-services/"] },
-        "cost":       { "score": 4, "confidence": "med", "why": "Moderate-to-high: app development, and — the big one — expensive two-sided customer acquisition, competing for consumer attention against incumbents with large marketing budgets while also onboarding institutions.", "sources": ["https://www.sharetribe.com/create/how-to-build-marketplace-for-financial-services/"] },
-        "saturation": { "score": 3, "confidence": "med", "why": "Crowded. Canada already has funded comparison/aggregator players — RATESDOTCA, LowestRates, RateHub, plus NerdWallet, HelloSafe, YouSet, ComparaSave. The 'institutions bid on your posted need' twist is a modest variation on lead-gen these players already do.", "sources": ["https://www.similarweb.com/website/ratehub.ca/competitors/"] },
-        "moat":       { "score": 3, "confidence": "med", "why": "Weak. The demand-led 'institutions come to you' inversion is a genuine UX differentiator but not a structural moat — incumbents already return multi-insurer quotes, already hold the network on both sides, and could add a 'post your need' flow. The proposed blockchain layer adds no defensibility (and raises data-privacy questions); it isn't a moat.", "sources": [] },
-        "margins":    { "score": 6, "confidence": "low", "why": "Intermediary economics can be healthy — commissions, lead-generation/referral fees and software margins — and scale well once the two-sided flywheel turns.", "sources": ["https://www.sharetribe.com/create/how-to-build-marketplace-for-financial-services/"] },
-        "founderFit": { "score": 6, "confidence": "med", "why": "A genuine strength: deep banking / finance / investment and consulting knowledge on the team is directly relevant to the products, the institutions and the unit economics. The gaps are consumer-fintech and app-scaling experience, and it leans heavily on one person's domain.", "sources": [] },
-        "risk":       { "score": 4, "confidence": "med", "why": "Moderate-to-high: a crowded, well-capitalised competitive set; the classic marketplace chicken-and-egg cold-start; financial-intermediary licensing and privacy (PIPEDA); and a blockchain element whose institution-adoption requirement echoes the failed B3i insurance consortium (Allianz, Munich Re, Swiss Re, Zurich et al.), which went insolvent in 2022, unable to raise further capital amid weak demand. Differentiation is currently thin.", "sources": ["https://www.similarweb.com/website/ratehub.ca/competitors/", "https://www.insurancejournal.com/news/international/2022/07/29/677926.htm"] }
+        "market": {
+          "score": 7,
+          "confidence": "med",
+          "why": "Large and active: Canadian financial-product comparison is a big market — RATESDOTCA alone serves 8M+ Canadians a year across car, home, travel and life insurance, mortgages and credit cards, and independent rivals like RateHub operate at scale (LowestRates is part of the RATESDOTCA group). Plenty of consumer demand and institutional spend on customer acquisition.",
+          "sources": [
+            "https://www.ratehub.ca/insurance",
+            "https://www.lowestrates.ca/"
+          ]
+        },
+        "entry": {
+          "score": 5,
+          "confidence": "med",
+          "why": "Moderate-to-hard. It's a two-sided marketplace (needs both consumers and bidding institutions), plus financial-intermediary licensing and data-privacy obligations. Not as gated as a regulated pharma play, but the cold-start plus compliance is real work.",
+          "sources": [
+            "https://www.sharetribe.com/create/how-to-build-marketplace-for-financial-services/"
+          ]
+        },
+        "cost": {
+          "score": 4,
+          "confidence": "med",
+          "why": "Moderate-to-high: app development, and — the big one — expensive two-sided customer acquisition, competing for consumer attention against incumbents with large marketing budgets while also onboarding institutions.",
+          "sources": [
+            "https://www.sharetribe.com/create/how-to-build-marketplace-for-financial-services/"
+          ]
+        },
+        "saturation": {
+          "score": 3,
+          "confidence": "med",
+          "why": "Crowded. Canada already has funded comparison/aggregator players — RATESDOTCA, LowestRates, RateHub, plus NerdWallet, HelloSafe, YouSet, ComparaSave. The 'institutions bid on your posted need' twist is a modest variation on lead-gen these players already do.",
+          "sources": [
+            "https://www.similarweb.com/website/ratehub.ca/competitors/"
+          ]
+        },
+        "moat": {
+          "score": 3,
+          "confidence": "med",
+          "why": "Weak. The demand-led 'institutions come to you' inversion is a genuine UX differentiator but not a structural moat — incumbents already return multi-insurer quotes, already hold the network on both sides, and could add a 'post your need' flow. The proposed blockchain layer adds no defensibility (and raises data-privacy questions); it isn't a moat.",
+          "sources": []
+        },
+        "margins": {
+          "score": 6,
+          "confidence": "low",
+          "why": "Intermediary economics can be healthy — commissions, lead-generation/referral fees and software margins — and scale well once the two-sided flywheel turns.",
+          "sources": [
+            "https://www.sharetribe.com/create/how-to-build-marketplace-for-financial-services/"
+          ]
+        },
+        "founderFit": {
+          "score": 6,
+          "confidence": "med",
+          "why": "A genuine strength: deep banking / finance / investment and consulting knowledge on the team is directly relevant to the products, the institutions and the unit economics. The gaps are consumer-fintech and app-scaling experience, and it leans heavily on one person's domain.",
+          "sources": []
+        },
+        "risk": {
+          "score": 4,
+          "confidence": "med",
+          "why": "Moderate-to-high: a crowded, well-capitalised competitive set; the classic marketplace chicken-and-egg cold-start; financial-intermediary licensing and privacy (PIPEDA); and a blockchain element whose institution-adoption requirement echoes the failed B3i insurance consortium (Allianz, Munich Re, Swiss Re, Zurich et al.), which went insolvent in 2022, unable to raise further capital amid weak demand. Differentiation is currently thin.",
+          "sources": [
+            "https://www.similarweb.com/website/ratehub.ca/competitors/",
+            "https://www.insurancejournal.com/news/international/2022/07/29/677926.htm"
+          ]
+        }
       },
       "businessCase": {
         "summary": "A demand-led financial marketplace that inverts how people shop for financial products: instead of searching comparison sites, a consumer posts what they want (e.g. scans an insurance policy up for renewal) and financial institutions come to them with competing quotes; the user picks the best. That 'post a need, institutions bid' inversion is the intended differentiator versus today's browse-and-compare aggregators. The category is real and large but well-served in Canada by funded players (RATESDOTCA, RateHub); the open questions are whether the pull model meaningfully out-converts incumbents — who already return multi-insurer quotes and could copy the flow — and whether the proposed blockchain layer adds anything a database can't.",
@@ -111,16 +289,74 @@
       "owner": "Dave",
       "status": "analyzed",
       "oneLiner": "A portfolio of small, identity-driven fashion and accessory brands, each for a specific underserved subculture — China-sourced and community-led.",
-      "tags": ["ecommerce", "fashion", "DTC", "China"],
+      "tags": [
+        "ecommerce",
+        "fashion",
+        "DTC",
+        "China"
+      ],
       "scores": {
-        "market":     { "score": 6, "confidence": "med", "why": "Global apparel/accessories is enormous, and the live trend genuinely favours this: community- and subculture-driven DTC, where tight, engaged micro-communities and niche influencers out-convert mass brands in a tighter-budget market. The catch is that each individual niche is small, so this is a portfolio of small bets rather than one big market.", "sources": ["https://www.lemuraknitwear.com/post/niche-streetwear-markets-targeting-subcultures-for-maximum-engagement", "https://www.gotolstoy.com/blog/fashion-marketing-trends"] },
-        "entry":      { "score": 8, "confidence": "high", "why": "Very low barriers — a Shopify store plus China low-MOQ or print-on-demand lets you launch a brand for a few thousand dollars, no licences. The flip side is that the same low barrier is why the space is so crowded.", "sources": ["https://www.sourcingyuan.com/low-moq-private-label/"] },
-        "cost":       { "score": 7, "confidence": "high", "why": "Cheap to start and test: a lean launch of a few styles is a low-thousands outlay (or near-zero on pure print-on-demand with no inventory), and heavyweight hoodies land around ~$14–28 FOB China. Main ongoing spend is design, creator/marketing and fulfilment.", "sources": ["https://sanchuanapparel.com/blog/clothing-manufacturing-cost-china-2026"] },
-        "saturation": { "score": 4, "confidence": "med", "why": "Apparel and accessories are savagely saturated (Shein, Temu, countless DTC brands), which drags the score — but genuinely specific, underserved niches (e.g. gay golfers) can be nearly uncontested. The differentiation lives entirely in how narrow and authentic the niche is.", "sources": ["https://www.saffronedge.com/blog/dtcs-fashion-and-apparel-industry-moving/"] },
-        "moat":       { "score": 4, "confidence": "med", "why": "Structurally weak — designs and niches are easily copied and there's no IP moat. The only durable moat is authentic brand and community loyalty, which is real if built but takes time and can't be faked (community-led buyers punish inauthenticity).", "sources": [] },
-        "margins":    { "score": 6, "confidence": "low", "why": "Apparel markups are decent (roughly 2–4x) and accessories often better, but marketing, returns and inventory eat into it; print-on-demand trades margin for zero inventory risk. Blended margin is moderate, and China sourcing keeps unit costs low.", "sources": ["https://sanchuanapparel.com/blog/clothing-manufacturing-cost-china-2026"] },
-        "founderFit": { "score": 7, "confidence": "med", "why": "The strongest fit of the ideas so far: the team combines China manufacturing/sourcing access with genuine marketing/creative and subculture instinct, plus finance/ops — which is most of what launching sourcing-and-marketing-led niche DTC brands needs. The gap is that no one has actually run a fashion/DTC brand or scaled ecommerce.", "sources": [] },
-        "risk":       { "score": 5, "confidence": "med", "why": "Capital-at-risk is low on a lean/print-on-demand path, but fashion has a high failure rate, real taste/trend risk, and running several micro-brands at once spreads focus and brand-building thin. Tariffs and shipping on China imports add cost and uncertainty.", "sources": ["https://www.sourcingyuan.com/startup-fashion-brands/"] }
+        "market": {
+          "score": 6,
+          "confidence": "med",
+          "why": "Global apparel/accessories is enormous, and the live trend genuinely favours this: community- and subculture-driven DTC, where tight, engaged micro-communities and niche influencers out-convert mass brands in a tighter-budget market. The catch is that each individual niche is small, so this is a portfolio of small bets rather than one big market.",
+          "sources": [
+            "https://www.lemuraknitwear.com/post/niche-streetwear-markets-targeting-subcultures-for-maximum-engagement",
+            "https://www.gotolstoy.com/blog/fashion-marketing-trends"
+          ]
+        },
+        "entry": {
+          "score": 8,
+          "confidence": "high",
+          "why": "Very low barriers — a Shopify store plus China low-MOQ or print-on-demand lets you launch a brand for a few thousand dollars, no licences. The flip side is that the same low barrier is why the space is so crowded.",
+          "sources": [
+            "https://www.sourcingyuan.com/low-moq-private-label/"
+          ]
+        },
+        "cost": {
+          "score": 7,
+          "confidence": "high",
+          "why": "Cheap to start and test: a lean launch of a few styles is a low-thousands outlay (or near-zero on pure print-on-demand with no inventory), and heavyweight hoodies land around ~$14–28 FOB China. Main ongoing spend is design, creator/marketing and fulfilment.",
+          "sources": [
+            "https://sanchuanapparel.com/blog/clothing-manufacturing-cost-china-2026"
+          ]
+        },
+        "saturation": {
+          "score": 4,
+          "confidence": "med",
+          "why": "Apparel and accessories are savagely saturated (Shein, Temu, countless DTC brands), which drags the score — but genuinely specific, underserved niches (e.g. gay golfers) can be nearly uncontested. The differentiation lives entirely in how narrow and authentic the niche is.",
+          "sources": [
+            "https://www.saffronedge.com/blog/dtcs-fashion-and-apparel-industry-moving/"
+          ]
+        },
+        "moat": {
+          "score": 4,
+          "confidence": "med",
+          "why": "Structurally weak — designs and niches are easily copied and there's no IP moat. The only durable moat is authentic brand and community loyalty, which is real if built but takes time and can't be faked (community-led buyers punish inauthenticity).",
+          "sources": []
+        },
+        "margins": {
+          "score": 6,
+          "confidence": "low",
+          "why": "Apparel markups are decent (roughly 2–4x) and accessories often better, but marketing, returns and inventory eat into it; print-on-demand trades margin for zero inventory risk. Blended margin is moderate, and China sourcing keeps unit costs low.",
+          "sources": [
+            "https://sanchuanapparel.com/blog/clothing-manufacturing-cost-china-2026"
+          ]
+        },
+        "founderFit": {
+          "score": 7,
+          "confidence": "med",
+          "why": "The strongest fit of the ideas so far: the team combines China manufacturing/sourcing access with genuine marketing/creative and subculture instinct, plus finance/ops — which is most of what launching sourcing-and-marketing-led niche DTC brands needs. The gap is that no one has actually run a fashion/DTC brand or scaled ecommerce.",
+          "sources": []
+        },
+        "risk": {
+          "score": 5,
+          "confidence": "med",
+          "why": "Capital-at-risk is low on a lean/print-on-demand path, but fashion has a high failure rate, real taste/trend risk, and running several micro-brands at once spreads focus and brand-building thin. Tariffs and shipping on China imports add cost and uncertainty.",
+          "sources": [
+            "https://www.sourcingyuan.com/startup-fashion-brands/"
+          ]
+        }
       },
       "businessCase": {
         "summary": "A 'house of brands' that launches a series of small, identity-driven fashion and accessory lines, each aimed at a specific underserved subculture (e.g. gay golfers, goth skiers, psychonauts), letting people 'wear their lifestyle.' China-sourced (low-MOQ or print-on-demand) and marketing-led, it rides the real shift toward community/subculture DTC where tight, engaged niches out-convert mass brands. The bet is a portfolio of cheap-to-launch micro-brands; the risk is apparel's brutal saturation and the focus-spreading of running many at once.",
@@ -144,16 +380,76 @@
       "owner": "Dave",
       "status": "analyzed",
       "oneLiner": "Farm genuine real wasabi and sell it at a premium to high-end Canadian restaurants — most restaurant 'wasabi' is actually dyed horseradish.",
-      "tags": ["agriculture", "food", "luxury", "Canada"],
+      "tags": [
+        "agriculture",
+        "food",
+        "luxury",
+        "Canada"
+      ],
       "scores": {
-        "market":     { "score": 5, "confidence": "med", "why": "Real wasabi is a scarce luxury — US$160–300/kg — precisely because it's so hard to grow that an estimated ~95% of restaurants serve an imitation (horseradish, mustard, dye). Demand for authenticity is real but narrow: genuine wasabi is used almost only at upscale establishments, and many diners actually prefer the sharper horseradish heat, so the addressable segment is the premium end only.", "sources": ["https://www.byfood.com/blog/culture/what-is-wasabi", "https://gemtaste.com/food/wasabi-so-expensive/"] },
-        "entry":      { "score": 2, "confidence": "high", "why": "Very high barriers. Wasabi is considered the hardest plant to grow commercially — it needs constant clean running water, shade, rocky soil and a steady 8–20°C, with stems partially submerged, and takes ~2 years to reach maturity. The specialist greenhouse know-how took the regional pioneer decades to develop.", "sources": ["https://www.byfood.com/blog/culture/what-is-wasabi", "https://nuvomagazine.com/palate/pacific-coast-wasabi"] },
-        "cost":       { "score": 2, "confidence": "med", "why": "High and front-loaded: a computer-controlled greenhouse with clean flowing-water systems and temperature/shade control, plus roughly a 2-year wait before the first harvest generates any revenue. Significant capital tied up before viability is even proven.", "sources": ["https://nuvomagazine.com/palate/pacific-coast-wasabi"] },
-        "saturation": { "score": 5, "confidence": "med", "why": "Real wasabi supply is genuinely scarce (attractive), but North America already has a single entrenched specialist — British Columbia's Pacific Coast Wasabi (now operating as Kawai BC after a New Zealand acquisition), described as North America's only commercial wasabi farm, which developed controlled-greenhouse cultivation and supplies restaurants and retailers. The 'sell to Canadian restaurants' niche is served by that one dominant incumbent on its home turf.", "sources": ["https://curiocity.com/vancouver-is-home-to-north-americas-only-wasabi-farm-heres-how-to-get-some/", "https://nuvomagazine.com/palate/pacific-coast-wasabi"] },
-        "moat":       { "score": 5, "confidence": "low", "why": "If you truly master the cultivation, the know-how plus scarcity is a genuine moat — but that's exactly the moat the incumbent already holds after decades of R&D, so a newcomer starts a long way behind rather than building a fresh advantage.", "sources": [] },
-        "margins":    { "score": 7, "confidence": "low", "why": "Real wasabi commands US$160–300/kg against a modest per-unit production cost at scale, so gross margins are high — conditional on actually growing it reliably, which is the hard part.", "sources": ["https://gemtaste.com/food/wasabi-so-expensive/"] },
-        "founderFit": { "score": 3, "confidence": "med", "why": "The core competency — growing the hardest commercial crop — is absent from the team. Engineering (controlled-environment systems) and Asian-restaurant market connections help at the margin, and the team is in the right region (Canada), but there is no agricultural or horticultural expertise, which is what this needs most.", "sources": [] },
-        "risk":       { "score": 3, "confidence": "med", "why": "Very high. Wasabi is famously the hardest commercial crop (disease, exacting conditions, frequent failure); the ~2-year payback ties up capital before viability is proven; an entrenched specialist already holds the know-how and the North American market; and demand is narrow. A lot can go wrong before any revenue arrives.", "sources": ["https://www.byfood.com/blog/culture/what-is-wasabi"] }
+        "market": {
+          "score": 5,
+          "confidence": "med",
+          "why": "Real wasabi is a scarce luxury — US$160–300/kg — precisely because it's so hard to grow that an estimated ~95% of restaurants serve an imitation (horseradish, mustard, dye). Demand for authenticity is real but narrow: genuine wasabi is used almost only at upscale establishments, and many diners actually prefer the sharper horseradish heat, so the addressable segment is the premium end only.",
+          "sources": [
+            "https://www.byfood.com/blog/culture/what-is-wasabi",
+            "https://gemtaste.com/food/wasabi-so-expensive/"
+          ]
+        },
+        "entry": {
+          "score": 2,
+          "confidence": "high",
+          "why": "Very high barriers. Wasabi is considered the hardest plant to grow commercially — it needs constant clean running water, shade, rocky soil and a steady 8–20°C, with stems partially submerged, and takes ~2 years to reach maturity. The specialist greenhouse know-how took the regional pioneer decades to develop.",
+          "sources": [
+            "https://www.byfood.com/blog/culture/what-is-wasabi",
+            "https://nuvomagazine.com/palate/pacific-coast-wasabi"
+          ]
+        },
+        "cost": {
+          "score": 2,
+          "confidence": "med",
+          "why": "High and front-loaded: a computer-controlled greenhouse with clean flowing-water systems and temperature/shade control, plus roughly a 2-year wait before the first harvest generates any revenue. Significant capital tied up before viability is even proven.",
+          "sources": [
+            "https://nuvomagazine.com/palate/pacific-coast-wasabi"
+          ]
+        },
+        "saturation": {
+          "score": 5,
+          "confidence": "med",
+          "why": "Real wasabi supply is genuinely scarce (attractive), but North America already has a single entrenched specialist — British Columbia's Pacific Coast Wasabi (now operating as Kawai BC after a New Zealand acquisition), described as North America's only commercial wasabi farm, which developed controlled-greenhouse cultivation and supplies restaurants and retailers. The 'sell to Canadian restaurants' niche is served by that one dominant incumbent on its home turf.",
+          "sources": [
+            "https://curiocity.com/vancouver-is-home-to-north-americas-only-wasabi-farm-heres-how-to-get-some/",
+            "https://nuvomagazine.com/palate/pacific-coast-wasabi"
+          ]
+        },
+        "moat": {
+          "score": 5,
+          "confidence": "low",
+          "why": "If you truly master the cultivation, the know-how plus scarcity is a genuine moat — but that's exactly the moat the incumbent already holds after decades of R&D, so a newcomer starts a long way behind rather than building a fresh advantage.",
+          "sources": []
+        },
+        "margins": {
+          "score": 7,
+          "confidence": "low",
+          "why": "Real wasabi commands US$160–300/kg against a modest per-unit production cost at scale, so gross margins are high — conditional on actually growing it reliably, which is the hard part.",
+          "sources": [
+            "https://gemtaste.com/food/wasabi-so-expensive/"
+          ]
+        },
+        "founderFit": {
+          "score": 3,
+          "confidence": "med",
+          "why": "The core competency — growing the hardest commercial crop — is absent from the team. Engineering (controlled-environment systems) and Asian-restaurant market connections help at the margin, and the team is in the right region (Canada), but there is no agricultural or horticultural expertise, which is what this needs most.",
+          "sources": []
+        },
+        "risk": {
+          "score": 3,
+          "confidence": "med",
+          "why": "Very high. Wasabi is famously the hardest commercial crop (disease, exacting conditions, frequent failure); the ~2-year payback ties up capital before viability is proven; an entrenched specialist already holds the know-how and the North American market; and demand is narrow. A lot can go wrong before any revenue arrives.",
+          "sources": [
+            "https://www.byfood.com/blog/culture/what-is-wasabi"
+          ]
+        }
       },
       "businessCase": {
         "summary": "Grow genuine real wasabi and sell it to high-end Canadian restaurants, trading on the fact that ~95% of restaurant 'wasabi' is actually dyed horseradish and real wasabi fetches US$160–300/kg. The scarcity and price are real — but so are the obstacles: wasabi is considered the hardest crop to grow commercially (about 2 years to maturity, exacting water/temperature/shade), the addressable market is narrow (only the premium end; mass diners accept the imitation), and British Columbia already hosts the established specialist, Pacific Coast Wasabi, which spent decades perfecting computer-controlled greenhouse cultivation and supplies restaurants worldwide. A capital- and expertise-heavy, long-payback play against an entrenched incumbent.",
@@ -177,16 +473,73 @@
       "owner": "Dave",
       "status": "analyzed",
       "oneLiner": "Import genuine real wasabi from Asia and distribute it to Canadian restaurants — competing with the domestic monopoly grower on origin and product range.",
-      "tags": ["import", "food", "distribution", "Canada"],
+      "tags": [
+        "import",
+        "food",
+        "distribution",
+        "Canada"
+      ],
       "scores": {
-        "market":     { "score": 5, "confidence": "med", "why": "Same scarce, premium demand as growing it — most of the best wasabi comes from Japan and limited fresh availability is a structural constraint, while restaurants increasingly prize authenticity (real B2B demand). The premium end is the core market, but carrying frozen/powder forms widens it beyond fresh-only buyers.", "sources": ["https://foodprint.org/blog/you-havent-had-wasabi-until-youve-had-it-fresh-and-local/", "https://www.fortunebusinessinsights.com/wasabi-market-110276"] },
-        "entry":      { "score": 5, "confidence": "med", "why": "Far easier than farming, but not frictionless: importing fresh rhizome is governed by CFIA phytosanitary rules (Directive D-94-26 for vegetables with attached roots — phytosanitary certificate, pest/soil-free, AIRS approval), and needs cold-chain handling. Shelf-stable forms (frozen grated, freeze-dried powder, paste) are much simpler to import.", "sources": ["https://inspection.canada.ca/plant-health/invasive-species/directives/horticulture/94-26", "https://realwasabi.com/blogs/news/how-to-store-and-preserve-fresh-wasabi-rhizomes"] },
-        "cost":       { "score": 6, "confidence": "med", "why": "No greenhouse and no 2-year wait — just working capital for inventory and freight (air freight for fresh), cold-chain handling and import compliance. You can start with a small trial shipment and a handful of restaurants, so cost-to-first-revenue is low.", "sources": [] },
-        "saturation": { "score": 5, "confidence": "med", "why": "Real-wasabi supply to Canada is scarce and there isn't a crowd of pure importers — but note the international pattern: the successful real-wasabi players (BC's Pacific Coast/Kawai, the UK's The Wasabi Company, Iceland's Nordic Wasabi, the US's Real Wasabi) mostly GROW locally for freshness rather than import. That's as much a competitive caution — a hint that fresh-and-local beats imported product — as it is open runway.", "sources": ["https://foodprint.org/blog/you-havent-had-wasabi-until-youve-had-it-fresh-and-local/"] },
-        "moat":       { "score": 4, "confidence": "med", "why": "Weak — importing and distribution are inherently replicable. The only real moat is locking an exclusive or preferential Asian supply relationship plus sticky restaurant accounts; without that, anyone can import the same product.", "sources": [] },
-        "margins":    { "score": 6, "confidence": "low", "why": "Real wasabi carries a high price, so distribution margins can be healthy, but freight, cold-chain and spoilage on fresh eat into them; shelf-stable frozen/powder forms carry better effective margins through far lower waste.", "sources": ["https://www.fortunebusinessinsights.com/wasabi-market-110276"] },
-        "founderFit": { "score": 6, "confidence": "med", "why": "A good fit — the team brings direct Asia-sourcing access and bilingual reach plus trade/finance skills, which is most of what importing and distributing needs, and a far better match than growing the crop. The gap is no food-import, distribution or cold-chain operating experience.", "sources": [] },
-        "risk":       { "score": 5, "confidence": "med", "why": "Fresh wasabi is highly perishable (~2–3 weeks refrigerated, and grated flavour starts to fade within ~15 minutes), so fresh imports carry waste and logistics risk; phytosanitary approval, currency and freight add friction; and the local grower has a fresher, no-shipping edge. But capital-at-risk is low and it's cheap to test — no 2-year crop bet.", "sources": ["https://realwasabi.com/blogs/news/how-to-store-and-preserve-fresh-wasabi-rhizomes"] }
+        "market": {
+          "score": 5,
+          "confidence": "med",
+          "why": "Same scarce, premium demand as growing it — most of the best wasabi comes from Japan and limited fresh availability is a structural constraint, while restaurants increasingly prize authenticity (real B2B demand). The premium end is the core market, but carrying frozen/powder forms widens it beyond fresh-only buyers.",
+          "sources": [
+            "https://foodprint.org/blog/you-havent-had-wasabi-until-youve-had-it-fresh-and-local/",
+            "https://www.fortunebusinessinsights.com/wasabi-market-110276"
+          ]
+        },
+        "entry": {
+          "score": 5,
+          "confidence": "med",
+          "why": "Far easier than farming, but not frictionless: importing fresh rhizome is governed by CFIA phytosanitary rules (Directive D-94-26 for vegetables with attached roots — phytosanitary certificate, pest/soil-free, AIRS approval), and needs cold-chain handling. Shelf-stable forms (frozen grated, freeze-dried powder, paste) are much simpler to import.",
+          "sources": [
+            "https://inspection.canada.ca/plant-health/invasive-species/directives/horticulture/94-26",
+            "https://realwasabi.com/blogs/news/how-to-store-and-preserve-fresh-wasabi-rhizomes"
+          ]
+        },
+        "cost": {
+          "score": 6,
+          "confidence": "med",
+          "why": "No greenhouse and no 2-year wait — just working capital for inventory and freight (air freight for fresh), cold-chain handling and import compliance. You can start with a small trial shipment and a handful of restaurants, so cost-to-first-revenue is low.",
+          "sources": []
+        },
+        "saturation": {
+          "score": 5,
+          "confidence": "med",
+          "why": "Real-wasabi supply to Canada is scarce and there isn't a crowd of pure importers — but note the international pattern: the successful real-wasabi players (BC's Pacific Coast/Kawai, the UK's The Wasabi Company, Iceland's Nordic Wasabi, the US's Real Wasabi) mostly GROW locally for freshness rather than import. That's as much a competitive caution — a hint that fresh-and-local beats imported product — as it is open runway.",
+          "sources": [
+            "https://foodprint.org/blog/you-havent-had-wasabi-until-youve-had-it-fresh-and-local/"
+          ]
+        },
+        "moat": {
+          "score": 4,
+          "confidence": "med",
+          "why": "Weak — importing and distribution are inherently replicable. The only real moat is locking an exclusive or preferential Asian supply relationship plus sticky restaurant accounts; without that, anyone can import the same product.",
+          "sources": []
+        },
+        "margins": {
+          "score": 6,
+          "confidence": "low",
+          "why": "Real wasabi carries a high price, so distribution margins can be healthy, but freight, cold-chain and spoilage on fresh eat into them; shelf-stable frozen/powder forms carry better effective margins through far lower waste.",
+          "sources": [
+            "https://www.fortunebusinessinsights.com/wasabi-market-110276"
+          ]
+        },
+        "founderFit": {
+          "score": 6,
+          "confidence": "med",
+          "why": "A good fit — the team brings direct Asia-sourcing access and bilingual reach plus trade/finance skills, which is most of what importing and distributing needs, and a far better match than growing the crop. The gap is no food-import, distribution or cold-chain operating experience.",
+          "sources": []
+        },
+        "risk": {
+          "score": 5,
+          "confidence": "med",
+          "why": "Fresh wasabi is highly perishable (~2–3 weeks refrigerated, and grated flavour starts to fade within ~15 minutes), so fresh imports carry waste and logistics risk; phytosanitary approval, currency and freight add friction; and the local grower has a fresher, no-shipping edge. But capital-at-risk is low and it's cheap to test — no 2-year crop bet.",
+          "sources": [
+            "https://realwasabi.com/blogs/news/how-to-store-and-preserve-fresh-wasabi-rhizomes"
+          ]
+        }
       },
       "businessCase": {
         "summary": "Rather than growing wasabi (a 2-year, high-failure crop dominated by BC's monopoly grower), import genuine real wasabi from Asia — primarily Japan — and distribute it to Canadian restaurants. The smart version carries a range: shelf-stable real-wasabi forms (frozen grated, freeze-dried powder, paste) for the broad premium market plus fresh rhizome by air freight for top-tier accounts, positioning on Japanese origin and product range against the local grower's freshness edge. Far lower barrier, cost and payback than farming, and a strong fit for the team's Asia-sourcing strength — but constrained by perishability, CFIA phytosanitary rules, and a telling pattern: the successful international real-wasabi players mostly grow locally for freshness rather than import, and the local incumbent has that same fresh, no-shipping advantage.",
@@ -210,16 +563,75 @@
       "owner": "Dave",
       "status": "analyzed",
       "oneLiner": "Import authenticated single-origin specialty foods — real wasabi, single-estate oils, single-origin spices — and sell them to premium Canadian restaurants and retailers with the provenance story attached.",
-      "tags": ["import", "food", "specialty", "Canada"],
+      "tags": [
+        "import",
+        "food",
+        "specialty",
+        "Canada"
+      ],
       "scores": {
-        "market":     { "score": 6, "confidence": "med", "why": "The premium end is real and growing: global gourmet food is ~US$542B in 2025 heading to ~US$931B by 2034 (~6.25% CAGR), specialty food is ~22% of US retail food & beverage, and premium kitchens already run high food costs (typically ~28–35% of revenue), so they absorb premium inputs. But the reachable Canadian slice for a small importer is a narrow premium segment — closer in scale to Canada's ~US$7B specialty-food-store market than the global headline.", "sources": ["https://www.fortunebusinessinsights.com/gourmet-food-market-111096", "https://www.specialtyfood.com/news-media/news-features/association-press-releases/specialty-food-and-beverage-sales-expected-to-reach-207-billion-in-2023-according-to-state-of-the-s", "https://www.xenia.team/articles/average-restaurant-food-cost", "https://www.ibisworld.com/canada/market-research-reports/specialty-food-stores-industry/"] },
-        "entry":      { "score": 6, "confidence": "med", "why": "Lower than making or growing anything — you source existing product — but not frictionless. Importing food into Canada requires a Safe Food for Canadians licence (CFIA won't clear shipments at the border, and processing runs ~70 business days), plus cold-chain handling for perishables and supplier relationships across categories. Shelf-stable goods (oils, spices, powders) are far simpler than fresh.", "sources": ["https://inspection.canada.ca/en/food-licences/importing-food"] },
-        "cost":       { "score": 6, "confidence": "med", "why": "Cheap to first revenue: working capital for inventory and freight, cold-chain handling, and import compliance — you can start with a small trial shipment and a handful of accounts. No facility build and no crop wait.", "sources": [] },
-        "saturation": { "score": 4, "confidence": "med", "why": "Contested. Canada already has established premium specialty-food importers and distributors — Qualifirst positions itself as a leading Canadian premium specialty importer, alongside broadliners like Gordon Food Service — so the importing lane itself is served. The single-origin/provenance angle is less crowded, but you'd be entering an occupied channel.", "sources": ["https://www.qualifirst.com/", "https://gfs.ca/en-ca/"] },
-        "moat":       { "score": 3, "confidence": "med", "why": "Weak — a specialty importer is a replaceable middleman. Provenance here rests on supplier certifications (PDO/PGI/DOP) and sourcing relationships rather than any owned, hard-to-copy capability, so anyone can import the same goods. The only durable edge is locking exclusive or preferential single-origin supply lines.", "sources": [] },
-        "margins":    { "score": 5, "confidence": "low", "why": "Thin, as distribution goes. Specialty distributors earn better gross margins than broadline (~24% at a listed specialty comparable) but net margins stay slim (~1.5%), and freight, cold-chain and spoilage on perishables eat in.", "sources": ["https://www.globenewswire.com/news-release/2025/02/12/3024884/15197/en/The-Chefs-Warehouse-Reports-Fourth-Quarter-2024-Financial-Results.html"] },
-        "founderFit": { "score": 5, "confidence": "med", "why": "Partial. The team's overseas-sourcing strength is region-specific — a strong match for Asian-origin goods like real wasabi, but it doesn't extend to Mediterranean single-estate oils or mixed-origin spices, so the edge is diluted across a general basket. Trade/finance and marketing skills fit the import and restaurant-sales sides; the gap is no food-import, distribution or cold-chain operating experience.", "sources": [] },
-        "risk":       { "score": 5, "confidence": "med", "why": "Contained. Capital-at-risk is low — a small trial shipment tests demand cheaply — but the position is structurally weak (replaceable middleman, thin margins), perishables carry spoilage and logistics risk, and CFIA's ~70-business-day licensing is a real lead-time gate. Downside is bounded; upside is capped without exclusive supply.", "sources": ["https://inspection.canada.ca/en/food-licences/importing-food"] }
+        "market": {
+          "score": 6,
+          "confidence": "med",
+          "why": "The premium end is real and growing: global gourmet food is ~US$542B in 2025 heading to ~US$931B by 2034 (~6.25% CAGR), specialty food is ~22% of US retail food & beverage, and premium kitchens already run high food costs (typically ~28–35% of revenue), so they absorb premium inputs. But the reachable Canadian slice for a small importer is a narrow premium segment — closer in scale to Canada's ~US$7B specialty-food-store market than the global headline.",
+          "sources": [
+            "https://www.fortunebusinessinsights.com/gourmet-food-market-111096",
+            "https://www.specialtyfood.com/news-media/news-features/association-press-releases/specialty-food-and-beverage-sales-expected-to-reach-207-billion-in-2023-according-to-state-of-the-s",
+            "https://www.xenia.team/articles/average-restaurant-food-cost",
+            "https://www.ibisworld.com/canada/market-research-reports/specialty-food-stores-industry/"
+          ]
+        },
+        "entry": {
+          "score": 6,
+          "confidence": "med",
+          "why": "Lower than making or growing anything — you source existing product — but not frictionless. Importing food into Canada requires a Safe Food for Canadians licence (CFIA won't clear shipments at the border, and processing runs ~70 business days), plus cold-chain handling for perishables and supplier relationships across categories. Shelf-stable goods (oils, spices, powders) are far simpler than fresh.",
+          "sources": [
+            "https://inspection.canada.ca/en/food-licences/importing-food"
+          ]
+        },
+        "cost": {
+          "score": 6,
+          "confidence": "med",
+          "why": "Cheap to first revenue: working capital for inventory and freight, cold-chain handling, and import compliance — you can start with a small trial shipment and a handful of accounts. No facility build and no crop wait.",
+          "sources": []
+        },
+        "saturation": {
+          "score": 4,
+          "confidence": "med",
+          "why": "Contested. Canada already has established premium specialty-food importers and distributors — Qualifirst positions itself as a leading Canadian premium specialty importer, alongside broadliners like Gordon Food Service — so the importing lane itself is served. The single-origin/provenance angle is less crowded, but you'd be entering an occupied channel.",
+          "sources": [
+            "https://www.qualifirst.com/",
+            "https://gfs.ca/en-ca/"
+          ]
+        },
+        "moat": {
+          "score": 3,
+          "confidence": "med",
+          "why": "Weak — a specialty importer is a replaceable middleman. Provenance here rests on supplier certifications (PDO/PGI/DOP) and sourcing relationships rather than any owned, hard-to-copy capability, so anyone can import the same goods. The only durable edge is locking exclusive or preferential single-origin supply lines.",
+          "sources": []
+        },
+        "margins": {
+          "score": 5,
+          "confidence": "low",
+          "why": "Thin, as distribution goes. Specialty distributors earn better gross margins than broadline (~24% at a listed specialty comparable) but net margins stay slim (~1.5%), and freight, cold-chain and spoilage on perishables eat in.",
+          "sources": [
+            "https://www.globenewswire.com/news-release/2025/02/12/3024884/15197/en/The-Chefs-Warehouse-Reports-Fourth-Quarter-2024-Financial-Results.html"
+          ]
+        },
+        "founderFit": {
+          "score": 5,
+          "confidence": "med",
+          "why": "Partial. The team's overseas-sourcing strength is region-specific — a strong match for Asian-origin goods like real wasabi, but it doesn't extend to Mediterranean single-estate oils or mixed-origin spices, so the edge is diluted across a general basket. Trade/finance and marketing skills fit the import and restaurant-sales sides; the gap is no food-import, distribution or cold-chain operating experience.",
+          "sources": []
+        },
+        "risk": {
+          "score": 5,
+          "confidence": "med",
+          "why": "Contained. Capital-at-risk is low — a small trial shipment tests demand cheaply — but the position is structurally weak (replaceable middleman, thin margins), perishables carry spoilage and logistics risk, and CFIA's ~70-business-day licensing is a real lead-time gate. Downside is bounded; upside is capped without exclusive supply.",
+          "sources": [
+            "https://inspection.canada.ca/en/food-licences/importing-food"
+          ]
+        }
       },
       "businessCase": {
         "summary": "Import authenticated single-origin specialty foods — real (Japanese) wasabi, single-estate olive oils, single-origin spices — and distribute them to premium Canadian restaurants and retailers on the strength of a provenance story, in a category where authenticity is both a selling point and a defence against the widespread adulteration that plagues products like olive oil and wasabi. The premium market is real and growing, and importing is cheap to test — but it's a replaceable-middleman position with thin distribution margins, an already-served Canadian channel, and provenance that rests on supplier certifications rather than any owned capability.",
@@ -243,16 +655,74 @@
       "owner": "Dave",
       "status": "analyzed",
       "oneLiner": "A specialty-food distribution brand whose entire pitch is proven origin and traceability — competing on verified authenticity against the commodity substitutes that dominate categories like olive oil, spices and wasabi.",
-      "tags": ["food", "brand", "traceability", "Canada"],
+      "tags": [
+        "food",
+        "brand",
+        "traceability",
+        "Canada"
+      ],
       "scores": {
-        "market":     { "score": 6, "confidence": "med", "why": "Strong demand signal. Beyond a growing gourmet market (~6.25% CAGR), willingness-to-pay for provenance is well evidenced — an IBM/NRF study found 71% of transparency-minded consumers will pay a premium (about 37% more) for full traceability, and the food-traceability-technology market is growing from ~US$21B (2024) to ~US$46B (2034, ~7.86% CAGR) — an adjacent signal of how fast provenance is being invested in, not the market this business itself sells into. The catch is that the reachable Canadian premium-B2B slice is still narrow relative to those global figures.", "sources": ["https://www.prnewswire.com/news-releases/ibm-study-purpose-and-provenance-drive-bigger-profits-for-consumer-goods-in-2020-300984746.html", "https://www.globenewswire.com/news-release/2026/07/17/3328990/0/en/Latest-Food-Traceability-Technology-Market-Size-Expected-to-Reach-USD-46-27-Billion-by-2034-With-7-86-CAGR.html", "https://www.fortunebusinessinsights.com/gourmet-food-market-111096"] },
-        "entry":      { "score": 4, "confidence": "med", "why": "Harder than plain importing. On top of the same sourcing and CFIA import requirements, this needs a brand built from scratch and — to be more than a slogan — an actual verification/traceability capability. That's a slower, heavier lift than reselling existing product.", "sources": ["https://inspection.canada.ca/en/food-licences/importing-food"] },
-        "cost":       { "score": 4, "confidence": "med", "why": "Capital-hungry and slower to revenue. Brand-building, marketing and standing up a credible traceability/certification system are real ongoing investments with a longer runway before the premium pays back — unlike a lean importer's quick trial shipment.", "sources": [] },
-        "saturation": { "score": 6, "confidence": "med", "why": "Open. Provenance-as-the-whole-pitch exists in single niches (real wasabi, single-estate olive oil) and among US luxury purveyors (e.g. Regalis Foods' direct-sourcing story), but a broadline Canadian distributor whose entire brand is cross-category authenticated single-origin traceability appears to be white space.", "sources": ["https://www.regalisfoods.com/"] },
-        "moat":       { "score": 5, "confidence": "med", "why": "Conditional but potentially strong — a trusted brand plus a genuine, hard-to-copy verification capability (lab testing, third-party certification, chain-of-custody) would be defensible, especially given documented fraud in the target categories (a UC Davis study found ~69% of imported olive oils failed extra-virgin standards). But that moat exists only if verification is a real capability; if it stays a story, competitors copy it and the edge collapses.", "sources": ["https://www.ucdavis.edu/news/most-imported-olive-oils-don%E2%80%99t-match-%E2%80%98extra-virgin%E2%80%99-claims-study-finds"] },
-        "margins":    { "score": 6, "confidence": "low", "why": "Premiumisation supports a real price premium — buyers say they would pay ~37% more for verified traceability — lifting gross margins above commodity distribution. But it's still a distribution business with thin net margins (~1.5% at a listed specialty comparable) plus the added cost of running verification.", "sources": ["https://www.prnewswire.com/news-releases/ibm-study-purpose-and-provenance-drive-bigger-profits-for-consumer-goods-in-2020-300984746.html", "https://www.globenewswire.com/news-release/2025/02/12/3024884/15197/en/The-Chefs-Warehouse-Reports-Fourth-Quarter-2024-Financial-Results.html"] },
-        "founderFit": { "score": 4, "confidence": "med", "why": "Partial and mixed. The team's marketing/creative strength genuinely fits building a brand, and finance suits raising the capital it needs — but its overseas-sourcing edge is region-specific and barely applies to an origin-agnostic, cross-category brand, and no one brings food distribution, certification/traceability, or the operating experience the verification claim demands.", "sources": [] },
-        "risk":       { "score": 4, "confidence": "med", "why": "Moderate. A bigger, slower bet than the lean importer — more upfront capital and a longer payback — and the load-bearing risk is execution: if 'verified origin' isn't a genuine capability, it's a copyable slogan. Downside is contained (no real-estate or crop bet), but the brand-building may not pay back.", "sources": [] }
+        "market": {
+          "score": 6,
+          "confidence": "med",
+          "why": "Strong demand signal. Beyond a growing gourmet market (~6.25% CAGR), willingness-to-pay for provenance is well evidenced — an IBM/NRF study found 71% of transparency-minded consumers will pay a premium (about 37% more) for full traceability, and the food-traceability-technology market is growing from ~US$21B (2024) to ~US$46B (2034, ~7.86% CAGR) — an adjacent signal of how fast provenance is being invested in, not the market this business itself sells into. The catch is that the reachable Canadian premium-B2B slice is still narrow relative to those global figures.",
+          "sources": [
+            "https://www.prnewswire.com/news-releases/ibm-study-purpose-and-provenance-drive-bigger-profits-for-consumer-goods-in-2020-300984746.html",
+            "https://www.globenewswire.com/news-release/2026/07/17/3328990/0/en/Latest-Food-Traceability-Technology-Market-Size-Expected-to-Reach-USD-46-27-Billion-by-2034-With-7-86-CAGR.html",
+            "https://www.fortunebusinessinsights.com/gourmet-food-market-111096"
+          ]
+        },
+        "entry": {
+          "score": 4,
+          "confidence": "med",
+          "why": "Harder than plain importing. On top of the same sourcing and CFIA import requirements, this needs a brand built from scratch and — to be more than a slogan — an actual verification/traceability capability. That's a slower, heavier lift than reselling existing product.",
+          "sources": [
+            "https://inspection.canada.ca/en/food-licences/importing-food"
+          ]
+        },
+        "cost": {
+          "score": 4,
+          "confidence": "med",
+          "why": "Capital-hungry and slower to revenue. Brand-building, marketing and standing up a credible traceability/certification system are real ongoing investments with a longer runway before the premium pays back — unlike a lean importer's quick trial shipment.",
+          "sources": []
+        },
+        "saturation": {
+          "score": 6,
+          "confidence": "med",
+          "why": "Open. Provenance-as-the-whole-pitch exists in single niches (real wasabi, single-estate olive oil) and among US luxury purveyors (e.g. Regalis Foods' direct-sourcing story), but a broadline Canadian distributor whose entire brand is cross-category authenticated single-origin traceability appears to be white space.",
+          "sources": [
+            "https://www.regalisfoods.com/"
+          ]
+        },
+        "moat": {
+          "score": 5,
+          "confidence": "med",
+          "why": "Conditional but potentially strong — a trusted brand plus a genuine, hard-to-copy verification capability (lab testing, third-party certification, chain-of-custody) would be defensible, especially given documented fraud in the target categories (a UC Davis study found ~69% of imported olive oils failed extra-virgin standards). But that moat exists only if verification is a real capability; if it stays a story, competitors copy it and the edge collapses.",
+          "sources": [
+            "https://www.ucdavis.edu/news/most-imported-olive-oils-don%E2%80%99t-match-%E2%80%98extra-virgin%E2%80%99-claims-study-finds"
+          ]
+        },
+        "margins": {
+          "score": 6,
+          "confidence": "low",
+          "why": "Premiumisation supports a real price premium — buyers say they would pay ~37% more for verified traceability — lifting gross margins above commodity distribution. But it's still a distribution business with thin net margins (~1.5% at a listed specialty comparable) plus the added cost of running verification.",
+          "sources": [
+            "https://www.prnewswire.com/news-releases/ibm-study-purpose-and-provenance-drive-bigger-profits-for-consumer-goods-in-2020-300984746.html",
+            "https://www.globenewswire.com/news-release/2025/02/12/3024884/15197/en/The-Chefs-Warehouse-Reports-Fourth-Quarter-2024-Financial-Results.html"
+          ]
+        },
+        "founderFit": {
+          "score": 4,
+          "confidence": "med",
+          "why": "Partial and mixed. The team's marketing/creative strength genuinely fits building a brand, and finance suits raising the capital it needs — but its overseas-sourcing edge is region-specific and barely applies to an origin-agnostic, cross-category brand, and no one brings food distribution, certification/traceability, or the operating experience the verification claim demands.",
+          "sources": []
+        },
+        "risk": {
+          "score": 4,
+          "confidence": "med",
+          "why": "Moderate. A bigger, slower bet than the lean importer — more upfront capital and a longer payback — and the load-bearing risk is execution: if 'verified origin' isn't a genuine capability, it's a copyable slogan. Downside is contained (no real-estate or crop bet), but the brand-building may not pay back.",
+          "sources": []
+        }
       },
       "businessCase": {
         "summary": "A specialty-food distribution brand whose entire identity is proven origin and traceability — turning verified authenticity into the product itself and competing against the commodity substitutes that pervade categories like olive oil (a UC Davis study found ~69% of imported oils failed extra-virgin standards), spices (also widely adulterated) and wasabi. Demand for provenance is well evidenced (buyers say they would pay ~37% more for full traceability) and a cross-category Canadian provenance-first distributor looks like white space — but the model's whole moat rests on whether 'verified' is a real, hard-to-copy capability or just a slogan, and building a brand plus a verification system is slow and capital-hungry.",
@@ -276,16 +746,70 @@
       "owner": "Dave",
       "status": "analyzed",
       "oneLiner": "A subscription that connects restaurants to a rotating selection of authenticated specialty ingredients, each delivered with an origin dossier — a curated 'ingredient club' for chefs.",
-      "tags": ["food", "subscription", "B2B", "Canada"],
+      "tags": [
+        "food",
+        "subscription",
+        "B2B",
+        "Canada"
+      ],
       "scores": {
-        "market":     { "score": 5, "confidence": "med", "why": "The underlying demand (chefs wanting authentic, story-rich ingredients) is real, but the specific model is largely unproven B2B: curated rotating-ingredient subscriptions work consumer-side (e.g. single-origin spice clubs), while the nearest restaurant-facing analogue — CookUnity's Ingredients Club — is group-purchasing, not curation. So the addressable, proven market is thin and speculative rather than cleanly sized.", "sources": ["https://www.cookunity.com/ingredientsclub", "https://curiospice.com/"] },
-        "entry":      { "score": 4, "confidence": "med", "why": "A two-sided cold-start plus operational drag: you need enough restaurants subscribing and a reliable rotating authenticated supply at once, on top of curation labour, cold-chain fulfilment and CFIA import compliance. Harder to get going than a straightforward importer.", "sources": ["https://inspection.canada.ca/en/food-licences/importing-food"] },
-        "cost":       { "score": 5, "confidence": "med", "why": "Moderate. A pilot with a few restaurants and a small rotating range can start fairly lean, but curation, per-drop fulfilment/cold-chain and sourcing rotating SKUs add ongoing cost, and subscription models carry churn and spoilage risk.", "sources": [] },
-        "saturation": { "score": 6, "confidence": "med", "why": "White space — but partly because it's unproven. There is no established restaurant-facing curated rotating-ingredient subscription; the model exists only consumer-side, so there's no direct competitor, but also no proof the B2B version works.", "sources": ["https://www.cookunity.com/ingredientsclub"] },
-        "moat":       { "score": 4, "confidence": "med", "why": "Modest. A recurring subscription plus curation expertise and origin dossiers builds some stickiness and switching cost — more than a transactional importer — but the format is copyable and a thin two-sided network isn't defensible at small scale.", "sources": [] },
-        "margins":    { "score": 6, "confidence": "low", "why": "Recurring subscription revenue and curation markups can beat transactional distribution on margin and retention, and B2B delivery consolidation lowers per-drop cost versus consumer boxes — but curation labour, fulfilment and spoilage on rotating perishables eat in.", "sources": [] },
-        "founderFit": { "score": 4, "confidence": "med", "why": "Partial. Finance and marketing fit the subscription/growth and curation-storytelling sides, and overseas sourcing helps for some ingredients — but no one brings foodservice, curation, subscription operations or cold-chain fulfilment experience, and running a two-sided B2B platform is outside the team's track record.", "sources": [] },
-        "risk":       { "score": 4, "confidence": "med", "why": "The headline risk is that the model itself is unproven B2B — demand for a rotating curated ingredient subscription among restaurants may not materialise. Add the two-sided cold-start, subscription churn, and spoilage on rotating perishables. Capital-at-risk on a pilot is contained, but the odds of the model not working are the real exposure.", "sources": ["https://www.cookunity.com/ingredientsclub"] }
+        "market": {
+          "score": 5,
+          "confidence": "med",
+          "why": "The underlying demand (chefs wanting authentic, story-rich ingredients) is real, but the specific model is largely unproven B2B: curated rotating-ingredient subscriptions work consumer-side (e.g. single-origin spice clubs), while the nearest restaurant-facing analogue — CookUnity's Ingredients Club — is group-purchasing, not curation. So the addressable, proven market is thin and speculative rather than cleanly sized.",
+          "sources": [
+            "https://www.cookunity.com/ingredientsclub",
+            "https://curiospice.com/"
+          ]
+        },
+        "entry": {
+          "score": 4,
+          "confidence": "med",
+          "why": "A two-sided cold-start plus operational drag: you need enough restaurants subscribing and a reliable rotating authenticated supply at once, on top of curation labour, cold-chain fulfilment and CFIA import compliance. Harder to get going than a straightforward importer.",
+          "sources": [
+            "https://inspection.canada.ca/en/food-licences/importing-food"
+          ]
+        },
+        "cost": {
+          "score": 5,
+          "confidence": "med",
+          "why": "Moderate. A pilot with a few restaurants and a small rotating range can start fairly lean, but curation, per-drop fulfilment/cold-chain and sourcing rotating SKUs add ongoing cost, and subscription models carry churn and spoilage risk.",
+          "sources": []
+        },
+        "saturation": {
+          "score": 6,
+          "confidence": "med",
+          "why": "White space — but partly because it's unproven. There is no established restaurant-facing curated rotating-ingredient subscription; the model exists only consumer-side, so there's no direct competitor, but also no proof the B2B version works.",
+          "sources": [
+            "https://www.cookunity.com/ingredientsclub"
+          ]
+        },
+        "moat": {
+          "score": 4,
+          "confidence": "med",
+          "why": "Modest. A recurring subscription plus curation expertise and origin dossiers builds some stickiness and switching cost — more than a transactional importer — but the format is copyable and a thin two-sided network isn't defensible at small scale.",
+          "sources": []
+        },
+        "margins": {
+          "score": 6,
+          "confidence": "low",
+          "why": "Recurring subscription revenue and curation markups can beat transactional distribution on margin and retention, and B2B delivery consolidation lowers per-drop cost versus consumer boxes — but curation labour, fulfilment and spoilage on rotating perishables eat in.",
+          "sources": []
+        },
+        "founderFit": {
+          "score": 4,
+          "confidence": "med",
+          "why": "Partial. Finance and marketing fit the subscription/growth and curation-storytelling sides, and overseas sourcing helps for some ingredients — but no one brings foodservice, curation, subscription operations or cold-chain fulfilment experience, and running a two-sided B2B platform is outside the team's track record.",
+          "sources": []
+        },
+        "risk": {
+          "score": 4,
+          "confidence": "med",
+          "why": "The headline risk is that the model itself is unproven B2B — demand for a rotating curated ingredient subscription among restaurants may not materialise. Add the two-sided cold-start, subscription churn, and spoilage on rotating perishables. Capital-at-risk on a pilot is contained, but the odds of the model not working are the real exposure.",
+          "sources": [
+            "https://www.cookunity.com/ingredientsclub"
+          ]
+        }
       },
       "businessCase": {
         "summary": "A subscription 'ingredient club' for chefs: restaurants pay a recurring fee for a rotating, curated selection of authenticated specialty ingredients, each with an origin dossier telling its provenance story. Recurring revenue and curation could give better margins and stickiness than transactional distribution — but it is a notably unproven model: curated rotating-ingredient subscriptions work consumer-side, while the closest restaurant-facing model (CookUnity's Ingredients Club) is group-purchasing, not curation, so demand for the B2B version is unproven and it faces a two-sided cold-start.",
@@ -307,33 +831,358 @@
       "id": "single-sport-social-franchise",
       "title": "Single-sport Social Franchise",
       "owner": "Dave",
-      "status": "analyzed",
-      "oneLiner": "A branded, franchisable venue built around one modernised game — automated scoring, leaderboards and a strong food-and-drink attach — landing the competitive-socialising wave in an underserved Canadian market.",
-      "tags": ["hospitality", "experiential", "franchise", "Canada"],
+      "status": "refined",
+      "refinedThrough": "2026-07-27T19:01:47.503Z",
+      "oneLiner": "A branded, franchisable competitive-socialising venue built around one modernised, digitally-scored game — scoped to a lower-capital format (electronic darts the lead candidate) with a built-in league and membership engine, in an under-served Canadian market.",
+      "tags": [
+        "hospitality",
+        "experiential",
+        "franchise",
+        "Canada"
+      ],
       "scores": {
-        "market":     { "score": 7, "confidence": "med", "why": "Competitive socialising is one of hospitality's fastest-growing formats — concepts have grown ~386% since the start of 2021 — and the wider location-based-entertainment market is put at ~US$23B in 2025 rising to ~US$58.5B by 2035 (~9.7% CAGR). Demand skews to the younger, experience-over-things spenders these venues target. The reachable Canadian slice is smaller than the global headline, but the growth is real and the demand is proven.", "sources": ["https://www.cushmanwakefield.com/en/insights/from-putt-to-pint-everyone-wins-with-competitive-socializing", "https://www.marketresearchfuture.com/reports/location-based-entertainment-market-24252"] },
-        "entry":      { "score": 3, "confidence": "high", "why": "High barriers. This is a capital- and real-estate-bound build: even a small-footprint single-game concept (Five Iron Golf is the closest analogue) runs roughly US$1.7–4.3M to build out, plus prime-location leases, liquor licensing and a 10–15-month build before doors open. Far harder to start than an asset-light play.", "sources": ["https://sharpsheets.io/blog/five-iron-golf-franchise-fdd-profits-costs/", "https://www.sec.gov/Archives/edgar/data/837465/000083746525000024/modg-20241231.htm"] },
-        "cost":       { "score": 3, "confidence": "med", "why": "Startup cost is high and time-to-revenue long: a first company-owned proof venue is a multi-million-dollar outlay with many months of build before any revenue, and the concept must be proven before franchising can scale it capital-light. This is a large upfront bet, not a cheap test.", "sources": ["https://sharpsheets.io/blog/five-iron-golf-franchise-fdd-profits-costs/", "https://www.sec.gov/Archives/edgar/data/837465/000083746525000024/modg-20241231.htm"] },
-        "saturation": { "score": 6, "confidence": "med", "why": "Canada is genuinely underserved by branded, tech-scored single-game concepts — no permanent Topgolf (its 2017 Cineplex JV was cancelled), and no Puttshack, Flight Club, F1 Arcade, Swingers or Five Iron venues here. The market is served mainly by one multi-game incumbent (Cineplex's The Rec Room) plus fragmented independents and the Canadian-founded Activate. Real whitespace — tempered by a broader experiential category filling fast, with UK commentators already warning of saturation.", "sources": ["https://en.wikipedia.org/wiki/Topgolf", "https://www.savills.co.uk/research_articles/229130/388823-0"] },
-        "moat":       { "score": 5, "confidence": "med", "why": "Moderate. A recognisable brand, secured prime locations and a franchise network are genuinely defensible once built, and being first with a branded single-game concept in Canada helps. But the core concept and the automated-scoring tech are replicable, and well-funded international operators (Topgolf, Puttshack, F1 Arcade) could expand north — so the moat is built through brand and footprint, not owned from day one.", "sources": [] },
-        "margins":    { "score": 6, "confidence": "low", "why": "Mixed but scalable. Food-and-drink attach is high-margin and material — ~35% of revenue at a category benchmark (Bowlero) — and once proven the franchise layer earns capital-light royalties (a comparable concept charges ~7% royalty + 2% marketing) that scale well. Offsetting this, venue-level economics carry heavy fixed costs (rent, staff) and are exposed to post-novelty softening.", "sources": ["https://www.sec.gov/Archives/edgar/data/1840572/000162828024039546/bowl-20240630.htm", "https://sharpsheets.io/blog/five-iron-golf-franchise-fdd-profits-costs/"] },
-        "founderFit": { "score": 4, "confidence": "med", "why": "Partial. The team's finance/investment and consulting depth fits the franchise economics, capital-raising and unit-economics modelling, and its marketing/creative strength suits brand-building — but no one has hospitality, multi-unit venue operations or real-estate-development experience, which is the core competency here, and the capital intensity sits far from the team's leaner, asset-light strengths.", "sources": [] },
-        "risk":       { "score": 3, "confidence": "med", "why": "High. This is a capital-heavy, real-estate-bound bet where a miss is a large loss, not a cheap lesson: novelty/fad risk is real (category leader Topgolf saw same-venue sales fall ~8.6% in 2024), fixed costs are heavy (fast-growing F1 Arcade was still EBITDA-negative in 2024), a single-game concept has no menu-mix hedge if that game cools, and the broader space may be nearing saturation.", "sources": ["https://www.sec.gov/Archives/edgar/data/837465/000083746525000024/modg-20241231.htm", "https://www.thembsgroup.co.uk/external/f1-arcade-reports-31-9m-revenue-as-us-expansion-accelerates/", "https://www.savills.co.uk/research_articles/229130/388823-0"] }
+        "market": {
+          "score": 7,
+          "confidence": "med",
+          "why": "Competitive socialising is one of hospitality's fastest-growing formats — concepts have grown ~386% since the start of 2021 — and the wider location-based-entertainment market is put at ~US$23B in 2025 rising to ~US$58.5B by 2035 (~9.7% CAGR). Demand skews to the younger, experience-over-things spenders these venues target. The reachable Canadian slice is smaller than the global headline, but the growth is real and proven.",
+          "sources": [
+            "https://www.cushmanwakefield.com/en/insights/from-putt-to-pint-everyone-wins-with-competitive-socializing",
+            "https://www.marketresearchfuture.com/reports/location-based-entertainment-market-24252"
+          ]
+        },
+        "entry": {
+          "score": 5,
+          "confidence": "med",
+          "why": "A lower-capital format is materially easier to enter. A modernised electronic-darts bar is a bar-scale fit-out plus cheap digitally-scored stations (camera auto-scoring stations ~US$1,000-2,300) rather than a multi-million big-box — dramatically easier and cheaper to open — though it still needs a venue lease, liquor licensing and hospitality operations.",
+          "sources": [
+            "https://usadartstore.com/collections/scolia-automatic-scoring-systems-for-darts"
+          ]
+        },
+        "cost": {
+          "score": 5,
+          "confidence": "med",
+          "why": "A single proof venue in a low-capex format (a darts bar) is roughly a bar-scale fit-out — on the order of hundreds of thousands rather than the US$18-35M of a Topgolf-style big-box — so the upfront bet and time-to-revenue shrink to something a small team could plausibly fund or raise for. A golf-simulator lounge is a proven but pricier alternative (franchised buildouts ~US$1.0-1.8M).",
+          "sources": [
+            "https://www.vettedbiz.com/x-golf-franchise/"
+          ]
+        },
+        "saturation": {
+          "score": 6,
+          "confidence": "med",
+          "why": "The under-served formats sit at the low-capex end: electronic darts has almost no branded presence in Canada (essentially one Toronto venue), and duckpin/mini-bowling and shuffleboard have no franchised operator here — genuine whitespace for a new franchisor. Golf simulators are more crowded, already served by many Canadian independents, and the broader socialising category is filling fast.",
+          "sources": [
+            "https://oche.com/ca/kingwest"
+          ]
+        },
+        "moat": {
+          "score": 5,
+          "confidence": "med",
+          "why": "A modernised single-game format is easy to copy, so the moat is a recognisable brand, a franchise network and — crucial for a single-game concept — a built-in league and membership engine that drives repeat play (darts has a deep league culture, with tens of thousands of sanctioned league players). First-mover franchising in an under-served Canadian format is the realistic edge.",
+          "sources": [
+            "https://ndadarts.com"
+          ]
+        },
+        "margins": {
+          "score": 6,
+          "confidence": "low",
+          "why": "Mixed but scalable. Food-and-drink attach is high-margin, franchise royalties (comparable game-based concepts charge ~7% plus a 1-2% marketing levy) scale capital-light, and league memberships add recurring revenue — offsetting a venue's fixed costs (rent, staff).",
+          "sources": [
+            "https://www.vettedbiz.com/x-golf-franchise/"
+          ]
+        },
+        "founderFit": {
+          "score": 4,
+          "confidence": "med",
+          "why": "Lower capital brings the idea closer to what the team could fund, and its finance and marketing strengths fit the franchise model and brand-building — but no one has hospitality or multi-unit venue-operations experience, which remains the core competency gap for running and franchising a venue.",
+          "sources": []
+        },
+        "risk": {
+          "score": 5,
+          "confidence": "med",
+          "why": "A lower-capex format sharply reduces the downside: a bar-scale darts venue is a recoverable bet you can prove before franchising, unlike a multi-million big-box. Single-game novelty risk is also lower for a format like darts with deep, sticky league play. Remaining risks: hospitality-operations inexperience, a fast-filling category, and the need to prove one venue's unit economics before scaling.",
+          "sources": [
+            "https://www.cushmanwakefield.com/en/insights/from-putt-to-pint-everyone-wins-with-competitive-socializing"
+          ]
+        }
       },
       "businessCase": {
-        "summary": "A branded, franchisable venue built around a single modernised game — automated scoring, leaderboards and a strong food-and-drink attach — riding the competitive-socialising boom (concepts up ~386% since 2021) into a Canadian market that branded single-game operators have barely entered. The demand and growth are real and Canada is underserved, but this is the most capital-intensive idea on the board: a multi-million-dollar, real-estate-bound build with a long runway to revenue, meaningful novelty/fad risk, and a core competency (hospitality operations) the team doesn't yet have.",
-        "customer": "Experience-led social spenders — younger adults, groups, corporate outings, date-nights and party bookings — who want an active, gamified night out with food and drink. Once the concept is proven, a second customer emerges: franchisees who buy and operate venues under the brand.",
-        "market": "Competitive socialising is among hospitality's hottest formats — concepts have grown ~386% since early 2021 — and the wider location-based-entertainment market is put at ~US$23B in 2025 heading to ~US$58.5B by 2035 (~9.7% CAGR). Canada is served mainly by one multi-game incumbent (The Rec Room) and fragmented independents; branded, tech-scored single-game concepts are largely absent, leaving real room. The reachable Canadian segment is a fraction of the global figure, so the opportunity is a strong-growth niche rather than a mass market.",
-        "model": "Two-stage: first prove one or two company-owned flagship venues (game entry/lane fees plus a high-margin food-and-drink attach — ~35% of revenue at category benchmarks), then scale capital-light by franchising the proven format (a franchise fee plus an ongoing royalty and marketing levy, in the ~7%+2% range comparable concepts charge). Revenue is gameplay + F&B on-venue, and royalty income at the franchisor level.",
-        "goToMarket": "Land a single flagship in a major Canadian metro with strong young-adult footfall, win on a distinctive, genuinely modern single-game experience and shareable social content, and build corporate/party bookings to smooth midweek demand. Only once unit economics are proven and repeatable open the franchise channel to expand into other Canadian cities ahead of international operators arriving.",
-        "costs": "High and front-loaded: roughly US$1.7–4.3M to build a small-format single-game venue (a big-box concept like Topgolf runs far higher), plus prime-location lease commitments, liquor licensing, fit-out and a 10–15-month build before revenue. Ongoing costs are rent, staff, F&B cost-of-goods and marketing — a heavy fixed-cost base.",
-        "risks": "Capital intensity and real-estate dependency make a failed venue a large loss rather than a cheap lesson. Novelty/fad risk is real — even category leader Topgolf saw same-venue sales fall ~8.6% in 2024 — and a single-game concept has no menu-mix hedge if that game cools. Fixed costs are heavy (a fast-growing rival, F1 Arcade, was still EBITDA-negative in 2024), the broader space may be nearing saturation, and well-funded international operators could enter Canada. The team also lacks hospitality/venue-operations experience.",
-        "nextSteps": "1) Pick the ONE game and prove it has genuine repeat-play depth, not just launch novelty. 2) Build a bottom-up unit-economics model for a single Canadian flagship (buildout, rent, staffing, F&B attach, target AUV) and pressure-test payback. 3) Scout a beachhead metro and site, and cost the lease/licensing reality. 4) Decide whether to raise for a company-owned proof venue or partner with an experienced hospitality operator to cover the ops gap. 5) Only design the franchise offer after one venue proves repeatable economics."
+        "summary": "A branded, franchisable competitive-socialising venue built around one modernised, digitally-scored game, in a lower-capital format so the first venue is a recoverable bet rather than a multi-million big-box. The strongest low-capex, franchisable, Canada-relevant candidate is a modernised electronic-darts bar: cheap digitally-scored stations, a modest footprint, deep pre-existing league culture (tens of thousands of sanctioned league players) for repeat play, and almost no branded competition in Canada. A small-bay golf-simulator lounge is a better-proven but pricier fallback (franchised buildouts ~US$1.0-1.8M, and already crowded with Canadian independents), and duckpin/mini-bowling is a differentiated small-footprint dark horse with no franchised competitor. Whichever game leads, the model only works with a league-and-membership engine built in from day one, and the team's lack of hospitality-operations experience remains the gap to fill.",
+        "customer": "Experience-led social spenders — younger adults, groups, corporate outings, date-nights and party bookings — who want an active, gamified night out with food and drink, plus a repeat-visit league/membership base. Once the format is proven, franchisees who buy and operate venues under the brand become a second customer.",
+        "market": "Competitive socialising is among hospitality's hottest formats (concepts up ~386% since early 2021), and the wider location-based-entertainment market is put at ~US$23B in 2025 heading to ~US$58.5B by 2035 (~9.7% CAGR). Canada is under-served by branded single-game concepts — especially at the low-capex end (electronic darts, duckpin) — so the opportunity is a strong-growth niche rather than a mass market.",
+        "model": "Prove one company-owned low-capex venue (game entry and league fees, high-margin food and drink, memberships), then franchise the proven format (a franchise fee plus ~7% royalty and a marketing levy, the range comparable game-based concepts charge). Recurring league memberships and F&B attach are the core venue economics; royalties scale the brand capital-light.",
+        "goToMarket": "Open one flagship in a major Canadian metro in the chosen low-capex format, win on a genuinely modern, digitally-scored experience plus a structured weekly league and membership that drive repeat visits, and only franchise once one venue proves repeatable unit economics.",
+        "costs": "In a darts-bar format, a bar-scale fit-out (hundreds of thousands) plus cheap digitally-scored stations — far below a big-box venue; a golf-sim lounge is higher (~US$1.0-1.8M franchised). Ongoing costs are lease, staff, food-and-drink cost of goods, and the league/membership platform.",
+        "risks": "Hospitality and multi-unit venue-operations experience is the team's gap; the competitive-socialising category is filling fast; single-game concepts risk novelty fatigue unless a league and membership engine sustains repeat play; and one venue must prove repeatable economics before franchising. Lower capital contains the downside relative to a big-box bet.",
+        "nextSteps": "1) Choose the hero game from the low-capex shortlist (electronic darts lead; golf sim or duckpin as alternatives) — see the open question below. 2) Commission a real fit-out quote for the chosen format in a target Canadian metro. 3) Design the league and membership engine that drives repeat play from day one. 4) Cover the hospitality-operations gap (hire or partner with an experienced operator). 5) Build the single-venue unit economics and prove them before designing the franchise offer."
       },
       "clarifyingQuestions": [
-        "Which single game is the concept built on, and what's the evidence it has real repeat-play depth rather than one-visit novelty?",
-        "Are we prepared to fund (or raise for) a multi-million-dollar company-owned flagship to prove the model before any franchising — and who covers the hospitality/venue-operations gap on the team?",
-        "Which Canadian metro is the beachhead, and does the concept differentiate enough from The Rec Room and incoming international operators to win it?"
+        "Which hero game do we commit to — electronic darts (lowest capex, deep league culture, Canadian whitespace), a golf-simulator lounge (better-proven, pricier, crowded), or duckpin/mini-bowling (differentiated, no franchised rival)?",
+        "What capital envelope are we working to for the first proof venue, and who covers the hospitality/venue-operations gap — hire or partner?",
+        "Which Canadian metro is the beachhead, and how do we build the league/membership engine that makes a single-game concept sticky?"
+      ]
+    },
+    {
+      "id": "order-capture-middleware-for-distributors",
+      "title": "Order-capture Middleware for Distributors",
+      "owner": "Dave",
+      "status": "analyzed",
+      "oneLiner": "A white-label AI voice-and-OCR order-capture layer sold to independent food distributors, turning phoned-in, texted and handwritten restaurant orders into clean digital orders automatically.",
+      "tags": [
+        "foodtech",
+        "AI",
+        "B2B",
+        "SaaS"
+      ],
+      "scores": {
+        "market": {
+          "score": 6,
+          "confidence": "med",
+          "why": "The US foodservice-distribution market is large (~US$382B in annual sales) and structurally fragmented — Sysco holds only ~17% and the long tail of regional and local distributors handles roughly two-thirds — so there are many potential buyers for tools that digitise ordering, operating from ~17,100 distribution locations. But the reachable slice is the software spend of the smaller distributors, a fraction of the headline, and they are slow adopters.",
+          "sources": [
+            "https://ifdaonline.org/industry-facts/",
+            "https://www.sec.gov/Archives/edgar/data/96021/000009602125000099/syy-20250628.htm"
+          ]
+        },
+        "entry": {
+          "score": 3,
+          "confidence": "med",
+          "why": "High for this kind of builder. Shipping a production-grade AI voice/OCR product and integrating it into distributors' back-office systems is a serious engineering undertaking, and selling into conservative, slow-moving distributors is a long-cycle B2B motion — a skill- and time-heavy barrier even though the capital needs are modest.",
+          "sources": []
+        },
+        "cost": {
+          "score": 4,
+          "confidence": "med",
+          "why": "Moderate. The marginal AI cost per captured order is small — on the order of a few cents for speech-to-text, invoice OCR and a cached LLM parse — so gross margins can be high, but building and maintaining the product plus a direct sales force for a fragmented buyer base is a sustained investment before meaningful revenue.",
+          "sources": [
+            "https://deepgram.com/pricing",
+            "https://aws.amazon.com/textract/pricing/"
+          ]
+        },
+        "saturation": {
+          "score": 3,
+          "confidence": "high",
+          "why": "Crowded. The exact capability is already shipped by well-funded players — Pepper's 'Order Agent' automates order capture from voicemails and messy emails (US$50M Series C, 500+ independent distributors) and Choco launched an OpenAI-powered voice agent in Dec 2025 (~95% order accuracy) — and the majors run their own tools (Sysco Shop, US Foods MOXe). The 'white-label middleware' positioning is less occupied, but the underlying capability is not.",
+          "sources": [
+            "https://www.usepepper.com/post/peppers-50m-series-c-building-the-next-generation-of-technology-for-food-distribution",
+            "https://choco.com/us/press/choco-and-openai-join-forces-to-launch-the-first-ai-voice-agent-for-the-food-service-industry"
+          ]
+        },
+        "moat": {
+          "score": 3,
+          "confidence": "med",
+          "why": "Weak. Voice/OCR order-capture is commoditising fast (OpenAI's Realtime API and cheap OCR put it within reach of many builders), the funded incumbents out-distribute a newcomer, and a thin capture layer is easy to replicate or bundle away. The only edge is deep integration and embeddability, which is a feature rather than a durable moat.",
+          "sources": []
+        },
+        "margins": {
+          "score": 6,
+          "confidence": "low",
+          "why": "Attractive if it scales — a software-only middleware can plausibly hold ~80% gross margin (public B2B SaaS runs ~75-85%), since the per-order AI cost is only cents. The caveat is keeping any payments or logistics layer out of it, which drags blended margins sharply (payments-heavy foodtech runs in the mid-20s%).",
+          "sources": [
+            "https://stockanalysis.com/stocks/HUBS/financials/",
+            "https://stockanalysis.com/stocks/TOST/financials/"
+          ]
+        },
+        "founderFit": {
+          "score": 2,
+          "confidence": "med",
+          "why": "Very weak. This is an AI software product sold into US food distribution — it needs machine-learning and product engineering plus foodservice-distribution go-to-market, neither of which the team has. The team's strengths (overseas sourcing, finance, consulting, marketing) don't apply to out-building and out-distributing funded software incumbents.",
+          "sources": []
+        },
+        "risk": {
+          "score": 3,
+          "confidence": "med",
+          "why": "High. The team would be building capability it lacks against well-capitalised incumbents (Pepper, Choco) who already ship the feature and out-distribute; AI errors on perishable orders carry real cost and liability (even 95% accuracy leaves ~5% wrong); and long-tail adoption is slow. The exposure is the sunk build and sales cost.",
+          "sources": []
+        }
+      },
+      "businessCase": {
+        "summary": "A white-label AI 'order-capture' layer that independent food distributors embed so their restaurant customers can keep ordering the way they already do — a phone call, a text, a photo of a handwritten list — while the system turns it into a clean, structured order automatically. The US foodservice-distribution market (~US$382B) is large and fragmented, and the marginal AI cost per order is only cents, so the software economics are attractive. But the capability is already shipped by funded incumbents (Pepper's Order Agent, Choco's OpenAI voice agent) and the majors' own tools, the moat is thin as voice/OCR commoditises, and — decisively — building and distributing this needs AI-product engineering and food-distribution sales the team doesn't have.",
+        "customer": "Independent and regional US food distributors (the long tail outside Sysco, US Foods and PFG) that take a high volume of orders by phone, text and email and want to digitise capture without building their own software — and, indirectly, the restaurants that order from them.",
+        "market": "US foodservice distribution posts ~US$382B in annual sales across a fragmented base (Sysco ~17%; the long tail handles roughly two-thirds), operating from ~17,100 distribution locations — many potential buyers for order-digitisation tools. The reachable market is the software spend of the smaller distributors, a modest slice of the headline, and adoption is slow.",
+        "model": "White-label SaaS/middleware: a per-order or per-seat subscription to distributors who embed the capture agent in their own ordering flow. Software-only economics (~80% gross margin achievable) if payments and logistics are deliberately left out.",
+        "goToMarket": "Sell directly to independent distributors as an embeddable layer that complements rather than replaces their existing systems, competing on integration depth and price rather than novelty. Land a few reference distributors, prove order accuracy and labour savings, then expand across the fragmented base.",
+        "costs": "The build and upkeep of a reliable AI voice/OCR product plus a direct enterprise sales motion are the real costs; marginal per-order AI cost is only cents (speech-to-text, invoice OCR, a cached LLM parse). Time-to-revenue is gated by product maturity and slow distributor sales cycles.",
+        "risks": "Funded incumbents (Pepper, Choco) already ship the capability and out-distribute a newcomer; the majors bundle their own tools; voice/OCR is commoditising, so the moat is thin; AI errors on perishable orders carry cost and liability; and long-tail adoption is slow. Above all, the team lacks the AI-product engineering and food-distribution go-to-market this requires.",
+        "nextSteps": "1) Be honest about the capability gap — this needs an AI-product engineering lead and food-distribution sales DNA the team would have to hire or partner for. 2) If pursued, find a defensible wedge (a distributor segment or integration the incumbents ignore) rather than competing head-on. 3) Talk to 5-10 independent distributors about willingness to pay and current pain. 4) Prototype against real messy orders to test accuracy and liability. 5) Compare honestly against simply reselling or partnering with an existing engine."
+      },
+      "clarifyingQuestions": [
+        "Who builds and owns the AI product — is there an engineering/ML lead, or would this be outsourced? (This is the make-or-break capability gap.)",
+        "What's the defensible wedge against Pepper and Choco, who already ship voice/OCR order capture to distributors?",
+        "Which distributor segment is the beachhead, and do we have any route into that conservative, slow-adopting buyer base?"
+      ]
+    },
+    {
+      "id": "invoice-to-insight-price-index",
+      "title": "Invoice-to-insight Price Index",
+      "owner": "Dave",
+      "status": "analyzed",
+      "oneLiner": "Turn restaurants' supplier-invoice data into an anonymised, real-time regional ingredient price index they pay to benchmark their own costs against.",
+      "tags": [
+        "foodtech",
+        "data",
+        "B2B",
+        "SaaS"
+      ],
+      "scores": {
+        "market": {
+          "score": 5,
+          "confidence": "med",
+          "why": "A restaurant-facing ingredient price index is a narrow, niche subscription market rather than a large one, and it competes with a free substitute — USDA publishes wholesale commodity and food-price data at no cost. The value is real only at vendor/SKU/contract granularity, which narrows the paying audience to cost-focused operators.",
+          "sources": [
+            "http://www.ers.usda.gov/data-products/food-price-outlook"
+          ]
+        },
+        "entry": {
+          "score": 2,
+          "confidence": "high",
+          "why": "Very high — and the barrier is structural, not capital. The product IS the data, and the business doesn't own the invoice flow: to build the index you must either be the invoice/ordering tool that already captures it (you're not) or convince incumbents to license theirs (they won't). Add data-rights and consent-to-resell obligations, and cold-starting the dataset is the whole challenge.",
+          "sources": []
+        },
+        "cost": {
+          "score": 3,
+          "confidence": "med",
+          "why": "Getting to a useful index needs enough invoice density per region before the product has any value — an expensive, slow two-sided build (or a data-acquisition/partnership deal), plus legal work to secure resale rights. Once the pipeline exists the marginal cost per subscriber is near zero, but reaching that point is the hard part.",
+          "sources": []
+        },
+        "saturation": {
+          "score": 4,
+          "confidence": "med",
+          "why": "Mixed. A restaurant-facing invoice-derived price index doesn't appear to exist as an established product (novel positioning) — but the data it needs is already held by others: Buyers Edge / Dining Alliance sits on the largest foodservice purchasing dataset (>US$100B in network transactions), and invoice tools like MarginEdge (5M+ invoices processed) could productise a benchmark faster than a cold-start entrant. Open as a product, pre-empted on data.",
+          "sources": [
+            "http://buyersedgeplatform.com/",
+            "https://www.marginedge.com/"
+          ]
+        },
+        "moat": {
+          "score": 2,
+          "confidence": "med",
+          "why": "Very weak for a new entrant. A price index is a classic data-network-effect business (YipitData and the ADP employment report show the model works) — but only for whoever owns the data. This venture doesn't, so the incumbents who do (Buyers Edge, MarginEdge, or POS platforms like Toast) hold the latent moat and could pre-empt it.",
+          "sources": []
+        },
+        "margins": {
+          "score": 6,
+          "confidence": "low",
+          "why": "High if it ever exists — subscription data/index products run ~70-82% gross margin once the collection pipeline is built (MSCI ~82%, S&P Global ~69%), with near-zero marginal cost per subscriber. But that is entirely conditional on first solving the data-access problem.",
+          "sources": [
+            "https://stockanalysis.com/stocks/MSCI/financials/",
+            "https://stockanalysis.com/stocks/SPGI/financials/"
+          ]
+        },
+        "founderFit": {
+          "score": 3,
+          "confidence": "med",
+          "why": "Weak. The concept plays to a finance/analytics instinct for benchmarks and indices, but the load-bearing requirement is owning and processing restaurant invoice data at scale plus the licensing to resell it — assets and capabilities the team doesn't have. Finance framing doesn't close the data gap.",
+          "sources": []
+        },
+        "risk": {
+          "score": 2,
+          "confidence": "med",
+          "why": "High. It presumes a data flow the team doesn't control; reselling anonymised invoice data needs explicit customer consent and licensing (real legal exposure); it faces a two-sided cold-start while incumbents already sit on the data; and a free USDA substitute caps willingness to pay. It reads more like a feature of an invoice tool than a standalone company.",
+          "sources": [
+            "http://www.ers.usda.gov/data-products/food-price-outlook"
+          ]
+        }
+      },
+      "businessCase": {
+        "summary": "Anonymise the supplier-invoice data restaurants generate and turn it into a real-time, regional ingredient price index they subscribe to — so an operator can see whether they're overpaying their vendors versus the local market at the SKU level. The economics of a data/index product are attractive once built (~70-82% gross margin), and no restaurant-facing invoice-derived index appears to exist yet. The problem is fundamental: the business doesn't own the invoice data. To have the index you must either be the invoice/ordering tool that captures it (the team isn't) or license it from incumbents who won't hand over their moat — and Buyers Edge (>US$100B of purchasing data), MarginEdge (millions of invoices) or a POS platform such as Toast could productise this faster. As framed, it's closer to a feature of an existing invoice tool than a standalone company.",
+        "customer": "Cost-focused restaurant operators and small groups who want to benchmark what they pay suppliers against the regional market — and potentially suppliers or investors who would buy the aggregated market view.",
+        "market": "A niche subscription market: the paying audience is operators who care enough about food-cost benchmarking to pay for SKU- and vendor-level granularity, competing against free USDA commodity and food-price data. Valuable but narrow, and only once regional data density exists.",
+        "model": "A subscription data product: restaurants (and possibly suppliers) pay for access to the anonymised regional price index and their own 'you versus the market' benchmark. Data/index economics scale at high margin — once the underlying invoice-data pipeline exists.",
+        "goToMarket": "The hard prerequisite is data density: either build or acquire an invoice-capture pipeline, or partner with a tool that already has one, with resale rights secured in the customer terms. Only then does the index have regional value worth subscribing to.",
+        "costs": "Front-loaded and structural: assembling enough invoice data per region (build, acquire or partner) plus data-rights and consent legal work, before there's a sellable product. Marginal cost per subscriber is near zero afterwards.",
+        "risks": "The team doesn't own the invoice flow, so the whole thing hinges on getting data it can't easily get; reselling anonymised invoice data needs explicit consent and licensing (legal exposure); a two-sided cold-start while Buyers Edge and invoice tools like MarginEdge already hold the data and could pre-empt; and free USDA data caps willingness to pay.",
+        "nextSteps": "1) Confront the data-access problem first — without a route to invoice data at regional density, there is no product. 2) Explore partnering with an existing invoice/ordering tool rather than cold-starting the dataset. 3) Get legal clarity on consent to resell anonymised invoice data. 4) Test whether operators would actually pay over free USDA benchmarks. 5) Decide whether this is better pursued as a feature or partnership than a standalone company."
+      },
+      "clarifyingQuestions": [
+        "How do we get invoice data at regional density — become the invoice tool, acquire a dataset, or partner — given we don't own the flow today?",
+        "Would restaurants pay for SKU-level benchmarking over free USDA commodity data, and how much?",
+        "Is this better built as a feature inside an existing invoice/ordering platform (or a partnership) than as a standalone company?"
+      ]
+    },
+    {
+      "id": "repricing-advisory-in-a-box",
+      "title": "Repricing Advisory-in-a-box",
+      "owner": "Dave",
+      "status": "analyzed",
+      "oneLiner": "A productised advisory-plus-tooling offer that helps seat-based SaaS companies model, pilot and migrate to usage or outcome-based pricing without wrecking their existing ARR.",
+      "tags": [
+        "SaaS",
+        "advisory",
+        "B2B",
+        "fintech"
+      ],
+      "scores": {
+        "market": {
+          "score": 6,
+          "confidence": "med",
+          "why": "The tailwind is strong and timely: SaaS is a ~US$316B market growing ~19% a year, and pricing is visibly shifting off per-seat — seat-based fell from 21% to 15% of B2B software companies' primary model in a year while hybrid rose to 41%, and a February 2026 software sell-off erased over US$1T on fears that AI agents erode per-seat licences. The reachable market for a boutique advisory-plus-tooling offer is a fraction of that (the pricing-software category is only ~US$1.9B by 2030), but the demand is acute right now.",
+          "sources": [
+            "https://www.growthunhinged.com/p/2025-state-of-b2b-monetization",
+            "https://www.forbes.com/sites/petercohan/2026/02/06/saaspocalypse-now-ai-is-disrupting-saas---but-not-all-software-is-doomed/",
+            "https://www.thebusinessresearchcompany.com/report/pricing-software-global-market-report",
+            "https://www.fortunebusinessinsights.com/software-as-a-service-saas-market-102222"
+          ]
+        },
+        "entry": {
+          "score": 5,
+          "confidence": "med",
+          "why": "Moderate. A services-plus-tooling business is cheap to stand up and needs little capital — but the barrier is credibility: selling an 'ARR-at-risk' migration methodology to CFOs and CROs requires a track record and named references the team can't yet claim, which is the real entry tax.",
+          "sources": []
+        },
+        "cost": {
+          "score": 6,
+          "confidence": "med",
+          "why": "Low startup cost — senior people plus a pricing-simulation/ARR-impact tool — and quick to first revenue if clients can be landed. The binding constraint is access to senior pricing talent, not capital.",
+          "sources": []
+        },
+        "saturation": {
+          "score": 5,
+          "confidence": "med",
+          "why": "Mixed. The market is barbelled: high-end pricing-strategy consultancies (Simon-Kucher, 2,000+ staff, which already pairs advisory with its own software) at the top, and self-serve billing/metering vendors (Metronome, Orb, m3ter, Zuora) at the bottom that don't bundle migration advisory. The gap — a productised, mid-market-accessible advisory-plus-tooling offer — is real, but partly occupied at the top by Simon-Kucher.",
+          "sources": [
+            "https://www.simon-kucher.com/en",
+            "https://www.forrester.com/blogs/saas-as-we-know-it-is-dead-how-to-survive-the-saas-pocalypse/"
+          ]
+        },
+        "moat": {
+          "score": 4,
+          "confidence": "med",
+          "why": "Weak. Methodology is copyable, advisory relationships are people-dependent, and the billing-infrastructure vendors that own the implementation relationship could add a services layer. A proprietary pricing-simulation tool and a credible operator brand (published benchmarks, named outcomes) are the only realistic moats.",
+          "sources": []
+        },
+        "margins": {
+          "score": 5,
+          "confidence": "low",
+          "why": "Mixed. Advisory revenue is capacity-capped by scarce senior pricing talent; a software/tooling layer scales at high margin. Blended margin depends on how much value is pushed into the tool versus billed as bodies — an advisory-heavy mix keeps it moderate.",
+          "sources": []
+        },
+        "founderFit": {
+          "score": 6,
+          "confidence": "med",
+          "why": "The best fit of the team's recent ideas: management consulting plus finance/investment is squarely the skill set for pricing strategy and ARR-impact modelling, and the offer is services-led rather than needing a product-engineering team. The gap is domain-specific credibility — SaaS pricing is a specialist field with entrenched experts, and the team would be selling to software CFOs without an obvious track record in it.",
+          "sources": []
+        },
+        "risk": {
+          "score": 5,
+          "confidence": "med",
+          "why": "Moderate. Capital-at-risk is low (a services business) and the timing is excellent — repricing is a 2026 CFO emergency. Against that: advisory doesn't scale, 'migrate our pricing' can be a one-time project rather than recurring revenue, incumbents (Simon-Kucher, the big consultancies) are the default choice, and the credibility barrier is real.",
+          "sources": []
+        }
+      },
+      "businessCase": {
+        "summary": "A productised 'repricing-in-a-box' — a repeatable methodology plus tooling (a pricing simulator, ARR-impact and cohort modelling, metering-readiness assessment) that helps seat-based SaaS companies move to usage, hybrid or outcome-based pricing without destroying existing revenue. The timing is unusually good: AI agents are compressing per-seat licences, seat-based pricing is falling fast as a primary model, and a February 2026 sell-off erased over US$1T of software value on exactly this fear — so repricing has become a live CFO priority. It fits the team's consulting/finance strengths better than any recent idea, but it's an advisory-led business (hard to scale, people-dependent), the credibility bar to sell SaaS CFOs is high, and Simon-Kucher already blends pricing advisory with its own software at the top of the market.",
+        "customer": "Seat-based B2B SaaS companies — especially mid-market firms below the big consultancies' focus — whose per-seat revenue is threatened by AI-driven seat compression and who need to migrate pricing without churning existing ARR. Sold to the CFO, CRO or head of monetisation.",
+        "market": "SaaS is ~US$316B and growing ~19% a year, and the pricing shift is real and current — seat-based pricing fell from 21% to 15% of B2B companies' primary model in a year, hybrid rose to 41%, and a Feb 2026 sell-off wiped out over US$1T on seat-compression fears. The reachable market for a boutique offer is far smaller (pricing software ~US$1.9B by 2030), but the pain is acute now.",
+        "model": "A blend of fixed-fee diagnostic engagements, a subscription to the pricing-simulation/ARR-monitoring tooling, and potentially a success fee tied to realised uplift. Pushing value into recurring tooling — repricing is continuous as AI features evolve — is what turns a one-off project into recurring revenue.",
+        "goToMarket": "Lead with credibility: published pricing benchmarks and thought leadership (the proven playbook for operator-brands in this niche), then convert inbound into fixed-fee diagnostics and land-and-expand into the tooling subscription. Target mid-market SaaS underserved by Simon-Kucher and the big consultancies.",
+        "costs": "Low — senior pricing talent and the build of a pricing-simulation/ARR-impact tool. The binding constraint is access to credible senior pricing expertise, not capital.",
+        "risks": "Advisory is capacity-capped and people-dependent; 'migrate our pricing' can be a one-time project rather than recurring revenue; the big consultancies (Simon-Kucher, McKinsey/Bain/Deloitte) are the board-level default and billing-infra vendors could add a services layer; and the credibility to sell CFOs a revenue-at-risk methodology is the hardest early barrier. The timing tailwind could also prove a crowded, hype-driven moment.",
+        "nextSteps": "1) Establish credibility first — who on or around the team can credibly advise SaaS CFOs on pricing, and can we publish proprietary benchmark data to earn trust? 2) Decide the wedge: pure advisory, or advisory as the front end to recurring simulation/monitoring tooling (the more scalable path). 3) Interview 5-10 mid-market SaaS finance/product leaders on willingness to pay and buying process. 4) Prototype the pricing-simulator/ARR-impact tool. 5) Map the partnership option — feed clients into a billing-infra vendor's rails rather than compete with them."
+      },
+      "clarifyingQuestions": [
+        "Who brings credible SaaS-pricing expertise and references — the entry tax here is convincing software CFOs, not building the tool?",
+        "Is this pure advisory, or advisory as the wedge into recurring pricing-simulation/monitoring software (the only path that really scales)?",
+        "Partner with a billing-infrastructure vendor (Metronome/Orb/m3ter) as the delivery layer, or stay independent and compete with Simon-Kucher and the big consultancies?"
       ]
     }
   ]
