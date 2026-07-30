@@ -990,9 +990,9 @@
           ]
         },
         "founderFit": {
-          "score": 2,
+          "score": 4,
           "confidence": "med",
-          "why": "Very weak. This is an AI software product sold into US food distribution — it needs machine-learning and product engineering plus foodservice-distribution go-to-market, neither of which the team has. The team's strengths (overseas sourcing, finance, consulting, marketing) don't apply to out-building and out-distributing funded software incumbents.",
+          "why": "The team's in-house software and applied-AI capability covers the hard part — building a reliable AI voice/OCR product — and its consulting/marketing suits B2B selling. What remains off-team is foodservice-distribution go-to-market and out-distributing funded incumbents into a conservative, slow-moving buyer base.",
           "sources": []
         },
         "risk": {
@@ -1076,9 +1076,9 @@
           ]
         },
         "founderFit": {
-          "score": 3,
+          "score": 4,
           "confidence": "med",
-          "why": "Weak. The concept plays to a finance/analytics instinct for benchmarks and indices, but the load-bearing requirement is owning and processing restaurant invoice data at scale plus the licensing to resell it — assets and capabilities the team doesn't have. Finance framing doesn't close the data gap.",
+          "why": "In-house software/data and applied-AI capability, plus a finance/analytics instinct for benchmarks and indices, means the team could build the product. But the load-bearing gap is not the build — it's that the team doesn't own the invoice data flow the index depends on, which capability alone doesn't fix.",
           "sources": []
         },
         "risk": {
@@ -1258,9 +1258,9 @@
           ]
         },
         "founderFit": {
-          "score": 2,
+          "score": 3,
           "confidence": "med",
-          "why": "Very weak. Building spatial games needs XR/game-development engineering the team doesn't have; none of its strengths (overseas sourcing, finance, consulting, marketing) apply to shipping a visionOS title.",
+          "why": "General software-development capability helps, but spatial/XR game development is a specialised discipline the team doesn't yet have, and the platform itself is tiny — so team-fit improves only modestly and the ceiling is the market, not the build.",
           "sources": []
         },
         "risk": {
@@ -1450,9 +1450,9 @@
           ]
         },
         "founderFit": {
-          "score": 3,
+          "score": 4,
           "confidence": "med",
-          "why": "Weak. Marketing/creative is a genuine partial fit (dating is a marketing-led consumer business), but one marketer doesn't win a customer-acquisition war against a company with ~US$3.5B of revenue and the top two apps, and the team has no consumer-app or AI engineering. Insufficient for this market.",
+          "why": "The team's in-house software-development and applied-AI capability, plus marketing, genuinely fits building an AI-matching app. But the decisive gaps are go-to-market, not build: outspending entrenched incumbents in a customer-acquisition war and solving the two-sided local cold-start — neither of which team capability resolves.",
           "sources": []
         },
         "risk": {
@@ -1544,9 +1544,9 @@
           ]
         },
         "founderFit": {
-          "score": 2,
+          "score": 4,
           "confidence": "med",
-          "why": "Very weak. A reliable real-time geosocial game plus trust-and-safety infrastructure is a serious consumer-mobile engineering effort the team can't staff; marketing is a partial fit for a consumer launch but does nothing to solve local density or stranger-safety, which are the binding constraints.",
+          "why": "The team can now build it — in-house software-development and applied-AI capability, plus marketing, put the app itself within reach. But the binding problems here are not the build: the open-world consumer version still faces the local-density cold-start and the stranger-safety burden, where the team has no special advantage or consumer-scaling track record.",
           "sources": []
         },
         "risk": {
@@ -1828,7 +1828,7 @@
         "founderFit": {
           "score": 6,
           "confidence": "med",
-          "why": "The team brings the build capability this most needs — hands-on software development and dev-team management plus applied-AI and technology-consulting experience, alongside marketing — so the mobile/event app is within reach in-house, and the B2B-to-organiser sales motion suits its consulting and marketing strengths. The remaining gaps are event-industry credibility and the reality that this stays a feature an incumbent platform could bundle.",
+          "why": "The team brings the build capability this most needs — in-house software-development and applied-AI capability, alongside marketing — so the mobile/event app is within reach, and the B2B-to-organiser sales motion suits its strengths. The remaining gaps are event-industry credibility and the reality that this stays a feature an incumbent platform could bundle.",
           "sources": []
         },
         "risk": {
