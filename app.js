@@ -551,19 +551,47 @@ function trendMap(trends, numById) {
   const colOf = t => t.source === "adjacency" ? "var(--team)" : "var(--accent)";
   // numById (stable creation-order numbers) is supplied by the caller (renderTrends).
 
-  let dots = "";
+  // Collect points, then a light collision-avoidance pass (as on the Idea Board) so trends that
+  // share a horizon+signal don't stack invisibly. Horizontal movement is clamped WITHIN each
+  // horizon band (the categorical x-axis), so a bubble never drifts into a different horizon.
+  const pts = [];
   bands.forEach((b, bi) => {
     const inBand = trends.filter(t => (t.horizon || "mid") === b);
     inBand.forEach((t, idx) => {
-      const cx = bandX0(bi) + bandW * ((idx + 1) / (inBand.length + 1));
-      const cy = y(t.signal || 5);
-      const r = Math.max(12, 8 + (t.ideas ? t.ideas.length : 0) * 3);
-      dots += `<g class="dot" data-id="${esc(t.id)}">
-        <circle cx="${cx}" cy="${cy}" r="${r}" fill="${colOf(t)}" fill-opacity="0.30" stroke="${colOf(t)}"></circle>
-        <text class="dot-num" x="${cx}" y="${cy}" text-anchor="middle" dominant-baseline="central">${numById.get(t.id)}</text>
-      </g>`;
+      pts.push({
+        t, bi,
+        cx: bandX0(bi) + bandW * ((idx + 1) / (inBand.length + 1)),
+        cy: y(t.signal || 5),
+        r: Math.max(12, 8 + (t.ideas ? t.ideas.length : 0) * 3),
+      });
     });
   });
+  // Break exact ties deterministically (sub-pixel) so coincident bubbles have a push direction.
+  pts.forEach((p, k) => { p.cx += (((k * 13) % 7) - 3) * 0.4; p.cy += (((k * 11) % 5) - 2) * 0.4; });
+  const clampBandX = p => Math.max(bandX0(p.bi) + p.r, Math.min(bandX0(p.bi) + bandW - p.r, p.cx));
+  const clampY = p => Math.max(pad + p.r, Math.min(H - pad - p.r, p.cy));
+  for (let iter = 0; iter < 120; iter++) {
+    let moved = false;
+    for (let a = 0; a < pts.length; a++) for (let bx = a + 1; bx < pts.length; bx++) {
+      const pa = pts[a], pb = pts[bx];
+      const dx = pb.cx - pa.cx, dy = pb.cy - pa.cy;
+      const dist = Math.hypot(dx, dy) || 0.001;
+      const minGap = pa.r + pb.r + 3;         // desired clearance between bubble edges
+      if (dist < minGap) {
+        const push = (minGap - dist) / 2, ux = dx / dist, uy = dy / dist;
+        pa.cx -= ux * push; pa.cy -= uy * push;
+        pb.cx += ux * push; pb.cy += uy * push;
+        pa.cx = clampBandX(pa); pa.cy = clampY(pa);
+        pb.cx = clampBandX(pb); pb.cy = clampY(pb);
+        moved = true;
+      }
+    }
+    if (!moved) break;
+  }
+  const dots = pts.map(p => `<g class="dot" data-id="${esc(p.t.id)}">
+        <circle cx="${p.cx.toFixed(1)}" cy="${p.cy.toFixed(1)}" r="${p.r}" fill="${colOf(p.t)}" fill-opacity="0.30" stroke="${colOf(p.t)}"></circle>
+        <text class="dot-num" x="${p.cx.toFixed(1)}" y="${p.cy.toFixed(1)}" text-anchor="middle" dominant-baseline="central">${numById.get(p.t.id)}</text>
+      </g>`).join("");
   const bandLabels = bands.map((b, bi) => `<text class="axis-label" x="${bandX0(bi) + bandW / 2}" y="${H - pad + 26}" text-anchor="middle">${esc(horizonLabel(b))}</text>`).join("");
   const gridlines = [1, 2].map(i => `<line x1="${pad + (i / 3) * (W - 2 * pad)}" y1="${pad}" x2="${pad + (i / 3) * (W - 2 * pad)}" y2="${H - pad}" stroke="var(--line)"></line>`).join("");
 
