@@ -323,16 +323,39 @@ function quadrant(rows) {
   const x = v => pad + ((v - 1) / 9) * (W - pad * 2);
   const y = v => (H - pad) - ((v - 1) / 9) * (H - pad * 2);
 
-  // Bubbles are numbered and keyed to the table below, so long titles never overlap on the chart.
-  const dots = rows.map(({ idea }, i) => {
+  // Bubbles are numbered and keyed to the table below. Ideas that share the same
+  // attractiveness/ease scores land on identical coordinates, so a light collision-avoidance
+  // pass nudges overlapping bubbles just clear of each other — each stays near its true spot
+  // but both stay visible instead of stacking invisibly on top of one another.
+  const pts = rows.map(({ idea }, i) => {
     const vote = teamVotes(idea.id).avg;      // bubble size reflects the team's average vote
     const sizeVal = vote == null ? 3 : vote;  // unvoted ideas show as small bubbles
-    const cx = x(ease(idea)), cy = y(attractiveness(idea)), r = 7 + sizeVal * 1.6;
-    return `<g class="dot" data-id="${esc(idea.id)}">
-      <circle cx="${cx}" cy="${cy}" r="${r}" fill="var(--team)" fill-opacity="0.28" stroke="var(--team)"></circle>
-      <text class="dot-num" x="${cx}" y="${cy}" text-anchor="middle" dominant-baseline="central">${i + 1}</text>
-    </g>`;
-  }).join("");
+    return { idea, i, cx: x(ease(idea)), cy: y(attractiveness(idea)), r: 7 + sizeVal * 1.6 };
+  });
+  // Break exact ties deterministically (a sub-pixel offset) so coincident points have a push direction.
+  pts.forEach((p, k) => { p.cx += (((k * 13) % 7) - 3) * 0.4; p.cy += (((k * 11) % 5) - 2) * 0.4; });
+  const clampX = (v, r) => Math.max(pad + r, Math.min(W - pad - r, v));
+  const clampY = (v, r) => Math.max(pad + r, Math.min(H - pad - r, v));
+  for (let iter = 0; iter < 120; iter++) {
+    let moved = false;
+    for (let a = 0; a < pts.length; a++) for (let b = a + 1; b < pts.length; b++) {
+      const pa = pts[a], pb = pts[b];
+      const dx = pb.cx - pa.cx, dy = pb.cy - pa.cy;
+      const dist = Math.hypot(dx, dy) || 0.001;
+      const minGap = pa.r + pb.r + 3;         // desired clearance between bubble edges
+      if (dist < minGap) {
+        const push = (minGap - dist) / 2, ux = dx / dist, uy = dy / dist;
+        pa.cx = clampX(pa.cx - ux * push, pa.r); pa.cy = clampY(pa.cy - uy * push, pa.r);
+        pb.cx = clampX(pb.cx + ux * push, pb.r); pb.cy = clampY(pb.cy + uy * push, pb.r);
+        moved = true;
+      }
+    }
+    if (!moved) break;
+  }
+  const dots = pts.map(p => `<g class="dot" data-id="${esc(p.idea.id)}">
+      <circle cx="${p.cx.toFixed(1)}" cy="${p.cy.toFixed(1)}" r="${p.r}" fill="var(--team)" fill-opacity="0.28" stroke="var(--team)"></circle>
+      <text class="dot-num" x="${p.cx.toFixed(1)}" y="${p.cy.toFixed(1)}" text-anchor="middle" dominant-baseline="central">${p.i + 1}</text>
+    </g>`).join("");
 
   return `<div class="quad">
     <h3>Attractiveness vs. ease of entry <span class="muted">— bubble size = team's average vote</span></h3>
