@@ -1473,6 +1473,100 @@
         "How is the sensitive-data privacy problem handled — an AI 'detailed profile' is special-category data with the heaviest legal obligations?",
         "Which single city is the beachhead, and how is the two-sided local-liquidity cold-start funded against incumbents' acquisition budgets?"
       ]
+    },
+    {
+      "id": "proximity-social-game",
+      "title": "Proximity Social Game",
+      "owner": "Dave",
+      "status": "analyzed",
+      "oneLiner": "A mobile game that pings you when another player is physically nearby and prompts a quick real-world interaction — rock-paper-scissors, a spy code word, a challenge — turning the strangers around you into live game targets.",
+      "tags": [
+        "gaming",
+        "social",
+        "mobile",
+        "consumer"
+      ],
+      "scores": {
+        "market": {
+          "score": 4,
+          "confidence": "med",
+          "why": "Location-based gaming is a real but modest genre — roughly US$1.2B globally in 2023 (Japan alone ~US$620M, about half) — and it is dominated by games whose targets are virtual (Pokemon Go, Ingress), which sidesteps needing another live player nearby. Pokemon Go's scale (1B+ downloads) is the wrong benchmark here: its magic was ambient single-player-versus-environment play on pre-existing IP. A no-IP game whose targets are real people has a far smaller reachable market, and every comparable human-proximity social app has failed.",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Location-based_game",
+            "https://en.wikipedia.org/wiki/Pok%C3%A9mon_Go"
+          ]
+        },
+        "entry": {
+          "score": 4,
+          "confidence": "med",
+          "why": "A basic app is cheap to build, but the mechanic the idea wants is technically constrained: phones can't reliably detect arbitrary nearby phones in the background — NFC is a ~4cm touch technology with no peer or background scanning, and iOS heavily throttles background Bluetooth advertising/scanning between third-party apps. The workable path is server-side GPS proximity (the Pokemon Go model), and the real barrier is non-technical: assembling local player density.",
+          "sources": [
+            "https://developer.apple.com/documentation/corenfc",
+            "https://en.wikipedia.org/wiki/Android_Beam",
+            "https://developer.apple.com/library/archive/documentation/NetworkingInternetWeb/Conceptual/CoreBluetooth_concepts/CoreBluetoothBackgroundProcessingForIOSApps/PerformingTasksWhileYourAppIsInTheBackground.html"
+          ]
+        },
+        "cost": {
+          "score": 4,
+          "confidence": "med",
+          "why": "Building a GPS-plus-server MVP is modest, but there is no revenue until local density exists, and an app that sends users toward real strangers needs identity/age checks, reporting/blocking and human moderation from day one — real cost and friction. Acquiring users in dense geographic clusters (buying local liquidity, not diffuse installs) is expensive per active experience.",
+          "sources": []
+        },
+        "saturation": {
+          "score": 5,
+          "confidence": "med",
+          "why": "There is no durable incumbent in 'proximity real-world micro-games' specifically — but that niche is empty because it is hard, not because it is open. The proximity-social category is a graveyard: Bump (shut 2014), Color (wound down 2012), Yik Yak (shut 2017), Zenly (discontinued ~2022) all died, and no human-proximity social game has reached durable scale.",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Bump_(application)",
+            "https://en.wikipedia.org/wiki/Yik_Yak",
+            "https://en.wikipedia.org/wiki/Color_Labs"
+          ]
+        },
+        "moat": {
+          "score": 3,
+          "confidence": "med",
+          "why": "Weak. The concept is easily copied; the only real moat is the player-density network effect — which is precisely the thing that can't be bootstrapped. Exclusive venue/event-organiser relationships (in the bounded-venue version) are a modest, more attainable moat.",
+          "sources": []
+        },
+        "margins": {
+          "score": 5,
+          "confidence": "low",
+          "why": "If it ever reached density, the economics are attractive and scalable — free-to-play in-app purchases plus paid real-world events (the location-gaming norm) on software-style margins. But that is conditional on solving density, and the mandatory safety/moderation overhead and the density ceiling temper the scalability.",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Pok%C3%A9mon_Go"
+          ]
+        },
+        "founderFit": {
+          "score": 2,
+          "confidence": "med",
+          "why": "Very weak. A reliable real-time geosocial game plus trust-and-safety infrastructure is a serious consumer-mobile engineering effort the team can't staff; marketing is a partial fit for a consumer launch but does nothing to solve local density or stranger-safety, which are the binding constraints.",
+          "sources": []
+        },
+        "risk": {
+          "score": 2,
+          "confidence": "med",
+          "why": "High, on two fronts. First, a two-sided local-density cold-start in its most acute form — the game is nothing unless another player is within a few metres right now, the exact failure that killed the whole proximity-social category (Color, Bump, Yik Yak, Zenly). Second, safety and liability: pointing users at real strangers to meet in person invites harassment, stalking and luring (location games already have a record of lure-based crime; Yik Yak collapsed under cyberbullying), on top of a continuous-location privacy honeypot and platform limits on background location/Bluetooth.",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Yik_Yak",
+            "https://en.wikipedia.org/wiki/Pok%C3%A9mon_Go"
+          ]
+        }
+      },
+      "businessCase": {
+        "summary": "A mobile game that alerts you when another player is physically nearby and prompts a quick real-world interaction — rock-paper-scissors, exchanging a spy code word, a challenge or task — a 'Pokemon Go, but the targets are real people' social game. A technical correction anchors the case: phones cannot sense each other by RFID/NFC as the pitch assumes — NFC is a ~4cm touch technology with no phone-to-phone peer or background scanning (Android's old NFC 'Beam' was removed in 2019), and even Bluetooth cannot reliably detect arbitrary nearby phones in the background (Apple and Google had to build COVID exposure-notification into the operating system itself for exactly this reason). The buildable version uses the Pokemon Go architecture — continuous GPS reported to a server that pushes 'a player is near you' — with Bluetooth/UWB only for the final face-to-face handshake. The concept is fun in principle, but its hardest problems aren't technical: it needs several players in the same small area at the same moment (a brutal local-density cold-start that has killed every comparable proximity-social app), and directing users toward real strangers creates a first-order safety and privacy burden.",
+        "customer": "Socially adventurous younger users (the Pokemon Go / experiential crowd) open to spontaneous real-world play with strangers — most realistically reached inside bounded, already-dense communities (a campus, festival, conference or event) rather than on the open street.",
+        "market": "Location-based gaming is a real but modest genre — roughly US$1.2B globally in 2023 (Japan alone ~US$620M, about half) — and it is dominated by games whose targets are virtual (Pokemon Go, Ingress), which sidesteps the need for another live player nearby. Pokemon Go's scale (1B+ downloads, ~US$1.9B peak-year revenue) is the wrong benchmark: its draw was ambient single-player-versus-environment play on pre-existing IP. A no-IP game whose targets are real people has a much smaller reachable market, and every comparable human-proximity social app has failed.",
+        "model": "Free-to-play with in-app purchases (power-ups, cosmetics, 'lures') and paid real-world events — the location-gaming norm — plus the more defensible path of selling the experience B2B to venues and event organisers (festivals, conferences, campuses, team-building) who supply the crowd.",
+        "goToMarket": "Density is the whole game, so a broad consumer launch would starve — the only viable start is to saturate one high-density, high-trust venue at a time (a single campus or a festival), prove the loop where players are already co-located and safety is bounded, then tile outward. Pokemon Go solved its own cold-start with global IP plus a pre-built map of points of interest from its earlier game; a startup has neither, and its 'points of interest' are live humans who must also be present.",
+        "costs": "Building a GPS-server MVP is modest, but there is no revenue until local density exists, and an app that directs users to real strangers needs identity/age verification, reporting/blocking, 'meet in public' guardrails and human moderation from day one — real cost and friction that work against the density it needs. Acquiring users in dense geographic clusters is expensive per active experience.",
+        "risks": "Two problems dominate. First, a two-sided local-density cold-start in its most acute form: the game is nothing unless another player is within a few metres right now — the exact failure that killed Color, Bump-style apps, Yik Yak and Zenly (the survivors either had huge IP or, like Happn's dating, a purpose valuable even at low density). Second, safety and liability: pointing users at real strangers to interact in person invites harassment, stalking and luring (location games already have a record of lure-based crime, and Yik Yak collapsed under cyberbullying), on top of a continuous-location privacy honeypot and Apple/Google limits on background location and Bluetooth. The RFID mechanic in the pitch also does not exist and must be dropped.",
+        "nextSteps": "1) Drop 'RFID' — the buildable mechanic is GPS-to-server proximity with a Bluetooth/UWB foreground handshake. 2) Pick ONE bounded, dense, trusted venue (a campus, festival or conference) and prototype the loop there, where density is guaranteed and the crowd is closed — this also sidesteps the background-detection limits and most of the stranger-safety risk. 3) Design safety in from the start (opt-in, age-gating, reporting, public-space guardrails). 4) Validate that the core interaction (a 30-second rock-paper-scissors or code-word exchange with a nearby stranger) is actually fun and repeatable. 5) Only consider open-world consumer expansion after the bounded version proves it can manufacture density and stay safe."
+      },
+      "clarifyingQuestions": [
+        "Is this an open-world consumer app, or a bounded-venue experience (campus/festival/conference/team-building) sold B2B to the organiser? The bounded version dodges both the density cold-start and most of the safety risk — and is what can realistically ship.",
+        "How is the stranger-safety problem handled — age verification, reporting/blocking, public-space guardrails — given the core loop sends people to interact with strangers in person?",
+        "Who builds it? A reliable real-time geosocial game plus trust-and-safety infrastructure is a serious mobile-engineering effort the team would need to bring in."
+      ]
     }
   ]
 }
