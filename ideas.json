@@ -471,7 +471,7 @@
       "id": "wasabi-import-business",
       "title": "Wasabi Import Business",
       "owner": "Dave",
-      "status": "analyzed",
+      "status": "refined",
       "oneLiner": "Import genuine real wasabi from Asia and distribute it to Canadian restaurants — competing with the domestic monopoly grower on origin and product range.",
       "tags": [
         "import",
@@ -483,16 +483,17 @@
         "market": {
           "score": 5,
           "confidence": "med",
-          "why": "Same scarce, premium demand as growing it — most of the best wasabi comes from Japan and limited fresh availability is a structural constraint, while restaurants increasingly prize authenticity (real B2B demand). The premium end is the core market, but carrying frozen/powder forms widens it beyond fresh-only buyers.",
+          "why": "Real wasabi is a scarce premium product and the Canadian market is thinly and poorly served: the leading specialty-food importer (Qualifirst) stocks only horseradish-based imitation, and genuine Wasabia japonica is offered by just a few niche sellers. Demand is narrow (the premium end) but under-supplied, and real-wasabi retail prices run high (roughly C$400-1,000+/kg for fresh rhizome), which frames the value even though imported fresh is no cheaper than BC-grown.",
           "sources": [
-            "https://foodprint.org/blog/you-havent-had-wasabi-until-youve-had-it-fresh-and-local/",
+            "https://www.qualifirst.com/shop/product/wasabi-ko-horseradish-l-103049",
+            "https://pacificwildpick.com/en-ca/products/real-fresh-wasabi-root",
             "https://www.fortunebusinessinsights.com/wasabi-market-110276"
           ]
         },
         "entry": {
           "score": 5,
           "confidence": "med",
-          "why": "Far easier than farming, but not frictionless: importing fresh rhizome is governed by CFIA phytosanitary rules (Directive D-94-26 for vegetables with attached roots — phytosanitary certificate, pest/soil-free, AIRS approval), and needs cold-chain handling. Shelf-stable forms (frozen grated, freeze-dried powder, paste) are much simpler to import.",
+          "why": "Far easier than farming, but not frictionless: importing fresh rhizome is governed by CFIA phytosanitary/soil-free rules (Directive D-94-26 for vegetables with attached roots, with the exact requirement set per-origin by an AIRS determination), and needs cold-chain handling. Shelf-stable forms (frozen grated, freeze-dried powder, paste) are much simpler to import.",
           "sources": [
             "https://inspection.canada.ca/plant-health/invasive-species/directives/horticulture/94-26",
             "https://realwasabi.com/blogs/news/how-to-store-and-preserve-fresh-wasabi-rhizomes"
@@ -507,8 +508,9 @@
         "saturation": {
           "score": 5,
           "confidence": "med",
-          "why": "Real-wasabi supply to Canada is scarce and there isn't a crowd of pure importers — but note the international pattern: the successful real-wasabi players (BC's Pacific Coast/Kawai, the UK's The Wasabi Company, Iceland's Nordic Wasabi, the US's Real Wasabi) mostly GROW locally for freshness rather than import. That's as much a competitive caution — a hint that fresh-and-local beats imported product — as it is open runway.",
+          "why": "Genuinely open at the dedicated-importer level: there appears to be no dedicated real-wasabi importer in Canada, and the leading specialty importer carries only imitation — real wasabi reaches the market via a handful of niche sellers and Japanese-foodservice distributors. That is real whitespace, but tempered by a telling international pattern: the successful real-wasabi players (BC's Pacific Coast Wasabi, the UK's Wasabi Company, Iceland's Nordic Wasabi, the US's Real Wasabi) mostly GROW locally for freshness rather than import.",
           "sources": [
+            "https://www.qualifirst.com/shop/product/wasabi-ko-horseradish-l-103049",
             "https://foodprint.org/blog/you-havent-had-wasabi-until-youve-had-it-fresh-and-local/"
           ]
         },
@@ -521,9 +523,10 @@
         "margins": {
           "score": 6,
           "confidence": "low",
-          "why": "Real wasabi carries a high price, so distribution margins can be healthy, but freight, cold-chain and spoilage on fresh eat into them; shelf-stable frozen/powder forms carry better effective margins through far lower waste.",
+          "why": "Real wasabi carries a high price, so distribution margins can be healthy — but the cost-arbitrage that would create a LARGE margin is unproven: imported fresh is not cheaper than domestic, and no wholesale differential could be verified. Any cost edge is strongest in shelf-stable frozen grated / paste / powder (far lower waste than fresh), which are also the import-friendly forms.",
           "sources": [
-            "https://www.fortunebusinessinsights.com/wasabi-market-110276"
+            "https://www.tridge.com/market-overview/fresh-wasabi-root",
+            "https://ozawa.ca/product/kaneku-frozen-grated-wasabi-750g/"
           ]
         },
         "founderFit": {
@@ -535,27 +538,29 @@
         "risk": {
           "score": 5,
           "confidence": "med",
-          "why": "Fresh wasabi is highly perishable (~2–3 weeks refrigerated, and grated flavour starts to fade within ~15 minutes), so fresh imports carry waste and logistics risk; phytosanitary approval, currency and freight add friction; and the local grower has a fresher, no-shipping edge. But capital-at-risk is low and it's cheap to test — no 2-year crop bet.",
+          "why": "The cost-arbitrage case is unproven — imported fresh wasabi is not cheaper than BC-grown at retail, the wholesale differential is unverified, and cheap Asian 'wasabi' is usually imitation — so the edge must be authenticity/assortment, not price. Fresh rhizome is highly perishable (~2-3 weeks; grated flavour fades within minutes) with CFIA phytosanitary hurdles; the domestic grower keeps a fresher, no-shipping advantage; and without an exclusive Asian supply line the position is replicable. Capital-at-risk stays low on a small frozen/paste trial.",
           "sources": [
-            "https://realwasabi.com/blogs/news/how-to-store-and-preserve-fresh-wasabi-rhizomes"
+            "https://realwasabi.com/blogs/news/how-to-store-and-preserve-fresh-wasabi-rhizomes",
+            "https://inspection.canada.ca/en/importing-food-plants-animals/plant-and-plant-product"
           ]
         }
       },
       "businessCase": {
-        "summary": "Rather than growing wasabi (a 2-year, high-failure crop dominated by BC's monopoly grower), import genuine real wasabi from Asia — primarily Japan — and distribute it to Canadian restaurants. The smart version carries a range: shelf-stable real-wasabi forms (frozen grated, freeze-dried powder, paste) for the broad premium market plus fresh rhizome by air freight for top-tier accounts, positioning on Japanese origin and product range against the local grower's freshness edge. Far lower barrier, cost and payback than farming, and a strong fit for the team's Asia-sourcing strength — but constrained by perishability, CFIA phytosanitary rules, and a telling pattern: the successful international real-wasabi players mostly grow locally for freshness rather than import, and the local incumbent has that same fresh, no-shipping advantage.",
-        "customer": "Authenticity-focused Japanese/Asian and high-end restaurants (and premium retailers) in Canada for fresh rhizome, plus a wider set of mid-to-upper restaurants that would use real-wasabi frozen/powder if the price and convenience work.",
-        "market": "Real wasabi is scarce and premium — most of the best comes from Japan, and limited fresh availability is a structural market constraint; restaurants increasingly prioritise authenticity, driving B2B demand. The addressable segment is the premium end, but broader than fresh-only if you carry frozen and powder forms.",
-        "model": "B2B import and distribution: source real wasabi from Asian producers and sell to Canadian restaurants at a markup on recurring supply relationships. Product tiers — fresh rhizome (premium, air-freighted, perishable) plus frozen grated / freeze-dried powder / paste (shelf-stable, broader reach, far less waste).",
-        "goToMarket": "Use Asia-sourcing relationships to secure supply; land high-end sushi restaurants on fresh/authenticity, and offer the frozen/powder range to a wider set of restaurants that want 'real wasabi' without fresh-handling. Differentiate from the local grower on Japanese origin and product range.",
-        "costs": "Working capital for inventory and freight (air freight for fresh), cold-chain handling, CFIA import compliance, and spoilage on unsold perishables. Much lower and faster than building a farm — a small trial shipment is enough to start.",
-        "risks": "Fresh wasabi is highly perishable (~2–3 weeks; grated flavour fades within ~15 minutes), so fresh imports carry waste and logistics risk; CFIA phytosanitary rules govern fresh-rhizome imports (Directive D-94-26, phytosanitary certificate, AIRS); the successful international real-wasabi players mostly grow locally for freshness rather than import (a caution for a pure-import model); and the domestic grower has a fresher, no-shipping edge. Low moat unless exclusive supply is locked.",
-        "nextSteps": "1) Check CFIA AIRS / Directive D-94-26 to confirm which real-wasabi forms can be imported and under what conditions (fresh vs frozen vs powder differ hugely). 2) Secure an Asian supplier and price landed cost incl. freight for each form. 3) Get 3–5 Canadian restaurants to commit on price/volume — test frozen/powder first (lower risk) before fresh. 4) Model spoilage on fresh at ~1–3 week shelf life. 5) Define positioning vs the local grower and check which international importers already ship to Canada."
+        "summary": "Import genuine (Wasabia japonica) wasabi from Asia — Japanese, sushi-grade — and sell it to Canadian restaurants and premium retailers in BOTH fresh rhizome and, more practically, shelf-stable forms (frozen grated, real paste, powder). The sharpest opening is authenticity and assortment, not price: Canada's leading specialty-food importer (Qualifirst) stocks only horseradish-based imitation and genuine wasabi is served by just a handful of niche players, so a dedicated real-wasabi importer is close to a category of one. The cost-arbitrage thesis is only partly supported — at retail, imported Japanese fresh wasabi is no cheaper than BC-grown (it matches or exceeds it), a genuine wholesale cost gap could not be verified, and the cheap Asian 'wasabi' that looks like arbitrage is almost always imitation. Any real cost edge lives in the frozen/powder forms; fresh rhizome is the hardest to land (perishable, CFIA phytosanitary rules), so the margin-safe path leads with frozen grated and real paste.",
+        "customer": "Authenticity-focused Japanese/sushi and high-end restaurants (and premium retailers) that want genuine Japanese-origin wasabi — reachable most easily via shelf-stable frozen grated and real paste, with fresh rhizome for top-tier accounts.",
+        "market": "Real wasabi is scarce and premium, and the Canadian market is under-supplied with the genuine article: the mainstream specialty importer sells only imitation, and only niche players offer real Wasabia japonica. Demand is narrow (the premium end) but authenticity is increasingly prized; carrying frozen/powder alongside fresh widens the addressable base beyond fresh-only buyers. Retail prices for real wasabi run high (roughly C$400-1,000+/kg fresh), framing the value.",
+        "model": "B2B import and distribution of genuine Japanese wasabi across a product range: shelf-stable frozen grated, real paste and powder (the import-friendly, low-waste, margin-safe core) plus fresh rhizome by air freight for marquee accounts. Positioning is on verified Japanese origin and authenticity versus the imitation that dominates the category — not on undercutting the local grower on fresh.",
+        "goToMarket": "Lead with frozen grated and real paste into authenticity-focused sushi restaurants and specialty retailers (fast, low-waste, easy to land), using Asia-sourcing relationships to secure supply; add fresh rhizome for top accounts once a supply line is proven. The wedge is 'real, Japanese-origin wasabi' in a market where the mainstream importer sells only horseradish.",
+        "costs": "Working capital for inventory and freight, cold-chain for perishables, and CFIA import compliance (a Safe Food for Canadians licence; fresh rhizome adds phytosanitary/soil-free requirements under CFIA plant-import rules). Frozen and powder forms are cheap and low-waste to import and test; fresh is costlier and perishable.",
+        "risks": "The cost-arbitrage case is unproven: imported fresh wasabi is not cheaper than BC-grown at retail, the wholesale differential could not be verified, and cheap Asian 'wasabi' is usually imitation — so the edge must be authenticity and assortment, not price. Fresh rhizome is highly perishable with phytosanitary hurdles; the domestic grower keeps a fresh, no-shipping advantage; and internationally the successful real-wasabi players mostly grow locally rather than import. Without an exclusive or preferential Asian supply line the position is replicable and the moat is weak.",
+        "nextSteps": "1) Verify the actual wholesale cost gap — get a landed price for Japanese frozen grated / real paste and compare it to the domestic grower's and existing niche importers' wholesale pricing; the 'large profit from cost arbitrage' claim stands or falls here. 2) Lock a reliable, ideally exclusive, Japanese sushi-grade supplier (the only real moat). 3) Lead with frozen/paste; test fresh with a small air-freight trial. 4) Confirm CFIA requirements per form (SFC licence; fresh-rhizome phytosanitary/soil rules). 5) Price against the few Canadian real-wasabi sellers, positioning on verified authenticity versus the imitation the mainstream importer stocks."
       },
       "clarifyingQuestions": [
-        "Fresh rhizome (most premium, most perishable, phytosanitary hurdles) or shelf-stable real-wasabi forms (frozen grated / powder — easier, broader reach) as the lead product?",
-        "Do we have a route to a reliable, ideally exclusive, Asian real-wasabi supplier — the main potential moat here?",
-        "How do we beat the local grower's freshness advantage — is Japanese-origin authenticity plus product range enough for Canadian restaurants?"
-      ]
+        "Does a real wholesale cost gap actually exist — is landed Japanese wasabi (especially frozen grated/paste) materially cheaper than the domestic grower's wholesale price, leaving room for a large margin? (Unverified today, and load-bearing for the arbitrage thesis.)",
+        "Is there a route to a reliable, ideally exclusive, Japanese sushi-grade supplier — the only real moat here?",
+        "If the price arbitrage doesn't materialise, is 'verified real, Japanese-origin wasabi' — versus the horseradish imitation the mainstream importer sells — a strong enough wedge on its own?"
+      ],
+      "refinedThrough": "2026-07-30T13:32:01.824Z"
     },
     {
       "id": "single-origin-specialty-importer",
@@ -832,7 +837,7 @@
       "title": "Single-sport Social Franchise",
       "owner": "Dave",
       "status": "refined",
-      "refinedThrough": "2026-07-27T19:01:47.503Z",
+      "refinedThrough": "2026-07-30T13:35:41.193Z",
       "oneLiner": "A branded, franchisable competitive-socialising venue built around one modernised, digitally-scored game — scoped to a lower-capital format (electronic darts the lead candidate) with a built-in league and membership engine, in an under-served Canadian market.",
       "tags": [
         "hospitality",
@@ -869,9 +874,11 @@
         "saturation": {
           "score": 6,
           "confidence": "med",
-          "why": "The under-served formats sit at the low-capex end: electronic darts has almost no branded presence in Canada (essentially one Toronto venue), and duckpin/mini-bowling and shuffleboard have no franchised operator here — genuine whitespace for a new franchisor. Golf simulators are more crowded, already served by many Canadian independents, and the broader socialising category is filling fast.",
+          "why": "Canada is under-served by branded, single-hero-game, digitally-scored league venues. Generic eat-drink-play is already present — The Rec Room and Immersive Gamebox both operate in Calgary — but the marquee single-game formats are absent nationally (no Flight Club darts, Topgolf/Five Iron, Puttshack or Sixes cricket in Canada), so a focused hero-game venue is genuine whitespace — tempered by a fast-filling category and by the fact that a local Calgary operator can't be ruled out without an on-the-ground check.",
           "sources": [
-            "https://oche.com/ca/kingwest"
+            "https://flightclubdarts.com/locations",
+            "https://www.therecroom.com/locations",
+            "https://sixescricket.com"
           ]
         },
         "moat": {
@@ -906,19 +913,19 @@
         }
       },
       "businessCase": {
-        "summary": "A branded, franchisable competitive-socialising venue built around one modernised, digitally-scored game, in a lower-capital format so the first venue is a recoverable bet rather than a multi-million big-box. The strongest low-capex, franchisable, Canada-relevant candidate is a modernised electronic-darts bar: cheap digitally-scored stations, a modest footprint, deep pre-existing league culture (tens of thousands of sanctioned league players) for repeat play, and almost no branded competition in Canada. A small-bay golf-simulator lounge is a better-proven but pricier fallback (franchised buildouts ~US$1.0-1.8M, and already crowded with Canadian independents), and duckpin/mini-bowling is a differentiated small-footprint dark horse with no franchised competitor. Whichever game leads, the model only works with a league-and-membership engine built in from day one, and the team's lack of hospitality-operations experience remains the gap to fill.",
-        "customer": "Experience-led social spenders — younger adults, groups, corporate outings, date-nights and party bookings — who want an active, gamified night out with food and drink, plus a repeat-visit league/membership base. Once the format is proven, franchisees who buy and operate venues under the brand become a second customer.",
-        "market": "Competitive socialising is among hospitality's hottest formats (concepts up ~386% since early 2021), and the wider location-based-entertainment market is put at ~US$23B in 2025 heading to ~US$58.5B by 2035 (~9.7% CAGR). Canada is under-served by branded single-game concepts — especially at the low-capex end (electronic darts, duckpin) — so the opportunity is a strong-growth niche rather than a mass market.",
-        "model": "Prove one company-owned low-capex venue (game entry and league fees, high-margin food and drink, memberships), then franchise the proven format (a franchise fee plus ~7% royalty and a marketing levy, the range comparable game-based concepts charge). Recurring league memberships and F&B attach are the core venue economics; royalties scale the brand capital-light.",
-        "goToMarket": "Open one flagship in a major Canadian metro in the chosen low-capex format, win on a genuinely modern, digitally-scored experience plus a structured weekly league and membership that drive repeat visits, and only franchise once one venue proves repeatable unit economics.",
-        "costs": "In a darts-bar format, a bar-scale fit-out (hundreds of thousands) plus cheap digitally-scored stations — far below a big-box venue; a golf-sim lounge is higher (~US$1.0-1.8M franchised). Ongoing costs are lease, staff, food-and-drink cost of goods, and the league/membership platform.",
-        "risks": "Hospitality and multi-unit venue-operations experience is the team's gap; the competitive-socialising category is filling fast; single-game concepts risk novelty fatigue unless a league and membership engine sustains repeat play; and one venue must prove repeatable economics before franchising. Lower capital contains the downside relative to a big-box bet.",
-        "nextSteps": "1) Choose the hero game from the low-capex shortlist (electronic darts lead; golf sim or duckpin as alternatives) — see the open question below. 2) Commission a real fit-out quote for the chosen format in a target Canadian metro. 3) Design the league and membership engine that drives repeat play from day one. 4) Cover the hospitality-operations gap (hire or partner with an experienced operator). 5) Build the single-venue unit economics and prove them before designing the franchise offer."
+        "summary": "A branded, franchisable competitive-socialising venue built around one modernised, digitally-scored 'hero game', with a strong food-and-drink attach and — central to making a single-game concept sticky — leagues and team competitions. Calgary is the beachhead. It is scoped to a lower-capital format, and across the researched field of hero games the strongest combination of whitespace, league depth and modest capital is a modernised electronic-darts venue (no Flight-Club-style branded darts venue is confirmed in Canada, darts has the deepest league culture, and darts booths are among the lowest-cost, most standardisable fit-outs). Social cricket (Sixes-style — the cleanest verified Canadian whitespace, and a strong fit with Calgary's large cricket-engaged community) and modernised duckpin/mini-bowling are the next-best plays; golf simulators are the weakest whitespace, since indoor sim bars are already broadly present. Calgary is not greenfield for generic eat-drink-play (The Rec Room and Immersive Gamebox operate here), so the opportunity is specifically a single-hero-game, league-driven venue — not a broad arcade. The binding gaps remain hospitality/venue operations and the capital for a first proof venue.",
+        "customer": "Experience-led social spenders — younger adults, groups, corporate outings, date-nights and party bookings — plus a recurring league/team-competition base that drives repeat visits. Once the format is proven, franchisees who buy and operate venues under the brand become a second customer.",
+        "market": "Competitive socialising is among hospitality's fastest-growing formats (concepts up ~386% since early 2021), and the wider location-based-entertainment market is put at ~US$23B in 2025 rising to ~US$58.5B by 2035 (~9.7% CAGR). Calgary is served by multi-game incumbents (The Rec Room, Immersive Gamebox) but not by a branded, single-hero-game, league-driven venue — the specific whitespace. The reachable Calgary slice is a strong-growth niche rather than a mass market.",
+        "model": "Prove one company-owned Calgary flagship in the chosen hero game (game/lane fees, a high-margin food-and-drink attach, and recurring league/membership subscriptions), then franchise the proven format (a franchise fee plus ~7% royalty and a marketing levy, the range comparable game-based concepts charge). Leagues and team competitions are the retention engine that makes a single-game concept sticky.",
+        "goToMarket": "Open one Calgary flagship in the chosen hero game (electronic darts the lead candidate), win on a genuinely modern, digitally-scored experience plus structured weekly leagues and team competitions that drive repeat visits, and differentiate from The Rec Room and Immersive Gamebox by being a focused single-game league venue rather than a broad arcade. Franchise only once the Calgary unit economics prove out.",
+        "costs": "In a darts-bar format, a bar-scale fit-out plus cheap digitally-scored stations — far below a big-box venue; a golf-sim lounge is far higher (~US$1.0-1.8M franchised). Ongoing costs are lease, staff, food-and-drink cost of goods, and the league/membership platform.",
+        "risks": "Hospitality and multi-unit venue-operations experience is the team's gap; capital for the first proof venue; the chosen format's Calgary-specific absence is unverified (pub darts and bowling exist, and Rec Room/Immersive Gamebox are here — confirm locally before committing); and the broader socialising category is filling fast. Single-game novelty risk is mitigated by building leagues and team competitions in from day one (darts in particular has deep league culture).",
+        "nextSteps": "1) Commit the hero game — electronic darts is the top whitespace/league/low-capex pick; social cricket (cleanest verified Canadian whitespace, strong Calgary demographic fit) and modernised duckpin are the alternatives. 2) Confirm the chosen format has no existing Calgary operator (national brands are absent, but check for a local venue). 3) Design the league and team-competition engine from day one — the retention core. 4) Build single-venue unit economics for the chosen format in Calgary and cover the hospitality-operations gap (hire or partner). 5) Franchise only after one Calgary venue proves repeatable economics."
       },
       "clarifyingQuestions": [
-        "Which hero game do we commit to — electronic darts (lowest capex, deep league culture, Canadian whitespace), a golf-simulator lounge (better-proven, pricier, crowded), or duckpin/mini-bowling (differentiated, no franchised rival)?",
-        "What capital envelope are we working to for the first proof venue, and who covers the hospitality/venue-operations gap — hire or partner?",
-        "Which Canadian metro is the beachhead, and how do we build the league/membership engine that makes a single-game concept sticky?"
+        "Commit to electronic darts as the hero game (top whitespace, deepest league culture, lowest capex), or a differentiated alternative — social cricket (cleanest verified Canadian whitespace, strong Calgary demographic fit) or modernised duckpin?",
+        "What capital envelope for the first Calgary proof venue, and who covers the hospitality/venue-operations gap — hire or partner?",
+        "Have we confirmed the chosen format has no existing Calgary operator (the national brands are absent, but a local venue could exist)?"
       ]
     },
     {
@@ -1757,7 +1764,7 @@
       "id": "locality-game",
       "title": "Locality Game",
       "owner": "Dave",
-      "status": "analyzed",
+      "status": "refined",
       "oneLiner": "A venue-bounded social icebreaker game for events: attendees' phones prompt quick real-world interactions with nearby participants, turning a conference, festival or team offsite into a networking game — sold B2B to the organiser.",
       "tags": [
         "events",
@@ -1819,9 +1826,9 @@
           ]
         },
         "founderFit": {
-          "score": 4,
+          "score": 6,
           "confidence": "med",
-          "why": "Better than a consumer app: the B2B-to-organiser sales motion suits the team's marketing and consulting strengths, and the event context removes the consumer-virality problem. But it still needs mobile game development the team lacks, and credibility selling to event organisers.",
+          "why": "The team brings the build capability this most needs — hands-on software development and dev-team management plus applied-AI and technology-consulting experience, alongside marketing — so the mobile/event app is within reach in-house, and the B2B-to-organiser sales motion suits its consulting and marketing strengths. The remaining gaps are event-industry credibility and the reality that this stays a feature an incumbent platform could bundle.",
           "sources": []
         },
         "risk": {
@@ -1842,13 +1849,14 @@
         "goToMarket": "Sell to organisers, not consumers: land a few conferences, campuses or corporate offsites, prove the game lifts networking and engagement, and expand to repeat buyers and agencies. Because the event supplies the crowd, there is no consumer density to bootstrap. The sharpest wedge is the one thing incumbents don't do — real-time proximity peer-to-peer play — pursued deeply enough to matter before a platform copies it, or offered as an embeddable module to the existing event platforms.",
         "costs": "Building a reliable foreground venue app plus the B2B sales motion are the main costs; there is no heavy consumer customer-acquisition spend because the organiser brings the crowd. The seasonality of events makes revenue lumpy under a per-event model.",
         "risks": "The binding risk is defensibility: this reads as a feature, not a company — Whova already ships an 'Icebreaker Contest' and the major platforms bundle matchmaking and gamification into apps attendees already have, so an organiser may not buy a second app for one mechanic. Add adoption friction (event-app adoption is often cited at only ~30-40% of attendees, and a proximity game needs a threshold of active players in the room), one-off per-event usage, and event seasonality. The density and safety problems of a consumer proximity game are, however, largely solved by the venue-bounded framing.",
-        "nextSteps": "1) Decide the strategy fork: a standalone game that wins on proximity-gameplay depth incumbents don't offer, or an embeddable module licensed into existing event platforms (lower-risk given the bundling threat). 2) Run a pilot at one conference or corporate offsite and measure real outcomes — repeat interactions and networking lift per attendee, not just installs. 3) Solve the opt-in/adoption threshold (how many players in a room before it is fun). 4) Line up repeat/subscription buyers (agencies, conference series, corporate L&D) to escape one-off event economics. 5) Bring in the mobile game-development capability the team lacks."
+        "nextSteps": "1) Decide the strategy fork: a standalone game that wins on proximity-gameplay depth incumbents don't offer, or an embeddable module licensed into existing event platforms (lower-risk given the bundling threat). 2) Run a pilot at one conference or corporate offsite and measure real outcomes — repeat interactions and networking lift per attendee, not just installs. 3) Solve the opt-in/adoption threshold (how many players in a room before it is fun). 4) Line up repeat/subscription buyers (agencies, conference series, corporate L&D) to escape one-off event economics. 5) Scope the in-house build and prioritise the proximity-gameplay depth that differentiates from incumbents."
       },
       "clarifyingQuestions": [
         "Standalone app, or an embeddable module licensed into existing event platforms (Whova, Swapcard, Cvent)? The bundling threat makes the embed route lower-risk.",
         "Which buyer is the beachhead — conferences, campuses, festivals or corporate team-building/L&D — and are they repeat/subscription buyers rather than one-off events?",
         "What is the minimum share of attendees who must opt in and be active for the proximity game to be fun, and how do we clear that threshold?"
-      ]
+      ],
+      "refinedThrough": "2026-07-30T13:37:41.478Z"
     }
   ]
 }
