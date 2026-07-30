@@ -82,6 +82,36 @@
       {
         "seed": "single-sport-social-franchise",
         "run": "2026-07-28"
+      },
+      {
+        "sector": "travel-hospitality",
+        "lens": "social",
+        "run": "2026-07-29",
+        "theme": "calgary-gap"
+      },
+      {
+        "sector": "media-entertainment",
+        "lens": "cultural",
+        "run": "2026-07-29",
+        "theme": "calgary-gap"
+      },
+      {
+        "sector": "consumer-retail",
+        "lens": "cultural",
+        "run": "2026-07-29",
+        "theme": "calgary-gap"
+      },
+      {
+        "sector": "travel-hospitality",
+        "lens": "cultural",
+        "run": "2026-07-29",
+        "theme": "calgary-gap"
+      },
+      {
+        "sector": "built-environment",
+        "lens": "cultural",
+        "run": "2026-07-29",
+        "theme": "calgary-gap"
       }
     ]
   },
@@ -841,6 +871,205 @@
         }
       ],
       "createdRun": "2026-07-28"
+    },
+    {
+      "id": "calgary-social-bathhouse",
+      "title": "Calgary Gap: Social Bathhouse & Nordic Sauna",
+      "sector": "travel-hospitality",
+      "lens": "social",
+      "source": "broad",
+      "horizon": "near",
+      "signal": 7,
+      "oneLiner": "The modern social bathhouse — guided sauna and cold-plunge as an experiential night out — is booming in cities like Toronto and New York, yet Calgary is served by none of the format's leading operators despite a near-ideal cold-climate fit.",
+      "why": "Contrast bathing (hot sauna, cold plunge) is a fast-growing North American wellness-social category — Othership runs venues in Toronto and New York — layered on a deep international public-bathing culture (Finnish sauna, Japanese sento, Korean jjimjilbang). It reads as a Calgary opportunity on two grounds. The gap: the category's leading operators are absent — Othership lists only Toronto and NYC, and the established Canadian Nordic-spa chain Scandinave Spa has no Alberta location (a nascent local operator may exist, so this is 'major operators absent', not a proven format vacuum). The fit: Calgary's long, cold winters make year-round contrast therapy a natural draw, and its relatively young and unusually wealthy population (as of 2015, the most millionaires per capita of any major Canadian city) matches the discretionary-wellness spend the format needs (Social/Economic/Environmental).",
+      "drivers": [
+        "social",
+        "economic",
+        "environmental"
+      ],
+      "sources": [
+        "https://www.othership.us/locations",
+        "https://www.scandinave.com/en/",
+        "https://en.wikipedia.org/wiki/Public_bathing",
+        "https://en.wikipedia.org/wiki/Calgary"
+      ],
+      "confidence": "med",
+      "ideas": [
+        {
+          "title": "Downtown social bathhouse",
+          "oneLiner": "An Othership-style inner-city venue with booked sauna + cold-plunge sessions, aufguss rituals and evening social slots.",
+          "pattern": "geographic-arbitrage"
+        },
+        {
+          "title": "In-city Nordic thermal spa",
+          "oneLiner": "Bring the destination Nordic thermal-cycle spa experience into the city itself, rather than the foothills day-trips Albertans currently drive to.",
+          "pattern": "geographic-arbitrage"
+        },
+        {
+          "title": "Recovery-club membership",
+          "oneLiner": "A members' sauna-and-plunge recovery club co-located with a gym or racquet club, aimed at athletic young professionals.",
+          "pattern": "service-izing"
+        }
+      ],
+      "createdRun": "2026-07-29"
+    },
+    {
+      "id": "calgary-immersive-art-destination",
+      "title": "Calgary Gap: Permanent Immersive-Art Destination",
+      "sector": "media-entertainment",
+      "lens": "cultural",
+      "source": "broad",
+      "horizon": "mid",
+      "signal": 6,
+      "oneLiner": "Permanent, marquee immersive-art destinations (Meow Wolf, teamLab) anchor tourism in cities including Denver, yet neither operator has a Canadian location and Calgary has no permanent immersive-art destination of its own — a weatherproof opportunity a Denver-scale city can support.",
+      "why": "Permanent narrative/immersive-art venues have become destination attractions: Meow Wolf operates in Santa Fe, Las Vegas, Denver, Grapevine and Houston, and teamLab runs dedicated immersive museums in Tokyo, Shanghai and Seoul. The gap: neither Meow Wolf nor teamLab has a single Canadian location, and Calgary has no permanent immersive-art destination of its own (it has hosted touring shows like Immersive Van Gogh, but nothing permanent) — Montreal's OASIS Immersion is the notable Canadian example of the format. Denver — a frequent Calgary size-and-lifestyle comparator — supports a full Meow Wolf, and a weatherproof indoor destination fits Calgary's long winters, high discretionary incomes and Stampede-driven visitor flow (Social/Technological/Economic). The catch is capital: these are large, multi-million-dollar fixed builds, so a lower-footprint 'chapter one' is the realistic entry.",
+      "drivers": [
+        "social",
+        "technological",
+        "economic"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/Meow_Wolf",
+        "https://en.wikipedia.org/wiki/TeamLab_(art_collective)",
+        "https://en.wikipedia.org/wiki/Calgary"
+      ],
+      "confidence": "med",
+      "ideas": [
+        {
+          "title": "Warehouse immersive-art house",
+          "oneLiner": "A permanent narrative immersive-art venue in repurposed Ramsay/Inglewood industrial stock, driven by Calgary artists and Prairie/energy-heritage themes.",
+          "pattern": "category-creation"
+        },
+        {
+          "title": "Rotating-IP projection venue",
+          "oneLiner": "A lower-capital projection-plus-interactive-room venue running rotating licensed experiences as a 'chapter one', upgradeable toward a permanent build.",
+          "pattern": "geographic-arbitrage"
+        },
+        {
+          "title": "Digital-art museum partnership",
+          "oneLiner": "A teamLab-style digital-art museum brought in as an anchor tourism attraction in partnership with the city or a developer.",
+          "pattern": "platform"
+        }
+      ],
+      "createdRun": "2026-07-29"
+    },
+    {
+      "id": "calgary-chef-driven-food-hall",
+      "title": "Calgary Gap: Chef-Driven Food Hall",
+      "sector": "consumer-retail",
+      "lens": "cultural",
+      "source": "broad",
+      "horizon": "near",
+      "signal": 7,
+      "oneLiner": "The curated, chef-driven food hall (Time Out Market) operates in Montreal and Vancouver but not Calgary — a marquee, restaurant-quality format distinct from the farmers' markets Calgary already has.",
+      "why": "The chef-curated food hall — an editorially selected set of restaurant-quality kiosks around shared seating and central bars — is an established international format (Time Out Market runs in Boston, New York, Montreal, Vancouver, Lisbon and more; other models include Rotterdam's Markthal and London's Borough Market). The gap is specific and sourced: Time Out Market operates in two Canadian metros (Montreal and Vancouver) but has no Calgary location. This is not 'Calgary lacks a market' — it demonstrably has farmers'/public markets — but a marquee chef-driven hall of this kind. Calgary is a comparable-scale, wealthier metro (as of 2015, the most millionaires per capita of any major Canadian city) with a strong independent-restaurant scene, downtown/Beltline density and Stampede/convention footfall, and it sits outside Michelin's Canadian coverage (as of 2025, Toronto, Vancouver and Quebec only) — a curated hall both fits an indoor-climate city and helps build its dining reputation (Social/Economic).",
+      "drivers": [
+        "social",
+        "economic"
+      ],
+      "sources": [
+        "https://www.timeout.com/time-out-market",
+        "https://en.wikipedia.org/wiki/Markthal",
+        "https://en.wikipedia.org/wiki/Michelin_Guide",
+        "https://en.wikipedia.org/wiki/Calgary"
+      ],
+      "confidence": "med",
+      "ideas": [
+        {
+          "title": "Chef-curated food hall",
+          "oneLiner": "A Time Out-model hall of 15-25 vetted local restaurant stalls plus central bars in a heritage/warehouse building in East Village or Inglewood.",
+          "pattern": "geographic-arbitrage"
+        },
+        {
+          "title": "All-weather covered public market",
+          "oneLiner": "A Markthal/Borough-hybrid year-round covered market pairing fresh-grocer stalls with prepared-food vendors as a climate-proof anchor.",
+          "pattern": "rebundling"
+        },
+        {
+          "title": "'Best-of-Calgary' hall",
+          "oneLiner": "A hall that recruits the city's top independent restaurants into satellite counters, editorially curated for locals and visitors.",
+          "pattern": "premiumisation"
+        }
+      ],
+      "createdRun": "2026-07-29"
+    },
+    {
+      "id": "calgary-asian-night-market",
+      "title": "Calgary Gap: Large-Scale Asian Night Market",
+      "sector": "travel-hospitality",
+      "lens": "cultural",
+      "source": "broad",
+      "horizon": "near",
+      "signal": 5,
+      "oneLiner": "Richmond, BC's night market has drawn ~30,000 visitors a night at its peak, proving the large-scale Asian night market works in western Canada — a format Calgary appears not to run at that scale.",
+      "why": "The large-scale Asian night market is a proven western-Canadian draw: Richmond, BC's has run 400+ booths and about 30,000 visitors a night at its peak across a warm-season run, echoing Asian antecedents like Taipei's Shilin. The opportunity for Calgary rests on a comparable young, large, multicultural metro with established Asian communities and a car-oriented layout that suits a big-footprint edge site with parking (the model Richmond uses). The absence claim is unverified — Calgary likely hosts smaller seasonal/community markets, and a Richmond-scale (400-booth, 30k-per-night) operation is the specific gap being hypothesised, not confirmed. The binding constraint is climate: an outdoor-only market loses roughly half the year, so a winterised or covered format is the version most likely to pencil (Social/Economic).",
+      "drivers": [
+        "social",
+        "economic"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/Richmond_Night_Market",
+        "https://en.wikipedia.org/wiki/Calgary"
+      ],
+      "confidence": "low",
+      "ideas": [
+        {
+          "title": "Seasonal NE Calgary night market",
+          "oneLiner": "A May-September weekend Asian night market on a large lot near Calgary's established Asian communities, 150-400 vendors plus a stage.",
+          "pattern": "geographic-arbitrage"
+        },
+        {
+          "title": "Winterised covered night market",
+          "oneLiner": "A covered/indoor night-market hybrid that runs year-round, defeating the six-month climate constraint that kills most Calgary outdoor concepts.",
+          "pattern": "category-creation"
+        },
+        {
+          "title": "Rotating 'world' night market",
+          "oneLiner": "A multi-cuisine rotating market to broaden demand if a single-cuisine market is too thin for the local base.",
+          "pattern": "rebundling"
+        }
+      ],
+      "createdRun": "2026-07-29"
+    },
+    {
+      "id": "calgary-distillery-destination-district",
+      "title": "Calgary Gap: Curated Distillery Destination District",
+      "sector": "built-environment",
+      "lens": "cultural",
+      "source": "broad",
+      "horizon": "mid",
+      "signal": 5,
+      "oneLiner": "Toronto's Distillery District turned heritage industrial buildings into a single pedestrianised craft-beverage destination; Calgary has the breweries and heritage stock but not the curated destination place-brand.",
+      "why": "Toronto's Distillery District converted 40+ Victorian industrial heritage buildings into a pedestrian-only arts/dining/retail destination that refuses chain tenants — a cohesive place-brand, not a dispersed cluster. Calgary is not short of craft beverage: Inglewood already markets itself as an arts-and-culture district with 100+ shops and a host of breweries (the 'Music Mile'). So the gap is not breweries — it is the curated, pedestrianised, heritage destination-district format built around a spirits/distillery anchor and marketed as a single visitor destination. This is a 'build on an asset Calgary already has' play (existing Inglewood/Ramsay heritage-industrial stock, brewery cluster, and Alberta's liberalised craft-distilling scene), which makes it lower-risk and incremental rather than a cold transplant. This is a place-making and experiential-format gap rather than a verified operator absence, so confidence is lower (Social/Economic/Environmental).",
+      "drivers": [
+        "economic",
+        "social",
+        "environmental"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/Distillery_District",
+        "https://en.wikipedia.org/wiki/Inglewood,_Calgary",
+        "https://en.wikipedia.org/wiki/Calgary"
+      ],
+      "confidence": "low",
+      "ideas": [
+        {
+          "title": "Pedestrianised craft-beverage block",
+          "oneLiner": "Anchor and curate a pedestrian craft-spirits-and-beer destination block in Inglewood/Ramsay with a heritage adaptive-reuse anchor (distillery, tasting halls, market, events).",
+          "pattern": "rebundling"
+        },
+        {
+          "title": "Destination craft distillery",
+          "oneLiner": "A destination distillery with tours, restaurant and event venue in a heritage building — the anchor tenant a district can grow around.",
+          "pattern": "verticalisation"
+        },
+        {
+          "title": "District place-brand & events layer",
+          "oneLiner": "A place-brand plus festivals/tours layer that markets the existing brewery cluster as one cohesive visitor destination.",
+          "pattern": "platform"
+        }
+      ],
+      "createdRun": "2026-07-29"
     }
   ]
 }
