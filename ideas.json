@@ -1567,6 +1567,288 @@
         "How is the stranger-safety problem handled — age verification, reporting/blocking, public-space guardrails — given the core loop sends people to interact with strangers in person?",
         "Who builds it? A reliable real-time geosocial game plus trust-and-safety infrastructure is a serious mobile-engineering effort the team would need to bring in."
       ]
+    },
+    {
+      "id": "rotating-ip-projection-venue",
+      "title": "Rotating-IP Projection Venue",
+      "owner": "Dave",
+      "status": "analyzed",
+      "oneLiner": "A lower-capital immersive projection venue in Calgary running rotating licensed digital-art experiences — a 'chapter one' that could later upgrade toward a permanent build.",
+      "tags": [
+        "experiential",
+        "entertainment",
+        "venue",
+        "Calgary"
+      ],
+      "scores": {
+        "market": {
+          "score": 5,
+          "confidence": "low",
+          "why": "Immersive/projection entertainment has real, demonstrated pull — teamLab's Tokyo venues have drawn millions of visitors a year and touring shows have travelled widely, including through Calgary — but it is a volatile, boom-and-bust category and no reliable market-size figure could be verified. Treat demand as real but proven-cyclical, not a stable, sized market.",
+          "sources": [
+            "https://en.wikipedia.org/wiki/TeamLab_(art_collective)",
+            "https://en.wikipedia.org/wiki/Immersive_Van_Gogh_Exhibit"
+          ]
+        },
+        "entry": {
+          "score": 4,
+          "confidence": "med",
+          "why": "Lower capital than a permanent narrative build (which runs into the tens of millions), and a licensed projection show is quick to stand up — but it still means a multi-year warehouse lease, a projector/media-server fit-out, and entering an oversupplied content space where the same shows are widely available.",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Convergence_Station"
+          ]
+        },
+        "cost": {
+          "score": 3,
+          "confidence": "med",
+          "why": "Capital-heavy and real-estate-committed: a projection-scale warehouse lease, projector array and media servers, plus recurring content-licensing fees and a relentless content-rotation treadmill to fight novelty fatigue. Below a permanent build's 8-figure cost, but not cheap, and the projection fit-out capex has no reliable public benchmark.",
+          "sources": []
+        },
+        "saturation": {
+          "score": 4,
+          "confidence": "med",
+          "why": "The touring projection-show space is oversupplied — a single subject (Van Gogh) spawned five or six competing shows in major cities on public-domain content, which drove the category's boom and bust. The permanent, proprietary end (Meow Wolf, teamLab) is genuinely uncontested in Canada, but that is not this licensed-projection model.",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Immersive_Van_Gogh_Exhibit"
+          ]
+        },
+        "moat": {
+          "score": 2,
+          "confidence": "med",
+          "why": "The defining weakness. Licensed or public-domain content has no exclusivity — a licensor can sell the same or a rival show to anyone, including a competitor across town — so there is no content moat; differentiation must come from location, rotation cadence, events and hospitality, not the shows. The permanent-narrative model (proprietary, physically built) has a moat; this one does not.",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Immersive_Van_Gogh_Exhibit"
+          ]
+        },
+        "margins": {
+          "score": 4,
+          "confidence": "low",
+          "why": "Ticketed admission (comparable touring shows ran ~US$25-75) against heavy fixed costs — lease, projection hardware, staffing — and novelty-limited runs that require constant, costly content refreshes. Margins are pressured by both oversupply and the rotation treadmill.",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Immersive_Van_Gogh_Exhibit"
+          ]
+        },
+        "founderFit": {
+          "score": 3,
+          "confidence": "med",
+          "why": "Marketing and creative instinct fit the brand/experience and events side, and the team is in the target city — but no one has venue operations, immersive-content production or capital-project experience, and it is a capital-heavy real-estate commitment far from the team's leaner strengths.",
+          "sources": []
+        },
+        "risk": {
+          "score": 2,
+          "confidence": "med",
+          "why": "High, with a recent and direct precedent: the category's largest touring operator, Lighthouse Immersive (behind Immersive Van Gogh), went insolvent in 2023 — less than two years after the peak — undone by exactly this model's weaknesses of commodity content, oversupply and novelty fatigue. Add a multi-year real-estate commitment and no content moat, and the downside is a large, illiquid loss.",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Immersive_Van_Gogh_Exhibit"
+          ]
+        }
+      },
+      "businessCase": {
+        "summary": "A lower-capital immersive venue in Calgary — a projection-and-interactive-room space running rotating licensed digital-art experiences, pitched as a 'chapter one' that could later upgrade toward a permanent Meow Wolf/teamLab-scale build. The appeal is real demand for immersive experiences (teamLab draws millions; touring shows have visited Calgary) and a genuine national white space at the permanent end (neither Meow Wolf nor teamLab has a Canadian location). But the licensed-projection version this describes has a defining flaw: the content is a commodity — a single subject like Van Gogh spawned five or six competing shows per city on public-domain material — so there is no moat, and the category's biggest touring operator, Lighthouse Immersive, went bankrupt in 2023 on exactly that dynamic. It is also a capital-heavy, real-estate-committed venue with no venue-operations capability on the team.",
+        "customer": "Calgary residents and visitors looking for a novel, weatherproof cultural outing — families, date-nights, tourists, and event/private-hire bookings — the audience touring immersive shows already draw locally.",
+        "market": "Immersive/projection entertainment has real, demonstrated pull (teamLab's Tokyo venues have drawn millions of visitors a year, and touring shows have visited Calgary), but it is a volatile, boom-and-bust category and no reliable market-size figure could be verified. The differentiated permanent end (Meow Wolf, teamLab) has no Canadian presence — a genuine white space — but the licensed-projection 'chapter one' competes in an oversupplied content space.",
+        "model": "Ticketed admission to timed immersive shows (comparable touring shows charged ~US$25-75), with rotating licensed content, plus events, private hires and a food-and-beverage attach to raise per-visit spend and drive repeat visits.",
+        "goToMarket": "Open a projection-scale space in a Calgary warehouse district, launch with a recognised licensed show to pull opening crowds, and sustain footfall through a rotating content calendar plus events and private hires. Position as the city's first permanent immersive venue, with an eventual upgrade path toward proprietary, built content.",
+        "costs": "A multi-year warehouse lease, projector array and media servers, and recurring content-licensing fees, plus the ongoing cost of rotating content to fight novelty fatigue. Below a permanent build's tens of millions, but capital-heavy and real-estate-committed, and the projection fit-out has no reliable public cost benchmark.",
+        "risks": "The content is a commodity with no exclusivity, so there is no moat and margins get competed away (the Van Gogh oversupply — five or six shows per city — is the pattern). Projection shows are largely one-and-done, forcing a costly content-rotation treadmill. The category's largest operator, Lighthouse Immersive, went insolvent in 2023. And it is a capital-heavy, multi-year real-estate bet the team has no venue-operations experience to run.",
+        "nextSteps": "1) Confront the moat problem — a licensed-projection venue competes with anyone who licenses the same show; decide what (location, cadence, events, hospitality, or eventually proprietary content) makes it defensible. 2) Study why Lighthouse Immersive failed and what the survivors do differently. 3) Build the fit-out and lease capex bottom-up from real Calgary vendor/lease quotes (no public benchmark exists). 4) Model the content-rotation calendar and repeat-visit economics honestly. 5) Cover the venue-operations gap (hire or partner)."
+      },
+      "clarifyingQuestions": [
+        "What makes it defensible, given a licensed or public-domain show can be run by any competitor — location, rotation cadence, events, hospitality, or an eventual move to proprietary content?",
+        "Given Lighthouse Immersive (Immersive Van Gogh) went bankrupt in 2023 on commodity content and novelty fatigue, what is different here?",
+        "Who runs the venue? This is capital-heavy hospitality/entertainment operations the team doesn't currently have."
+      ]
+    },
+    {
+      "id": "in-city-nordic-thermal-spa",
+      "title": "In-city Nordic Thermal Spa",
+      "owner": "Dave",
+      "status": "analyzed",
+      "oneLiner": "An in-city Nordic thermal spa and social bathhouse for Calgary — sauna, cold plunge and a hot-cold thermal cycle in the city itself, rather than the foothills day-trip Albertans currently drive to.",
+      "tags": [
+        "wellness",
+        "hospitality",
+        "experiential",
+        "Calgary"
+      ],
+      "scores": {
+        "market": {
+          "score": 6,
+          "confidence": "med",
+          "why": "Genuine, structurally-supported demand. Contrast bathing (hot sauna, cold plunge) is a canonical wellness cycle rather than a fad, the urban social-bathhouse format is growing (Othership runs four urban venues in Toronto and New York), and the global wellness economy is large (~US$6.8T in 2024, a broad proxy). Calgary's cold climate and affluent population make year-round indoor thermal bathing a strong fit — the demand case is the strongest of Calgary's gap ideas.",
+          "sources": [
+            "https://www.othership.us/",
+            "https://en.wikipedia.org/wiki/Sauna",
+            "https://globalwellnessinstitute.org/press-room/statistics-and-facts/"
+          ]
+        },
+        "entry": {
+          "score": 3,
+          "confidence": "med",
+          "why": "High barriers. A thermal spa is capital-heavy hospitality real estate — pools, multiple saunas, cold plunge, water treatment and heavy HVAC on a large urban footprint (Scandinave venues run 25,000-72,000 sq ft) — plus public-bathing water health-code regulation. Not a lean launch.",
+          "sources": [
+            "https://www.scandinave.com/en/"
+          ]
+        },
+        "cost": {
+          "score": 2,
+          "confidence": "med",
+          "why": "Very capital-heavy and slow to pay back. The fit-out (water systems, saunas, plunge pools, HVAC) is a major upfront build with heavy ongoing utilities and maintenance, on a multi-year real-estate commitment. No reliable public build-cost benchmark was verifiable — model it bottom-up — but the scale is clearly high.",
+          "sources": [
+            "https://www.scandinave.com/en/"
+          ]
+        },
+        "saturation": {
+          "score": 5,
+          "confidence": "med",
+          "why": "The urban social-bathhouse format is absent in Calgary (Othership and Scandinave have no Alberta location), so the in-city niche is open — but Alberta already has a destination Nordic spa (Kananaskis Nordic Spa, about an hour west) that owns the regional 'Nordic spa' mindshare as a day-trip, and the category is drawing new entrants.",
+          "sources": [
+            "https://www.othership.us/",
+            "https://www.scandinave.com/en/",
+            "https://www.explorekananaskis.com/kananaskis-nordic-spa/"
+          ]
+        },
+        "moat": {
+          "score": 3,
+          "confidence": "med",
+          "why": "Modest. A prime urban location, a strong brand and a sticky membership base would be a real if unspectacular moat, but the format itself is replicable and a well-funded competitor could copy it. Location and membership loyalty are the defensible pieces.",
+          "sources": []
+        },
+        "margins": {
+          "score": 5,
+          "confidence": "low",
+          "why": "Premium pricing helps (destination day-passes run ~CAD$138-185; urban venues add memberships and drop-in sessions), but heavy fixed costs — utilities to continuously heat and chill water, maintenance, staff — and dependence on repeat-visit retention temper it.",
+          "sources": [
+            "https://www.scandinave.com/whistler/rates/"
+          ]
+        },
+        "founderFit": {
+          "score": 3,
+          "confidence": "med",
+          "why": "Marketing and community-building fit the brand side, and the team is in the target city — but no one has spa/hospitality operations, water-systems engineering or health-code experience, and it is a capital-heavy build far from the team's leaner, asset-light strengths.",
+          "sources": []
+        },
+        "risk": {
+          "score": 3,
+          "confidence": "med",
+          "why": "High, but with genuine demand behind it. The risks are capital intensity and a multi-year real-estate commitment, heavy ongoing utilities and maintenance, public-bathing water health-code regulation, competition from the established foothills destination spa, and dependence on membership retention (a beautiful venue people visit twice a year underperforms). The cold-climate demand fit contains the downside somewhat.",
+          "sources": [
+            "https://www.explorekananaskis.com/kananaskis-nordic-spa/"
+          ]
+        }
+      },
+      "businessCase": {
+        "summary": "An in-city Nordic thermal spa and social bathhouse for Calgary — sauna, cold plunge and a hot-cold-rest thermal cycle located in the city, rather than the roughly hour-west foothills day-trip Albertans currently drive to (Kananaskis Nordic Spa). Demand is the strongest of Calgary's gap ideas: contrast bathing is a canonical wellness practice, the urban social-bathhouse format is growing (Othership runs four urban venues in Toronto and New York), the wellness economy is large, and Calgary's cold winters and affluent population make year-round indoor thermal bathing a natural fit — and no urban operator of this kind is in Calgary. The hard part is the build: it is capital-heavy hospitality real estate (pools, saunas, water treatment, HVAC on a 25,000-72,000 sq ft-scale footprint), health-code-regulated, retention-dependent, and needs hospitality-operations capability the team doesn't have.",
+        "customer": "Affluent, wellness-oriented Calgarians wanting frequent, convenient contrast-therapy and social bathing in the city — most valuably as members and regulars rather than occasional day-trippers — plus recovery-focused athletes and young professionals.",
+        "market": "Demand is genuine and structurally supported: contrast bathing is a canonical wellness cycle (not a fad), the urban social-bathhouse format is growing (Othership's four urban venues), and the global wellness economy is large (~US$6.8T in 2024, a broad proxy). Calgary's cold climate and high incomes make it a strong fit, and no urban Nordic bathhouse currently operates there — the existing option is the foothills destination spa about an hour west.",
+        "model": "Membership-led recurring revenue (a recovery/contrast-therapy club) plus premium drop-in sessions and day-passes (destination day-passes benchmark around CAD$138-185), with add-ons like massage and events. Frequency and membership retention drive the economics — which is what most differentiates an urban venue from the occasional-visit destination model.",
+        "goToMarket": "Open one urban venue in a central, accessible Calgary location and anchor revenue in memberships (convenience and frequency are the whole pitch versus the foothills day-trip), layering premium drop-ins and events on top. Lean on the wellness/recovery community and social content to build a regular base.",
+        "costs": "Capital-heavy: a large urban fit-out (pools, saunas, cold plunge, water treatment, heavy HVAC) on a multi-year lease or build, with substantial ongoing utilities, water-treatment and maintenance costs. No reliable public build-cost benchmark exists — it must be modelled bottom-up — but it is clearly a major upfront commitment with a long payback.",
+        "risks": "Capital intensity and a multi-year real-estate commitment; heavy ongoing utilities and maintenance; public-bathing water health-code regulation; competition from the established Kananaskis destination spa for regional 'Nordic spa' mindshare; and, above all, retention risk — an urban venue's economics depend on members coming frequently, not visiting twice a year. The team also lacks spa/hospitality-operations and water-systems experience.",
+        "nextSteps": "1) Pin the build cost bottom-up from real Calgary contractor/fit-out quotes (no public benchmark exists) and size the capital honestly. 2) Validate the membership-frequency assumption — how often would Calgarians actually come, and at what price — since retention is make-or-break. 3) Scope Alberta public-bathing water health-code requirements early. 4) Differentiate clearly from the Kananaskis destination spa on convenience, frequency and social positioning. 5) Cover the spa/hospitality-operations gap (hire or partner with an experienced operator)."
+      },
+      "clarifyingQuestions": [
+        "What capital envelope are we prepared to commit, given a thermal-spa fit-out (pools, saunas, water treatment, HVAC) is a major, long-payback build with no cheap version?",
+        "Will Calgarians visit often enough as members to carry an urban venue, versus the occasional day-trip to the foothills spa — what is the frequency and membership assumption?",
+        "Who runs it? This needs spa/hospitality operations and water-systems/health-code experience the team doesn't currently have."
+      ]
+    },
+    {
+      "id": "locality-game",
+      "title": "Locality Game",
+      "owner": "Dave",
+      "status": "analyzed",
+      "oneLiner": "A venue-bounded social icebreaker game for events: attendees' phones prompt quick real-world interactions with nearby participants, turning a conference, festival or team offsite into a networking game — sold B2B to the organiser.",
+      "tags": [
+        "events",
+        "gaming",
+        "B2B",
+        "SaaS"
+      ],
+      "scores": {
+        "market": {
+          "score": 5,
+          "confidence": "med",
+          "why": "Event technology is a real, growing host market — analyst estimates put event-management software in the ~US$8-24B range (differing scope) growing ~10% a year — and conference networking is a validated pain point (in one survey only 15% of organisers rated their event's networking 'very effective'). But the reachable slice for a proximity icebreaker game specifically is a niche feature within that market, not the whole of it.",
+          "sources": [
+            "https://www.mordorintelligence.com/industry-reports/event-management-software-market",
+            "https://www.verifiedmarketresearch.com/product/event-management-software-market/",
+            "https://www.bizzabo.com/blog/event-marketing-statistics"
+          ]
+        },
+        "entry": {
+          "score": 6,
+          "confidence": "med",
+          "why": "Far easier than an open-world consumer app. Selling one organiser reaches thousands of attendees at once, the event guarantees the player density the game needs, and a foreground, venue-bounded experience runs full-rate Bluetooth without fighting the iOS background-scanning throttles that cripple always-on proximity apps.",
+          "sources": [
+            "https://developer.apple.com/library/archive/documentation/NetworkingInternetWeb/Conceptual/CoreBluetooth_concepts/CoreBluetoothBackgroundProcessingForIOSApps/PerformingTasksWhileYourAppIsInTheBackground.html",
+            "https://www.goosechase.com/"
+          ]
+        },
+        "cost": {
+          "score": 6,
+          "confidence": "med",
+          "why": "Light. A foreground event app avoids the heavy consumer customer-acquisition spend (the organiser brings the crowd), and it can be sold per-event or as an organiser subscription — a comparable event game charges ~US$299 per experience — so time-to-revenue is short once the product exists.",
+          "sources": [
+            "https://www.goosechase.com/pricing"
+          ]
+        },
+        "saturation": {
+          "score": 4,
+          "confidence": "med",
+          "why": "Event gamification is already served — Whova ships a native 'Icebreaker Contest', Goosechase runs event scavenger hunts, and Brella/Grip/Swapcard all do AI networking/matchmaking. A real-time proximity peer-to-peer game appears unserved specifically, but it sits as an unbundled feature inside a category incumbents already occupy.",
+          "sources": [
+            "https://whova.com/features/event-gamification-app/",
+            "https://www.goosechase.com/"
+          ]
+        },
+        "moat": {
+          "score": 3,
+          "confidence": "med",
+          "why": "Weak — this reads as a feature, not a company. The incumbents own the attendee's home screen (the official event app) and can bundle a proximity mini-game into software attendees already installed; Whova's existing icebreaker contest shows the intent. The only defensible edges are genuine gameplay depth or embedding into the existing platforms rather than competing with them.",
+          "sources": [
+            "https://whova.com/features/event-gamification-app/"
+          ]
+        },
+        "margins": {
+          "score": 5,
+          "confidence": "low",
+          "why": "Event SaaS carries healthy software margins (a listed event-software comparable, Eventbrite, runs ~67-70% gross), but one-off per-event usage and event seasonality temper it; durable economics need repeat buyers on subscription (venues, agencies, conference series, corporate L&D).",
+          "sources": [
+            "https://stockanalysis.com/stocks/EB/financials/"
+          ]
+        },
+        "founderFit": {
+          "score": 4,
+          "confidence": "med",
+          "why": "Better than a consumer app: the B2B-to-organiser sales motion suits the team's marketing and consulting strengths, and the event context removes the consumer-virality problem. But it still needs mobile game development the team lacks, and credibility selling to event organisers.",
+          "sources": []
+        },
+        "risk": {
+          "score": 6,
+          "confidence": "med",
+          "why": "Materially lower risk than an open-world proximity game — the event guarantees player density (killing the cold-start) and the closed, opt-in, known-attendee crowd removes the stranger-safety problem. The remaining risks are commercial: it may be a feature incumbents bundle rather than a standalone company, event-app adoption is often cited at only ~30-40% of attendees (a proximity game is worthless below a density threshold in the room), usage can be one-off per event, and event demand is seasonal.",
+          "sources": [
+            "https://whova.com/features/event-gamification-app/",
+            "https://www.swapcard.com/"
+          ]
+        }
+      },
+      "businessCase": {
+        "summary": "A social icebreaker game for live events: at a conference, festival, campus or corporate offsite, attendees who opt in are prompted by their phones to do quick real-world interactions with nearby participants — rock-paper-scissors, a code word, a challenge — turning networking into a game and helping shy attendees break the ice. It is the venue-bounded, B2B version of a proximity social game, sold to the event organiser. That framing fixes the problems that doom an open-world consumer version: the event guarantees the player density the game needs, the crowd is closed and opt-in (removing the stranger-safety risk), acquisition is cheap (sell one organiser, reach thousands), and a foreground venue-bounded app sidesteps the iOS limits on background proximity detection. The open question is defensibility — event platforms like Whova already ship icebreaker/gamification features and could bundle this into an app attendees have already installed, so it risks being a feature rather than a company.",
+        "customer": "Event organisers — conference and festival producers, universities, and corporate L&D/team-building buyers — who pay for tools that make attendee networking and engagement happen rather than leaving it to chance. Attendees are the players; the organiser is the buyer.",
+        "market": "Event technology is a multi-billion-dollar, roughly 10%-a-year market (analyst estimates range from ~US$8B to ~US$24B depending on scope), and networking is a recognised weak spot organisers actively try to fix (only 15% rate their event's networking 'very effective' in one survey). The reachable market for a proximity icebreaker game is a niche within this — most naturally a feature or module sold into the events and team-building budget.",
+        "model": "Organiser-side SaaS: per-event licences for one-off conferences and subscriptions for repeat buyers (venues, agencies, conference series, corporate L&D), mirroring how comparable event games price (from ~US$299 per experience up to a subscription). Software-style gross margins, but revenue quality depends on landing repeat/subscription buyers rather than one-off events.",
+        "goToMarket": "Sell to organisers, not consumers: land a few conferences, campuses or corporate offsites, prove the game lifts networking and engagement, and expand to repeat buyers and agencies. Because the event supplies the crowd, there is no consumer density to bootstrap. The sharpest wedge is the one thing incumbents don't do — real-time proximity peer-to-peer play — pursued deeply enough to matter before a platform copies it, or offered as an embeddable module to the existing event platforms.",
+        "costs": "Building a reliable foreground venue app plus the B2B sales motion are the main costs; there is no heavy consumer customer-acquisition spend because the organiser brings the crowd. The seasonality of events makes revenue lumpy under a per-event model.",
+        "risks": "The binding risk is defensibility: this reads as a feature, not a company — Whova already ships an 'Icebreaker Contest' and the major platforms bundle matchmaking and gamification into apps attendees already have, so an organiser may not buy a second app for one mechanic. Add adoption friction (event-app adoption is often cited at only ~30-40% of attendees, and a proximity game needs a threshold of active players in the room), one-off per-event usage, and event seasonality. The density and safety problems of a consumer proximity game are, however, largely solved by the venue-bounded framing.",
+        "nextSteps": "1) Decide the strategy fork: a standalone game that wins on proximity-gameplay depth incumbents don't offer, or an embeddable module licensed into existing event platforms (lower-risk given the bundling threat). 2) Run a pilot at one conference or corporate offsite and measure real outcomes — repeat interactions and networking lift per attendee, not just installs. 3) Solve the opt-in/adoption threshold (how many players in a room before it is fun). 4) Line up repeat/subscription buyers (agencies, conference series, corporate L&D) to escape one-off event economics. 5) Bring in the mobile game-development capability the team lacks."
+      },
+      "clarifyingQuestions": [
+        "Standalone app, or an embeddable module licensed into existing event platforms (Whova, Swapcard, Cvent)? The bundling threat makes the embed route lower-risk.",
+        "Which buyer is the beachhead — conferences, campuses, festivals or corporate team-building/L&D — and are they repeat/subscription buyers rather than one-off events?",
+        "What is the minimum share of attendees who must opt in and be active for the proximity game to be fun, and how do we clear that threshold?"
+      ]
     }
   ]
 }
