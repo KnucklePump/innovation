@@ -1184,6 +1184,295 @@
         "Is this pure advisory, or advisory as the wedge into recurring pricing-simulation/monitoring software (the only path that really scales)?",
         "Partner with a billing-infrastructure vendor (Metronome/Orb/m3ter) as the delivery layer, or stay independent and compete with Simon-Kucher and the big consultancies?"
       ]
+    },
+    {
+      "id": "visionpro-games",
+      "title": "VisionPro Games",
+      "owner": "Dave",
+      "status": "analyzed",
+      "oneLiner": "Build and sell 3D/spatial games for Apple Vision Pro on the visionOS App Store.",
+      "tags": [
+        "gaming",
+        "XR",
+        "consumer-tech",
+        "AppStore"
+      ],
+      "scores": {
+        "market": {
+          "score": 3,
+          "confidence": "low",
+          "why": "The bet is constrained to the smallest XR platform. Apple doesn't disclose Vision Pro sales, but reported figures are ~200,000 pre-orders and analyst launch-shipment estimates of ~60,000-80,000 units, and demand since has been widely described as 'struggling' and 'niche' at a $3,499 launch price (raised to $3,699 in 2026), with its roadmap recently scaled back and no near-term hardware catalyst. By contrast Meta Quest, the category leader, has sold 20M+ headsets — so a visionOS-only game addresses perhaps one to two orders of magnitude fewer potential buyers.",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Apple_Vision_Pro",
+            "https://9to5mac.com/guides/vision-pro/",
+            "https://en.wikipedia.org/wiki/Meta_Quest"
+          ]
+        },
+        "entry": {
+          "score": 5,
+          "confidence": "med",
+          "why": "The platform is open to developers — Apple provides the toolchain (Unity, RealityKit, Xcode) and App Store distribution, and takes only 15% of the first US$1M in annual proceeds under its Small Business Program — so there's no capital or regulatory barrier to shipping a game. The real barrier is the specialist 3D/spatial game-development skill.",
+          "sources": [
+            "https://developer.apple.com/app-store/small-business-program/",
+            "https://developer.apple.com/visionos/"
+          ]
+        },
+        "cost": {
+          "score": 5,
+          "confidence": "low",
+          "why": "Moderate. Building a polished spatial game is a multi-month development effort but not capital-heavy, and App Store distribution is cheap. The real constraint is that revenue is capped by the tiny installed base, not the build cost.",
+          "sources": [
+            "https://developer.apple.com/app-store/small-business-program/"
+          ]
+        },
+        "saturation": {
+          "score": 4,
+          "confidence": "med",
+          "why": "Mixed. The native visionOS game catalogue is thin (a sign of open shelf space), but the broader VR-gaming audience — and the proven hits like Beat Saber (4M+ copies) — sit on Meta Quest's far larger base, not visionOS. You'd have an emptier shelf but almost no shoppers.",
+          "sources": [
+            "https://en.wikipedia.org/wiki/VisionOS",
+            "https://en.wikipedia.org/wiki/Beat_Saber"
+          ]
+        },
+        "moat": {
+          "score": 3,
+          "confidence": "low",
+          "why": "Weak. A single game has no structural moat — hits are hit-driven and easily cloned — and the whole business sits on one vendor's platform whose roadmap was recently scaled back, so Apple's choices, not the studio's, govern the ceiling.",
+          "sources": [
+            "https://9to5mac.com/guides/vision-pro/"
+          ]
+        },
+        "margins": {
+          "score": 6,
+          "confidence": "med",
+          "why": "App Store software economics are attractive per unit — a studio keeps 85% of proceeds under US$1M/yr (less above that threshold) on a zero-marginal-cost digital good. But a high per-unit margin on a tiny base is still small absolute revenue.",
+          "sources": [
+            "https://developer.apple.com/app-store/small-business-program/"
+          ]
+        },
+        "founderFit": {
+          "score": 2,
+          "confidence": "med",
+          "why": "Very weak. Building spatial games needs XR/game-development engineering the team doesn't have; none of its strengths (overseas sourcing, finance, consulting, marketing) apply to shipping a visionOS title.",
+          "sources": []
+        },
+        "risk": {
+          "score": 3,
+          "confidence": "med",
+          "why": "High. The installed base is tiny and uncertain, Apple's Vision roadmap was recently scaled back (a platform dependency the studio can't control), games are hit-driven, and the team can't build it. Capital-at-risk is contained to a single game build, but the odds of a meaningful return on a sub-million-unit platform are low.",
+          "sources": [
+            "https://9to5mac.com/guides/vision-pro/"
+          ]
+        }
+      },
+      "businessCase": {
+        "summary": "Develop 3D/spatial games for Apple Vision Pro and sell them on the visionOS App Store. Apple's developer tools and a favourable 15% App Store cut (under US$1M/yr) make shipping a title straightforward, but the venture is constrained to the smallest XR platform: Vision Pro's installed base is small (Apple doesn't disclose sales; ~200k pre-orders and ~60-80k launch shipments reported, with demand since described as 'niche' at a $3,499-3,699 price), versus 20M+ Meta Quest headsets. High per-unit software margins sit on a tiny base, hits are hit-driven, the platform's roadmap was recently scaled back, and the team has no game-development capability.",
+        "customer": "The small, affluent, early-adopter base of Apple Vision Pro owners looking for spatial games and experiences.",
+        "market": "Vision Pro's installed base is small — reported at ~200,000 pre-orders and analyst launch-shipment estimates of ~60,000-80,000 units, with post-launch demand widely described as 'struggling' and 'niche' at a $3,499-3,699 price, with the roadmap recently scaled back and no near-term hardware catalyst. The larger VR audience is on Meta Quest (20M+ sold). A visionOS-only game therefore addresses a very small market.",
+        "model": "Paid or freemium game sales on the visionOS App Store; Apple takes 15% of the first US$1M in annual proceeds (the standard rate above that), leaving the studio the rest.",
+        "goToMarket": "Publish on the visionOS App Store and rely on Apple featuring, store discovery and the small enthusiast community. With so few devices in the wild, breakout reach is hard and largely gated by Apple's editorial choices.",
+        "costs": "A multi-month spatial-game development effort (the team would have to hire or contract the XR engineering); distribution itself is cheap. The binding issue is that revenue is capped by the installed base, not the build.",
+        "risks": "A tiny, uncertain installed base on a single premium platform whose roadmap was recently scaled back; hit-driven game economics; the far larger audience being on Meta Quest instead; and no game-development capability on the team. Capital-at-risk is limited to the build, but expected return is low.",
+        "nextSteps": "1) Confront the platform-size problem — get a dated, sourced Vision Pro installed-base figure and decide whether any visionOS-only title can pay back. 2) Consider building cross-platform (Meta Quest first, where the audience and the proven hits are) rather than visionOS-exclusive. 3) Be honest about the capability gap — this needs XR/game-dev talent the team would have to bring in. 4) Prototype a small experience before committing. 5) Check whether Apple funds or features spatial-game developers."
+      },
+      "clarifyingQuestions": [
+        "What's the actual reachable Vision Pro installed base, and can a visionOS-only game pay back against it — or should this target Meta Quest (20M+ devices) first?",
+        "Who builds the game? Spatial game development is specialist XR engineering the team doesn't currently have.",
+        "Is there a reason to bet on Apple's smallest, premium platform over the larger VR audience, given the tiny base and scaled-back roadmap?"
+      ]
+    },
+    {
+      "id": "immersive-movies-on-visionpro",
+      "title": "Immersive Movies on VisionPro",
+      "owner": "Dave",
+      "status": "analyzed",
+      "oneLiner": "Produce immersive, volumetric movies — where the viewer is inside the action and can change viewpoint — for Apple Vision Pro.",
+      "tags": [
+        "media",
+        "XR",
+        "film",
+        "consumer-tech"
+      ],
+      "scores": {
+        "market": {
+          "score": 3,
+          "confidence": "low",
+          "why": "The same tiny Vision Pro base as any visionOS venture (Apple doesn't disclose sales; ~200k pre-orders and ~60-80k launch shipments reported, demand 'niche' at $3,499-3,699), with an added constraint: there is no open, paid third-party storefront for immersive films. Apple largely commissions and curates the marquee 'Apple Immersive Video' content itself, so a producer's addressable market is gated by Apple, not open to direct sale.",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Apple_Vision_Pro",
+            "https://9to5mac.com/guides/apple-immersive-video/"
+          ]
+        },
+        "entry": {
+          "score": 3,
+          "confidence": "med",
+          "why": "High barriers on two fronts. Production needs specialist volumetric capture — the reference camera, Blackmagic's URSA Cine Immersive, is ~US$22,000-31,000 before rigs, crew and specialist stereoscopic/spatial-audio post — and there is no open self-publish route: reaching viewers means being commissioned or curated by Apple. Capital and access barriers are both high.",
+          "sources": [
+            "https://www.blackmagicdesign.com/products/blackmagicursacineimmersive",
+            "https://9to5mac.com/guides/apple-immersive-video/"
+          ]
+        },
+        "cost": {
+          "score": 2,
+          "confidence": "low",
+          "why": "High and specialist. A single immersive title is a high-capital production — the reference capture camera alone is ~US$22,000-31,000, before rigs, crew and specialist post — with no assured route to revenue, unlike a laptop-and-camera indie film.",
+          "sources": [
+            "https://www.blackmagicdesign.com/products/blackmagicursacineimmersive"
+          ]
+        },
+        "saturation": {
+          "score": 4,
+          "confidence": "med",
+          "why": "The third-party immersive-film catalogue is thin, but that is because there is barely a market: the marquee content (Apple's own Elevated, Adventure, live NBA, NASA capture) is Apple-produced and Apple-curated, and only a handful of third-party titles (e.g. CANAL+'s immersive MotoGP documentary) exist. A newcomer competes against the platform owner for a curated shelf, not an open market.",
+          "sources": [
+            "https://9to5mac.com/guides/apple-immersive-video/"
+          ]
+        },
+        "moat": {
+          "score": 3,
+          "confidence": "low",
+          "why": "Weak from the venture's side — it wouldn't control distribution (Apple does), content is commissioned rather than owned-and-sold, and the format is Apple's. Specialist production capability is a mild skill barrier, but not a business moat.",
+          "sources": [
+            "https://9to5mac.com/guides/apple-immersive-video/"
+          ]
+        },
+        "margins": {
+          "score": 4,
+          "confidence": "low",
+          "why": "Poor for a standalone producer: high, specialist production cost per title against uncertain, commissioned revenue and no scalable self-publish storefront. This is project-based media economics, not scalable software.",
+          "sources": [
+            "https://www.blackmagicdesign.com/products/blackmagicursacineimmersive"
+          ]
+        },
+        "founderFit": {
+          "score": 2,
+          "confidence": "med",
+          "why": "Very weak. Immersive/volumetric film production is a specialist capability the team doesn't have; a marketing/creative instinct is tangential at best to shooting stereoscopic 8K-per-eye content and mastering spatial audio.",
+          "sources": []
+        },
+        "risk": {
+          "score": 2,
+          "confidence": "med",
+          "why": "High. Large capital per title, no confirmed monetisation path (Apple commissions and curates rather than running an open paid store), a tiny platform whose roadmap was recently scaled back, and no in-house production capability. A produced title could have nowhere to sell.",
+          "sources": [
+            "https://9to5mac.com/guides/vision-pro/",
+            "https://9to5mac.com/guides/apple-immersive-video/"
+          ]
+        }
+      },
+      "businessCase": {
+        "summary": "Produce immersive, volumetric movies for Apple Vision Pro — 'Apple Immersive Video'-style films (180-degree stereoscopic 3D, dual-8K-per-eye, spatial audio) that put the viewer inside the action. The format is striking, but the business is doubly constrained: the Vision Pro installed base is small (Apple doesn't disclose sales; ~200k pre-orders and ~60-80k launch shipments reported, 'niche' demand at $3,499-3,699), and there is no open paid storefront for third-party immersive films — Apple commissions and curates the marquee content itself. Production is high-capital and specialist (the reference camera alone is ~US$22-31k before rigs, crew and post), the monetisation path is unconfirmed, and the team has no immersive-film capability.",
+        "customer": "The small base of Apple Vision Pro owners consuming immersive content — reached, in practice, only if Apple commissions or curates the work, since there is no open paid immersive-film storefront.",
+        "market": "The addressable audience is the small Vision Pro installed base (~200k pre-orders, ~60-80k launch shipments reported; 'niche' demand at a $3,499-3,699 price), and access to it is gated: Apple produces and curates the flagship Apple Immersive Video titles, with only a handful of third-party works so far. There is no confirmed open, paid market a producer can simply sell into.",
+        "model": "Unclear and gating: there is no disclosed third-party revenue-share or open storefront for Apple Immersive Video. The realistic near-term path is commissioned or branded work for Apple or partners (as with CANAL+'s immersive MotoGP documentary), not self-published direct-to-consumer sales.",
+        "goToMarket": "In practice, pitch Apple or brand partners to commission immersive content, since viewers are reached through Apple's curated app rather than an open store. That makes the go-to-market a bespoke-commission business, not a scalable publishing one.",
+        "costs": "High and specialist: volumetric capture hardware (the reference Blackmagic URSA Cine Immersive camera is ~US$22-31k), plus rigs, crew and specialist stereoscopic and spatial-audio post-production per title.",
+        "risks": "No confirmed way to monetise third-party immersive films (Apple commissions/curates); a tiny platform with a recently scaled-back roadmap; high capital per title; competition for the curated shelf against Apple's own first-party content; and no in-house production capability. A finished title could have no route to market.",
+        "nextSteps": "1) Resolve the monetisation question first — establish whether Apple offers any third-party revenue-share or open publishing for Immersive Video, or whether this is commission-only. 2) If commission-only, treat it as a production-services pitch to Apple/brands, not a product. 3) Weigh the specialist capital (camera, rigs, post) against the tiny audience. 4) Consider the larger Meta Quest immersive-video audience as an alternative. 5) Be honest about the missing production capability."
+      },
+      "clarifyingQuestions": [
+        "Is there any open, paid route to sell immersive films to Vision Pro owners, or is it commission-and-curate only through Apple? (This determines whether there's a business at all.)",
+        "Given the ~US$22-31k+ specialist capture cost per production and a tiny installed base, what's the path to payback?",
+        "Who produces the immersive content — this needs specialist volumetric-film capability the team doesn't have?"
+      ]
+    },
+    {
+      "id": "ai-dating-app",
+      "title": "AI Dating App",
+      "owner": "Dave",
+      "status": "analyzed",
+      "oneLiner": "A dating app where an AI builds a detailed profile of each user and matches them with compatible people.",
+      "tags": [
+        "consumer",
+        "AI",
+        "dating",
+        "app"
+      ],
+      "scores": {
+        "market": {
+          "score": 4,
+          "confidence": "med",
+          "why": "The online-dating market is sizeable — Match Group and Bumble alone booked ~US$4.5B of revenue in 2025 — but it is mature and softening: Tinder's paying users have fallen every year (10.9M in 2022 to 9M in 2025), Bumble's revenue fell ~10% in 2025, and dating-app burnout is widely reported. Crucially, a new entrant's reachable market is tiny — credible newcomers launch one city at a time — not the headline figure.",
+          "sources": [
+            "https://stockanalysis.com/stocks/mtch/",
+            "https://stockanalysis.com/stocks/bmbl/",
+            "https://en.wikipedia.org/wiki/Tinder_(app)",
+            "https://techcrunch.com/2026/02/04/tinder-looks-to-ai-to-help-fight-swipe-fatigue-and-dating-app-burnout/"
+          ]
+        },
+        "entry": {
+          "score": 3,
+          "confidence": "med",
+          "why": "Hard. Beyond building the app, dating demands a brutal, marketing-heavy customer-acquisition war and a two-sided local-liquidity cold-start — you need enough of both sides in the same city before the product works, which is why serious entrants (Sitch in New York, Overtone in select locations) launch one metro at a time.",
+          "sources": [
+            "https://techcrunch.com/2025/06/25/sitch-wants-to-fuse-human-personality-and-ai-for-matchmaking/",
+            "https://techcrunch.com/2026/07/14/the-founder-of-hinge-raised-18m-to-build-a-new-ai-dating-service-overtone/"
+          ]
+        },
+        "cost": {
+          "score": 3,
+          "confidence": "med",
+          "why": "High. Dating is notoriously acquisition-spend-heavy (Match put US$50M of marketing behind Tinder alone), and reaching local liquidity in even one city is expensive and slow before subscriptions cover it.",
+          "sources": [
+            "https://techcrunch.com/2026/02/04/tinder-looks-to-ai-to-help-fight-swipe-fatigue-and-dating-app-burnout/"
+          ]
+        },
+        "saturation": {
+          "score": 2,
+          "confidence": "high",
+          "why": "Brutally saturated. Match Group owns Tinder and Hinge, the category's two dominant apps, and the exact 'AI learns you, curates matches, no swiping' concept is already shipping from incumbents (Tinder 'Chemistry', Bumble 'Bee') AND from Overtone — the founder of Hinge, who raised US$18M backed by Match Group itself. The specific idea is being built by arguably the most credible possible team.",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Match_Group",
+            "https://techcrunch.com/2026/07/14/the-founder-of-hinge-raised-18m-to-build-a-new-ai-dating-service-overtone/",
+            "https://techcrunch.com/2025/11/05/tinder-to-use-ai-to-get-to-know-users-tap-into-their-camera-roll-photos/"
+          ]
+        },
+        "moat": {
+          "score": 2,
+          "confidence": "med",
+          "why": "Very weak. Matching approaches are copyable, a newcomer has no data or network advantage at cold-start, and the incumbents (and well-funded AI-first entrants) already hold the users and the concept. There is no defensible edge on offer.",
+          "sources": []
+        },
+        "margins": {
+          "score": 5,
+          "confidence": "low",
+          "why": "Dating subscriptions carry decent gross margins and real ARPU (Bumble ~US$22/month per payer; new AI-matchmaking entrants charge ~US$20-30 per introduction), but success-driven churn and high acquisition cost erode the lifetime-value-to-CAC economics that actually matter.",
+          "sources": [
+            "https://techcrunch.com/2026/03/12/bumble-introduces-an-ai-dating-assistant-bee/",
+            "https://techcrunch.com/2025/06/25/sitch-wants-to-fuse-human-personality-and-ai-for-matchmaking/"
+          ]
+        },
+        "founderFit": {
+          "score": 3,
+          "confidence": "med",
+          "why": "Weak. Marketing/creative is a genuine partial fit (dating is a marketing-led consumer business), but one marketer doesn't win a customer-acquisition war against a company with ~US$3.5B of revenue and the top two apps, and the team has no consumer-app or AI engineering. Insufficient for this market.",
+          "sources": []
+        },
+        "risk": {
+          "score": 3,
+          "confidence": "med",
+          "why": "High, with a sharp privacy dimension. An AI building a 'detailed profile' of personality and behaviour is exactly special-category sensitive personal data (orientation, beliefs), carrying the heaviest privacy obligations — and dating apps are already rated a category-wide privacy failure. Add trust/safety and AI-authenticity/deepfake concerns (an AI-mediated product can make users doubt they're talking to a real person), a marketing-spend war, a two-sided local cold-start, and the structural paradox that success (couples forming) drives churn.",
+          "sources": [
+            "https://www.mozillafoundation.org/en/privacynotincluded/categories/dating-apps/",
+            "https://www.pewresearch.org/short-reads/2023/02/02/key-findings-about-online-dating-in-the-u-s/"
+          ]
+        }
+      },
+      "businessCase": {
+        "summary": "A dating app where an AI builds a detailed profile of each user — personality, preferences, behaviour — and matches them with compatible people, reducing swiping. The problem is that this is one of the most hostile markets a new consumer app can pick: it's mature and softening (Tinder's payers down every year to 9M in 2025, Bumble's revenue down ~10%, widespread user burnout), dominated by Match Group (owner of Tinder and Hinge), and the exact 'AI learns you, curates matches' concept is already shipping from Tinder and Bumble AND from Overtone — the Hinge founder, funded with US$18M and backed by Match itself. On top of a brutal customer-acquisition war and a two-sided local cold-start, a 'detailed AI profile' turns sensitive-data privacy into a first-order legal risk.",
+        "customer": "Singles frustrated with swipe-based apps who want AI-curated, higher-relevance matches — reachable only city-by-city, since dating requires local density on both sides.",
+        "market": "Online dating is large (Match Group and Bumble alone ~US$4.5B revenue in 2025) but mature and declining at the edges — Tinder paying users fell from 10.9M (2022) to 9M (2025), Bumble revenue fell ~10% in 2025, and user burnout is widespread. A new entrant's reachable market is a single city at a time, not the headline figure.",
+        "model": "Subscription and/or pay-per-match (incumbent ARPU is ~US$22/month per payer; AI-matchmaking entrants charge ~US$20-30 per introduction). Revenue only follows once local liquidity exists.",
+        "goToMarket": "The only workable path is city-by-city: build critical mass of both sides in one metro before expanding — the model both credible AI-first entrants (Sitch in New York, Overtone in select locations) have adopted. This requires heavy, sustained acquisition spend against incumbents.",
+        "costs": "Dominated by customer acquisition — dating is famously marketing-heavy (Match spent US$50M on Tinder alone) — plus consumer-app and AI development. Reaching local liquidity is expensive and slow before subscriptions pay back.",
+        "risks": "Sensitive-data privacy is the sharpest risk: a 'detailed AI profile' is special-category personal data with the heaviest legal obligations, in a category already rated a privacy failure. Add a marketing-spend war against Match Group, a two-sided local cold-start, trust/safety and AI-authenticity/deepfake concerns, the same concept already shipping from incumbents and the Hinge founder's Overtone, and the paradox that success (couples forming) drives churn.",
+        "nextSteps": "1) Confront the differentiation problem — Overtone (Hinge's founder, US$18M, Match-backed) and the incumbents already ship 'AI learns you, curated matches'; what is genuinely different and defensible? 2) Get privacy/legal advice on special-category data BEFORE building — consent, data-minimisation and lawful basis are gating. 3) Pick one city and model the cost of reaching two-sided liquidity there. 4) Be realistic about competing on acquisition spend against Match Group. 5) Consider whether a narrow niche (a specific community) is more defensible than a general AI dating app."
+      },
+      "clarifyingQuestions": [
+        "What is genuinely differentiated and defensible versus incumbents (Tinder 'Chemistry', Bumble 'Bee') and Overtone (the Hinge founder's Match-backed AI dating app) already shipping the same concept?",
+        "How is the sensitive-data privacy problem handled — an AI 'detailed profile' is special-category data with the heaviest legal obligations?",
+        "Which single city is the beachhead, and how is the two-sided local-liquidity cold-start funded against incumbents' acquisition budgets?"
+      ]
     }
   ]
 }
