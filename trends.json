@@ -112,6 +112,42 @@
         "lens": "cultural",
         "run": "2026-07-29",
         "theme": "calgary-gap"
+      },
+      {
+        "sector": "consumer-retail",
+        "lens": "contrarian",
+        "run": "2026-07-30",
+        "theme": "stagflation"
+      },
+      {
+        "sector": "money-finance",
+        "lens": "financial",
+        "run": "2026-07-30",
+        "theme": "stagflation"
+      },
+      {
+        "sector": "money-finance",
+        "lens": "contrarian",
+        "run": "2026-07-30",
+        "theme": "stagflation"
+      },
+      {
+        "sector": "work-enterprise",
+        "lens": "financial",
+        "run": "2026-07-30",
+        "theme": "stagflation"
+      },
+      {
+        "seed": "niche-brands",
+        "run": "2026-07-30"
+      },
+      {
+        "seed": "come-to-me-financial-product-app",
+        "run": "2026-07-30"
+      },
+      {
+        "seed": "single-sport-social-franchise",
+        "run": "2026-07-30"
       }
     ]
   },
@@ -1070,6 +1106,325 @@
         }
       ],
       "createdRun": "2026-07-29"
+    },
+    {
+      "id": "repair-refurbish-reuse-economy",
+      "title": "The repair, refurbish & reuse economy",
+      "sector": "consumer-retail",
+      "lens": "contrarian",
+      "source": "broad",
+      "horizon": "near",
+      "signal": 7,
+      "oneLiner": "As tariffs and sticky inflation push up the price of new goods, spend shifts from replace to repair — and a wave of right-to-repair law is turning a long-blocked reuse market into a real one.",
+      "why": "In the 1970s energy-crisis, high-inflation era, households leaned into thrift, conservation and self-maintenance as new goods grew expensive. After a decade of ultra-cheap disposable goods, the same forces are returning — tariffs and elevated inflation raise replacement costs — but this time the market is being structurally unlocked by legislation. Right-to-repair laws now force makers to supply parts, tools and manuals: New York's Digital Fair Repair Act (in effect Dec 2023), California's SB 244 and Minnesota's law (both mid-2024), Oregon's first-in-nation parts-pairing ban (2025), and EU Directive 2024/1799 (member states must apply it by July 2026). Refurbished demand is already climbing — global refurbished-smartphone sales grew about 5% year-on-year in 2024. A stagflationary squeeze accelerates a shift the law has finally made buildable.",
+      "drivers": [
+        "economic",
+        "political",
+        "environmental"
+      ],
+      "sources": [
+        "https://www.governor.ny.gov/news/governor-hochul-signs-digital-fair-repair-act-law",
+        "https://natlawreview.com/article/new-york-enacts-first-state-right-to-repair-law",
+        "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202320240SB244",
+        "https://www.ag.state.mn.us/Consumer/Publications/RightToRepair.asp",
+        "https://eur-lex.europa.eu/eli/dir/2024/1799/oj",
+        "https://www.ifixit.com/News/92144/oregon-just-struck-a-blow-to-parts-pairing-and-won-a-decade-of-repair-support",
+        "https://www.counterpointresearch.com/insight/apple-reaches-new-high-in-global-refurbished-market-in-2024-but-supply-remains-a-challenge/"
+      ],
+      "confidence": "med",
+      "ideas": [
+        {
+          "title": "Right-to-repair parts & tooling distributor",
+          "oneLiner": "Stock and ship the OEM parts, diagnostic tools and manuals that new laws now compel manufacturers to release, arming independent repair shops.",
+          "pattern": "picks-and-shovels"
+        },
+        {
+          "title": "Branded certified-refurbished retailer",
+          "oneLiner": "A trusted consumer brand for warrantied refurbished phones, laptops and appliances, riding trade-down demand for near-new at a discount.",
+          "pattern": "rebundling"
+        },
+        {
+          "title": "Repair-as-a-subscription",
+          "oneLiner": "A flat monthly fee that covers repair and upkeep of a household's devices and appliances, keeping them in service instead of replaced.",
+          "pattern": "service-izing"
+        },
+        {
+          "title": "Franchised appliance & electronics repair",
+          "oneLiner": "A standardized, franchisable repair-shop format capturing the post-warranty repair surge in local markets.",
+          "pattern": "verticalisation"
+        }
+      ],
+      "createdRun": "2026-07-30"
+    },
+    {
+      "id": "trading-down-hard-discount-value",
+      "title": "Trading down: hard-discount & value private label",
+      "sector": "consumer-retail",
+      "lens": "financial",
+      "source": "adjacency",
+      "seededBy": "niche-brands",
+      "horizon": "near",
+      "signal": 7,
+      "oneLiner": "When real incomes stall, shoppers trade down — to cheaper stores and store brands. Private label is at record share and hard-discounters are expanding fastest, echoing the 1970s birth of warehouse clubs and generics.",
+      "why": "The warehouse club (Price Club, 1976; Costco, 1983) and the generic/no-name product (Loblaws No Name, 1978; the US generics wave of the late 1970s) were both born of 1970s stagflation as shoppers hunted value. The same trade-down is measurable today: US private-label sales hit a record $282.8B in 2025 — 21.3% of retail sales — after a record $271B in 2024, hard-discounter Aldi is adding 800 US stores by 2028, and surveys show roughly 42% of shoppers planning to switch to lower-priced stores. After a decade obsessed with premiumisation, value formats and own-brand supply are under-built in many categories — and sourcing-and-branding capability aimed at cheap essentials, rather than premium identity, is the wedge.",
+      "drivers": [
+        "economic",
+        "social"
+      ],
+      "sources": [
+        "https://www.plma.com/article/us-private-label-industry-reached-2828-billion-sales-2025",
+        "https://www.plma.com/article/private-label-sales-rose-39-2024-record-271-billion",
+        "https://www.prnewswire.com/news-releases/americas-low-price-leader-aldi-expands-footprint-nationwide-with-800-new-stores-by-the-end-of-2028-302082226.html",
+        "https://www.grocerydive.com/news/grocery-shoppers-value-trading-down-lower-priced-retailer/819394/",
+        "https://en.wikipedia.org/wiki/No_Name_(brand)"
+      ],
+      "confidence": "high",
+      "ideas": [
+        {
+          "title": "Hard-value private-label brand",
+          "oneLiner": "Overseas-sourced everyday essentials — household, basics, pantry — sold at hard-discount prices under one trusted value brand.",
+          "pattern": "geographic-arbitrage"
+        },
+        {
+          "title": "Off-price overstock channel",
+          "oneLiner": "Buy branded overstock and returns and move them through a lean discount channel (online or pop-up) as shoppers hunt deals.",
+          "pattern": "unbundling"
+        },
+        {
+          "title": "No-frills refill & bulk staples store",
+          "oneLiner": "A stripped-down bulk/refill format for pantry and household staples that cuts packaging and markup to beat grocery inflation.",
+          "pattern": "category-creation"
+        },
+        {
+          "title": "Single-category value champion",
+          "oneLiner": "Dominate one category (e.g. pet or pantry) with a vertically-integrated private-label brand that undercuts national brands.",
+          "pattern": "verticalisation"
+        }
+      ],
+      "createdRun": "2026-07-30"
+    },
+    {
+      "id": "real-asset-inflation-hedge-access",
+      "title": "Real-asset & inflation-hedge access for everyday investors",
+      "sector": "money-finance",
+      "lens": "financial",
+      "source": "broad",
+      "horizon": "mid",
+      "signal": 7,
+      "oneLiner": "Gold, farmland and cash yield were the winners of 1970s stagflation and are quietly at records again — yet retail portfolios remain over-indexed to growth equities and under-built for inflation. The opportunity is access.",
+      "why": "The 1970s taught that in stagflation, real assets and short-dated yield beat paper: gold ran from around $35 to roughly $850 an ounce, US farmland more than tripled ($197 to $737 an acre across 1970-80), and the money-market fund — invented around 1970 — exploded as savers chased real yield. Those winners are re-emerging: US money-market-fund assets stand near all-time highs at about $7.85 trillion (up from roughly $7 trillion in early 2025), 2025 gold demand hit a record US$555 billion (up 45% year-on-year) with central banks buying 863 tonnes, and US farmland keeps appreciating — average farm real estate reached $4,170 an acre in 2024, up 5% on the year. Yet after a 15-year growth/tech bull market, retail investors are structurally under-allocated to real assets, and the access rails — fractional farmland, tangible-asset custody, inflation-aware advice — are still thin.",
+      "drivers": [
+        "economic",
+        "political",
+        "social"
+      ],
+      "sources": [
+        "https://www.ici.org/research/stats/mmf",
+        "https://www.ici.org/news-release/money-market-funds-hit-seven-trillion",
+        "https://www.gold.org/goldhub/research/gold-demand-trends/gold-demand-trends-full-year-2025",
+        "https://www.northernag.net/cash-rents-up-3-2-commodity-prices-slide/",
+        "https://www.prnewswire.com/news-releases/proterra-acquires-farmland-investment-platform-acretrader-from-acrescom-transaction-accelerates-opportunities-for-both-investors-and-farmers-302526006.html",
+        "https://www.nass.usda.gov/Publications/Trends_in_U.S._Agriculture/Land_Values/index.php"
+      ],
+      "confidence": "high",
+      "ideas": [
+        {
+          "title": "Fractional real-asset investing platform",
+          "oneLiner": "Let retail investors buy slices of farmland, timber or royalty streams as an inflation hedge, with sourcing and management handled.",
+          "pattern": "platform"
+        },
+        {
+          "title": "Inflation-hedge robo-advisor",
+          "oneLiner": "An automated portfolio that tilts to real assets, commodities and short-dated yield, sold as 'stagflation insurance' for ordinary savers.",
+          "pattern": "service-izing"
+        },
+        {
+          "title": "Tangible-asset custody & marketplace",
+          "oneLiner": "Buy, authenticate, store and resell gold, silver and collectibles for retail hedgers who don't want paper ETFs.",
+          "pattern": "picks-and-shovels"
+        },
+        {
+          "title": "High-yield cash & T-bill app",
+          "oneLiner": "A simple app that sweeps idle cash into money-market and T-bill yield — the mass-market real-yield trade of the high-rate era.",
+          "pattern": "unbundling"
+        }
+      ],
+      "createdRun": "2026-07-30"
+    },
+    {
+      "id": "collateral-credit-return-of-pawn",
+      "title": "Collateral credit & the return of pawn",
+      "sector": "money-finance",
+      "lens": "contrarian",
+      "source": "broad",
+      "horizon": "near",
+      "signal": 6,
+      "oneLiner": "When credit gets expensive and lenders tighten, borrowing shifts from unsecured to asset-backed. Pawn and secured lending — the classic tight-money credit channel — are posting records while BNPL buckles.",
+      "why": "In the high-rate early 1980s (the federal funds rate hit 17.6% in April 1980 and stayed punishingly high into 1981), households and small businesses shut out of cheap unsecured credit turned to collateralized and installment borrowing, and pawn expanded. The pattern is repeating: FirstCash posted record FY2024 revenue of $3.4 billion with same-store pawn receivables up 12%, and EZCORP's pawn loans outstanding hit a record $307.5 million in FY2025 — while the ZIRP-era darling, buy-now-pay-later, shows visible strain (47% of BNPL users paid late, 29% used it for groceries; about $156.7 billion issued in 2025). Stagflation widens the gap between the asset-rich and the cash-strapped, and asset-backed credit is the durable winner in that world.",
+      "drivers": [
+        "economic",
+        "social"
+      ],
+      "sources": [
+        "https://www.globenewswire.com/news-release/2025/01/30/3017822/0/en/FirstCash-Reports-Record-Fourth-Quarter-and-Full-Year-Operating-Results-Accelerating-Pawn-Demand-Drives-Record-Revenue-Earnings-Declares-Quarterly-Cash-Dividend.html",
+        "https://www.globenewswire.com/news-release/2025/11/13/3187867/30055/en/EZCORP-Reports-Fourth-Quarter-and-Full-Year-Fiscal-2025-Results.html",
+        "https://www.lendingtree.com/personal/buy-now-pay-later-loan-statistics/",
+        "https://www.federalreserve.gov/econres/notes/feds-notes/buy-now-pay-later-beyond-pay-in-4-a-comprehensive-product-overview-20260605.html",
+        "https://en.wikipedia.org/wiki/Early_1980s_recession_in_the_United_States"
+      ],
+      "confidence": "high",
+      "ideas": [
+        {
+          "title": "Digital asset-backed lending",
+          "oneLiner": "An app-based pawn/secured-loan product against phones, watches, tools or vehicles — pawn liquidity without the storefront stigma.",
+          "pattern": "service-izing"
+        },
+        {
+          "title": "Luxury-goods collateral lending",
+          "oneLiner": "Short-term loans against watches, handbags and jewelry for asset-rich, cash-tight borrowers.",
+          "pattern": "verticalisation"
+        },
+        {
+          "title": "Merchant installment-as-a-service",
+          "oneLiner": "White-label secured installment plans for retailers as consumers move off stressed, unsecured BNPL.",
+          "pattern": "picks-and-shovels"
+        }
+      ],
+      "createdRun": "2026-07-30"
+    },
+    {
+      "id": "margin-defence-cost-cutting-services",
+      "title": "The margin-defence economy: cost-cutting & efficiency services",
+      "sector": "work-enterprise",
+      "lens": "financial",
+      "source": "broad",
+      "horizon": "near",
+      "signal": 6,
+      "oneLiner": "When you can't raise prices and input costs keep climbing, the only lever left is cost. Businesses that strip out energy, procurement and overhead — the industry the 1970s oil shocks created — win when margins compress.",
+      "why": "The 1973 and 1979 oil shocks created the entire energy-conservation and energy-service-company (ESCO) industry, built on a 'shared savings' model paid out of the very cost it removed. Stagflation reproduces the trigger — squeezed margins with no pricing power — and the signals are live: global ESCO investment hit a record about US$42 billion in 2024, energy-efficiency investment runs near US$660 billion a year, and Deloitte finds 88% of companies plan to pursue cost improvement over the next two years, with 59% targeting cuts of 10% or more. After a growth-at-all-costs decade, 'help me spend less' is the rising line in the enterprise budget.",
+      "drivers": [
+        "economic",
+        "environmental",
+        "technological"
+      ],
+      "sources": [
+        "https://www.iea.org/commentaries/why-the-growth-of-energy-service-companies-is-uneven-globally",
+        "https://www.iea.org/reports/energy-efficiency-2024/executive-summary",
+        "https://www.cfo.com/news/88-of-firms-planning-cost-cuts-in-next-2-years/661948/",
+        "https://www.naesco.org/esco/",
+        "https://www.energy.gov/cmei/scep/wap/weatherization-assistance-program"
+      ],
+      "confidence": "med",
+      "ideas": [
+        {
+          "title": "Share-of-savings cost-reduction service",
+          "oneLiner": "Find and strip out cost across procurement, energy and overhead for mid-market firms, paid only out of the savings delivered.",
+          "pattern": "service-izing"
+        },
+        {
+          "title": "Overhead & subscription-waste auditor",
+          "oneLiner": "Software plus service that finds and kills redundant SaaS, energy and supplier spend, monetized on the savings.",
+          "pattern": "picks-and-shovels"
+        },
+        {
+          "title": "Procurement-optimization for the mid-market",
+          "oneLiner": "Cut input costs for companies without a dedicated procurement team, on a share-of-savings fee.",
+          "pattern": "service-izing"
+        },
+        {
+          "title": "Industrial energy-audit SaaS",
+          "oneLiner": "Tooling that helps manufacturers benchmark and cut energy per unit of output as power costs bite.",
+          "pattern": "verticalisation"
+        }
+      ],
+      "createdRun": "2026-07-30"
+    },
+    {
+      "id": "barter-b2b-trade-exchange-networks",
+      "title": "Barter & B2B trade-exchange networks",
+      "sector": "money-finance",
+      "lens": "contrarian",
+      "source": "adjacency",
+      "seededBy": "come-to-me-financial-product-app",
+      "horizon": "mid",
+      "signal": 5,
+      "oneLiner": "When cash is dear and demand is soft, businesses trade unsold capacity instead of paying cash. Barter exchanges boomed in the last inflation era and remain a quiet US$12-14B industry ready to be rebuilt.",
+      "why": "Barter and countertrade surged in the high-inflation late-1970s and early-1980s — the industry body IRTA was founded in 1979 — because trading idle inventory and capacity conserves scarce cash and clears stock when demand is weak. The modern trade-exchange industry still turns over roughly US$12-14 billion a year (IRTA's own estimate) but has never been rebuilt with modern software, and inflation crises keep reviving the behaviour — Argentina's 'trueque' barter networks, which peaked during its 2001-02 crisis, returned amid the country's 2023 inflation surge. It works like a demand-matching marketplace where members post what they have and what they need — but settled in trade credit rather than cash. Stagflation's mix of soft demand and cash preservation is precisely its tailwind.",
+      "drivers": [
+        "economic",
+        "technological"
+      ],
+      "sources": [
+        "https://irta.com/about-us/",
+        "https://edition.cnn.com/2009/WORLD/americas/05/20/argentina.barter/index.html",
+        "https://www.france24.com/en/live-news/20231115-a-shirt-for-rice-bartering-to-survive-in-inflation-battered-argentina"
+      ],
+      "confidence": "low",
+      "ideas": [
+        {
+          "title": "Software-first B2B trade exchange",
+          "oneLiner": "A modern barter network where businesses spend idle inventory and capacity as trade credit instead of cash.",
+          "pattern": "platform"
+        },
+        {
+          "title": "Excess-inventory swap marketplace",
+          "oneLiner": "Match overstock between businesses so they trade goods directly rather than discount for cash.",
+          "pattern": "platform"
+        },
+        {
+          "title": "Local trade-credit network",
+          "oneLiner": "A city-level exchange letting small businesses pay each other in trade dollars, keeping cash for payroll and rent.",
+          "pattern": "rebundling"
+        }
+      ],
+      "createdRun": "2026-07-30"
+    },
+    {
+      "id": "boring-cashflow-smb-succession-buyout",
+      "title": "Boring cash-flow businesses & the SMB succession buyout",
+      "sector": "work-enterprise",
+      "lens": "financial",
+      "source": "adjacency",
+      "seededBy": "single-sport-social-franchise",
+      "horizon": "mid",
+      "signal": 7,
+      "oneLiner": "A wall of retiring owners is putting millions of profitable, unglamorous small businesses up for sale just as capital rediscovers cash flow over growth — the owner-operator model that thrived in the 1970s, at scale.",
+      "why": "The 1970s rewarded low-capital, cash-generating owner-operator businesses — franchised sales grew about 2.4x (up roughly 140%) over the decade — because in a low-growth, high-rate world, present cash flow beats far-off growth. Two forces sharpen that thesis now. A demographic 'silver tsunami' is flooding the market with sellers: about 2.9 million US businesses are owned by people 55 or older, generating $6.5 trillion in revenue, and in Canada 76% of small-business owners plan to exit within a decade — over $2 trillion in assets — yet only 9% have a formal succession plan. Meanwhile entrepreneurship-through-acquisition posts standout returns (Stanford's 2024 study reports a 35.1% aggregate pre-tax IRR and 4.5x for the search-fund asset class). Durable local cash flow is exactly what wins in a stagflation regime — and it is changing hands cheaply for lack of buyers.",
+      "drivers": [
+        "social",
+        "economic",
+        "financial"
+      ],
+      "sources": [
+        "https://project-equity.org/news/employee-ownership-insider/business-owner-statistics-exit-planning/",
+        "https://www.cfib-fcei.ca/en/media/over-2-trillion-in-business-assets-are-at-stake-as-majority-of-small-business-owners-plan-to-exit-their-business-over-the-next-decade",
+        "https://www.gsb.stanford.edu/faculty-research/case-studies/2024-search-fund-study",
+        "https://www.franchise-law.com/franchise-law-overview/a-brief-history-of-franchising.shtml"
+      ],
+      "confidence": "high",
+      "ideas": [
+        {
+          "title": "Search-fund acquisition of a retiring-owner business",
+          "oneLiner": "Raise a small fund to buy one profitable SMB from a retiring owner and operate it for cash flow.",
+          "pattern": "rebundling"
+        },
+        {
+          "title": "Roll-up of fragmented local services",
+          "oneLiner": "Acquire and combine several small essential-service businesses (HVAC, repair, cleaning) for scale and margin.",
+          "pattern": "rebundling"
+        },
+        {
+          "title": "Succession marketplace & deal financing",
+          "oneLiner": "Connect retiring owners with vetted operator-buyers and provide the financing, arming the buy-side of the silver tsunami.",
+          "pattern": "platform"
+        },
+        {
+          "title": "Financeable owner-operator franchise",
+          "oneLiner": "Package a proven recession-resistant essential-service business into a franchisable, financeable owner-operator format.",
+          "pattern": "verticalisation"
+        }
+      ],
+      "createdRun": "2026-07-30"
     }
   ]
 }
