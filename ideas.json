@@ -1151,7 +1151,8 @@
       "id": "repricing-advisory-in-a-box",
       "title": "Repricing Advisory-in-a-box",
       "owner": "Dave",
-      "status": "analyzed",
+      "status": "refined",
+      "refinedThrough": "2026-07-31T13:04:57.487Z",
       "oneLiner": "A productised advisory-plus-tooling offer that helps seat-based SaaS companies model, pilot and migrate to usage or outcome-based pricing without wrecking their existing ARR.",
       "tags": [
         "SaaS",
@@ -1163,7 +1164,7 @@
         "market": {
           "score": 6,
           "confidence": "med",
-          "why": "The tailwind is strong and timely: SaaS is a ~US$316B market growing ~19% a year, and pricing is visibly shifting off per-seat — seat-based fell from 21% to 15% of B2B software companies' primary model in a year while hybrid rose to 41%, and a February 2026 software sell-off erased over US$1T on fears that AI agents erode per-seat licences. The reachable market for a boutique advisory-plus-tooling offer is a fraction of that (the pricing-software category is only ~US$1.9B by 2030), but the demand is acute right now.",
+          "why": "The tailwind is strong and timely: SaaS is a ~US$316B market growing ~19% a year, and pricing is visibly shifting off per-seat — seat-based fell from 21% to 15% of B2B software companies' primary model in a year while hybrid rose to 41%, and a February 2026 software sell-off erased about US$1T on fears that AI agents erode per-seat licences. The reachable market for a boutique advisory-plus-tooling offer is a fraction of that (the pricing-software category is only ~US$1.9B by 2030), but the demand is acute right now.",
           "sources": [
             "https://www.growthunhinged.com/p/2025-state-of-b2b-monetization",
             "https://www.forbes.com/sites/petercohan/2026/02/06/saaspocalypse-now-ai-is-disrupting-saas---but-not-all-software-is-doomed/",
@@ -1205,9 +1206,9 @@
           "sources": []
         },
         "founderFit": {
-          "score": 6,
-          "confidence": "med",
-          "why": "The best fit of the team's recent ideas: management consulting plus finance/investment is squarely the skill set for pricing strategy and ARR-impact modelling, and the offer is services-led rather than needing a product-engineering team. The gap is domain-specific credibility — SaaS pricing is a specialist field with entrenched experts, and the team would be selling to software CFOs without an obvious track record in it.",
+          "score": 3,
+          "confidence": "high",
+          "why": "Weak where it counts. The team's management-consulting and finance/investment strengths transfer to pricing strategy and ARR-impact modelling in the abstract, and the offer is services-led rather than needing a product-engineering team — but no one brings software-licensing or SaaS-pricing experience, and that specialist credibility is the exact entry tax for selling a revenue-at-risk migration methodology to software CFOs. Without a named SaaS-pricing track record, the fit is thin at the point that decides the sale.",
           "sources": []
         },
         "risk": {
@@ -1218,17 +1219,17 @@
         }
       },
       "businessCase": {
-        "summary": "A productised 'repricing-in-a-box' — a repeatable methodology plus tooling (a pricing simulator, ARR-impact and cohort modelling, metering-readiness assessment) that helps seat-based SaaS companies move to usage, hybrid or outcome-based pricing without destroying existing revenue. The timing is unusually good: AI agents are compressing per-seat licences, seat-based pricing is falling fast as a primary model, and a February 2026 sell-off erased over US$1T of software value on exactly this fear — so repricing has become a live CFO priority. It fits the team's consulting/finance strengths better than any recent idea, but it's an advisory-led business (hard to scale, people-dependent), the credibility bar to sell SaaS CFOs is high, and Simon-Kucher already blends pricing advisory with its own software at the top of the market.",
+        "summary": "A productised 'repricing-in-a-box' — a repeatable methodology plus tooling (a pricing simulator, ARR-impact and cohort modelling, metering-readiness assessment) that helps seat-based SaaS companies move to usage, hybrid or outcome-based pricing without destroying existing revenue. The timing is unusually good: AI agents are compressing per-seat licences, seat-based pricing is falling fast as a primary model, and a February 2026 sell-off erased about US$1T of software value on exactly this fear — so repricing has become a live CFO priority. The team's consulting and finance strengths are only generically relevant — no one brings software-licensing or SaaS-pricing experience, the specialist credibility that is the core entry tax — and it's an advisory-led business (hard to scale, people-dependent), with Simon-Kucher already blending pricing advisory and its own software at the top of the market.",
         "customer": "Seat-based B2B SaaS companies — especially mid-market firms below the big consultancies' focus — whose per-seat revenue is threatened by AI-driven seat compression and who need to migrate pricing without churning existing ARR. Sold to the CFO, CRO or head of monetisation.",
-        "market": "SaaS is ~US$316B and growing ~19% a year, and the pricing shift is real and current — seat-based pricing fell from 21% to 15% of B2B companies' primary model in a year, hybrid rose to 41%, and a Feb 2026 sell-off wiped out over US$1T on seat-compression fears. The reachable market for a boutique offer is far smaller (pricing software ~US$1.9B by 2030), but the pain is acute now.",
+        "market": "SaaS is ~US$316B and growing ~19% a year, and the pricing shift is real and current — seat-based pricing fell from 21% to 15% of B2B companies' primary model in a year, hybrid rose to 41%, and a Feb 2026 sell-off wiped out about US$1T on seat-compression fears. The reachable market for a boutique offer is far smaller (pricing software ~US$1.9B by 2030), but the pain is acute now.",
         "model": "A blend of fixed-fee diagnostic engagements, a subscription to the pricing-simulation/ARR-monitoring tooling, and potentially a success fee tied to realised uplift. Pushing value into recurring tooling — repricing is continuous as AI features evolve — is what turns a one-off project into recurring revenue.",
         "goToMarket": "Lead with credibility: published pricing benchmarks and thought leadership (the proven playbook for operator-brands in this niche), then convert inbound into fixed-fee diagnostics and land-and-expand into the tooling subscription. Target mid-market SaaS underserved by Simon-Kucher and the big consultancies.",
         "costs": "Low — senior pricing talent and the build of a pricing-simulation/ARR-impact tool. The binding constraint is access to credible senior pricing expertise, not capital.",
         "risks": "Advisory is capacity-capped and people-dependent; 'migrate our pricing' can be a one-time project rather than recurring revenue; the big consultancies (Simon-Kucher, McKinsey/Bain/Deloitte) are the board-level default and billing-infra vendors could add a services layer; and the credibility to sell CFOs a revenue-at-risk methodology is the hardest early barrier. The timing tailwind could also prove a crowded, hype-driven moment.",
-        "nextSteps": "1) Establish credibility first — who on or around the team can credibly advise SaaS CFOs on pricing, and can we publish proprietary benchmark data to earn trust? 2) Decide the wedge: pure advisory, or advisory as the front end to recurring simulation/monitoring tooling (the more scalable path). 3) Interview 5-10 mid-market SaaS finance/product leaders on willingness to pay and buying process. 4) Prototype the pricing-simulator/ARR-impact tool. 5) Map the partnership option — feed clients into a billing-infra vendor's rails rather than compete with them."
+        "nextSteps": "1) Close the credibility gap — with no in-house SaaS-pricing track record, this hinges on recruiting or partnering with a recognised pricing expert and publishing proprietary benchmark data to earn CFO trust. 2) Decide the wedge: pure advisory, or advisory as the front end to recurring simulation/monitoring tooling (the more scalable path). 3) Interview 5-10 mid-market SaaS finance/product leaders on willingness to pay and buying process. 4) Prototype the pricing-simulator/ARR-impact tool. 5) Map the partnership option — feed clients into a billing-infra vendor's rails rather than compete with them."
       },
       "clarifyingQuestions": [
-        "Who brings credible SaaS-pricing expertise and references — the entry tax here is convincing software CFOs, not building the tool?",
+        "Given no in-house SaaS-pricing credibility, would we recruit or partner with a recognised pricing expert to front the offer — or is that a dealbreaker?",
         "Is this pure advisory, or advisory as the wedge into recurring pricing-simulation/monitoring software (the only path that really scales)?",
         "Partner with a billing-infrastructure vendor (Metronome/Orb/m3ter) as the delivery layer, or stay independent and compete with Simon-Kucher and the big consultancies?"
       ]
