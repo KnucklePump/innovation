@@ -1899,6 +1899,92 @@
         "What is the minimum share of attendees who must opt in and be active for the proximity game to be fun, and how do we clear that threshold?"
       ],
       "refinedThrough": "2026-07-30T13:37:41.478Z"
+    },
+    {
+      "id": "ewaitress",
+      "title": "eWaitress",
+      "owner": "Dave",
+      "status": "analyzed",
+      "oneLiner": "A table-top device that lets each diner order directly through an AI — identifying the seat, taking and confirming the order by voice, and dropping it straight into the kitchen — so a runner just delivers and no tip is expected.",
+      "tags": [
+        "restaurant tech",
+        "hardware",
+        "AI",
+        "hospitality"
+      ],
+      "scores": {
+        "market": {
+          "score": 6,
+          "confidence": "med",
+          "why": "A real, growing category riding a genuine labour-automation tailwind: the restaurant self-service kiosk market is ~US$2.29B in 2026 and forecast to ~US$6.37B by 2035 (12.05% CAGR), pulled by labour shortages, contactless expectations and AI integration. But the on-table slice specifically is contested and partly commoditised — QR-code-to-order wiped out the low end during COVID — so the reachable market is narrower than the headline automation number.",
+          "sources": [
+            "https://www.marketreportsworld.com/market-reports/restaurant-kiosk-market-14728897"
+          ]
+        },
+        "entry": {
+          "score": 3,
+          "confidence": "med",
+          "why": "High barriers on several fronts at once: it's a hardware product (design, manufacture, certification, on-site support) AND an AI-ordering software stack AND a set of POS integrations (Toast, Square, Micros) that gate any real deployment — all sold into conservative, thin-margin operators with long pilot cycles. The per-seat fingerprint adds biometric-privacy regulation (Canadian PIPEDA / US BIPA-style exposure) on top.",
+          "sources": []
+        },
+        "cost": {
+          "score": 3,
+          "confidence": "med",
+          "why": "Capital-heavy and slow to revenue. Building a bespoke table device (screen, biometric sensor, compute or connectivity) plus a voice-AI ordering engine plus POS integrations is a long, expensive R&D and pilot road before the first paying location — unlike a pure-software or services play.",
+          "sources": []
+        },
+        "saturation": {
+          "score": 2,
+          "confidence": "high",
+          "why": "One of the most crowded corners of restaurant tech. Tabletop is owned by entrenched incumbents — Ziosk touches ~1B guests a year across Chili's, Olive Garden, Texas Roadhouse and Outback — while AI ordering is a funded arms race (SoundHound, Presto, ConverseNow, Kea, PolyAI) and QR-code ordering plus kiosk vendors (GRUBBRR, Toast, Square) cover the rest. Very little uncontested space.",
+          "sources": [
+            "https://www.ziosk.com/",
+            "https://www.soundhound.com/voice-ai-solutions/restaurants/"
+          ]
+        },
+        "moat": {
+          "score": 3,
+          "confidence": "med",
+          "why": "Weak and, in one respect, negative. Voice-AI ordering is commoditising fast, the hardware is copyable, and the per-seat fingerprint is a liability rather than a moat — seat identification is solved by a QR code or a tapped seat number at zero cost and zero privacy risk. The durable moats in this category are POS integrations and installed base, and incumbents already hold them.",
+          "sources": []
+        },
+        "margins": {
+          "score": 4,
+          "confidence": "low",
+          "why": "Mixed. Hardware carries low gross margin and ongoing support/replacement cost; a per-location software/AI subscription scales at better margin. Blended economics are moderate and capped by device, install and support costs — a hardware-led model rarely reaches software-like margins.",
+          "sources": []
+        },
+        "founderFit": {
+          "score": 4,
+          "confidence": "med",
+          "why": "Partial. The team's China-market sourcing and manufacturing access is a genuine advantage for building a table device cheaply, and there's marketing strength for a consumer-facing product. But the core of this business — restaurant-tech software, voice-AI ordering, POS integration and enterprise hospitality sales — sits well outside the team's experience, and that is where the idea is won or lost.",
+          "sources": []
+        },
+        "risk": {
+          "score": 3,
+          "confidence": "med",
+          "why": "High. Capital tied up in hardware before validation, brutal incumbent competition, biometric-privacy and regulatory exposure from the fingerprint feature, and slow restaurant sales cycles against thin operator budgets. The 'no tip' framing also cuts against how incumbents actually sell — Ziosk markets a ~20% lift in server tips — and in Canada servers already earn full minimum wage, so 'no tip' removes little operator cost while food still has to be run to the table.",
+          "sources": [
+            "https://www.ziosk.com/"
+          ]
+        }
+      },
+      "businessCase": {
+        "summary": "eWaitress is a table-top device that lets each diner order directly through an AI: it identifies which seat is ordering, takes the order by voice and repeats it back to confirm, then sends it straight to the kitchen so a runner only has to deliver — with no tip expected. The underlying trend is real: the restaurant self-service kiosk market (~US$2.29B in 2026, ~12% CAGR to ~US$6.37B by 2035) is being pushed hard by labour shortages and AI. But this is simultaneously a hardware, AI-software and POS-integration business in one of the most crowded segments of restaurant tech, the per-seat fingerprint adds biometric-privacy liability for a problem a QR code already solves, and the team's edge (China hardware sourcing, marketing) doesn't cover the software, integration and hospitality-sales core.",
+        "customer": "Full-service pubs, bars and casual-dining restaurants that want to cut front-of-house labour and speed up ordering — initially independent and small-chain operators in Canada. The buyer is the owner/operator or GM weighing labour cost against an equipment-plus-subscription outlay.",
+        "market": "The restaurant self-service kiosk market is ~US$2.29B in 2026, forecast to ~US$6.37B by 2035 at a 12.05% CAGR, driven by labour shortages, contactless-service expectations and AI integration. Adjacent tabletop-tablet and voice-AI ordering categories add to the automation wave, but the specific on-table ordering niche is contested and was partly commoditised by free QR-code ordering, so the serviceable market is a fraction of the headline number.",
+        "model": "Hardware sold or leased per table plus a recurring per-location software/AI subscription, potentially with a cut of payment processing. Margin quality depends on pushing value into the recurring software layer rather than the device, since hardware alone is low-margin and support-heavy.",
+        "goToMarket": "Land a small number of independent Canadian pubs/casual-dining venues as paid pilots, prove a labour-cost and table-turn improvement, then expand by word of mouth and small-chain references. Winning requires a working POS integration for whichever system the beachhead venues run (Toast/Square/Micros).",
+        "costs": "High and front-loaded: device design and manufacture (where China sourcing helps), a voice-AI ordering engine, POS integrations, certification and on-site support — a long, capital-intensive road to the first paying location and a continuing hardware support/replacement burden thereafter.",
+        "risks": "Entrenched, well-funded incumbents across tabletop (Ziosk), voice AI (SoundHound, Presto, ConverseNow) and QR/kiosk ordering; capital sunk into hardware before demand is proven; biometric-privacy and regulatory exposure from the fingerprint feature; and a 'no tip' pitch that removes little operator cost in Canada (servers earn full minimum wage and food still needs running) while cutting against the tip-lift incumbents sell. The fingerprint feature specifically risks being friction and liability for a benefit a QR code delivers for free.",
+        "nextSteps": "1) Kill or justify the fingerprint: A/B a QR-code / tap-a-seat identifier against the biometric version — if the QR route works, drop the fingerprint and its liability. 2) Pick the beachhead and its POS: interview 8-10 Canadian pub/casual-dining operators on labour pain, willingness to pay, and which POS they run. 3) Prototype the AI-ordering flow on an off-the-shelf tablet before committing to custom hardware, to test order accuracy and guest acceptance cheaply. 4) Pressure-test the 'no tip' economics against a Canadian full-minimum-wage cost base. 5) Map the integration and support model — the real operational cost — for a multi-location rollout."
+      },
+      "clarifyingQuestions": [
+        "What does the per-seat fingerprint actually buy over a QR code or a tapped seat number, given it adds cost, friction and biometric-privacy liability for identification a free method already solves?",
+        "Where is the wedge against entrenched incumbents — Ziosk on tabletop, SoundHound/Presto/ConverseNow on voice AI, and ubiquitous QR ordering — a specific under-served segment, or a real technical edge?",
+        "Is the beachhead Canadian full-service pubs/casual dining, and does the 'no tip' framing hold up when Canadian servers already earn full minimum wage and food still has to be delivered to the table?",
+        "Do we build custom hardware (leaning on China sourcing) or run the AI on off-the-shelf tablets — and which POS (Toast/Square/Micros) do we integrate first?"
+      ]
     }
   ]
 }
