@@ -837,8 +837,8 @@
       "title": "Single-sport Social Franchise",
       "owner": "Dave",
       "status": "refined",
-      "refinedThrough": "2026-07-30T13:35:41.193Z",
-      "oneLiner": "A branded, franchisable competitive-socialising venue built around one modernised, digitally-scored game — scoped to a lower-capital format (electronic darts the lead candidate) with a built-in league and membership engine, in an under-served Canadian market.",
+      "refinedThrough": "2026-07-31T12:29:27.141Z",
+      "oneLiner": "A branded, franchisable competitive-socialising venue built around one modernised, digitally-scored 'hero game' with a built-in league and membership engine — scoped to a lower-capital format and aimed at the single-game whitespace that Calgary still lacks.",
       "tags": [
         "hospitality",
         "experiential",
@@ -866,26 +866,29 @@
         "cost": {
           "score": 5,
           "confidence": "med",
-          "why": "A single proof venue in a low-capex format (a darts bar) is roughly a bar-scale fit-out — on the order of hundreds of thousands rather than the US$18-35M of a Topgolf-style big-box — so the upfront bet and time-to-revenue shrink to something a small team could plausibly fund or raise for. A golf-simulator lounge is a proven but pricier alternative (franchised buildouts ~US$1.0-1.8M).",
-          "sources": [
-            "https://www.vettedbiz.com/x-golf-franchise/"
-          ]
+          "why": "A single proof venue in a low-capex format is roughly a bar-scale fit-out — on the order of hundreds of thousands rather than the multi-millions of a big-box entertainment venue — so the upfront bet and time-to-revenue shrink to something a small team could plausibly fund or raise for. Electronic darts is the cheapest fit-out; cricket nets and modernised duckpin lanes sit moderately above it.",
+          "sources": []
         },
         "saturation": {
           "score": 6,
           "confidence": "med",
-          "why": "Canada is under-served by branded, single-hero-game, digitally-scored league venues. Generic eat-drink-play is already present — The Rec Room and Immersive Gamebox both operate in Calgary — but the marquee single-game formats are absent nationally (no Flight Club darts, Topgolf/Five Iron, Puttshack or Sixes cricket in Canada), so a focused hero-game venue is genuine whitespace — tempered by a fast-filling category and by the fact that a local Calgary operator can't be ruled out without an on-the-ground check.",
+          "why": "The recommended single-game formats are genuinely uncontested in Calgary: no Sixes-style social cricket in Canada (Sixes runs the UK and Trinidad only), no franchised modernised duckpin, no Clays-style virtual-shooting social venue (Calgary's shooting venues are real-firearm ranges, not eatertainment), and social ping-pong (SPiN) only in Toronto — real whitespace for a league-driven, digitally-scored single-hero-game venue. What caps the score rather than lifting it higher is that the broader competitive-socialising category is maturing locally: a next-gen darts-and-lounge venue (PinPointe Social) opened in January 2026 and golf-range big-boxes are arriving (Calgary-based LaunchPad is expanding and Topgolf's first Alberta venue is due in 2026), and group-VR / immersive puzzle rooms already operate here (Immersive Gamebox, Zero Latency) — one-visit-novelty formats rather than repeat-play league venues. So the former lead format, electronic darts, is no longer clean whitespace even though cricket, duckpin, shooting and ping-pong still are.",
           "sources": [
-            "https://flightclubdarts.com/locations",
-            "https://www.therecroom.com/locations",
-            "https://sixescricket.com"
+            "https://dailyhive.com/calgary/pinpointe-social-calgary",
+            "https://flagstick.com/tee-shots/calgary-based-launchpad-golf-entertainment-centres-announces-canadian-expansion-plans/",
+            "https://sixescricket.com/venues",
+            "https://wearespin.com/location/toronto/",
+            "https://clays.bar/",
+            "https://www.immersivegamebox.com/en-US/venues/ppc-powerplay",
+            "https://zlontilt.ca/"
           ]
         },
         "moat": {
           "score": 5,
           "confidence": "med",
-          "why": "A modernised single-game format is easy to copy, so the moat is a recognisable brand, a franchise network and — crucial for a single-game concept — a built-in league and membership engine that drives repeat play (darts has a deep league culture, with tens of thousands of sanctioned league players). First-mover franchising in an under-served Canadian format is the realistic edge.",
+          "why": "A modernised single-game format is easy to copy, so the moat is a recognisable brand, a franchise network and — crucial for a single-game concept — a built-in league and membership engine that drives repeat play. Calgary's new darts venue (PinPointe Social) advertises no league programming, which is exactly the sticky, differentiating layer this concept would lead with (darts alone has tens of thousands of sanctioned league players). First-mover franchising in an under-served Canadian format is the realistic edge.",
           "sources": [
+            "https://dailyhive.com/calgary/pinpointe-social-calgary",
             "https://ndadarts.com"
           ]
         },
@@ -906,26 +909,64 @@
         "risk": {
           "score": 5,
           "confidence": "med",
-          "why": "A lower-capex format sharply reduces the downside: a bar-scale darts venue is a recoverable bet you can prove before franchising, unlike a multi-million big-box. Single-game novelty risk is also lower for a format like darts with deep, sticky league play. Remaining risks: hospitality-operations inexperience, a fast-filling category, and the need to prove one venue's unit economics before scaling.",
+          "why": "A lower-capex format keeps the downside recoverable — a bar-scale venue can be proven before franchising, and single-game novelty risk is mitigated by building leagues in from day one. But the beachhead is more contested than it first appeared: a next-gen darts venue (PinPointe Social) opened in Calgary in January 2026 and golf big-boxes are arriving, so the chosen format's Calgary whitespace has to be format-specific (cricket, duckpin and ping-pong still appear absent locally). Remaining risks are hospitality-operations inexperience, a fast-filling category, and proving one venue's unit economics before scaling.",
           "sources": [
+            "https://dailyhive.com/calgary/pinpointe-social-calgary",
             "https://www.cushmanwakefield.com/en/insights/from-putt-to-pint-everyone-wins-with-competitive-socializing"
           ]
         }
       },
       "businessCase": {
-        "summary": "A branded, franchisable competitive-socialising venue built around one modernised, digitally-scored 'hero game', with a strong food-and-drink attach and — central to making a single-game concept sticky — leagues and team competitions. Calgary is the beachhead. It is scoped to a lower-capital format, and across the researched field of hero games the strongest combination of whitespace, league depth and modest capital is a modernised electronic-darts venue (no Flight-Club-style branded darts venue is confirmed in Canada, darts has the deepest league culture, and darts booths are among the lowest-cost, most standardisable fit-outs). Social cricket (Sixes-style — the cleanest verified Canadian whitespace, and a strong fit with Calgary's large cricket-engaged community) and modernised duckpin/mini-bowling are the next-best plays; golf simulators are the weakest whitespace, since indoor sim bars are already broadly present. Calgary is not greenfield for generic eat-drink-play (The Rec Room and Immersive Gamebox operate here), so the opportunity is specifically a single-hero-game, league-driven venue — not a broad arcade. The binding gaps remain hospitality/venue operations and the capital for a first proof venue.",
+        "summary": "A branded, franchisable competitive-socialising venue built around one modernised, digitally-scored 'hero game', with a strong food-and-drink attach and — central to making a single-game concept sticky — leagues and team competitions. Calgary is the beachhead. The candidate hero games, ranked by how clean their Calgary/Canada whitespace is: 1) Social cricket (Sixes-style) — no Canadian venue (Sixes runs only in the UK and Trinidad) and a strong fit with the large cricket-engaged communities in Calgary and the GTA — the cleanest verified whitespace; 2) Modernised duckpin / mini-bowling — no franchised branded rival in Canada, and differentiated from standard ten-pin; 3) Electronic shooting (Clays-style virtual clay/target shooting) — no Canadian venue for the social virtual-shooting format (Calgary's existing shooting venues are real-firearm ranges, not eatertainment), though it needs a heavier camera-and-projection fit-out; 4) Social ping-pong (SPiN-style) — a proven format, but SPiN already operates in Toronto, so it is whitespace in Calgary specifically; 5) Interactive soccer (TOCA Social-style) — no Canadian venue, though it carries a higher fit-out cost; 6) Electronic / next-gen darts — the deepest league culture and lowest capex, but the beachhead is no longer empty: PinPointe Social, a next-gen darts-and-lounge venue, opened in Calgary in January 2026 (it advertises no league programming, leaving the league-driven angle open). Excluded as already well-served in the Calgary market: golf-range and simulator formats (Calgary-based LaunchPad is expanding and Topgolf's first Alberta venue is due in 2026, on top of the city's many sim lounges), plus axe-throwing and pickleball (already saturated locally) and group-VR / immersive puzzle rooms (Immersive Gamebox and Zero Latency already operate in Calgary, and the format is one-visit novelty rather than the repeat-play, league-driven model this concept needs). On balance the strongest single-hero-game, league-driven plays are social cricket, modernised duckpin or Clays-style electronic shooting; electronic darts stays viable only if differentiated by a genuine league and membership engine that the local incumbent lacks. The binding gaps remain hospitality/venue operations and the capital for a first proof venue.",
         "customer": "Experience-led social spenders — younger adults, groups, corporate outings, date-nights and party bookings — plus a recurring league/team-competition base that drives repeat visits. Once the format is proven, franchisees who buy and operate venues under the brand become a second customer.",
-        "market": "Competitive socialising is among hospitality's fastest-growing formats (concepts up ~386% since early 2021), and the wider location-based-entertainment market is put at ~US$23B in 2025 rising to ~US$58.5B by 2035 (~9.7% CAGR). Calgary is served by multi-game incumbents (The Rec Room, Immersive Gamebox) but not by a branded, single-hero-game, league-driven venue — the specific whitespace. The reachable Calgary slice is a strong-growth niche rather than a mass market.",
-        "model": "Prove one company-owned Calgary flagship in the chosen hero game (game/lane fees, a high-margin food-and-drink attach, and recurring league/membership subscriptions), then franchise the proven format (a franchise fee plus ~7% royalty and a marketing levy, the range comparable game-based concepts charge). Leagues and team competitions are the retention engine that makes a single-game concept sticky.",
-        "goToMarket": "Open one Calgary flagship in the chosen hero game (electronic darts the lead candidate), win on a genuinely modern, digitally-scored experience plus structured weekly leagues and team competitions that drive repeat visits, and differentiate from The Rec Room and Immersive Gamebox by being a focused single-game league venue rather than a broad arcade. Franchise only once the Calgary unit economics prove out.",
-        "costs": "In a darts-bar format, a bar-scale fit-out plus cheap digitally-scored stations — far below a big-box venue; a golf-sim lounge is far higher (~US$1.0-1.8M franchised). Ongoing costs are lease, staff, food-and-drink cost of goods, and the league/membership platform.",
-        "risks": "Hospitality and multi-unit venue-operations experience is the team's gap; capital for the first proof venue; the chosen format's Calgary-specific absence is unverified (pub darts and bowling exist, and Rec Room/Immersive Gamebox are here — confirm locally before committing); and the broader socialising category is filling fast. Single-game novelty risk is mitigated by building leagues and team competitions in from day one (darts in particular has deep league culture).",
-        "nextSteps": "1) Commit the hero game — electronic darts is the top whitespace/league/low-capex pick; social cricket (cleanest verified Canadian whitespace, strong Calgary demographic fit) and modernised duckpin are the alternatives. 2) Confirm the chosen format has no existing Calgary operator (national brands are absent, but check for a local venue). 3) Design the league and team-competition engine from day one — the retention core. 4) Build single-venue unit economics for the chosen format in Calgary and cover the hospitality-operations gap (hire or partner). 5) Franchise only after one Calgary venue proves repeatable economics."
+        "market": "Competitive socialising is among hospitality's fastest-growing formats (concepts up ~386% since early 2021), and the wider location-based-entertainment market is put at ~US$23B in 2025 rising to ~US$58.5B by 2035 (~9.7% CAGR). Calgary is served by multi-game incumbents (The Rec Room, Immersive Gamebox) and, more recently, a next-gen darts venue and arriving golf big-boxes — but not by a branded, single-hero-game, league-driven venue in cricket, duckpin or ping-pong, which is the specific whitespace. The reachable Calgary slice is a strong-growth niche rather than a mass market.",
+        "model": "Prove one company-owned Calgary flagship in the chosen hero game (game/lane fees, a high-margin food-and-drink attach, and recurring league/membership subscriptions), then franchise the proven format (a franchise fee plus ~7% royalty and a marketing levy, the range comparable game-based concepts charge). Leagues and team competitions are the retention engine that makes a single-game concept sticky — and the clearest differentiator from Calgary's existing casual darts-and-lounge venue, which advertises none.",
+        "goToMarket": "Open one Calgary flagship in the chosen hero game — the cleanest whitespace is social cricket (no Canadian venue), modernised duckpin (no franchised Canadian rival) or Clays-style electronic shooting (no Canadian social-shooting venue), with social ping-pong a proven format also absent from Calgary. Win on a genuinely modern, digitally-scored experience plus structured weekly leagues and team competitions that drive repeat visits, and differentiate from The Rec Room, Immersive Gamebox and the new casual darts venue by being a focused single-game league venue. Franchise only once the Calgary unit economics prove out.",
+        "costs": "Format-dependent. Electronic darts is the lowest fit-out (bar-scale plus cheap camera auto-scoring stations, ~US$1,000-2,300 each); social cricket and modernised duckpin are moderate (nets/lanes plus digital scoring). Whichever format, expect a bar-scale venue rather than a multi-million big-box, plus lease, staff, food-and-drink cost of goods, and the league/membership platform.",
+        "risks": "Hospitality and multi-unit venue-operations experience is the team's gap, and capital for the first proof venue is real. The Calgary beachhead is also more contested than it first looked: a next-gen darts venue (PinPointe Social) opened in January 2026 and golf big-boxes are arriving (LaunchPad, Topgolf Alberta 2026), so the chosen format's local absence must be confirmed on the ground (cricket, duckpin and ping-pong appear absent; darts and golf are now present). The broader socialising category is filling fast. Single-game novelty risk is mitigated by building leagues and team competitions in from day one.",
+        "nextSteps": "1) Commit the hero game — social cricket (cleanest verified Canadian whitespace, strong Calgary demographic fit) and modernised duckpin (no franchised Canadian rival) are the top picks, with Clays-style electronic shooting another clean-whitespace option; electronic darts is viable only as a league-driven play differentiated from Calgary's new casual darts venue. 2) Confirm the chosen format has no existing Calgary operator on the ground (cricket, duckpin, virtual shooting and ping-pong appear absent; darts is now present via PinPointe Social). 3) Design the league and team-competition engine from day one — the retention core and the clearest edge over the local incumbent. 4) Build single-venue unit economics for the chosen format in Calgary and cover the hospitality-operations gap (hire or partner). 5) Franchise only after one Calgary venue proves repeatable economics."
       },
       "clarifyingQuestions": [
-        "Commit to electronic darts as the hero game (top whitespace, deepest league culture, lowest capex), or a differentiated alternative — social cricket (cleanest verified Canadian whitespace, strong Calgary demographic fit) or modernised duckpin?",
+        "With a next-gen darts venue (PinPointe Social) now open in Calgary and golf big-boxes arriving, do we commit to the cleaner single-game whitespace — social cricket (no Canadian venue) or modernised duckpin (no franchised Canadian rival) — or pursue a league-driven darts play differentiated from the local incumbent, which is positioned as a casual darts-and-lounge venue rather than a league?",
         "What capital envelope for the first Calgary proof venue, and who covers the hospitality/venue-operations gap — hire or partner?",
-        "Have we confirmed the chosen format has no existing Calgary operator (the national brands are absent, but a local venue could exist)?"
+        "For the chosen format, have we confirmed there's no existing Calgary operator on the ground (cricket, duckpin and ping-pong appear absent locally)?"
+      ],
+      "examples": [
+        {
+          "name": "Sixes Social Cricket",
+          "url": "https://sixescricket.com/",
+          "note": "Social-cricket hero-game venue (UK) — the model for candidate #1; no Canadian venue yet."
+        },
+        {
+          "name": "Pins Mechanical Co.",
+          "url": "https://www.pinsbar.com/",
+          "note": "Modernised duckpin bowling with its own leagues (US) — the model for candidate #2; no franchised Canadian rival."
+        },
+        {
+          "name": "Clays",
+          "url": "https://clays.bar/",
+          "note": "Electronic virtual clay-shooting bar (UK) — the model for candidate #3; no Canadian social-shooting venue."
+        },
+        {
+          "name": "SPiN",
+          "url": "https://wearespin.com/",
+          "note": "Social ping-pong (operates in Toronto) — a proven format, whitespace in Calgary."
+        },
+        {
+          "name": "TOCA Social",
+          "url": "https://www.toca.social/",
+          "note": "Interactive-soccer hero-game venue (UK) — candidate #5; higher fit-out cost, no Canadian venue."
+        },
+        {
+          "name": "Flight Club",
+          "url": "https://flightclubdarts.com/",
+          "note": "Branded social-darts venue (UK/US) — the darts benchmark; not in Canada."
+        },
+        {
+          "name": "PinPointe Social",
+          "url": "https://www.pinpointesocial.com/",
+          "note": "Calgary's next-gen darts-and-lounge venue (opened Jan 2026) — the local darts incumbent to differentiate from; casual play, not leagues."
+        }
       ]
     },
     {

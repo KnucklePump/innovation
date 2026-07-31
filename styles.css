@@ -180,6 +180,9 @@ svg { display: block; width: 100%; height: auto; }
 .bc-section p { margin: 0; color: var(--muted-bright); }
 ul.qs { margin: 6px 0 0; padding-left: 18px; color: var(--muted-bright); }
 ul.qs li { margin: 6px 0; }
+ul.examples { margin: 6px 0 0; padding-left: 18px; color: var(--muted-bright); }
+ul.examples li { margin: 8px 0; }
+ul.examples a { font-weight: 700; }
 
 /* Forms (submit + answers) */
 .ans-q { margin: 15px 0; }

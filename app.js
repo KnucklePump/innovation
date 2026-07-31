@@ -391,6 +391,11 @@ function renderDetail(idea) {
 
   const bcSection = (h, v) => v ? `<div class="bc-section"><h4>${esc(h)}</h4><p>${esc(v)}</p></div>` : "";
   const qs = (idea.clarifyingQuestions || []);
+  const examples = (idea.examples || []);
+  const examplesCard = examples.length ? `
+    <div class="card"><h3>Example businesses</h3>
+      <ul class="examples">${examples.map(e => `<li><a href="${esc(e.url)}" target="_blank" rel="noopener">${esc(e.name)}</a>${e.note ? ` — ${esc(e.note)}` : ""}</li>`).join("")}</ul>
+    </div>` : "";
 
   view.innerHTML = `
     <a class="back" href="#/">← All ideas</a>
@@ -418,6 +423,7 @@ function renderDetail(idea) {
       </div>
       <div>
         <div class="card"><h3>Scorecard</h3>${scoreRows}</div>
+        ${examplesCard}
       </div>
     </div>
     <div class="card"><h3>Clarify or expand this idea</h3>
