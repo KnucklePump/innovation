@@ -2073,8 +2073,8 @@
       "id": "multi-sku-asian-condiment-house",
       "title": "Multi-SKU Asian-condiment house",
       "owner": "Dave",
-      "status": "analyzed",
-      "oneLiner": "One premium brand spanning chili crisp, black vinegar, doubanjiang and real wasabi — a portfolio, not a single hero jar.",
+      "status": "refined",
+      "oneLiner": "One premium brand spanning chili crisp, black vinegar, doubanjiang and real wasabi — a Chinese-regional pantry portfolio fronted by an authentic-recipe and chef-video content engine, not a single hero jar.",
       "tags": [
         "CPG",
         "food",
@@ -2106,13 +2106,16 @@
         "saturation": {
           "score": 4,
           "confidence": "med",
-          "why": "The broad Asian-condiment aisle has entrenched players (Lee Kum Kee, S&B, Lao Gan Ma), but a single premium, Western-facing brand that unifies several authentic staples is less contested than chili crisp alone — the whitespace is the coherent premium portfolio, not any one product.",
-          "sources": []
+          "why": "The premium multi-SKU Asian pantry is more contested than a single-condiment launch: Momofuku Goods (chili crunch, noodles, soy sauce, seasoned salts; a ~US$17.5M Series A) and Omsom (a multi-sauce Asian range in 1,080 retail doors) already run exactly this portfolio play, and broad-line incumbents (Lee Kum Kee, Lao Gan Ma, S&B) own the shelf. The narrower whitespace is a specifically Chinese-regional house — black vinegar, doubanjiang, real wasabi — with no homegrown Canadian leader, differentiated by an owned authentic-content engine rather than the jar alone.",
+          "sources": [
+            "https://www.fooddive.com/news/momofuku-goods-raises-seventeen-million-series-a-funding-round/645895/",
+            "https://www.globenewswire.com/de/news-release/2023/02/16/2609833/0/en/Omsom-Launches-in-550-Target-Locations-Nationwide-Doubling-Retail-Footprint.html"
+          ]
         },
         "moat": {
-          "score": 5,
+          "score": 6,
           "confidence": "med",
-          "why": "Modestly better than a single SKU: a portfolio brand plus potential exclusive supply across several items is harder to copy wholesale than one recipe, and cross-SKU loyalty compounds. Still fundamentally a brand-and-supply moat rather than a structural one.",
+          "why": "Two reinforcing layers lift this above a single-recipe brand: potential exclusive or preferential supply across several authentic staples, and an owned content engine — an authentic Chinese-recipe site and chef-video channel — that builds a first-party audience and brand affinity competitors can't lift wholesale. Content-to-commerce lowers dependence on paid acquisition and deepens loyalty across the range, though the underlying supply can still be sourced by others.",
           "sources": []
         },
         "margins": {
@@ -2122,9 +2125,9 @@
           "sources": []
         },
         "founderFit": {
-          "score": 6,
+          "score": 7,
           "confidence": "med",
-          "why": "Squarely on the team's import-and-brand axis — direct China/Asia sourcing access plus marketing — and it connects to prior interest in authenticated Asian specialty foods. The gap remains multi-SKU CPG operations and grocery-distribution experience.",
+          "why": "A strong fit on multiple axes: direct China/Asia sourcing access to secure authentic supply, marketing and creative strength to build the brand, in-house capability to build the recipe/content site, and cultural depth to produce genuinely authentic Chinese recipe and chef-video content. The remaining gap is hands-on multi-SKU CPG operations and grocery-distribution experience.",
           "sources": []
         },
         "risk": {
@@ -2135,20 +2138,21 @@
         }
       },
       "businessCase": {
-        "summary": "A single premium brand spanning several authentic Asian pantry staples — chili crisp, black vinegar, doubanjiang, real wasabi — sold as a coherent portfolio into DTC and grocery. It rides the same premiumisation wave as chili crisp (a US$1.5B+ category with proven branded economics) but aims at the broader pantry, where a unified Western-facing premium house is less contested than any single product. The trade-off is operational: multiple SKUs multiply sourcing, compliance and inventory complexity, so the risk is spreading too thin before a hero product lands.",
+        "summary": "A single premium brand spanning several authentic Chinese pantry staples — chili crisp, black vinegar, doubanjiang, real wasabi — sold as a coherent portfolio into DTC and grocery, and fronted by an owned content engine of authentic Chinese recipes and chef videos that turns cooking inspiration into product demand. It rides the premiumisation wave proven by chili crisp, but the multi-SKU premium Asian pantry is already contested by well-funded brands like Momofuku Goods and Omsom; the defensible angle is a specifically Chinese-regional house with no Canadian leader, built on authentic content rather than a single jar.",
         "customer": "Premium-pantry shoppers and home cooks exploring authentic Asian cooking, plus specialty grocers and — via a foodservice arm — restaurants wanting authenticated ingredients. Reached DTC first, then specialty and mainstream retail.",
-        "market": "Anchored by chili crisp (~US$1.52B in 2025 → ~US$2.82B by 2034, 7.1% CAGR) and extending across vinegars, chili-bean pastes and specialty items, the premium Asian-pantry opportunity is larger than any single SKU. Branded premiumisation is proven (Fly By Jing: eight-figure, 12,000 stores), and no Canadian house unifies these staples under one premium brand.",
-        "model": "A portfolio of premium jarred/bottled staples sold DTC and wholesale, with cross-sell and bundles lifting basket size and lifetime value; a foodservice channel supplies restaurants with authenticated product. Launch narrow (a hero SKU) and widen the range as the brand earns trust.",
-        "goToMarket": "Lead with one standout product to establish the brand DTC, then expand the range and move into specialty grocery and foodservice, using the portfolio to win shelf space a single SKU couldn't justify.",
+        "market": "Anchored by chili crisp (~US$1.52B in 2025 rising to ~US$2.82B by 2034, 7.1% CAGR) and extending across vinegars, chili-bean pastes and specialty items, the premium Asian-pantry opportunity is larger than any single SKU. The multi-SKU model is proven and funded — Momofuku Goods raised a ~US$17.5M Series A and Omsom sits in 1,080 retail doors — which validates demand but sharpens competition. No Canadian house yet unifies authentic Chinese-regional staples under one premium, content-led brand.",
+        "model": "A portfolio of premium jarred/bottled staples sold DTC and wholesale, with cross-sell and bundles lifting basket size and lifetime value, and a foodservice channel supplying restaurants with authenticated product. An owned content platform — an authentic Chinese-recipe website and a chef-led YouTube channel — sits at the top of the funnel, driving discovery and repeat demand while lowering paid-acquisition cost. Launch narrow with a hero SKU and widen the range as the brand earns trust.",
+        "goToMarket": "Lead with one standout product and an authentic-recipe/chef-video content engine that builds an owned audience before heavy ad spend, converting cooking inspiration into DTC orders. Expand the range as the brand earns trust, then move into specialty grocery and foodservice, using the portfolio to justify shelf space a single SKU couldn't. Content becomes both the acquisition channel and the brand's differentiator against better-funded portfolio rivals.",
         "costs": "Multi-SKU sourcing/co-packing, broader inventory, packaging and compliance across items, plus marketing. Working-capital-intensive relative to a single product; no major capex.",
-        "risks": "Doing too much at once — diluting focus and capital across SKUs before proving the model; entrenched broad-line incumbents; thin brand/supply moat; and the DTC-to-retail graduation challenge. Supply consistency across several authentic products is an added operational risk.",
-        "nextSteps": "1) Pick the hero SKU to launch first and prove the brand. 2) Map sourcing/co-pack for the initial 3-4 items, prioritising any exclusive supply. 3) Design a portfolio brand that can stretch across the pantry. 4) Test cross-sell/bundle economics on DTC. 5) Scope the foodservice channel as a second demand source."
+        "risks": "The multi-SKU premium Asian pantry is already contested by well-funded brands (Momofuku Goods, Omsom) and broad-line incumbents, so differentiation rests on the Chinese-regional focus and content execution — and building a content audience is itself slow and uncertain. Doing too much at once still threatens focus and capital across SKUs before a hero lands; supply consistency across several authentic products and the DTC-to-retail graduation remain operational risks.",
+        "nextSteps": "1) Pick the hero SKU to launch first and prove the brand. 2) Map sourcing/co-pack for the initial 3-4 items, prioritising exclusive supply. 3) Stand up a lightweight authentic-recipe/chef-video content pilot and measure whether it drives DTC demand and CAC below paid channels. 4) Test cross-sell/bundle economics on DTC. 5) Scope the foodservice channel as a second demand source."
       },
       "clarifyingQuestions": [
         "Which single hero SKU do we launch first to establish the brand before widening the range?",
         "Can we secure exclusive or preferential supply across several staples — the difference between a portfolio brand and a reseller?",
         "Is the foodservice/restaurant channel part of the plan from the start, or a later expansion?"
-      ]
+      ],
+      "refinedThrough": "2026-08-01T12:48:01.407Z"
     },
     {
       "id": "heated-workwear-for-outdoor-trades",
@@ -2563,8 +2567,8 @@
       "id": "local-scene-music-membership",
       "title": "Local-Scene Music Membership",
       "owner": "Dave",
-      "status": "analyzed",
-      "oneLiner": "A membership platform for local music scenes: fans discover new and unsigned bands in their own city through free streaming, then pay to become members of the bands they love — unlocking downloads, early releases, direct messages and real-world perks like presale tickets and guest lists, with bands keeping the overwhelming majority of the money.",
+      "status": "refined",
+      "oneLiner": "A streaming-first membership platform for local music scenes — starting in Calgary — where fans discover new and unsigned bands through free streaming, then pay to become members of the bands they love, unlocking downloads, early releases, direct messages and band-set perks like presale tickets and guest lists, with bands keeping the overwhelming majority of the money and staying non-exclusive.",
       "tags": [
         "music",
         "marketplace",
@@ -2576,11 +2580,12 @@
         "market": {
           "score": 6,
           "confidence": "med",
-          "why": "Direct-to-fan is a proven, growing behaviour: the fan-funding platforms market is put at ~US$2.38B in 2024 rising to ~US$7.22B by 2033 (13.2% CAGR), and Bandcamp alone has paid artists and labels ~US$1.5B to date on a fair split. The live-music adjacency is large (global ~US$38.6B in 2025, ~8.8% CAGR). The reachable local artist-to-fan slice is far smaller than those headlines, but the direction and growth are real.",
+          "why": "Direct-to-fan is a proven, growing behaviour: the fan-funding platforms market runs ~US$2.38B in 2024 to ~US$7.22B by 2033 (13.2% CAGR), and Bandcamp alone has paid artists and labels ~US$1.5B on a fair split. The real-world half is sizable in-country — Canada's live-music sector contributes ~C$10.92B to GDP and supports 100,000+ jobs. The beachhead, Calgary, is a real but mid-tier scene with active club, folk and coffee-house circuits rather than a Nashville-scale market, so the reachable local slice is modest even though the direction is right.",
           "sources": [
             "https://growthmarketreports.com/report/fan-funding-platforms-market",
             "https://www.musicbusinessworldwide.com/bandcamp-fridays-hit-154m-in-payouts-since-2020-with-19m-paid-in-2025-alone/",
-            "https://www.custommarketinsights.com/report/live-music-market/"
+            "https://www.canadianlivemusic.ca/news/hearandnowpr",
+            "https://everydaytourist.ca/calgary-visitor-information/calgary-music-city-wannabe"
           ]
         },
         "entry": {
@@ -2604,9 +2609,9 @@
           ]
         },
         "moat": {
-          "score": 5,
+          "score": 4,
           "confidence": "med",
-          "why": "The durable defensibility is local network density — the compounding of bands, fans and venues within a single city — which is genuinely hard for a global incumbent to replicate scene by scene once it exists. Early on, though, the moat is thin: individual features (memberships, downloads, gig alerts) are copyable, so the platform has to reach community critical mass in a beachhead before that density becomes a real barrier.",
+          "why": "With bands non-exclusive and the same catalogue available on Spotify, the platform has no content lock-in — defensibility rests entirely on local network density (bands, fans and venues compounding within Calgary) and the fan-membership experience. That density is genuinely hard to replicate scene by scene once achieved, but it is slow to build and leaks while bands stay reachable elsewhere, so early defensibility is thin and individual features are copyable.",
           "sources": []
         },
         "margins": {
@@ -2618,36 +2623,36 @@
           ]
         },
         "founderFit": {
-          "score": 7,
+          "score": 6,
           "confidence": "med",
-          "why": "A strong fit for this team: genuine music-domain depth (an advanced music-and-psychology academic background on the team, directly relevant to why fans attach to and pay for artists), in-house software build capability to ship a two-sided app and payments without outsourcing the core, and marketing/creative strength for the supply-and-demand seeding a beachhead city needs. The main gap is no stated music-industry operator or local-promoter network among the founders.",
+          "why": "Music-domain depth on the team (an advanced music-and-psychology academic background) plus in-house software-build and marketing strength fit the product well. The gap the local beachhead exposes is that no founder is stated to hold a Calgary music-scene network — the venue, promoter and band relationships needed to seed a hyper-local roster — and the music-domain strength sits outside the beachhead city.",
           "sources": []
         },
         "risk": {
           "score": 4,
           "confidence": "med",
-          "why": "The downside is contained — this is low-capex software, not a hardware or lease commitment — but the probability of stall is high. It is a two-sided cold-start against entrenched incumbents, and there is direct precedent of failure: Ampled, a musician-focused direct fan-funding platform, launched in 2020 and shut down at the end of 2023 citing burnout and lack of resources. Monetisation ramps slowly, which strains a small team's runway.",
+          "why": "Downside stays contained — low-capex software — but the core bet is hard: a streaming-first, non-exclusive product competes for listening time against Spotify without a catalogue advantage or exclusivity, so it must win purely on local discovery and the membership layer. It is also a two-sided cold-start with a direct failure precedent — Ampled, a musician-focused fan-funding platform, launched in 2020 and shut down at the end of 2023 citing burnout and lack of resources — and monetisation ramps slowly behind a free tier.",
           "sources": [
             "https://musically.com/2023/10/23/indie-fan-funding-platform-ampled-will-close-by-end-of-2023/"
           ]
         }
       },
       "businessCase": {
-        "summary": "A membership platform that reconnects new and unsigned bands directly with the fans in their own city. Listeners discover local artists through free streaming, then pay to become members of the bands they love, unlocking downloads, early releases, direct messages and real-world perks — presale tickets, guest lists and merch. Bands keep the overwhelming majority of the revenue and own the fan relationship outright, replacing the pennies-per-stream economics of the big platforms with fair, direct support.",
-        "customer": "Two sides in one local scene. On the supply side, new, unsigned and emerging bands with an existing pocket of local fans who feel underpaid and disconnected from their audience on Spotify. On the demand side, engaged local-music fans — gig-goers who want to discover bands near them, get closer to the artists, and feel their money actually supports the music.",
-        "market": "Direct-to-fan support is proven and growing. The fan-funding platforms market is estimated at ~US$2.38B in 2024, rising to ~US$7.22B by 2033 (13.2% CAGR), inside a creator economy worth ~US$254B in 2025. Bandcamp has paid artists and labels ~US$1.5B on a fair ~82–85% artist split, showing fans will pay when the cut is right. The real-world half — live music — is large and resurgent: ~US$38.6B globally in 2025 (~8.8% CAGR), with grassroots venues explicitly the layer where emerging talent is discovered. The serviceable slice is the local artist-to-fan segment within these, city by city.",
-        "model": "A marketplace take-rate. The platform keeps ~10–15% of band memberships (in line with Patreon's 10% standard creator fee) and passes the rest to the band, plus commission on ticketing and merch sold through the real-world perks. An optional listener subscription for city-wide streaming access adds a second revenue line. Revenue compounds as each city's roster and fanbase grow.",
-        "goToMarket": "Win one city at a time. Sign a dense cluster of local bands in a single beachhead scene on the model's central bet — that each band brings its own fanbase, seeding demand without competing against a global catalogue. Anchor discovery to the live scene ('bands playing near you') and convert gig-goers with perks they cannot get elsewhere: presales and guest lists. Use the team's marketing strength and artist credibility to recruit the first roster, then let band-to-fan invitations drive organic growth before expanding to the next city. Whether that cross-side pull actually overcomes the two-sided cold-start is the first thing to prove, not assume.",
-        "costs": "Moderate and software-shaped rather than capital-heavy: a two-sided app, streaming and payments infrastructure, and per-city field effort to sign and onboard bands. Ongoing costs are hosting, payment processing, support and local scene development. The larger cost is time — both sides of each city must be seeded before membership revenue becomes meaningful.",
-        "risks": "A two-sided cold-start is the central risk: too few bands and fans won't join, too few fans and bands won't. The space is crowded (Bandcamp, Patreon, Sofar, Bandsintown, Audius) and has a direct failure precedent — Ampled, a musician fan-funding platform, shut down in 2023 after burnout and funding shortfall. Monetisation per niche city is small and ramps slowly, and incumbents could copy individual features before local network density becomes a moat.",
-        "nextSteps": "Validate cheaply before building. (1) Pick one beachhead city and confirm 15–20 local bands will commit to a membership offer at a set price. (2) Pre-sell memberships for a handful of those bands via a no-code page to test fan willingness-to-pay and conversion from a free follow. (3) Run one live-gig tie-in (presale + guest list) to measure whether the real-world perk drives sign-ups. (4) Only then scope the minimum app — streaming, membership, and gig alerts — for that single city."
+        "summary": "A streaming-first membership platform for a local music scene, starting in Calgary. Fans discover new and unsigned local bands through free streaming, then pay to become members of the bands they love — unlocking downloads, early releases, direct messages and real-world perks like presales and guest lists that each band sets for itself. Bands keep the overwhelming majority of the money and stay non-exclusive, keeping their other platforms; the product wins, if it wins, on local discovery and the direct fan relationship rather than on owning the catalogue.",
+        "customer": "Two sides in one local scene, starting in Calgary. On the supply side, new, unsigned and emerging Calgary bands with a pocket of local fans who feel underpaid and disconnected from their audience on Spotify. On the demand side, engaged local-music fans and gig-goers who want to discover bands near them, get closer to the artists, and feel their money actually supports the music.",
+        "market": "Direct-to-fan support is proven and growing: the fan-funding platforms market is ~US$2.38B in 2024, rising to ~US$7.22B by 2033 (13.2% CAGR), and Bandcamp has paid artists and labels ~US$1.5B on a fair ~82–85% split. The real-world half is large in-country — Canada's live-music sector contributes ~C$10.92B to GDP with 100,000+ jobs. The beachhead, Calgary, is a real but mid-tier scene with active club, folk and coffee-house circuits rather than a Nashville-scale market, so the serviceable slice is a modest local segment the model must prove city by city.",
+        "model": "Streaming-first: free local streaming is the discovery habit and the top of the funnel, with paid band memberships as the monetisation layer on top. The platform keeps ~10–15% of memberships (in line with Patreon's 10% standard fee) and passes the rest to the band, plus commission on ticketing and merch. Perks are band-configurable — early releases, direct messages, presales, guest lists and more, varying by artist — and bands stay non-exclusive, keeping their Spotify/Bandcamp presence, which lowers the barrier to recruit them. An optional listener subscription for city-wide streaming adds a second line.",
+        "goToMarket": "Win Calgary first. Because bands stay non-exclusive, the ask is low-risk — join and keep everything else — which eases recruiting a dense first roster from the city's club, folk and coffee-house circuits. Anchor discovery to the live scene ('bands playing near you') and convert gig-goers with band-set perks like presales and guest lists. The open question the model must answer is why a fan streams here rather than on Spotify, where the same non-exclusive catalogue also lives — the local-discovery experience and the direct fan-membership layer have to carry that, not exclusivity.",
+        "costs": "Moderate and software-shaped: a two-sided streaming app, payments infrastructure, and per-city field effort to sign bands. A streaming-first free tier means the audience must be built before membership revenue arrives, lengthening time-to-revenue; ongoing costs are hosting and streaming delivery, payment processing, support and local scene development.",
+        "risks": "The core bet is hard: a streaming-first, non-exclusive product competes for listening time against Spotify with no catalogue advantage or lock-in, so it must win on local discovery and the membership layer alone. It is a two-sided cold-start in a crowded space (Bandcamp, Patreon, Sofar, Bandsintown, Audius) with a direct failure precedent — Ampled shut down in 2023 after burnout and funding shortfall. Monetisation per niche city is small and ramps slowly behind a free tier, and features are copyable before local density becomes a moat.",
+        "nextSteps": "Validate cheaply before building. (1) Confirm 15–20 Calgary bands will join a non-exclusive, streaming-first membership offer. (2) Pre-sell memberships for a handful via a no-code page to test fan willingness-to-pay and free-to-paid conversion. (3) Test the local-discovery hook: can you get fans to choose this app to stream a local band over Spotify? (4) Run one live-gig tie-in (presale + guest list) to measure whether the real-world perk drives sign-ups, then scope the minimum streaming app for Calgary only."
       },
       "clarifyingQuestions": [
-        "Which single city is the beachhead, and do you have an existing route to its local bands and venues (a promoter, a scene contact, a genre community) to seed the first roster?",
-        "Is the core habit streaming-first (compete for listening time) or membership-first (a fan-club people pay for and rarely open) — which one is the product you build around, with the other as support?",
-        "What is the anchor perk that makes a fan pay: the exclusive early music, the direct line to the band, or the live-gig presales and guest lists?",
-        "Do bands sign an exclusive relationship (only reachable to these fans through you) or is the platform additive to their Spotify/Bandcamp presence — and which will bands actually agree to?"
-      ]
+        "With bands non-exclusive and the same music on Spotify, what is the single local-discovery hook that makes a Calgary fan open this app to stream instead of Spotify?",
+        "Do you have a concrete Calgary entry point — a venue, promoter, folk-club or scene community — to seed the first dense roster of bands?",
+        "What specifically converts a free streamer into a paying member — the first perk or moment that triggers the upgrade?"
+      ],
+      "refinedThrough": "2026-08-01T14:06:59.427Z"
     }
   ]
 }
