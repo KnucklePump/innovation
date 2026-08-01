@@ -38,9 +38,9 @@
           ]
         },
         "cost": {
-          "score": 7,
+          "score": 4,
           "confidence": "med",
-          "why": "Cheap to first revenue on the lean kit path: an estimated few thousand dollars of portable LED gear plus glow inventory to build demo and pilot kits. The expensive alternative — permanently lighting a course (~$500–$900 per light, or roughly $30,000–$90,000 for a full facility) — is what this path avoids. Caveat: Canada's short season concentrates revenue into ~5–6 warm months, so annual economics hinge on that window.",
+          "why": "The lean kit path keeps demo and pilot outlay low — a few thousand dollars of overseas-sourced portable LED gear and glow inventory. But reaching viability in Canada means building course relationships from zero, carrying real consumables inventory, and funding pilots across a short season before revenue is proven. The effective investment-to-viability is therefore materially larger than the kit sticker, and time-to-revenue is gated by slow B2B relationship-building with conservative operators.",
           "sources": [
             "https://blog.feslighting.com/golf-course-lighting"
           ]
@@ -75,27 +75,26 @@
           "sources": []
         },
         "risk": {
-          "score": 5,
+          "score": 3,
           "confidence": "med",
-          "why": "Mixed. Lower: no scaled competitor in Canada. Higher: a smaller market, no course relationships to open doors, and pronounced seasonality — Canada's short, cold golf season squeezes outdoor night play into a few months. Capital-at-risk stays low on the lean path, so downside is contained.",
-          "sources": [
-            "https://www.golfcanada.ca/articles/recreational-golf-continued-growth-in-canada-in-2024-thanks-to-youth-female-programs/"
-          ]
+          "why": "The downside is less contained than a lean-kit framing suggests. Reaching viability requires meaningful, mostly up-front investment — relationships built from zero, inventory, and multi-course pilots — set against a genuinely uncertain payoff in a small, short-season, weak-moat market. The most likely failure mode is spending to build demand that doesn't rebook at a price supporting a Canada-wide rollout, which makes the investment-to-risk balance the idea's central problem.",
+          "sources": []
         }
       },
       "businessCase": {
-        "summary": "A self-run 'night-golf-in-a-box' kit — glow balls, lit greens and neon course features with a playbook — sold or leased B2B to Canadian golf courses so they can monetise otherwise-dead evening hours. The commodity glow-ball manufacturing path is out, and so are staffed events; the model is the kit plus recurring consumables. Canada is the target because the scaled US incumbent (Glow Vibe Golf) isn't here — genuine first-mover whitespace — though it's a smaller market with a much shorter season and the team has no course relationships yet.",
+        "summary": "A self-run 'night-golf-in-a-box' kit — glow balls, lit greens and neon course features with a playbook — sold or leased B2B to Canadian golf courses so they can monetise otherwise-dead evening hours. The commodity glow-ball manufacturing path is out, and so are staffed events; the model is the kit plus recurring consumables. Canada is the target because the scaled US incumbent (Glow Vibe Golf) isn't here — genuine first-mover whitespace — though it's a smaller market with a much shorter season and the team has no course relationships yet. The harder question is capital-at-risk: reaching viability takes meaningful up-front investment against an uncertain payoff, so the investment-to-risk balance — not the kit itself — is the make-or-break.",
         "customer": "The paying customer is the Canadian golf-course / driving-range operator (B2B) — ~2,047 facilities, especially public, municipal and resort courses chasing off-peak and event revenue. The end users are social golfers, corporate outings and charity fundraisers, families, and the growing youth/female segments driving Canadian golf's growth.",
         "market": "Canada: ~2,047 course/club businesses, ~6M golfers, ~11M rounds posted by members in 2024, ~C$4.0B industry revenue at ~4.5% CAGR. Smaller than the US but healthy and growing. The turnkey night-golf niche is under-served — only scattered DIY course events exist and no scaled turnkey B2B provider — so there's real first-mover room.",
         "model": "B2B kit model: sell or lease a 'night-golf-in-a-box' kit so courses self-run night events, generating upfront hardware revenue plus recurring consumables (glow balls, markers, cart lights) and ongoing replenishment. Gear sourced overseas for a cost advantage. Not manufacturing commodity balls, and not running staffed events.",
         "goToMarket": "With no existing course relationships, job one is building them — start local (the team is Canada-based). Win the first public/municipal or resort courses by helping them run a supported pilot night with the kit, then convert to a kit sale or lease plus recurring consumables. Lean on shareable experiential/social content and the high-value corporate and charity bookings the courses host. Move first, before US operators expand north.",
-        "costs": "Lean: a few thousand dollars of portable LED gear and glow inventory (overseas-sourced) to build demo and pilot kits; ongoing costs are inventory, fulfilment and support. The short Canadian season is the real economic constraint — plan for concentrated summer revenue and consider shoulder-season or indoor/simulator angles to smooth it.",
-        "risks": "A smaller market; pronounced seasonality (short, cold Canadian golf season); no existing course relationships to open doors; weak structural moat; and the possibility that a US incumbent expands into Canada. The upside is that the niche is currently open and capital-at-risk is low.",
-        "nextSteps": "1) Build the first course relationships — the biggest gap. 2) Run 2–3 supported pilot nights at local Canadian courses to test willingness-to-pay and rebooking for the kit. 3) Nail the kit + consumables unit economics and pricing (sell vs lease). 4) Lock an overseas-sourced gear cost advantage. 5) Work through the short-season economics (shoulder/indoor options)."
+        "costs": "Building demo and pilot kits is cheap — a few thousand dollars of overseas-sourced portable LED gear and glow inventory. The real cost is what it takes to reach viability: building course relationships from zero, carrying consumables inventory, and funding multiple pilot nights across a short season before revenue is proven. That effective investment is larger than the kit sticker and is the figure the model lives or dies on — a lean sticker price should not be mistaken for a lean total investment.",
+        "risks": "The dominant risk is capital-at-risk versus an uncertain payoff: the investment to reach viability (relationships from zero, inventory, pilots) is meaningful and mostly precedes proven revenue, in a small, short-season market with a weak structural moat. Add pronounced seasonality, no existing course relationships, and the possibility a US incumbent expands north. The offsetting upside — an open niche and a low sticker cost to a first demo — does not by itself resolve the investment-to-risk question.",
+        "nextSteps": "1) Before any real spend, define the maximum investment worth risking and the single cheapest test that could kill or confirm the idea — one course, one season. 2) Run that minimal supported pilot to measure willingness-to-pay and, critically, rebooking. 3) Only on a positive rebooking signal, build the first cluster of course relationships. 4) Nail kit + consumables unit economics (sell vs lease) and an overseas gear cost edge. 5) Work through short-season economics (shoulder/indoor options) before committing to any Canada-wide rollout."
       },
       "clarifyingQuestions": [
         "Given Canada's short golf season, how does the business sustain year-round — shoulder-season formats, indoor/simulator play, or a southern/US expansion later?",
-        "What's the beachhead — which region and course type do we land first, and how do we win it with no existing relationships?"
+        "What's the beachhead — which region and course type do we land first, and how do we win it with no existing relationships?",
+        "What's the maximum capital worth risking on this, and can a single-course, single-season pilot validate demand and rebooking before any larger commitment?"
       ]
     },
     {
