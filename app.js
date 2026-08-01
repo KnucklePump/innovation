@@ -157,6 +157,12 @@ function teamVotes(ideaId) {
   const avg = valid.length ? valid.reduce((a, b) => a + b.score, 0) / valid.length : null;
   return { avg, count: valid.length, votes: arr };
 }
+// The team score for an idea stays hidden until the current voter has rated it (avoids anchoring).
+function hasVoted(ideaId) {
+  if (!state.voter) return false;
+  const arr = (state.votes && state.votes[ideaId]) || [];
+  return arr.some(v => v.name === state.voter && v.score > 0);
+}
 function upsertVote(ideaId, name, score, comment) {
   const arr = state.votes[ideaId] = state.votes[ideaId] || [];
   const existing = arr.find(v => v.name === name);
@@ -166,10 +172,13 @@ function upsertVote(ideaId, name, score, comment) {
 function teamCardHtml(idea) {
   const { avg, count, votes } = teamVotes(idea.id);
   const mine = votes.find(v => v.name === state.voter);
-  const summary = count
-    ? `<div class="vote-summary"><span class="composite team-score">${avg.toFixed(1)}</span><span class="muted">/ 10 · ${count} vote${count > 1 ? "s" : ""}</span></div>`
-    : `<p class="muted" style="margin:0 0 4px">No team ratings yet.</p>`;
-  const list = votes.length
+  const voted = hasVoted(idea.id);
+  const summary = !voted
+    ? `<p class="muted" style="margin:0 0 4px">🔒 Rate this idea below to reveal the team's score.</p>`
+    : (count
+      ? `<div class="vote-summary"><span class="composite team-score">${avg.toFixed(1)}</span><span class="muted">/ 10 · ${count} vote${count > 1 ? "s" : ""}</span></div>`
+      : `<p class="muted" style="margin:0 0 4px">No team ratings yet.</p>`);
+  const list = voted && votes.length
     ? `<div class="vote-list">${votes.map(v => `<div class="vote-row"><span class="vote-name">${esc(v.name)}</span><span class="score-pill ${scoreClass(v.score)}">${v.score}</span>${v.comment ? `<span class="vote-comment">${esc(v.comment)}</span>` : ""}</div>`).join("")}</div>`
     : "";
   const mineForm = state.voter
@@ -254,7 +263,9 @@ function renderList() {
             <td class="idea-title">${esc(idea.title)}${idea.sample ? ' <span class="badge sample">sample</span>' : ""}
               <small>${esc(idea.oneLiner || "")}</small></td>
             <td class="num"><span class="composite">${c.toFixed(1)}</span></td>
-            <td class="num">${teamVotes(idea.id).avg == null ? '<span class="muted">—</span>' : `<span class="composite team-score">${teamVotes(idea.id).avg.toFixed(1)}</span>`}</td>
+            <td class="num">${hasVoted(idea.id)
+              ? (teamVotes(idea.id).avg == null ? '<span class="muted">—</span>' : `<span class="composite team-score">${teamVotes(idea.id).avg.toFixed(1)}</span>`)
+              : '<span class="vote-now">VOTE NOW</span>'}</td>
             ${cols.map(k => {
               const s = idea.scores?.[k]?.score;
               return `<td class="num">${s == null ? "—" : `<span class="score-pill ${scoreClass(s)}">${s}</span>`}</td>`;
