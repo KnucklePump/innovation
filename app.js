@@ -260,25 +260,25 @@ function renderList() {
               return `<td class="num">${s == null ? "—" : `<span class="score-pill ${scoreClass(s)}">${s}</span>`}</td>`;
             }).join("")}
           </tr>`;
-  // Ideas stay on the board only with a composite ABOVE 4.0; the rest are shown as discarded.
-  const kept = rows.filter(r => r.composite > 4.0);
-  const discarded = rows.filter(r => r.composite <= 4.0);
+  // Ideas stay on the board only with a composite of 5.0 OR ABOVE; the rest are shown as discarded.
+  const kept = rows.filter(r => r.composite >= 5);
+  const discarded = rows.filter(r => r.composite < 5);
 
   view.innerHTML = `
     <div class="list-head">
-      <div><h2>Idea Board</h2><p class="muted">Ideas scoring <strong>above 4.0</strong> stay on the board and are plotted below; lower-scoring ideas drop to <strong>Discarded</strong>. The chart plots each kept idea by <strong>attractiveness</strong> (higher up) against <strong>ease of entry</strong> (further right); <strong>bubble size</strong> is the team's average vote. Click any bubble or row for the full business case.</p></div>
+      <div><h2>Idea Board</h2><p class="muted">Ideas scoring <strong>5.0 or above</strong> stay on the board and are plotted below; lower-scoring ideas drop to <strong>Discarded</strong>. The chart plots each kept idea by <strong>attractiveness</strong> (higher up) against <strong>ease of entry</strong> (further right); <strong>bubble size</strong> is the team's average vote. Click any bubble or row for the full business case.</p></div>
       <a href="#/submit" class="btn-primary">+ Submit an idea</a>
     </div>
     ${quadrant(kept)}
-    <h3 class="board-section" style="margin-top:22px">Ideas on the board <span class="muted">— composite above 4.0</span></h3>
+    <h3 class="board-section" style="margin-top:22px">Ideas on the board <span class="muted">— composite 5.0 or above</span></h3>
     <div class="table-wrap"><table>
       ${thead}
       <tbody>
-        ${kept.length ? kept.map((r, i) => rowHtml(r, i + 1, false)).join("") : `<tr><td colspan="${cols.length + 4}" class="muted" style="padding:14px">No ideas above 4.0 yet.</td></tr>`}
+        ${kept.length ? kept.map((r, i) => rowHtml(r, i + 1, false)).join("") : `<tr><td colspan="${cols.length + 4}" class="muted" style="padding:14px">No ideas 5.0 or above yet.</td></tr>`}
       </tbody>
     </table></div>
     ${discarded.length ? `
-    <h3 class="board-section" style="margin-top:30px">Discarded Ideas <span class="muted">— composite 4.0 or below</span></h3>
+    <h3 class="board-section" style="margin-top:30px">Discarded Ideas <span class="muted">— composite below 5.0</span></h3>
     <div class="table-wrap"><table>
       ${thead}
       <tbody>
