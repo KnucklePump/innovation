@@ -2667,6 +2667,93 @@
         "Both Etsy and the machine market are saturated — what's the specific wedge (a niche like pet memorials, a corporate/bulk channel, quality, or an exclusive machine line) that makes this stand out?",
         "Is there a route to an exclusive or preferential machine-supply deal, or a niche where we have authentic credibility — i.e. anything that isn't trivially copyable?"
       ]
+    },
+    {
+      "id": "transparent-display-film",
+      "title": "Transparent Display Film",
+      "owner": "Dave",
+      "status": "analyzed",
+      "oneLiner": "See-through LED film that turns glass into a video screen — either importing/reselling the film, or designing immersive retail, event and brand-activation experiences with it.",
+      "tags": [
+        "import",
+        "retail-tech",
+        "experiential",
+        "displays"
+      ],
+      "scores": {
+        "market": {
+          "score": 6,
+          "confidence": "med",
+          "why": "Real and growing. The transparent LED-film display market is estimated around US$240M in 2025 growing ~16% CAGR, within a larger transparent-display market, with retail and window displays the dominant application and architecture and events adding demand. The reachable local slice is modest, but the category is genuinely rising.",
+          "sources": [
+            "https://www.reportprime.com/transparent-led-film-display-r5659"
+          ]
+        },
+        "entry": {
+          "score": 5,
+          "confidence": "med",
+          "why": "Moderate, and it depends on the model. Importing and reselling the film is low-barrier — many Chinese OEMs sell it directly — but the experiential model needs AV-integration skill, glass mounting, content creation and B2B project sales. No licensing, but the service angle carries real skill and relationship barriers.",
+          "sources": [
+            "https://www.doitvision.com/transparent-led-film-screen-price/"
+          ]
+        },
+        "cost": {
+          "score": 5,
+          "confidence": "med",
+          "why": "Moderate. The film runs roughly US$300–1,200/m², with fine-pitch/high-spec film higher (up to ~US$2,500–3,000/m²), so a demo/showroom install is several thousand dollars; the service model adds content tools and install labour, the resale model adds inventory. No facility build, but not a low-thousands start either.",
+          "sources": [
+            "https://www.doitvision.com/transparent-led-film-screen-price/",
+            "https://www.szradiant.com/flexible-transparent-led-film-screens-2025-prices-installation-hacks.html"
+          ]
+        },
+        "saturation": {
+          "score": 4,
+          "confidence": "med",
+          "why": "Contested on the hardware side — many Chinese OEMs (DOIT VISION, LEDKUL, Radiant and others) sell transparent LED film directly, alongside established AV/signage players and premium transparent-OLED from majors — so reselling competes on price against the source. The experiential-integration angle is newer and less crowded locally, but overlaps what AV integrators and signage firms already do with digital window displays.",
+          "sources": [
+            "https://www.doitvision.com/transparent-led-film-screen-price/"
+          ]
+        },
+        "moat": {
+          "score": 4,
+          "confidence": "med",
+          "why": "Weak on resale (commodity film sourced from the same OEMs anyone can buy from); moderate on the service model, where creative reputation, install/integration know-how and client relationships build some stickiness — but all replicable, with no IP.",
+          "sources": []
+        },
+        "margins": {
+          "score": 5,
+          "confidence": "low",
+          "why": "Mixed. Hardware resale is thin-margin against direct-from-China pricing; the design-install-content service carries better margins but is project-based and labour-intensive, so blended economics depend on winning enough installs at good project margins.",
+          "sources": []
+        },
+        "founderFit": {
+          "score": 6,
+          "confidence": "med",
+          "why": "A genuine fit for the experiential model: China-market sourcing to secure the film, marketing/creative to design the brand experiences, and engineering to handle glass mounting and AV integration. The gap is that no one has run an AV-integration or experiential-install business or holds retail/events relationships — so the fit is real but unproven in execution.",
+          "sources": []
+        },
+        "risk": {
+          "score": 5,
+          "confidence": "med",
+          "why": "Contained but not a slam-dunk. Capital-at-risk is moderate (demo units/inventory), but it's a premium-priced product with a narrower buyer base, lumpy project-based revenue, and competition from both direct-from-China sellers and established AV integrators. Downside is bounded; upside needs a differentiated service, not just reselling film.",
+          "sources": []
+        }
+      },
+      "businessCase": {
+        "summary": "See-through LED film that adheres to glass and plays video, turning shop windows, curtain walls and showroom glass into transparent displays. Two models sit inside it: import and resell the film (widely made by Chinese OEMs at roughly US$300–1,200/m²), or — the more differentiated angle — design and install immersive retail, event and brand-activation experiences with it. The transparent-display category is real and growing (retail the dominant application), and the sourcing-plus-creative-plus-engineering mix fits the service model; the catch is that the hardware is a crowded, commoditised supply and the service angle competes with established AV integrators, so differentiation and project economics decide it.",
+        "customer": "For the service model: retailers and shopping centres wanting standout window displays, brands running experiential activations, museums and attractions, and event or showroom clients. For the resale model: sign shops, AV integrators and businesses buying transparent LED film.",
+        "market": "The transparent LED-film display market is estimated around US$240M in 2025 growing ~16% CAGR, within a larger transparent-display market; retail and window displays are the dominant application, with architecture and experiential events adding demand. The reachable local slice (Calgary-area retail, events, showrooms) is modest, but the category is genuinely rising.",
+        "model": "Service model: design, supply, install and service transparent-display experiences on a per-project basis (hardware + creative + integration + content), with possible content/maintenance retainers. Resale model: import the film and on-sell it (hardware margin). The service model carries the better margin and differentiation; the two can combine — sell the install and the film.",
+        "goToMarket": "Service path: build one or two showcase installs (a flagship retail window or an event activation) as portfolio, then sell to retailers, brands and experience agencies on the 'turn your glass into a screen' pitch. Resale path: import a tested product line and sell through sign/AV channels. Lead with the experiential angle, where the sourcing + creative + engineering mix is the edge.",
+        "costs": "The film runs ~US$300–1,200/m², with fine-pitch/high-spec film higher (up to ~US$2,500–3,000/m²), so a demo/showroom install is several thousand dollars; add content-creation tools and install labour for the service model, or inventory for resale. No facility build, but a meaningful up-front outlay for demo units and first installs.",
+        "risks": "The hardware is a crowded, commoditised supply — many Chinese OEMs sell the film directly, so reselling competes on price against the source, and the experiential angle competes with established AV/signage integrators. It's a premium product with a narrower buyer base and lumpy, project-based revenue, and the moat is weak without a differentiated creative/service reputation. Capital-at-risk is moderate; the upside hinges on winning installs at good margins.",
+        "nextSteps": "1) Pick the model — resell the film (sourcing play) vs sell experiences (creative + integration play); the service model is the more defensible. 2) Build one showcase install (retail window or event activation) as proof and portfolio. 3) Cost a demo unit and typical project economics (film + install + content) and target project margin. 4) Line up a reliable OEM supplier. 5) Test demand with 2–3 retailers, brands or event agencies before committing inventory."
+      },
+      "clarifyingQuestions": [
+        "Resell the film (plays to China sourcing) or sell experiences/installations with it (plays to creative + engineering)? The service model is more differentiated and higher-margin, but needs AV-integration capability and client relationships we'd have to build.",
+        "The film itself is a crowded, commoditised supply — many Chinese OEMs sell it directly — so what's the wedge: creative/experiential quality, install/integration, a specific vertical (retail, events, museums), or exclusive product?",
+        "Which beachhead — retail window displays, brand/event activations, or showrooms/museums — and do we have a route to those buyers?"
+      ]
     }
   ]
 }
