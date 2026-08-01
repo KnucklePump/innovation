@@ -148,6 +148,52 @@
       {
         "seed": "single-sport-social-franchise",
         "run": "2026-07-30"
+      },
+      {
+        "sector": "consumer-retail",
+        "lens": "technological",
+        "run": "2026-07-31",
+        "theme": "china-import"
+      },
+      {
+        "sector": "energy-climate",
+        "lens": "environmental",
+        "run": "2026-07-31",
+        "theme": "china-import"
+      },
+      {
+        "sector": "energy-climate",
+        "lens": "financial",
+        "run": "2026-07-31",
+        "theme": "china-import"
+      },
+      {
+        "sector": "consumer-retail",
+        "lens": "social",
+        "run": "2026-07-31",
+        "theme": "china-import"
+      },
+      {
+        "sector": "built-environment",
+        "lens": "technological",
+        "run": "2026-07-31",
+        "theme": "china-import"
+      },
+      {
+        "sector": "health-longevity",
+        "lens": "technological",
+        "run": "2026-07-31",
+        "theme": "china-import"
+      },
+      {
+        "seed": "wasabi-import-business",
+        "run": "2026-07-31",
+        "theme": "china-import"
+      },
+      {
+        "seed": "niche-brands",
+        "run": "2026-07-31",
+        "theme": "china-import"
       }
     ]
   },
@@ -1425,6 +1471,316 @@
         }
       ],
       "createdRun": "2026-07-30"
+    },
+    {
+      "id": "wire-free-robotic-lawn-care",
+      "title": "Wire-free robotic lawn care crosses to North America",
+      "sector": "consumer-retail",
+      "lens": "technological",
+      "source": "broad",
+      "horizon": "near",
+      "signal": 8,
+      "oneLiner": "GPS/AI wire-free robotic mowers are already a mass-market category in Europe but remain under-adopted in North America — a Chinese-brand-led wave now landing at Canadian retail.",
+      "why": "The global robotic lawn mower market is ~US$7.5B in 2026, forecast to ~US$15.9B by 2033 (11.4% CAGR), and it is regionally lopsided: Europe holds ~43% share while North America sits near ~30% despite far larger lawns — a penetration gap, not a demand ceiling. The unlock is technological: new wire-free RTK-GPS + AI-vision navigation removes the buried-perimeter-wire install that held the category back. The best-selling wire-free brands are Chinese — Mammotion, which reports being the world's best-selling wire-free robotic-mower brand with 400,000+ households across 30+ countries and is now expanding into commercial mowing, plus Segway Navimow, Dreame and Ecovacs. That combination — proven European demand, a fresh install-free product, and China-manufactured supply arriving before the market is saturated — defines the opening.",
+      "drivers": [
+        "technological",
+        "economic",
+        "social"
+      ],
+      "sources": [
+        "https://www.persistencemarketresearch.com/market-research/robotic-lawn-mower-market.asp",
+        "https://www.prnewswire.com/news-releases/mammotion-announces-strategic-expansion-into-commercial-robotic-mowers-as-it-confirms-its-position-as-the-worlds-best-selling-wire-free-robotic-lawn-mower-brand-302655042.html"
+      ],
+      "confidence": "high",
+      "ideas": [
+        {
+          "title": "Prairie robotic-mower dealer & install network",
+          "oneLiner": "Become the regional sales-plus-install-plus-winterization channel for a leading wire-free brand across Canadian suburban and acreage markets, where robots need setup and seasonal storage.",
+          "pattern": "geographic-arbitrage"
+        },
+        {
+          "title": "Robot-mowing-as-a-service for estates & HOAs",
+          "oneLiner": "Own the robots and sell a flat-fee 'always-cut lawn' subscription to large-lot homeowners, condo boards and HOAs instead of selling hardware.",
+          "pattern": "service-izing"
+        },
+        {
+          "title": "Four-season yard-robot bundle",
+          "oneLiner": "One robot base with seasonal attachments — mowing in summer, leaf/snow tools in winter — sold as a single year-round subscription.",
+          "pattern": "rebundling"
+        }
+      ],
+      "createdRun": "2026-07-31"
+    },
+    {
+      "id": "plug-in-balcony-solar",
+      "title": "Plug-in 'balcony' solar reaches North America",
+      "sector": "energy-climate",
+      "lens": "environmental",
+      "source": "broad",
+      "horizon": "mid",
+      "signal": 7,
+      "oneLiner": "Renter-friendly plug-in solar kits — over a million installed in Germany — are just becoming legal in the US, while Canada has not yet created a path.",
+      "why": "Germany registered about 430,000 new plug-in 'Balkonkraftwerk' systems in 2025 alone (up from roughly 300,000 in 2023), after 2024 reforms cut registration to a simple online form — one of Europe's fastest-growing distributed-energy movements, driven by renter-installable design and subsidies. North America is a step behind: it has no widespread legal framework yet, and Utah has only recently become the first US state to legalise plug-in solar (up to 1,200W), with more than 30 states now considering similar bills. The hardware — panels plus microinverters — is overwhelmingly China-manufactured. The opportunity is a classic regulation-led category-creation window: proven European product-market fit, a North-American legal unlock just beginning, and no Canadian standard yet — so first movers can shape certification and channel. The binding risk is exactly that regulation: no CSA path yet.",
+      "drivers": [
+        "environmental",
+        "political",
+        "economic"
+      ],
+      "sources": [
+        "https://www.bundesnetzagentur.de/SharedDocs/Pressemitteilungen/EN/2026/20260108_EEG.html",
+        "https://www.cleanenergywire.org/news/germany-simplifies-registration-balcony-photovoltaic-units",
+        "https://www.thecooldown.com/green-tech/utah-solar-energy-law-diy-systems/"
+      ],
+      "confidence": "high",
+      "ideas": [
+        {
+          "title": "Canadian balcony-solar brand & certification path",
+          "oneLiner": "Import plug-in kits, drive the CSA/utility approvals, and sell the first renter-and-condo-friendly branded system built for the Canadian code.",
+          "pattern": "category-creation"
+        },
+        {
+          "title": "Solar-in-a-box for condos & renters",
+          "oneLiner": "A pre-permitted kit plus a landlord/condo-board approval playbook that removes the paperwork barrier for apartment dwellers.",
+          "pattern": "verticalisation"
+        },
+        {
+          "title": "Utility & municipal rebate partner",
+          "oneLiner": "Package kits with compliance and installation as the turnkey vendor behind a utility or city plug-in-solar rebate pilot.",
+          "pattern": "platform"
+        }
+      ],
+      "createdRun": "2026-07-31"
+    },
+    {
+      "id": "portable-power-home-backup",
+      "title": "Portable power stations & home battery backup",
+      "sector": "energy-climate",
+      "lens": "financial",
+      "source": "broad",
+      "horizon": "near",
+      "signal": 6,
+      "oneLiner": "Portable power stations — a large, China-manufactured category — are moving from campsite gadget to mainstream home-outage backup.",
+      "why": "The portable power station market is ~US$4.87B in 2026 (North America the leading region at 42%+ of 2025 revenue), pulled by more frequent grid outages, extreme weather and off-grid/outdoor demand. The category is defined by Chinese manufacturers — Jackery, EcoFlow, Bluetti, Anker — who own the technology and cost curve. For a cold-winter market the relevance is specific: multi-day power outages during deep freezes are a life-safety event, not an inconvenience. The catch that caps the signal is that the leading brands already distribute in Canada, so the opening is less 'first import' than branding, bundling and service for specific segments (cold-climate resilience, rural/acreage, remote worksites) rather than commodity resale.",
+      "drivers": [
+        "environmental",
+        "technological",
+        "economic"
+      ],
+      "sources": [
+        "https://www.precedenceresearch.com/portable-power-station-market"
+      ],
+      "confidence": "med",
+      "ideas": [
+        {
+          "title": "Cold-climate resilience-power brand",
+          "oneLiner": "Bundle a power station with a curated deep-freeze critical-load kit (furnace fan, medical devices, comms) and sell winter-outage peace of mind, not spec sheets.",
+          "pattern": "premiumisation"
+        },
+        {
+          "title": "Backup-power-as-a-subscription for rural & acreage",
+          "oneLiner": "Financed station-plus-solar plus install and seasonal service for off-grid-prone properties, billed monthly.",
+          "pattern": "service-izing"
+        },
+        {
+          "title": "Rugged off-grid power for remote worksites",
+          "oneLiner": "White-label ruggedised units and rental fleets for remote industrial and outdoor-crew sites that need silent, fuel-free power.",
+          "pattern": "verticalisation"
+        }
+      ],
+      "createdRun": "2026-07-31"
+    },
+    {
+      "id": "wearable-heat-extreme-cold",
+      "title": "Battery-heated apparel for extreme cold",
+      "sector": "consumer-retail",
+      "lens": "social",
+      "source": "broad",
+      "horizon": "near",
+      "signal": 6,
+      "oneLiner": "Battery-heated jackets, vests, gloves and insoles are a steadily growing, China-made category with little dedicated branded presence in Canada's cold-weather market.",
+      "why": "The global heated-clothing market is ~US$383M in 2025 and ~US$416M in 2026, forecast to ~US$840M by 2034 (9.17% CAGR), with lithium-battery heating now standard and demand spread across outdoor recreation, industrial safety, commuting and winter sport. It is a smaller market than the energy categories, but its fit with a deep-winter market is unusually direct and it is not yet owned by a strong Canadian consumer brand — most product is generic China-OEM sold on marketplaces. That leaves room to build a purpose-built, cold-rated brand and, more durably, to serve outdoor trades (utilities, construction, energy crews) where heated workwear is a productivity-and-safety purchase rather than a novelty. The category is China-manufactured end to end, so the edge is brand, fit, cold-rating and channel rather than technology.",
+      "drivers": [
+        "social",
+        "environmental",
+        "technological"
+      ],
+      "sources": [
+        "https://www.fortunebusinessinsights.com/heated-clothing-market-103861"
+      ],
+      "confidence": "high",
+      "ideas": [
+        {
+          "title": "Cold-rated heated-apparel brand",
+          "oneLiner": "A Canadian brand engineering and marketing heated layers for genuine -30 C conditions, sold DTC and through outdoor retail.",
+          "pattern": "premiumisation"
+        },
+        {
+          "title": "Heated workwear for outdoor trades",
+          "oneLiner": "A B2B safety-and-comfort line of heated jackets, gloves and insoles for construction, utility and energy crews working outdoors all winter.",
+          "pattern": "verticalisation"
+        },
+        {
+          "title": "Heated-gear rental for winter tourism",
+          "oneLiner": "Supply ski resorts, outfitters and outdoor-event operators with rentable heated layers and hand-warmers as an upsell.",
+          "pattern": "service-izing"
+        }
+      ],
+      "createdRun": "2026-07-31"
+    },
+    {
+      "id": "autonomous-snow-clearing-robots",
+      "title": "Autonomous residential snow-clearing robots",
+      "sector": "built-environment",
+      "lens": "technological",
+      "source": "broad",
+      "horizon": "near",
+      "signal": 6,
+      "oneLiner": "Fully autonomous snow-clearing robots have crossed from concept to shipping product — a brand-new premium category with unusually high relevance to Canadian winters.",
+      "why": "Autonomous residential snow removal has just become real: the Yarbo snow robot maps a property with RTK-GPS and AI vision and clears it 24/7 as snow falls (demonstrated clearing a 6,000-sq-ft driveway through a live snowstorm), sells at a ~US$4,999 price point, and has picked up an iF Design Award 2026 and CES Innovation Award, moving from crowdfunding into retail sale on Amazon. It is an early, expensive, China-engineered category with no dominant incumbent and obvious pull in heavy-snow regions where clearing is a recurring, physically demanding chore. Because it is nascent there is no reliable market-size figure yet — the signal rests on category novelty, cold-climate fit and open distribution rather than proven scale, which is also the risk.",
+      "drivers": [
+        "technological",
+        "environmental",
+        "social"
+      ],
+      "sources": [
+        "https://interestingengineering.com/ai-robotics/yarbo-autonomous-snow-blowing",
+        "https://lawncareguides.com/reviews/robotic-mowers/yarbo-snow-blower/"
+      ],
+      "confidence": "med",
+      "ideas": [
+        {
+          "title": "Autonomous-snow-robot dealer & managed service",
+          "oneLiner": "Sell, install, map and season-manage snow robots for homeowners and condo boards, taking the setup and support burden off a premium new product.",
+          "pattern": "service-izing"
+        },
+        {
+          "title": "Robotic snow-clearing for small commercial lots",
+          "oneLiner": "Run a fleet that keeps small commercial, retail and condo lots clear on a subscription, competing with unreliable plow contracts.",
+          "pattern": "service-izing"
+        },
+        {
+          "title": "Multi-season yard-robot platform",
+          "oneLiner": "Pair with robotic mowing so one robot base serves lawn in summer and snow in winter — a single year-round customer relationship.",
+          "pattern": "rebundling"
+        }
+      ],
+      "createdRun": "2026-07-31"
+    },
+    {
+      "id": "at-home-beauty-longevity-devices",
+      "title": "At-home beauty & longevity devices",
+      "sector": "health-longevity",
+      "lens": "technological",
+      "source": "broad",
+      "horizon": "near",
+      "signal": 6,
+      "oneLiner": "At-home IPL, LED/red-light and microcurrent devices — overwhelmingly China-manufactured — are a large, fast-growing consumer category selling the clinic experience at home.",
+      "why": "The global beauty-devices market is ~US$80.07B in 2025 and ~US$96.24B in 2026 (20.2% CAGR to 2034), and the home-use segment now leads on the back of convenience, affordability and DIY-treatment demand — home devices increasingly outsell salon alternatives. Light- and energy-based modalities (IPL hair removal, red/near-infrared LED for anti-ageing, microcurrent) are the growth core, and they overlap the rising longevity/healthspan consumer. Nearly all of this hardware is designed and built in China's Shenzhen/Guangdong electronics cluster, so a brand play — not a manufacturing one — is what is winnable: a trusted, Health-Canada-aware Canadian brand with clinic credibility, plus recurring consumables. The tempering factor is that the category is crowded and marketing-heavy globally, so differentiation and trust, not access to product, decide it.",
+      "drivers": [
+        "technological",
+        "social",
+        "economic"
+      ],
+      "sources": [
+        "https://www.marketdataforecast.com/market-reports/global-beauty-devices-market"
+      ],
+      "confidence": "med",
+      "ideas": [
+        {
+          "title": "Clinic-endorsed at-home device brand",
+          "oneLiner": "Brand a curated device line with dermatologist/clinic partnerships and a clean Health-Canada compliance story to earn trust in a noisy market.",
+          "pattern": "premiumisation"
+        },
+        {
+          "title": "Red-light longevity wellness brand",
+          "oneLiner": "Position red/near-infrared panels and wearables inside the healthspan movement, sold with a membership and protocol rather than as a gadget.",
+          "pattern": "rebundling"
+        },
+        {
+          "title": "Device-plus-consumables subscription",
+          "oneLiner": "Sell the device near cost and recur on cartridges, gels and serums — a razor-and-blades model for at-home beauty tech.",
+          "pattern": "service-izing"
+        }
+      ],
+      "createdRun": "2026-07-31"
+    },
+    {
+      "id": "premium-asian-pantry-brands",
+      "title": "Premium Asian pantry staples go mainstream",
+      "sector": "food-agriculture",
+      "lens": "cultural",
+      "source": "adjacency",
+      "seededBy": "wasabi-import-business",
+      "horizon": "near",
+      "signal": 7,
+      "oneLiner": "Premium Asian pantry staples — chili crisp foremost — have jumped from niche ethnic-aisle import to a fast-growing branded category, still under-built in Canada.",
+      "why": "Chili crisp alone is a ~US$1.52B market in 2025 heading to ~US$2.82B by 2034 (7.1% CAGR), and brand economics have transformed: Fly By Jing turned a Kickstarter into an eight-figure, 12,000-store brand (Target, Walmart) and became synonymous with the chili-crisp boom on a clean-label, story-first premium positioning. This is the same 'authenticated specialty food' current behind the provenance trend, but narrowed to a specific, China-and-Asia-origin product family (chili crisp, doubanjiang, black vinegar, real wasabi, premium soy) where the branded, premiumised layer is largely absent in Canadian grocery. The move is to build the branded house, not resell commodity jars.",
+      "drivers": [
+        "social",
+        "economic"
+      ],
+      "sources": [
+        "https://growthmarketreports.com/report/chili-crisp-market",
+        "https://www.shopify.com/blog/fly-by-jing-recipe-for-success"
+      ],
+      "confidence": "high",
+      "ideas": [
+        {
+          "title": "Canadian premium chili-crisp brand",
+          "oneLiner": "Source authentic Sichuan-style product and build the branded, clean-label chili crisp that Canadian grocery and DTC don't yet have a homegrown leader in.",
+          "pattern": "premiumisation"
+        },
+        {
+          "title": "Multi-SKU Asian-condiment house",
+          "oneLiner": "One premium brand spanning chili crisp, black vinegar, doubanjiang and real wasabi — a portfolio, not a single hero jar.",
+          "pattern": "rebundling"
+        },
+        {
+          "title": "Foodservice authenticity supply",
+          "oneLiner": "Sell authenticated, provenance-carrying premium condiments to restaurants that want the real ingredient with a story attached.",
+          "pattern": "verticalisation"
+        }
+      ],
+      "createdRun": "2026-07-31"
+    },
+    {
+      "id": "designer-blind-box-collectibles",
+      "title": "Designer blind-box collectibles & drop culture",
+      "sector": "consumer-retail",
+      "lens": "cultural",
+      "source": "adjacency",
+      "seededBy": "niche-brands",
+      "horizon": "near",
+      "signal": 7,
+      "oneLiner": "China-born designer 'blind-box' collectibles built multibillion-dollar global drop culture in under two years — with thin dedicated retail in Canada.",
+      "why": "China's Pop Mart turned blind-box designer toys into a global phenomenon: its valuation recently hit about US$40B, eclipsing legacy toy giants Hasbro and Mattel, and its momentum is overseas-led — Q1-2025 revenue rose over 165% year-on-year with international sales up around 475%. Its Labubu line alone contributed roughly US$418M (about 23% of revenue) in 2024, up 726% year-on-year. The phenomenon runs on Gen-Z identity, scarcity 'drop' mechanics and social sharing — the same community-and-identity engine behind creator-led niche brands, but applied to physical, China-manufactured product. Dedicated blind-box retail and drop experiences remain sparse in Canada, and the manufacturing base for original designer toys is Chinese, so both a distribution play and an own-IP play are open. The risk is IP-dependence and hit-driven demand.",
+      "drivers": [
+        "social",
+        "economic",
+        "technological"
+      ],
+      "sources": [
+        "https://www.china-briefing.com/news/decoding-labubu-phenomenon-china-collectible-toys-market/"
+      ],
+      "confidence": "med",
+      "ideas": [
+        {
+          "title": "Canadian designer-toy retail & drop concept",
+          "oneLiner": "A dedicated blind-box retail-plus-vending format with timed drop events for established IP, bringing the experience Canada lacks.",
+          "pattern": "geographic-arbitrage"
+        },
+        {
+          "title": "Original-IP collectible line, made in China",
+          "oneLiner": "Commission artists, manufacture blind-box figures in China's toy cluster, and build a community-owned brand rather than reselling someone else's IP.",
+          "pattern": "category-creation"
+        },
+        {
+          "title": "Blind-box mechanics for new niches",
+          "oneLiner": "Apply the scarcity/drop/blind-box model to an adjacent collectible category — sports, outdoor or alpine culture — with its own community.",
+          "pattern": "platform"
+        }
+      ],
+      "createdRun": "2026-07-31"
     }
   ]
 }
