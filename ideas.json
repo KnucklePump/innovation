@@ -468,99 +468,101 @@
       ]
     },
     {
-      "id": "wasabi-import-business",
-      "title": "Wasabi Import Business",
+      "id": "asian-flavours",
+      "title": "Asian Flavours",
       "owner": "Dave",
-      "status": "refined",
-      "oneLiner": "Import genuine real wasabi from Asia and distribute it to Canadian restaurants — competing with the domestic monopoly grower on origin and product range.",
+      "status": "analyzed",
+      "oneLiner": "An import-led house of authentic Asian condiments for Canada — real Japanese wasabi and Sichuan-style chili crisp at the core, widening into regional staples like black vinegar and doubanjiang — sold as a branded consumer line and into restaurants.",
       "tags": [
         "import",
         "food",
-        "distribution",
+        "CPG",
         "Canada"
       ],
       "scores": {
         "market": {
-          "score": 5,
+          "score": 6,
           "confidence": "med",
-          "why": "Real wasabi is a scarce premium product and the Canadian market is thinly and poorly served: the leading specialty-food importer (Qualifirst) stocks only horseradish-based imitation, and genuine Wasabia japonica is offered by just a few niche sellers. Demand is narrow (the premium end) but under-supplied, and real-wasabi retail prices run high (roughly C$400-1,000+/kg for fresh rhizome), which frames the value even though imported fresh is no cheaper than BC-grown.",
+          "why": "The premium Asian-pantry category is real and rising: chili crisp alone is a ~US$1.52B global market in 2025 heading to ~US$2.82B by 2034 (~7.1% CAGR), and premium branding has transformed the economics (Fly By Jing built an eight-figure brand across about 12,000 stores). Adjacent staples (vinegars, chili-bean pastes) plus scarce real wasabi — under-supplied in Canada, where the mainstream specialty channel largely carries horseradish-based imitation and genuine wasabi reaches buyers only through a few niche sellers — widen the basket. The reachable Canadian slice is a premium niche, not the global headline, but no homegrown multi-condiment leader owns it yet.",
           "sources": [
-            "https://www.qualifirst.com/shop/product/wasabi-ko-horseradish-l-103049",
-            "https://pacificwildpick.com/en-ca/products/real-fresh-wasabi-root",
+            "https://growthmarketreports.com/report/chili-crisp-market",
+            "https://www.shopify.com/blog/fly-by-jing-recipe-for-success",
             "https://www.fortunebusinessinsights.com/wasabi-market-110276"
           ]
         },
         "entry": {
           "score": 5,
           "confidence": "med",
-          "why": "Far easier than farming, but not frictionless: importing fresh rhizome is governed by CFIA phytosanitary/soil-free rules (Directive D-94-26 for vegetables with attached roots, with the exact requirement set per-origin by an AIRS determination), and needs cold-chain handling. Shelf-stable forms (frozen grated, freeze-dried powder, paste) are much simpler to import.",
+          "why": "Low capital to start — import or co-pack, brand, sell — but not frictionless. Importing food into Canada requires a Safe Food for Canadians licence, and a multi-condiment range means several sourcing relationships, more compliance and more inventory complexity from day one. Fresh wasabi rhizome adds CFIA phytosanitary/soil-free requirements; shelf-stable forms (chili crisp jars, frozen-grated/paste wasabi, powders) are far simpler to land.",
           "sources": [
-            "https://inspection.canada.ca/plant-health/invasive-species/directives/horticulture/94-26",
-            "https://realwasabi.com/blogs/news/how-to-store-and-preserve-fresh-wasabi-rhizomes"
+            "https://inspection.canada.ca/en/food-licences/importing-food",
+            "https://inspection.canada.ca/plant-health/invasive-species/directives/horticulture/94-26"
           ]
         },
         "cost": {
-          "score": 6,
-          "confidence": "med",
-          "why": "No greenhouse and no 2-year wait — just working capital for inventory and freight (air freight for fresh), cold-chain handling and import compliance. You can start with a small trial shipment and a handful of restaurants, so cost-to-first-revenue is low.",
-          "sources": []
-        },
-        "saturation": {
           "score": 5,
           "confidence": "med",
-          "why": "Genuinely open at the dedicated-importer level: there appears to be no dedicated real-wasabi importer in Canada, and the leading specialty importer carries only imitation — real wasabi reaches the market via a handful of niche sellers and Japanese-foodservice distributors. That is real whitespace, but tempered by a telling international pattern: the successful real-wasabi players (BC's Pacific Coast Wasabi, the UK's Wasabi Company, Iceland's Nordic Wasabi, the US's Real Wasabi) mostly GROW locally for freshness rather than import.",
+          "why": "Moderate working capital, no heavy capex: product sourcing/co-packing, multi-SKU inventory and freight, cold-chain for perishable wasabi, packaging and marketing. Spreading launch spend across a portfolio raises the cost to reach critical mass in any one line, but a lean, shelf-stable-first launch keeps cost-to-first-revenue low.",
           "sources": [
-            "https://www.qualifirst.com/shop/product/wasabi-ko-horseradish-l-103049",
-            "https://foodprint.org/blog/you-havent-had-wasabi-until-youve-had-it-fresh-and-local/"
+            "https://ozawa.ca/product/kaneku-frozen-grated-wasabi-750g/"
+          ]
+        },
+        "saturation": {
+          "score": 4,
+          "confidence": "med",
+          "why": "Mixed. The chili-crisp core is crowded (Fly By Jing, Momofuku Chili Crunch, Lao Gan Ma, S&B) and the broader premium Asian pantry has funded players (Momofuku Goods ~US$17.5M Series A; Omsom in 1,080+ retail doors). But the real-wasabi importer lane is genuinely open — Canada's mainstream specialty channel largely carries horseradish imitation and genuine wasabi reaches the market via a few niche sellers — and a specifically Chinese-regional, content-led house is less contested than a single hero jar.",
+          "sources": [
+            "https://www.shopify.com/blog/fly-by-jing-recipe-for-success",
+            "https://www.fooddive.com/news/momofuku-goods-raises-seventeen-million-series-a-funding-round/645895/",
+            "https://www.globenewswire.com/de/news-release/2023/02/16/2609833/0/en/Omsom-Launches-in-550-Target-Locations-Nationwide-Doubling-Retail-Footprint.html",
+            "https://www.qualifirst.com/shop/product/wasabi-ko-horseradish-l-103049"
           ]
         },
         "moat": {
-          "score": 4,
+          "score": 5,
           "confidence": "med",
-          "why": "Weak — importing and distribution are inherently replicable. The only real moat is locking an exclusive or preferential Asian supply relationship plus sticky restaurant accounts; without that, anyone can import the same product.",
+          "why": "Two reinforcing layers lift this above a single-recipe brand: potential exclusive or preferential supply across several authentic staples, and an owned content-to-commerce engine (an authentic Chinese-recipe site and chef-video channel) that builds an audience and lowers acquisition cost. Sticky foodservice accounts add switching cost. But recipes and brands are copyable, so the durable moat exists only if the team actually locks exclusive supply — currently unproven.",
           "sources": []
         },
         "margins": {
           "score": 6,
-          "confidence": "low",
-          "why": "Real wasabi carries a high price, so distribution margins can be healthy — but the cost-arbitrage that would create a LARGE margin is unproven: imported fresh is not cheaper than domestic, and no wholesale differential could be verified. Any cost edge is strongest in shelf-stable frozen grated / paste / powder (far lower waste than fresh), which are also the import-friendly forms.",
+          "confidence": "med",
+          "why": "Premium-condiment economics: branded jars command a multiple of commodity imports and real wasabi carries a high price, so gross margins can be healthy, with cross-sell across the range lifting lifetime value and lowering blended acquisition cost. Retail and distribution take a meaningful cut and multi-SKU operations add overhead, so blended margins are good rather than exceptional.",
           "sources": [
-            "https://www.tridge.com/market-overview/fresh-wasabi-root",
-            "https://ozawa.ca/product/kaneku-frozen-grated-wasabi-750g/"
+            "https://www.shopify.com/blog/fly-by-jing-recipe-for-success"
           ]
         },
         "founderFit": {
           "score": 6,
           "confidence": "med",
-          "why": "A good fit — the team brings direct Asia-sourcing access and bilingual reach plus trade/finance skills, which is most of what importing and distributing needs, and a far better match than growing the crop. The gap is no food-import, distribution or cold-chain operating experience.",
+          "why": "A good fit on the axes that matter for an Asia-sourced import-and-brand play: direct China/Asia market access and bilingual reach to secure authentic supply, marketing and creative strength to build the brand and an owned content engine, and business/finance capability for import working capital and landed-cost modelling. The gap is that no one on the team has packaged-food/CPG, grocery-distribution or food-import/cold-chain operating experience.",
           "sources": []
         },
         "risk": {
           "score": 5,
           "confidence": "med",
-          "why": "The cost-arbitrage case is unproven — imported fresh wasabi is not cheaper than BC-grown at retail, the wholesale differential is unverified, and cheap Asian 'wasabi' is usually imitation — so the edge must be authenticity/assortment, not price. Fresh rhizome is highly perishable (~2-3 weeks; grated flavour fades within minutes) with CFIA phytosanitary hurdles; the domestic grower keeps a fresher, no-shipping advantage; and without an exclusive Asian supply line the position is replicable. Capital-at-risk stays low on a small frozen/paste trial.",
+          "why": "Contained downside on a lean, shelf-stable-first launch, but real execution risk: the chili-crisp core is brand-dependent and crowded, funded competitors contest the premium Asian pantry, and running several SKUs at once spreads focus before any one proves out. The wasabi cost-arbitrage is unproven (imported fresh is not cheaper than domestic, and cheap Asian 'wasabi' is usually imitation), fresh rhizome is perishable with phytosanitary hurdles, and without an exclusive supply line the position is replicable — so the edge must be authenticity, assortment and content, not price.",
           "sources": [
-            "https://realwasabi.com/blogs/news/how-to-store-and-preserve-fresh-wasabi-rhizomes",
-            "https://inspection.canada.ca/en/importing-food-plants-animals/plant-and-plant-product"
+            "https://www.qualifirst.com/shop/product/wasabi-ko-horseradish-l-103049",
+            "https://realwasabi.com/blogs/news/how-to-store-and-preserve-fresh-wasabi-rhizomes"
           ]
         }
       },
       "businessCase": {
-        "summary": "Import genuine (Wasabia japonica) wasabi from Asia — Japanese, sushi-grade — and sell it to Canadian restaurants and premium retailers in BOTH fresh rhizome and, more practically, shelf-stable forms (frozen grated, real paste, powder). The sharpest opening is authenticity and assortment, not price: Canada's leading specialty-food importer (Qualifirst) stocks only horseradish-based imitation and genuine wasabi is served by just a handful of niche players, so a dedicated real-wasabi importer is close to a category of one. The cost-arbitrage thesis is only partly supported — at retail, imported Japanese fresh wasabi is no cheaper than BC-grown (it matches or exceeds it), a genuine wholesale cost gap could not be verified, and the cheap Asian 'wasabi' that looks like arbitrage is almost always imitation. Any real cost edge lives in the frozen/powder forms; fresh rhizome is the hardest to land (perishable, CFIA phytosanitary rules), so the margin-safe path leads with frozen grated and real paste.",
-        "customer": "Authenticity-focused Japanese/sushi and high-end restaurants (and premium retailers) that want genuine Japanese-origin wasabi — reachable most easily via shelf-stable frozen grated and real paste, with fresh rhizome for top-tier accounts.",
-        "market": "Real wasabi is scarce and premium, and the Canadian market is under-supplied with the genuine article: the mainstream specialty importer sells only imitation, and only niche players offer real Wasabia japonica. Demand is narrow (the premium end) but authenticity is increasingly prized; carrying frozen/powder alongside fresh widens the addressable base beyond fresh-only buyers. Retail prices for real wasabi run high (roughly C$400-1,000+/kg fresh), framing the value.",
-        "model": "B2B import and distribution of genuine Japanese wasabi across a product range: shelf-stable frozen grated, real paste and powder (the import-friendly, low-waste, margin-safe core) plus fresh rhizome by air freight for marquee accounts. Positioning is on verified Japanese origin and authenticity versus the imitation that dominates the category — not on undercutting the local grower on fresh.",
-        "goToMarket": "Lead with frozen grated and real paste into authenticity-focused sushi restaurants and specialty retailers (fast, low-waste, easy to land), using Asia-sourcing relationships to secure supply; add fresh rhizome for top accounts once a supply line is proven. The wedge is 'real, Japanese-origin wasabi' in a market where the mainstream importer sells only horseradish.",
-        "costs": "Working capital for inventory and freight, cold-chain for perishables, and CFIA import compliance (a Safe Food for Canadians licence; fresh rhizome adds phytosanitary/soil-free requirements under CFIA plant-import rules). Frozen and powder forms are cheap and low-waste to import and test; fresh is costlier and perishable.",
-        "risks": "The cost-arbitrage case is unproven: imported fresh wasabi is not cheaper than BC-grown at retail, the wholesale differential could not be verified, and cheap Asian 'wasabi' is usually imitation — so the edge must be authenticity and assortment, not price. Fresh rhizome is highly perishable with phytosanitary hurdles; the domestic grower keeps a fresh, no-shipping advantage; and internationally the successful real-wasabi players mostly grow locally rather than import. Without an exclusive or preferential Asian supply line the position is replicable and the moat is weak.",
-        "nextSteps": "1) Verify the actual wholesale cost gap — get a landed price for Japanese frozen grated / real paste and compare it to the domestic grower's and existing niche importers' wholesale pricing; the 'large profit from cost arbitrage' claim stands or falls here. 2) Lock a reliable, ideally exclusive, Japanese sushi-grade supplier (the only real moat). 3) Lead with frozen/paste; test fresh with a small air-freight trial. 4) Confirm CFIA requirements per form (SFC licence; fresh-rhizome phytosanitary/soil rules). 5) Price against the few Canadian real-wasabi sellers, positioning on verified authenticity versus the imitation the mainstream importer stocks."
+        "summary": "An import-led house of authentic Asian condiments for the Canadian market — real (Japanese) wasabi and Sichuan-style chili crisp at the core, widening into adjacent regional staples such as black vinegar and doubanjiang. It sources genuine product from Asia and sells it two ways: a branded consumer line across DTC and grocery, and a foodservice channel supplying restaurants and specialty retailers. The opening is that Canada has no homegrown leader in premium Asian pantry condiments and the mainstream specialty channel largely carries imitation wasabi, so an Asia-sourcing-plus-marketing team can win on authenticity and assortment. The catch: the chili-crisp core is crowded and the durable moat depends on locking exclusive supply.",
+        "customer": "Two channels. Consumers — home cooks who buy premium Asian condiments through DTC and grocery. Foodservice — authenticity-focused Japanese/Asian and premium restaurants and specialty retailers wanting genuine product (real wasabi in frozen-grated, paste and fresh forms; authentic chili crisp and regional staples).",
+        "market": "The premium Asian-pantry category is real and growing — chili crisp alone ~US$1.52B (2025) to ~US$2.82B (2034) at ~7.1% CAGR, with premium branding (Fly By Jing) proving the economics — plus adjacent vinegars and chili-bean pastes and scarce items like real wasabi, which is under-supplied in Canada. The reachable Canadian segment is a premium niche rather than the global headline, but no homegrown multi-condiment leader owns it yet.",
+        "model": "Import and distribution at the core, sold through (1) a branded consumer line — DTC at premium margins, then grocery listings — and (2) foodservice supply to restaurants and specialty retail. Revenue is product margin across a portfolio, with cross-sell lowering blended acquisition cost. Lead with shelf-stable, import-friendly forms (chili crisp, frozen-grated and paste wasabi, powders); add fresh wasabi rhizome by air freight for marquee accounts.",
+        "goToMarket": "Start with one or two hero SKUs to establish the brand rather than a wide launch — most likely authentic chili crisp (proven category demand) plus real wasabi (a near-empty importer lane) as the authenticity flagship. Use Asia-sourcing relationships to secure genuine supply, an owned content engine (authentic Chinese-recipe site and chef videos) to build an audience and lower acquisition cost on the consumer side, and direct foodservice sales into authenticity-focused restaurants. Prove repeat and renewal before widening the range.",
+        "costs": "Working capital for multi-SKU inventory and freight, cold-chain for perishable wasabi, packaging and brand design, marketing/acquisition, and CFIA import compliance (a Safe Food for Canadians licence; fresh wasabi rhizome adds phytosanitary/soil-free requirements). No heavy capex — shelf-stable forms are cheap to start and test; the spend that matters is brand-building and carrying inventory across the range.",
+        "risks": "The chili-crisp core is savagely contested (Fly By Jing, Momofuku Chili Crunch, Lao Gan Ma) and the premium Asian pantry has funded players (Momofuku Goods ~US$17.5M Series A, Omsom in 1,080+ doors), so differentiation leans on authenticity, a Chinese-regional assortment and content rather than a structural moat. Running several SKUs at once spreads focus before any one proves out; the wasabi cost-arbitrage is unproven and cheap Asian 'wasabi' is usually imitation; fresh rhizome is perishable with phytosanitary hurdles; and without an exclusive supply line the position is replicable. Capital-at-risk stays contained on a lean, shelf-stable-first launch.",
+        "nextSteps": "1) Pick the hero SKU(s) to launch first — chili crisp for proven demand, real wasabi for the open lane — and prove repeat before widening. 2) Probe for exclusive or preferential Asian supply across a couple of staples, the only durable moat. 3) Verify the wasabi wholesale cost gap (landed frozen-grated/paste vs Canadian wholesale) before leaning on price. 4) Confirm CFIA requirements per form (SFC licence; fresh-rhizome phytosanitary/soil rules). 5) Stand up the content-to-commerce engine (recipe site + chef videos) to build an owned audience. 6) Line up first foodservice accounts on the authenticity pitch."
       },
       "clarifyingQuestions": [
-        "Does a real wholesale cost gap actually exist — is landed Japanese wasabi (especially frozen grated/paste) materially cheaper than the domestic grower's wholesale price, leaving room for a large margin? (Unverified today, and load-bearing for the arbitrage thesis.)",
-        "Is there a route to a reliable, ideally exclusive, Japanese sushi-grade supplier — the only real moat here?",
-        "If the price arbitrage doesn't materialise, is 'verified real, Japanese-origin wasabi' — versus the horseradish imitation the mainstream importer sells — a strong enough wedge on its own?"
-      ],
-      "refinedThrough": "2026-07-30T13:32:01.824Z"
+        "Which hero SKU(s) do we launch first to establish the brand before widening — chili crisp (proven demand but crowded) or real wasabi (open importer lane but narrower market), or both together?",
+        "Is there a route to exclusive or preferential Asian supply across several staples — the difference between a defensible portfolio brand and a replaceable reseller?",
+        "Consumer brand (DTC/grocery) or foodservice (restaurants) as the beachhead channel — and do we have the CPG/grocery or food-distribution operating capability, or do we hire/partner for it?"
+      ]
     },
     {
       "id": "single-origin-specialty-importer",
@@ -1985,174 +1987,6 @@
         "Is the beachhead Canadian full-service pubs/casual dining, and does the 'no tip' framing hold up when Canadian servers already earn full minimum wage and food still has to be delivered to the table?",
         "Do we build custom hardware (leaning on China sourcing) or run the AI on off-the-shelf tablets — and which POS (Toast/Square/Micros) do we integrate first?"
       ]
-    },
-    {
-      "id": "canadian-premium-chili-crisp-brand",
-      "title": "Canadian premium chili-crisp brand",
-      "owner": "Dave",
-      "status": "analyzed",
-      "oneLiner": "Source authentic Sichuan-style product and build the branded, clean-label chili crisp that Canadian grocery and DTC don't yet have a homegrown leader in.",
-      "tags": [
-        "CPG",
-        "food",
-        "import",
-        "brand"
-      ],
-      "scores": {
-        "market": {
-          "score": 6,
-          "confidence": "med",
-          "why": "The chili-crisp category is real and rising — a ~US$1.52B global market in 2025 heading to ~US$2.82B by 2034 (7.1% CAGR) — and premium branding has transformed the economics, with Fly By Jing turning a Kickstarter into an eight-figure, 12,000-store brand. It is one condiment, though, and the reachable Canadian slice is a fraction of the global number, so this is a good niche rather than a large market.",
-          "sources": [
-            "https://growthmarketreports.com/report/chili-crisp-market",
-            "https://www.shopify.com/blog/fly-by-jing-recipe-for-success"
-          ]
-        },
-        "entry": {
-          "score": 6,
-          "confidence": "med",
-          "why": "Low capital to start — co-pack or import, brand, sell DTC — but the real barriers are food-safety/CFIA compliance and, harder, winning grocery listings against established SKUs. A DTC-first launch sidesteps the shelf fight early.",
-          "sources": []
-        },
-        "cost": {
-          "score": 6,
-          "confidence": "med",
-          "why": "Moderate and controllable: product sourcing/co-packing, inventory, packaging design and marketing. No heavy capex; the spend that matters is brand-building and customer acquisition.",
-          "sources": []
-        },
-        "saturation": {
-          "score": 3,
-          "confidence": "high",
-          "why": "Crowded. Fly By Jing, Momofuku Chili Crunch, Lao Gan Ma, S&B and a wave of newer brands already contest North-American shelves and DTC, and Canadian grocery carries multiple options. A single-SKU chili-crisp entrant arrives late to a busy category.",
-          "sources": [
-            "https://www.shopify.com/blog/fly-by-jing-recipe-for-success"
-          ]
-        },
-        "moat": {
-          "score": 4,
-          "confidence": "med",
-          "why": "Thin. Brand, authenticity story and a distinctive recipe are the only real differentiators, and all are copyable. A genuine moat would need an exclusive supply relationship or a defended Canadian retail position — neither exists at the outset.",
-          "sources": []
-        },
-        "margins": {
-          "score": 6,
-          "confidence": "med",
-          "why": "Healthy for a premium condiment sold direct — jars command a multiple of commodity imports — but retail and distribution take a meaningful cut and marketing is an ongoing draw, so blended margins are good rather than exceptional.",
-          "sources": []
-        },
-        "founderFit": {
-          "score": 6,
-          "confidence": "med",
-          "why": "Strong on the axis that matters for an import-and-brand play: direct China/Asia market access plus marketing strength is exactly the combination this needs. The gap is that no one on the team has packaged-food/CPG or grocery-distribution experience.",
-          "sources": []
-        },
-        "risk": {
-          "score": 5,
-          "confidence": "med",
-          "why": "Contained downside — low capital, no heavy commitments — but a crowded, brand-dependent category where many entrants fail to escape DTC into durable retail. The bet is on brand and taste standing out, not on a defensible position.",
-          "sources": []
-        }
-      },
-      "businessCase": {
-        "summary": "A Canadian premium chili-crisp brand — authentic Sichuan-style product, clean-label, sold DTC and into grocery — riding a category that has jumped from ethnic-aisle import to a branded, premiumised US$1.5B+ market. The economics are proven at the top (Fly By Jing built an eight-figure, 12,000-store brand from a Kickstarter), and Canada lacks a homegrown premium leader. The catch is that the category is already crowded with strong US and Asian brands, the moat is thin (brand and recipe, both copyable), and success rests on standing out in a busy aisle rather than on any structural advantage.",
-        "customer": "Canadian home cooks and food enthusiasts who buy premium condiments (the same shopper paying up for hot sauce, miso or single-origin oil), reached first DTC and via specialty/premium grocery, then mainstream grocery.",
-        "market": "Chili crisp is a ~US$1.52B global market in 2025, forecast to ~US$2.82B by 2034 (7.1% CAGR). The premium, branded layer is where the value has moved — Fly By Jing reached eight-figure revenue across 12,000 stores including Target and Walmart — and Canada has no equivalent homegrown premium brand, though the serviceable Canadian market is a small fraction of the global figure.",
-        "model": "Premium jarred product sold DTC (best margin) and wholesale into specialty then mainstream grocery; extend into a small line (varieties, heat levels, formats) once a hero SKU lands. Subscription/refill can lift DTC repeat rate.",
-        "goToMarket": "Launch DTC with a strong brand and origin story, seed via food media and creators, prove repeat purchase, then convert that traction into specialty-grocery listings and, eventually, mainstream retail. Sampling and foodservice placements build trial.",
-        "costs": "Sourcing/co-packing, inventory, packaging and — the largest ongoing line — marketing and customer acquisition. No significant capex; working capital for inventory is the main financing need.",
-        "risks": "A crowded category with entrenched brands; thin, copyable differentiation; the well-known difficulty of graduating from DTC to profitable retail; and dependence on marketing spend to stay visible. Supply authenticity and consistency must hold as volume grows.",
-        "nextSteps": "1) Nail a differentiated hero product and brand (taste test against the incumbents). 2) Secure a reliable, ideally exclusive, authentic supply/co-pack source. 3) Run a small DTC launch to prove repeat-purchase economics and CAC. 4) Line up 3-5 specialty-grocery listings as the retail beachhead. 5) Confirm CFIA/labelling compliance before scaling."
-      },
-      "clarifyingQuestions": [
-        "What is the single differentiator versus Fly By Jing, Momofuku and the incumbents — flavour, format, price, or a Canadian identity — that earns a place in an already-crowded aisle?",
-        "Is there a route to an exclusive or hard-to-copy supply source, the only real moat here?",
-        "DTC-first to prove the brand, or straight for grocery listings — and which channel do we anchor on?"
-      ]
-    },
-    {
-      "id": "multi-sku-asian-condiment-house",
-      "title": "Multi-SKU Asian-condiment house",
-      "owner": "Dave",
-      "status": "refined",
-      "oneLiner": "One premium brand spanning chili crisp, black vinegar, doubanjiang and real wasabi — a Chinese-regional pantry portfolio fronted by an authentic-recipe and chef-video content engine, not a single hero jar.",
-      "tags": [
-        "CPG",
-        "food",
-        "import",
-        "brand"
-      ],
-      "scores": {
-        "market": {
-          "score": 6,
-          "confidence": "med",
-          "why": "Broader than a single condiment — the premium Asian-pantry category spans chili crisp (a ~US$1.52B market alone, 7.1% CAGR), plus vinegars, chili-bean pastes and specialty items — and the branded premiumisation proven by Fly By Jing extends across the aisle. The addressable market is larger than one SKU, though still a specialty slice of grocery.",
-          "sources": [
-            "https://growthmarketreports.com/report/chili-crisp-market",
-            "https://www.shopify.com/blog/fly-by-jing-recipe-for-success"
-          ]
-        },
-        "entry": {
-          "score": 5,
-          "confidence": "med",
-          "why": "Harder than a single-product launch: multiple SKUs mean more sourcing relationships, more co-packing, more compliance and more inventory complexity from day one. The upside is a fuller shelf presence and cross-sell once established.",
-          "sources": []
-        },
-        "cost": {
-          "score": 5,
-          "confidence": "med",
-          "why": "Higher working capital than a single hero jar — more inventory across more SKUs — though still no heavy capex. Spreading launch spend across a portfolio raises the cost to reach critical mass in any one line.",
-          "sources": []
-        },
-        "saturation": {
-          "score": 4,
-          "confidence": "med",
-          "why": "The premium multi-SKU Asian pantry is more contested than a single-condiment launch: Momofuku Goods (chili crunch, noodles, soy sauce, seasoned salts; a ~US$17.5M Series A) and Omsom (a multi-sauce Asian range in 1,080 retail doors) already run exactly this portfolio play, and broad-line incumbents (Lee Kum Kee, Lao Gan Ma, S&B) own the shelf. The narrower whitespace is a specifically Chinese-regional house — black vinegar, doubanjiang, real wasabi — with no homegrown Canadian leader, differentiated by an owned authentic-content engine rather than the jar alone.",
-          "sources": [
-            "https://www.fooddive.com/news/momofuku-goods-raises-seventeen-million-series-a-funding-round/645895/",
-            "https://www.globenewswire.com/de/news-release/2023/02/16/2609833/0/en/Omsom-Launches-in-550-Target-Locations-Nationwide-Doubling-Retail-Footprint.html"
-          ]
-        },
-        "moat": {
-          "score": 6,
-          "confidence": "med",
-          "why": "Two reinforcing layers lift this above a single-recipe brand: potential exclusive or preferential supply across several authentic staples, and an owned content engine — an authentic Chinese-recipe site and chef-video channel — that builds a first-party audience and brand affinity competitors can't lift wholesale. Content-to-commerce lowers dependence on paid acquisition and deepens loyalty across the range, though the underlying supply can still be sourced by others.",
-          "sources": []
-        },
-        "margins": {
-          "score": 6,
-          "confidence": "med",
-          "why": "Premium-condiment margins across a range, with cross-sell lowering blended acquisition cost per customer. Retail/distribution cuts and multi-SKU operational overhead temper it, but a portfolio can carry better lifetime value than a single jar.",
-          "sources": []
-        },
-        "founderFit": {
-          "score": 7,
-          "confidence": "med",
-          "why": "A strong fit on multiple axes: direct China/Asia sourcing access to secure authentic supply, marketing and creative strength to build the brand, in-house capability to build the recipe/content site, and cultural depth to produce genuinely authentic Chinese recipe and chef-video content. The remaining gap is hands-on multi-SKU CPG operations and grocery-distribution experience.",
-          "sources": []
-        },
-        "risk": {
-          "score": 5,
-          "confidence": "med",
-          "why": "Portfolio complexity is the added risk — spreading effort thin across SKUs before any one proves out — against a still-contained capital downside. Execution and focus, not capital, are the failure modes.",
-          "sources": []
-        }
-      },
-      "businessCase": {
-        "summary": "A single premium brand spanning several authentic Chinese pantry staples — chili crisp, black vinegar, doubanjiang, real wasabi — sold as a coherent portfolio into DTC and grocery, and fronted by an owned content engine of authentic Chinese recipes and chef videos that turns cooking inspiration into product demand. It rides the premiumisation wave proven by chili crisp, but the multi-SKU premium Asian pantry is already contested by well-funded brands like Momofuku Goods and Omsom; the defensible angle is a specifically Chinese-regional house with no Canadian leader, built on authentic content rather than a single jar.",
-        "customer": "Premium-pantry shoppers and home cooks exploring authentic Asian cooking, plus specialty grocers and — via a foodservice arm — restaurants wanting authenticated ingredients. Reached DTC first, then specialty and mainstream retail.",
-        "market": "Anchored by chili crisp (~US$1.52B in 2025 rising to ~US$2.82B by 2034, 7.1% CAGR) and extending across vinegars, chili-bean pastes and specialty items, the premium Asian-pantry opportunity is larger than any single SKU. The multi-SKU model is proven and funded — Momofuku Goods raised a ~US$17.5M Series A and Omsom sits in 1,080 retail doors — which validates demand but sharpens competition. No Canadian house yet unifies authentic Chinese-regional staples under one premium, content-led brand.",
-        "model": "A portfolio of premium jarred/bottled staples sold DTC and wholesale, with cross-sell and bundles lifting basket size and lifetime value, and a foodservice channel supplying restaurants with authenticated product. An owned content platform — an authentic Chinese-recipe website and a chef-led YouTube channel — sits at the top of the funnel, driving discovery and repeat demand while lowering paid-acquisition cost. Launch narrow with a hero SKU and widen the range as the brand earns trust.",
-        "goToMarket": "Lead with one standout product and an authentic-recipe/chef-video content engine that builds an owned audience before heavy ad spend, converting cooking inspiration into DTC orders. Expand the range as the brand earns trust, then move into specialty grocery and foodservice, using the portfolio to justify shelf space a single SKU couldn't. Content becomes both the acquisition channel and the brand's differentiator against better-funded portfolio rivals.",
-        "costs": "Multi-SKU sourcing/co-packing, broader inventory, packaging and compliance across items, plus marketing. Working-capital-intensive relative to a single product; no major capex.",
-        "risks": "The multi-SKU premium Asian pantry is already contested by well-funded brands (Momofuku Goods, Omsom) and broad-line incumbents, so differentiation rests on the Chinese-regional focus and content execution — and building a content audience is itself slow and uncertain. Doing too much at once still threatens focus and capital across SKUs before a hero lands; supply consistency across several authentic products and the DTC-to-retail graduation remain operational risks.",
-        "nextSteps": "1) Pick the hero SKU to launch first and prove the brand. 2) Map sourcing/co-pack for the initial 3-4 items, prioritising exclusive supply. 3) Stand up a lightweight authentic-recipe/chef-video content pilot and measure whether it drives DTC demand and CAC below paid channels. 4) Test cross-sell/bundle economics on DTC. 5) Scope the foodservice channel as a second demand source."
-      },
-      "clarifyingQuestions": [
-        "Which single hero SKU do we launch first to establish the brand before widening the range?",
-        "Can we secure exclusive or preferential supply across several staples — the difference between a portfolio brand and a reseller?",
-        "Is the foodservice/restaurant channel part of the plan from the start, or a later expansion?"
-      ],
-      "refinedThrough": "2026-08-01T12:48:01.407Z"
     },
     {
       "id": "heated-workwear-for-outdoor-trades",
