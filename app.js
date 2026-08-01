@@ -820,10 +820,14 @@ function myRoleScore(roleId) {
   const mine = arr.find(v => v.name === state.voter && v.score > 0);
   return mine ? mine.score : null;
 }
-// Team totals stay hidden until the current voter has set their own interest
-// (at least one saved rating) — same anchoring guard as the Idea Board.
+// Team totals stay hidden until the current voter has rated EVERY role —
+// the anchoring guard from the Idea Board, applied to the whole set so nobody
+// sees the group's leanings before committing their own full pass.
+function myRatedCount() {
+  return state.roles.filter(r => myRoleScore(r.id) != null).length;
+}
 function hasSetInterest() {
-  return !!state.voter && state.roles.some(r => myRoleScore(r.id) != null);
+  return !!state.voter && state.roles.length > 0 && myRatedCount() === state.roles.length;
 }
 
 function renderTeam() {
@@ -851,7 +855,7 @@ function renderTeam() {
   const mineCard = state.voter
     ? `<div class="card">
          <h3>Your interest <span class="muted" style="text-transform:none;letter-spacing:0;font-weight:600">— as ${esc(state.voter)}</span></h3>
-         <p class="muted" style="margin:0 0 4px">Set how much you'd want to own each role, 1 (not for me) to 10 (all in). Untouched roles stay <em>unrated</em> and don't count — move a slider to rate it, then save.</p>
+         <p class="muted" style="margin:0 0 4px">Set how much you'd want to own each role, 1 (not for me) to 10 (all in). Tap or drag each slider to rate it — untouched roles stay <em>unrated</em>. Rate all ${state.roles.length} and save to reveal the team's totals.</p>
          <div class="role-set-list">
            ${state.roles.map(r => {
              const saved = myRoleScore(r.id);
@@ -906,7 +910,7 @@ function renderTeam() {
        ${matrix}`
     : `<div class="card locked-reveal" style="margin-top:26px">
          <h3>Team totals & who's interested</h3>
-         <p class="muted" style="margin-bottom:0">🔒 Set and save your own interest above to reveal the group's totals and the full breakdown. You rate before you see how everyone else did — that keeps the interest levels honest.</p>
+         <p class="muted" style="margin-bottom:0">🔒 Rate all ${state.roles.length} roles above${state.voter ? ` — you've rated <strong>${myRatedCount()} of ${state.roles.length}</strong>` : ""} and save to reveal the group's totals and the full breakdown. You rate before you see how everyone else did — that keeps the interest levels honest.</p>
        </div>`;
 
   view.innerHTML = `
@@ -922,12 +926,16 @@ function renderTeam() {
     const out = el.querySelector("output");
     const wrap = el.querySelector(".role-slider-wrap");
     const note = el.querySelector(".role-note");
-    inp.addEventListener("input", () => {
+    // Any interaction rates the role — a plain tap counts too, so leaving a
+    // slider at its default 5 still registers (needed now all 10 are required).
+    const markRated = () => {
       out.textContent = inp.value;
       inp.dataset.rated = "true";
       wrap.classList.remove("unrated");
       note.textContent = "/ 10";
-    });
+    };
+    inp.addEventListener("input", markRated);      // drag / arrow keys (value changes)
+    inp.addEventListener("pointerdown", markRated); // tap without moving
   });
 
   // ----- Save: send only rated + changed roles, SEQUENTIALLY -----
