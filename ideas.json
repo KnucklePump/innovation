@@ -2486,6 +2486,187 @@
         "What specifically converts a free streamer into a paying member — the first perk or moment that triggers the upgrade?"
       ],
       "refinedThrough": "2026-08-01T14:06:59.427Z"
+    },
+    {
+      "id": "flying-billboards",
+      "title": "Flying Billboards",
+      "owner": "Dave",
+      "status": "analyzed",
+      "oneLiner": "Sell \"billboards in the sky\" — choreographed drone light shows that display logos and visuals for events and brand activations, either operated as a service or by reselling the fleets.",
+      "tags": [
+        "events",
+        "advertising",
+        "drones",
+        "Canada"
+      ],
+      "scores": {
+        "market": {
+          "score": 7,
+          "confidence": "med",
+          "why": "A real, fast-growing category: the drone light-show market was estimated at roughly US$1.6B in 2024 (estimates vary widely across research firms) growing ~16.7% CAGR, with North America around 38% of it and corporate/brand activations the fastest-growing segment. The reachable local slice is smaller, but the underlying demand and growth are genuine.",
+          "sources": [
+            "https://www.grandviewresearch.com/industry-analysis/drone-light-show-market-report"
+          ]
+        },
+        "entry": {
+          "score": 4,
+          "confidence": "med",
+          "why": "Meaningful barriers. Canada's 2025 rules require a Special Flight Operations Certificate (SFOC) to fly microdrones (<250g) at advertised events, and larger show drones (>250g) require separate operational authorizations — so paid advertised shows are gated either way. Operations also need certified pilots and specialised choreography software, and even a starter fleet runs into the tens of thousands — a regulated, skill- and capital-gated entry rather than an easy one.",
+          "sources": [
+            "https://tc.canada.ca/en/aviation/drone-safety/2025-summary-changes-canada-drone-regulations",
+            "https://www.ahbl.ca/canadian-drone-operators-face-new-rules-under-transport-canadas-phase-1-reform/"
+          ]
+        },
+        "cost": {
+          "score": 4,
+          "confidence": "med",
+          "why": "Not cheap to first paid revenue. A DIY starter fleet runs roughly US$10–20K (about US$7.5–10K for 10 drones), and a professional-grade turnkey system considerably more — before software licences, ground-station hardware, training, insurance and certified pilots. Per-show revenue is high (~US$15–50K for a ~10-minute show), but the up-front outlay and utilisation risk are real.",
+          "sources": [
+            "https://www.thedronegirl.com/2024/04/10/drone-light-show-kit/",
+            "https://www.droneshowsoftware.com/news/how-much-does-the-drone-show-cost"
+          ]
+        },
+        "saturation": {
+          "score": 3,
+          "confidence": "med",
+          "why": "Crowded, including locally. Calgary/Alberta is already served by established, insured, certified drone-show operators (e.g. Pixel Sky Animations positioning as a Calgary leader, and Drone Light Show Canada operating across Alberta), so a new entrant arrives into an occupied market.",
+          "sources": [
+            "https://www.pixelskyanimations.com/service-areas/calgary",
+            "https://www.dronelightshow.ca/alberta"
+          ]
+        },
+        "moat": {
+          "score": 4,
+          "confidence": "med",
+          "why": "Weak. The drones and choreography software are commercially available, so the differentiators are fleet size, creative quality, safety/SFOC track record and client relationships — all replicable, and the incumbents already hold them locally.",
+          "sources": []
+        },
+        "margins": {
+          "score": 5,
+          "confidence": "low",
+          "why": "Mixed. Revenue per show is high (~US$15–50K for ~10 minutes), but the model is capital-intensive (fleet, software, insurance), skilled-labour-dependent, weather- and season-exposed, and hinges on utilisation — so blended economics rest on booking enough shows, not on any per-unit edge.",
+          "sources": [
+            "https://www.droneshowsoftware.com/news/how-much-does-the-drone-show-cost"
+          ]
+        },
+        "founderFit": {
+          "score": 4,
+          "confidence": "med",
+          "why": "Partial. The team's marketing and creative strength fits the advertising/experience side and its engineering background helps with technical operations, but the core capability this needs — certified RPAS drone-show operations, an SFOC track record and event-industry relationships — is absent, and the China-sourcing edge barely applies since drone-show fleets are proprietary hardware-plus-software, not a resell-from-Asia product.",
+          "sources": []
+        },
+        "risk": {
+          "score": 4,
+          "confidence": "med",
+          "why": "Moderate-to-high. Capital-heavy up front; a Canadian SFOC now required to fly microdrones at advertised events (larger show drones need separate operational authorization), plus airspace, night-ops and weather limits; a crowded local field; a weak moat; and pronounced Alberta seasonality. Downside isn't small once a fleet is bought.",
+          "sources": [
+            "https://tc.canada.ca/en/aviation/drone-safety/2025-summary-changes-canada-drone-regulations"
+          ]
+        }
+      },
+      "businessCase": {
+        "summary": "\"Flying billboards\" are, in practice, drone light shows — fleets of LED-equipped drones choreographed to display logos, mascots and visuals as a giant billboard in the night sky, sold to brands, festivals, sports and civic events. It's a real, fast-growing category (roughly US$1.6B in 2024, forecast to grow ~17% a year), with brand and corporate activations the fastest-growing slice. Two models sit inside it: operate shows as a service (the substantive business, ~US$15–50K per show) or resell drone-show fleets (a thin, tiny B2B). The catches: a starter fleet plus software and training runs ~US$50–75K, Canada now requires an SFOC to fly at advertised events, and Calgary/Alberta is already served by several established, insured, certified operators.",
+        "customer": "Brands and marketing agencies running product launches and activations; festival, sports and civic-event organisers; and — for the resale angle — the small number of drone-show operators who buy fleets.",
+        "market": "The drone light-show market was estimated at roughly US$1.6B in 2024 (estimates vary widely across research firms) growing ~16.7% CAGR, with North America around 38% of it and corporate/brand activations the fastest-growing segment. The reachable local slice is a modest number of Alberta events, already contested — so the growth is real but the addressable base near home is smaller than the headline.",
+        "model": "Operate-as-a-service: charge per show (~US$15–50K for a ~10-minute performance) plus repeat and seasonal event contracts. Resale: import and on-sell drone-show fleets to operators (thin hardware margin, tiny buyer pool). The service model is where the real revenue is.",
+        "goToMarket": "Win the first shows through event organisers, sponsorship agencies and civic/festival calendars in Alberta; lean on shareable, viral aerial content as its own marketing; and build the SFOC track record, insurance and safety credibility that larger clients require before booking.",
+        "costs": "A DIY starter fleet (~20 drones) runs roughly US$10–20K, with professional-grade turnkey systems considerably more, plus choreography software (Verge Aero / Skybrush / Drone Show Software), ground-station hardware, training and insurance. Ongoing: pilots, maintenance, insurance, SFOC/authorization applications and travel. High per-show revenue (~US$15–50K) offsets this only at decent utilisation.",
+        "risks": "Capital-heavy entry; a Canadian SFOC now required to fly microdrones at advertised events (larger show drones need separate operational authorization), plus airspace, night-ops and weather limits; a crowded local field of established, certified operators; a weak moat (buyable tech); pronounced Alberta seasonality; and a core-capability gap — this is a certified drone-operations and events business, not a sourcing-and-marketing one. The resale angle is weaker still (proprietary fleets/software, few buyers).",
+        "nextSteps": "1) Decide the model — operate shows vs resell fleets (operating is the real business). 2) Map Alberta demand: how many event/brand buyers, at what price and frequency. 3) Cost the SFOC path and certified-pilot requirement honestly. 4) Scope a minimum viable fleet + software + insurance budget. 5) Pressure-test a wedge against the incumbents already serving Calgary — or find a lower-capital way in (partner/resell for an existing operator)."
+      },
+      "clarifyingQuestions": [
+        "Import-and-resell the fleets, or operate shows as a service? They're different businesses — the service model holds the revenue, but it needs certified drone-show operations the team doesn't have today.",
+        "Given Calgary/Alberta already has several established, insured, SFOC-capable operators, what's our wedge — and are we prepared for the ~US$50–75K fleet plus the SFOC / certified-pilot path?",
+        "Is there a lower-capital entry (a single LED \"billboard\" drone, or partnering/reselling for an existing fleet operator) that tests demand before buying a full swarm?"
+      ]
+    },
+    {
+      "id": "stone-laser-engraving",
+      "title": "Stone Laser Engraving",
+      "owner": "Dave",
+      "status": "analyzed",
+      "oneLiner": "Laser-engrave images and text into stone — either importing and reselling the (mostly CO2) engraving machines, or running a personalised-gifts brand making engraved rocks, coasters and memorial stones.",
+      "tags": [
+        "ecommerce",
+        "personalization",
+        "import",
+        "DTC"
+      ],
+      "scores": {
+        "market": {
+          "score": 6,
+          "confidence": "med",
+          "why": "The personalised-gifts market is large and growing — around US$30B in 2025 at roughly ~8% CAGR — with custom engraving one of its service segments. But engraved stone specifically is a small niche within that, so the reachable slice is modest rather than the headline figure.",
+          "sources": [
+            "https://www.thebusinessresearchcompany.com/report/personalized-gifts-global-market-report"
+          ]
+        },
+        "entry": {
+          "score": 7,
+          "confidence": "high",
+          "why": "Very low barriers. A capable stone-engraving laser is a CO2 machine — hobbyist desktop units under ~US$1,000, capable mid-range machines a few thousand — with no licensing required, so a production or resale operation can start cheaply and fast. The flip side: the same low barrier is why the space is crowded.",
+          "sources": [
+            "https://www.xtool.com/blogs/xtool-academy/laser-stone-engraving",
+            "https://themakerschest.com/blogs/laser-engravers/can-you-laser-engrave-a-stone-everything-you-need-to-know"
+          ]
+        },
+        "cost": {
+          "score": 7,
+          "confidence": "high",
+          "why": "Cheap to first revenue on the production path: a mid-range CO2 laser (low single-thousands) plus low-cost stone stock (slate, pebbles, granite offcuts), so cost-to-first-sale is low. The resale path needs working capital for machine inventory but still no heavy capex.",
+          "sources": [
+            "https://www.xtool.com/blogs/xtool-academy/laser-stone-engraving",
+            "https://www.stylecnc.com/laser-engraving-machine/Marble-granite-and-stone-laser-engraving-machine-for-sale.html"
+          ]
+        },
+        "saturation": {
+          "score": 3,
+          "confidence": "med",
+          "why": "Crowded on both angles. Etsy is saturated with personalised/engraved-stone sellers (pet memorials, garden rocks, coasters, keepsakes), and the engraving-machine market is equally contested — xTool, Glowforge and a wave of Chinese OEMs already sell stone-capable lasers. Differentiation is scarce in both the product and the hardware lanes.",
+          "sources": [
+            "https://www.xtool.com/blogs/xtool-academy/laser-stone-engraving"
+          ]
+        },
+        "moat": {
+          "score": 3,
+          "confidence": "med",
+          "why": "Weak. Engraved designs and product types are trivially copyable, the machines are commodity hardware, and there's no IP. The only durable edge is an authentic brand/niche and quality reputation — real if built, but slow and easily imitated.",
+          "sources": []
+        },
+        "margins": {
+          "score": 5,
+          "confidence": "low",
+          "why": "Moderate. Engraving carries decent gross margins (cheap stone, value in the personalisation), but low price points and heavy Etsy competition compress the net; the machine-resale angle is thin hardware margin with warranty and support obligations.",
+          "sources": []
+        },
+        "founderFit": {
+          "score": 6,
+          "confidence": "med",
+          "why": "A reasonable fit on the axes that matter: China-market sourcing access suits the import-and-resell machine angle, and marketing/creative strength suits a personalised-gifts DTC brand. The gaps are no engraving-production or DTC-gifts operating experience, and both angles are saturated — so the fit helps execution but doesn't itself create an edge.",
+          "sources": []
+        },
+        "risk": {
+          "score": 5,
+          "confidence": "med",
+          "why": "Contained downside — low capital at risk (a cheap machine and materials, or a small first machine-import order) — but a saturated, commoditised, low-differentiation niche with low price points. Little can go badly wrong financially, but little is defensible either.",
+          "sources": []
+        }
+      },
+      "businessCase": {
+        "summary": "Two businesses in one idea, both built on lasers that etch images and text into stone. First, import and resell the machines — stone engraving is done mostly with CO2 lasers (hobbyist desktop units under ~US$1,000, capable machines a few thousand), widely sourced from Asia. Second, run a personalised-gifts brand producing engraved rocks, coasters, garden markers and memorial/pet stones. The personalised-gifts market is large and growing (around US$30B in 2025), but engraved stone is a small, heavily-contested niche within it — Etsy is saturated with sellers and the machine market is equally crowded (xTool, Glowforge, many Chinese OEMs). Cheap and low-risk to start; the hard part is standing out.",
+        "customer": "For the product brand: gift-buyers and the pet-memorial/bereavement market, plus garden/home-décor and corporate-gift buyers, largely via DTC/Etsy. For the machine-resale angle: hobbyists, makers and small engraving businesses buying stone-capable lasers.",
+        "market": "The personalised-gifts market is around US$30B in 2025 growing ~8% CAGR, with custom engraving one of its service segments. Engraved stone is a small niche within this — real, steady gift demand (memorials, keepsakes, garden décor) rather than a large standalone market.",
+        "model": "Production/DTC: sell engraved stone products at a personalisation premium over near-zero material cost via Etsy/Shopify and corporate-gift orders. Resale: import stone-capable CO2 lasers and on-sell them (hardware margin plus consumables/support). The two can combine — sell the products and the machines that make them.",
+        "goToMarket": "Product path: start on Etsy/DTC in a specific high-intent niche (pet memorials convert well) with strong photography and SEO, then add corporate/bulk gifting. Machine path: import a tested CO2 model and sell through marketplaces and maker communities. Prove one niche before widening.",
+        "costs": "Low. Production: a mid-range CO2 laser (low single-thousands), cheap stone stock, plus marketing and fulfilment — a low-thousands start. Resale: working capital for machine inventory and some warranty/support capacity. No facility build, no regulation.",
+        "risks": "Both angles are saturated — Etsy is thick with engraved-stone sellers and the machine market is crowded with established brands and Chinese OEMs — so differentiation is the core problem, the moat is weak (everything is copyable), and price points are low. Tariffs and shipping on imported machines add cost. Capital-at-risk is low, but so is defensibility.",
+        "nextSteps": "1) Pick ONE model to start — a niche product brand (e.g. pet memorials) or machine resale — rather than both at once. 2) Validate cheaply: a small Etsy test drop, or a single trial machine-import order. 3) Nail a genuine differentiator (niche authenticity, quality, a corporate/bulk channel) since the generic lane is saturated. 4) Lock a reliable Asian machine supplier if reselling. 5) Work out unit economics and price points before scaling."
+      },
+      "clarifyingQuestions": [
+        "Which model do we actually want — importing and reselling the engraving machines (plays to sourcing strength) or running a personalised-stone products brand (plays to marketing)? Doing both at once splits focus.",
+        "Both Etsy and the machine market are saturated — what's the specific wedge (a niche like pet memorials, a corporate/bulk channel, quality, or an exclusive machine line) that makes this stand out?",
+        "Is there a route to an exclusive or preferential machine-supply deal, or a niche where we have authentic credibility — i.e. anything that isn't trivially copyable?"
+      ]
     }
   ]
 }
