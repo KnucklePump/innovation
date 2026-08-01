@@ -78,6 +78,12 @@ button.ghost:hover, .ghost:hover { color: var(--ink); border-color: var(--accent
   border: 1px solid var(--line); border-radius: var(--radius-sm); background: var(--bg); color: var(--ink);
 }
 .gate-card input:focus { outline: none; border-color: var(--accent); }
+.gate-card .gate-select {
+  width: 100%; margin: 20px 0 0; padding: 12px 14px; font-size: 15px; font-family: inherit;
+  border: 1px solid var(--line); border-radius: var(--radius-sm); background: var(--bg); color: var(--ink);
+}
+.gate-card .gate-select:focus { outline: none; border-color: var(--accent); }
+.gate-card input { margin-top: 14px; }
 .gate-card button { width: 100%; }
 .gate-error { color: var(--bad); margin: 12px 0 0; font-size: 13.5px; }
 

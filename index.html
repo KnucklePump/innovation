@@ -24,7 +24,10 @@
   <div id="gate" class="gate">
     <form id="gate-form" class="gate-card">
       <h1>Innovation</h1>
-      <p class="muted">Private idea board. Enter the group password.</p>
+      <p class="muted">Private idea board. Select your name and enter the group password.</p>
+      <select id="gate-voter" class="gate-select" required aria-label="Who are you?">
+        <option value="">Select your name…</option>
+      </select>
       <input id="gate-input" type="password" placeholder="Password" autocomplete="current-password" autofocus />
       <button type="submit">Enter</button>
       <p id="gate-error" class="gate-error" hidden>Incorrect password.</p>

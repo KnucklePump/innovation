@@ -81,8 +81,15 @@ $("#signout").addEventListener("click", () => {
 $("#gate-form").addEventListener("submit", (e) => {
   e.preventDefault();
   const err = $("#gate-error");
+  const name = $("#gate-voter").value;
+  if (!name) {
+    err.textContent = "Please select your name.";
+    err.hidden = false;
+    return;
+  }
   try {
     if (sha256(utf8($("#gate-input").value)) === PASSWORD_HASH) {
+      setVoter(name);
       sessionStorage.setItem("unlocked", "1");
       unlock();
     } else {
@@ -94,6 +101,18 @@ $("#gate-form").addEventListener("submit", (e) => {
     err.hidden = false;
   }
 });
+// Populate the gate's name selector from config before unlock (config isn't loaded until boot()).
+async function loadGateVoters() {
+  const sel = $("#gate-voter");
+  if (!sel) return;
+  try {
+    const cfg = await fetch("config.json").then(r => r.json());
+    const remembered = localStorage.getItem("voterName") || "";
+    sel.innerHTML = `<option value="">Select your name…</option>` +
+      (cfg.voters || []).map(n => `<option value="${esc(n)}"${n === remembered ? " selected" : ""}>${esc(n)}</option>`).join("");
+  } catch {}
+}
+loadGateVoters();
 if (sessionStorage.getItem("unlocked") === "1") unlock();
 
 /* ---------- Data + scoring ---------- */
