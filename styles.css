@@ -271,6 +271,32 @@ tr:hover .vote-now { background: var(--accent); color: #0a0c10; }
 .send-idea { white-space: nowrap; flex-shrink: 0; }
 .send-idea.sent { color: var(--good); border-color: var(--good); }
 
+/* Team & roles page */
+.role-rank { margin: 0 0 16px; }
+.role-rank:last-child { margin-bottom: 4px; }
+.role-rank-head { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; margin-bottom: 7px; }
+.role-rank-name { font-weight: 700; font-size: 14.5px; display: flex; align-items: baseline; gap: 9px; min-width: 0; }
+.rank-num { display: inline-flex; align-items: center; justify-content: center; width: 20px; height: 20px; border-radius: 50%; background: var(--team); color: #0a0c10; font-size: 11px; font-weight: 800; flex-shrink: 0; align-self: center; }
+.role-rank-total { font-weight: 800; font-size: 16px; color: var(--team); white-space: nowrap; }
+.role-rank-total .muted { font-weight: 600; font-size: 12.5px; }
+.role-rank .bar { height: 9px; margin: 0; }
+.role-rank .bar > i { background: var(--team); }
+
+.role-set-list { display: flex; flex-direction: column; gap: 4px; margin: 14px 0 4px; }
+.role-set { padding: 14px 0; border-top: 1px solid var(--line); }
+.role-set:first-child { border-top: none; }
+.role-set-info { margin-bottom: 8px; }
+.role-set-name { font-weight: 700; font-size: 14.5px; color: var(--ink); }
+.role-set-blurb { display: block; font-size: 13.5px; color: var(--muted); margin-top: 2px; }
+.role-slider-wrap { margin-bottom: 0; }
+.role-slider-wrap .role-note { font-size: 12.5px; min-width: 58px; }
+.role-slider-wrap.unrated input[type=range] { accent-color: var(--muted); }
+.role-slider-wrap.unrated output { color: var(--muted); }
+
+.roles-matrix { min-width: 520px; }
+.roles-matrix .idea-title { white-space: nowrap; }
+.roles-matrix td.num, .roles-matrix th.num { min-width: 54px; }
+
 @media (max-width: 640px) {
   body { font-size: 14.5px; }
   .topbar-inner { padding: 12px 16px; gap: 10px; }

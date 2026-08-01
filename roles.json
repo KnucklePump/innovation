@@ -1,0 +1,57 @@
+{
+  "meta": {
+    "subtitle": "The broad functions needed to get a business off the ground. Rate how much you'd want to own each one — the board totals everyone's interest so we can see where the group leans and where the gaps are."
+  },
+  "roles": [
+    {
+      "id": "role:leadership",
+      "title": "Leadership & Strategy",
+      "blurb": "Vision, direction, big decisions, the business model and overall plan. The \"where are we going and why\" role."
+    },
+    {
+      "id": "role:product",
+      "title": "Product & Service",
+      "blurb": "Designing and building the actual thing we sell — development, quality, and deciding what to offer."
+    },
+    {
+      "id": "role:operations",
+      "title": "Operations & Supply Chain",
+      "blurb": "Keeping the business running day-to-day: sourcing, suppliers, inventory, logistics, fulfilment, facilities."
+    },
+    {
+      "id": "role:sales",
+      "title": "Sales & Business Development",
+      "blurb": "Winning customers and partners: pipeline, closing, new markets, account management, retention."
+    },
+    {
+      "id": "role:marketing",
+      "title": "Marketing & Communications",
+      "blurb": "Brand, digital marketing, content, social, PR and market research — getting attention and demand."
+    },
+    {
+      "id": "role:finance",
+      "title": "Finance",
+      "blurb": "Bookkeeping, budgeting, cash flow, forecasting, fundraising and investor relations. The money role."
+    },
+    {
+      "id": "role:people",
+      "title": "People (HR)",
+      "blurb": "Hiring, payroll, benefits, training and culture — everything to do with the team."
+    },
+    {
+      "id": "role:it",
+      "title": "IT & Technology",
+      "blurb": "Website, systems, software and platforms, data and cybersecurity — all things digital."
+    },
+    {
+      "id": "role:legal",
+      "title": "Legal & Compliance",
+      "blurb": "Entity structure, contracts, IP, licences, regulation, insurance and risk."
+    },
+    {
+      "id": "role:support",
+      "title": "Customer Support",
+      "blurb": "Serving customers after the sale — service, support and handling issues."
+    }
+  ]
+}

@@ -9,7 +9,7 @@
 const PASSWORD_HASH = "2ecfd1b8a9c8e6f2f97748fd28ab531c0491e152108690abab45421d68c35551";
 
 const $ = (s, el = document) => el.querySelector(s);
-const state = { ideas: [], rubric: {}, votes: {}, voters: [], voter: "", sort: { key: "composite", asc: false }, trends: [], trendMeta: {}, trendSort: { key: "created", asc: false } };
+const state = { ideas: [], rubric: {}, votes: {}, voters: [], voter: "", sort: { key: "composite", asc: false }, trends: [], trendMeta: {}, trendSort: { key: "created", asc: false }, roles: [], roleMeta: {} };
 let voteCbSeq = 0;
 
 /* ---------- Password gate ----------
@@ -117,11 +117,13 @@ if (sessionStorage.getItem("unlocked") === "1") unlock();
 
 /* ---------- Data + scoring ---------- */
 async function boot() {
-  const [ideasRes, cfgRes, trendsRes] = await Promise.all([
+  const [ideasRes, cfgRes, trendsRes, rolesRes] = await Promise.all([
     fetch("ideas.json").then(r => r.json()),
     fetch("config.json").then(r => r.json()),
     // trends.json is optional — a missing/empty file just yields no trends.
     fetch("trends.json").then(r => r.ok ? r.json() : {}).catch(() => ({})),
+    // roles.json is optional too — a missing/empty file just yields no team roles.
+    fetch("roles.json").then(r => r.ok ? r.json() : {}).catch(() => ({})),
   ]);
   state.ideas = ideasRes.ideas || [];
   state.rubric = cfgRes.rubric || {};
@@ -130,6 +132,8 @@ async function boot() {
   state.voters = cfgRes.voters || [];
   state.trends = (trendsRes && trendsRes.trends) || [];
   state.trendMeta = (trendsRes && trendsRes.meta) || {};
+  state.roles = (rolesRes && rolesRes.roles) || [];
+  state.roleMeta = (rolesRes && rolesRes.meta) || {};
   $("#brand-sub").textContent = (ideasRes.meta && ideasRes.meta.subtitle) || "";
   setupVoter();
   route();
@@ -230,6 +234,7 @@ function route() {
   let page = "board";
   if (hash === "#/submit") { renderSubmit(); }
   else if (hash === "#/trends") { page = "trends"; renderTrends(); }
+  else if (hash === "#/team") { page = "team"; renderTeam(); }
   else {
     const tm = hash.match(/^#\/trend\/(.+)$/);
     const im = hash.match(/^#\/idea\/(.+)$/);
@@ -796,6 +801,159 @@ function renderTrendDetail(t) {
       location.href = `mailto:${state.contactEmail}?subject=${subject}&body=${encodeURIComponent(body)}`;
     }
   }));
+}
+
+/* ---------- Team roles: interest voting ----------
+   Reuses the SAME vote store as the Idea Board — each role is voted on under a
+   "role:"-prefixed id, so role votes and idea votes share one endpoint and can
+   never collide (teamVotes only ever reads real idea ids). No backend change.
+   The headline metric here is the TOTAL interest (sum of everyone's 1–10), not
+   an average — a role two people rate 8 beats one that a single person rates 10. */
+function roleTally(roleId) {
+  const arr = (state.votes && state.votes[roleId]) || [];
+  const valid = arr.filter(v => v.score > 0);
+  const total = valid.reduce((a, b) => a + b.score, 0);
+  return { total, count: valid.length, votes: valid };
+}
+function myRoleScore(roleId) {
+  const arr = (state.votes && state.votes[roleId]) || [];
+  const mine = arr.find(v => v.name === state.voter && v.score > 0);
+  return mine ? mine.score : null;
+}
+
+function renderTeam() {
+  const view = $("#view");
+  if (!state.roles.length) {
+    view.innerHTML = `<div class="empty"><h2>No team roles yet</h2><p>Add roles to <code>roles.json</code> to start collecting the group's interest.</p><p><a href="#/" class="btn-primary">← Back to the Idea Board</a></p></div>`;
+    return;
+  }
+  const voters = state.voters.slice();
+  const nVoters = voters.length || 1;
+
+  // ----- Headline: roles ranked by TOTAL interest (sum of all 1–10 ratings) -----
+  const ranked = state.roles.map(r => ({ role: r, ...roleTally(r.id) })).sort((a, b) => b.total - a.total);
+  const maxTotal = Math.max(1, ...ranked.map(r => r.total));
+  const rankBars = ranked.map((r, i) => `
+    <div class="role-rank">
+      <div class="role-rank-head">
+        <span class="role-rank-name"><span class="rank-num">${i + 1}</span>${esc(r.role.title)}</span>
+        <span class="role-rank-total">${r.total || 0}<span class="muted"> · ${r.count}/${nVoters} rated</span></span>
+      </div>
+      <div class="bar"><i style="width:${Math.max(2, (r.total / maxTotal) * 100)}%"></i></div>
+    </div>`).join("");
+
+  // ----- Your interest: one 1–10 slider per role, saved together -----
+  const mineCard = state.voter
+    ? `<div class="card">
+         <h3>Your interest <span class="muted" style="text-transform:none;letter-spacing:0;font-weight:600">— as ${esc(state.voter)}</span></h3>
+         <p class="muted" style="margin:0 0 4px">Set how much you'd want to own each role, 1 (not for me) to 10 (all in). Untouched roles stay <em>unrated</em> and don't count — move a slider to rate it, then save.</p>
+         <div class="role-set-list">
+           ${state.roles.map(r => {
+             const saved = myRoleScore(r.id);
+             const val = saved == null ? 5 : saved;
+             return `<div class="role-set" data-id="${esc(r.id)}">
+               <div class="role-set-info"><span class="role-set-name">${esc(r.title)}</span><span class="role-set-blurb">${esc(r.blurb || "")}</span></div>
+               <div class="vote-slider role-slider-wrap${saved == null ? " unrated" : ""}">
+                 <input type="range" class="role-slider" min="1" max="10" step="1" value="${val}" data-initial="${saved == null ? "" : saved}" />
+                 <output>${val}</output>
+                 <span class="muted role-note">${saved == null ? "not rated" : "/ 10"}</span>
+               </div>
+             </div>`;
+           }).join("")}
+         </div>
+         <div class="ans-actions"><button type="button" id="roles-save">Save my interest</button><span id="roles-note" class="muted"></span></div>
+       </div>`
+    : `<div class="card"><h3>Your interest</h3><p class="muted" style="margin-bottom:0">Pick your name (top-right) to add your interest levels.</p></div>`;
+
+  // ----- Breakdown: who's interested in what (read-only matrix) -----
+  const matrix = `
+    <div class="table-wrap"><table class="roles-matrix">
+      <thead><tr>
+        <th data-key="_role">Role</th>
+        ${voters.map(n => `<th class="num">${esc(n)}</th>`).join("")}
+        <th class="num">Total</th>
+      </tr></thead>
+      <tbody>
+        ${ranked.map(({ role, total }) => {
+          const byName = {};
+          (state.votes[role.id] || []).forEach(v => { if (v.score > 0) byName[v.name] = v.score; });
+          return `<tr>
+            <td class="idea-title">${esc(role.title)}</td>
+            ${voters.map(n => {
+              const s = byName[n];
+              return `<td class="num">${s == null ? '<span class="muted">—</span>' : `<span class="score-pill ${scoreClass(s)}">${s}</span>`}</td>`;
+            }).join("")}
+            <td class="num"><span class="composite team-score">${total || 0}</span></td>
+          </tr>`;
+        }).join("")}
+      </tbody>
+    </table></div>`;
+
+  view.innerHTML = `
+    <div class="list-head">
+      <div><h2>Team & Roles</h2><p class="muted">${esc(state.roleMeta.subtitle || "Rate your interest in each role; the board totals everyone's scores to show where the group's interest is concentrated.")}</p></div>
+    </div>
+    <div class="quad">
+      <h3>Total interest by role <span class="muted">— sum of everyone's 1–10 ratings (max ${nVoters * 10})</span></h3>
+      <div class="card" style="margin-bottom:0">${rankBars}</div>
+    </div>
+    ${mineCard}
+    <h3 class="board-section" style="margin-top:26px">Who's interested in what</h3>
+    ${matrix}`;
+
+  // ----- Slider wiring: moving a slider marks the role as rated -----
+  view.querySelectorAll(".role-set").forEach(el => {
+    const inp = el.querySelector(".role-slider");
+    const out = el.querySelector("output");
+    const wrap = el.querySelector(".role-slider-wrap");
+    const note = el.querySelector(".role-note");
+    inp.addEventListener("input", () => {
+      out.textContent = inp.value;
+      inp.dataset.rated = "true";
+      wrap.classList.remove("unrated");
+      note.textContent = "/ 10";
+    });
+  });
+
+  // ----- Save: send only rated + changed roles, SEQUENTIALLY -----
+  //  The Apps Script vote handler reads-then-appends with no lock, so parallel
+  //  POSTs of brand-new rows can drop or duplicate. One await at a time is safe.
+  const saveBtn = $("#roles-save");
+  if (saveBtn) {
+    saveBtn.addEventListener("click", async () => {
+      const note = (m) => { const n = $("#roles-note"); if (n) n.textContent = m; };
+      const changed = [...view.querySelectorAll(".role-set")].filter(el => {
+        const inp = el.querySelector(".role-slider");
+        const initial = inp.dataset.initial;                       // "" when previously unrated
+        const rated = inp.dataset.rated === "true" || initial !== "";
+        return rated && String(inp.value) !== String(initial);     // skip untouched / unchanged
+      });
+      if (!changed.length) { note("No new ratings to save."); setTimeout(() => note(""), 3000); return; }
+
+      setBusy(saveBtn, true, "Saving…");
+      let ok = 0;
+      for (let i = 0; i < changed.length; i++) {
+        const el = changed[i];
+        const roleId = el.dataset.id;
+        const role = state.roles.find(r => r.id === roleId);
+        const score = Number(el.querySelector(".role-slider").value);
+        upsertVote(roleId, state.voter, score, "");               // optimistic local update
+        note(`Saving ${i + 1}/${changed.length}…`);
+        if (state.endpoint) {
+          try {
+            await postToStore({ type: "vote", submittedAt: new Date().toISOString(), ideaId: roleId, ideaTitle: role ? role.title : roleId, name: state.voter, score, comment: "" });
+            ok++;
+          } catch { /* keep going; the optimistic local value still shows */ }
+        } else { ok++; }
+      }
+      setBusy(saveBtn, false);
+      note(state.endpoint
+        ? (ok === changed.length ? "Saved ✓" : `Saved ${ok}/${changed.length} — check your connection and re-save.`)
+        : "Saved locally (no endpoint configured).");
+      if (state.endpoint && ok) { await loadVotes(); }
+      if (location.hash === "#/team") renderTeam();
+    });
+  }
 }
 
 /* ---------- Submit-an-idea view ---------- */
