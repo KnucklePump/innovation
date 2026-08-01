@@ -1152,7 +1152,7 @@
       "title": "Repricing Advisory-in-a-box",
       "owner": "Dave",
       "status": "refined",
-      "refinedThrough": "2026-07-31T13:04:57.487Z",
+      "refinedThrough": "2026-07-31T13:50:49.455Z",
       "oneLiner": "A productised advisory-plus-tooling offer that helps seat-based SaaS companies model, pilot and migrate to usage or outcome-based pricing without wrecking their existing ARR.",
       "tags": [
         "SaaS",
@@ -1206,9 +1206,9 @@
           "sources": []
         },
         "founderFit": {
-          "score": 3,
+          "score": 2,
           "confidence": "high",
-          "why": "Weak where it counts. The team's management-consulting and finance/investment strengths transfer to pricing strategy and ARR-impact modelling in the abstract, and the offer is services-led rather than needing a product-engineering team — but no one brings software-licensing or SaaS-pricing experience, and that specialist credibility is the exact entry tax for selling a revenue-at-risk migration methodology to software CFOs. Without a named SaaS-pricing track record, the fit is thin at the point that decides the sale.",
+          "why": "Very weak at the decisive point. The team has essentially no credibility selling pricing to software CFOs — no one brings software-licensing or SaaS-pricing experience, and that specialist credibility is the entire entry tax for a revenue-at-risk migration methodology. Generic consulting and finance skills transfer only in the abstract; without a named SaaS-pricing track record the team cannot credibly win the sale, which caps the fit to the low end regardless of the idea's timing.",
           "sources": []
         },
         "risk": {
@@ -1984,6 +1984,579 @@
         "Where is the wedge against entrenched incumbents — Ziosk on tabletop, SoundHound/Presto/ConverseNow on voice AI, and ubiquitous QR ordering — a specific under-served segment, or a real technical edge?",
         "Is the beachhead Canadian full-service pubs/casual dining, and does the 'no tip' framing hold up when Canadian servers already earn full minimum wage and food still has to be delivered to the table?",
         "Do we build custom hardware (leaning on China sourcing) or run the AI on off-the-shelf tablets — and which POS (Toast/Square/Micros) do we integrate first?"
+      ]
+    },
+    {
+      "id": "canadian-premium-chili-crisp-brand",
+      "title": "Canadian premium chili-crisp brand",
+      "owner": "Dave",
+      "status": "analyzed",
+      "oneLiner": "Source authentic Sichuan-style product and build the branded, clean-label chili crisp that Canadian grocery and DTC don't yet have a homegrown leader in.",
+      "tags": [
+        "CPG",
+        "food",
+        "import",
+        "brand"
+      ],
+      "scores": {
+        "market": {
+          "score": 6,
+          "confidence": "med",
+          "why": "The chili-crisp category is real and rising — a ~US$1.52B global market in 2025 heading to ~US$2.82B by 2034 (7.1% CAGR) — and premium branding has transformed the economics, with Fly By Jing turning a Kickstarter into an eight-figure, 12,000-store brand. It is one condiment, though, and the reachable Canadian slice is a fraction of the global number, so this is a good niche rather than a large market.",
+          "sources": [
+            "https://growthmarketreports.com/report/chili-crisp-market",
+            "https://www.shopify.com/blog/fly-by-jing-recipe-for-success"
+          ]
+        },
+        "entry": {
+          "score": 6,
+          "confidence": "med",
+          "why": "Low capital to start — co-pack or import, brand, sell DTC — but the real barriers are food-safety/CFIA compliance and, harder, winning grocery listings against established SKUs. A DTC-first launch sidesteps the shelf fight early.",
+          "sources": []
+        },
+        "cost": {
+          "score": 6,
+          "confidence": "med",
+          "why": "Moderate and controllable: product sourcing/co-packing, inventory, packaging design and marketing. No heavy capex; the spend that matters is brand-building and customer acquisition.",
+          "sources": []
+        },
+        "saturation": {
+          "score": 3,
+          "confidence": "high",
+          "why": "Crowded. Fly By Jing, Momofuku Chili Crunch, Lao Gan Ma, S&B and a wave of newer brands already contest North-American shelves and DTC, and Canadian grocery carries multiple options. A single-SKU chili-crisp entrant arrives late to a busy category.",
+          "sources": [
+            "https://www.shopify.com/blog/fly-by-jing-recipe-for-success"
+          ]
+        },
+        "moat": {
+          "score": 4,
+          "confidence": "med",
+          "why": "Thin. Brand, authenticity story and a distinctive recipe are the only real differentiators, and all are copyable. A genuine moat would need an exclusive supply relationship or a defended Canadian retail position — neither exists at the outset.",
+          "sources": []
+        },
+        "margins": {
+          "score": 6,
+          "confidence": "med",
+          "why": "Healthy for a premium condiment sold direct — jars command a multiple of commodity imports — but retail and distribution take a meaningful cut and marketing is an ongoing draw, so blended margins are good rather than exceptional.",
+          "sources": []
+        },
+        "founderFit": {
+          "score": 6,
+          "confidence": "med",
+          "why": "Strong on the axis that matters for an import-and-brand play: direct China/Asia market access plus marketing strength is exactly the combination this needs. The gap is that no one on the team has packaged-food/CPG or grocery-distribution experience.",
+          "sources": []
+        },
+        "risk": {
+          "score": 5,
+          "confidence": "med",
+          "why": "Contained downside — low capital, no heavy commitments — but a crowded, brand-dependent category where many entrants fail to escape DTC into durable retail. The bet is on brand and taste standing out, not on a defensible position.",
+          "sources": []
+        }
+      },
+      "businessCase": {
+        "summary": "A Canadian premium chili-crisp brand — authentic Sichuan-style product, clean-label, sold DTC and into grocery — riding a category that has jumped from ethnic-aisle import to a branded, premiumised US$1.5B+ market. The economics are proven at the top (Fly By Jing built an eight-figure, 12,000-store brand from a Kickstarter), and Canada lacks a homegrown premium leader. The catch is that the category is already crowded with strong US and Asian brands, the moat is thin (brand and recipe, both copyable), and success rests on standing out in a busy aisle rather than on any structural advantage.",
+        "customer": "Canadian home cooks and food enthusiasts who buy premium condiments (the same shopper paying up for hot sauce, miso or single-origin oil), reached first DTC and via specialty/premium grocery, then mainstream grocery.",
+        "market": "Chili crisp is a ~US$1.52B global market in 2025, forecast to ~US$2.82B by 2034 (7.1% CAGR). The premium, branded layer is where the value has moved — Fly By Jing reached eight-figure revenue across 12,000 stores including Target and Walmart — and Canada has no equivalent homegrown premium brand, though the serviceable Canadian market is a small fraction of the global figure.",
+        "model": "Premium jarred product sold DTC (best margin) and wholesale into specialty then mainstream grocery; extend into a small line (varieties, heat levels, formats) once a hero SKU lands. Subscription/refill can lift DTC repeat rate.",
+        "goToMarket": "Launch DTC with a strong brand and origin story, seed via food media and creators, prove repeat purchase, then convert that traction into specialty-grocery listings and, eventually, mainstream retail. Sampling and foodservice placements build trial.",
+        "costs": "Sourcing/co-packing, inventory, packaging and — the largest ongoing line — marketing and customer acquisition. No significant capex; working capital for inventory is the main financing need.",
+        "risks": "A crowded category with entrenched brands; thin, copyable differentiation; the well-known difficulty of graduating from DTC to profitable retail; and dependence on marketing spend to stay visible. Supply authenticity and consistency must hold as volume grows.",
+        "nextSteps": "1) Nail a differentiated hero product and brand (taste test against the incumbents). 2) Secure a reliable, ideally exclusive, authentic supply/co-pack source. 3) Run a small DTC launch to prove repeat-purchase economics and CAC. 4) Line up 3-5 specialty-grocery listings as the retail beachhead. 5) Confirm CFIA/labelling compliance before scaling."
+      },
+      "clarifyingQuestions": [
+        "What is the single differentiator versus Fly By Jing, Momofuku and the incumbents — flavour, format, price, or a Canadian identity — that earns a place in an already-crowded aisle?",
+        "Is there a route to an exclusive or hard-to-copy supply source, the only real moat here?",
+        "DTC-first to prove the brand, or straight for grocery listings — and which channel do we anchor on?"
+      ]
+    },
+    {
+      "id": "multi-sku-asian-condiment-house",
+      "title": "Multi-SKU Asian-condiment house",
+      "owner": "Dave",
+      "status": "analyzed",
+      "oneLiner": "One premium brand spanning chili crisp, black vinegar, doubanjiang and real wasabi — a portfolio, not a single hero jar.",
+      "tags": [
+        "CPG",
+        "food",
+        "import",
+        "brand"
+      ],
+      "scores": {
+        "market": {
+          "score": 6,
+          "confidence": "med",
+          "why": "Broader than a single condiment — the premium Asian-pantry category spans chili crisp (a ~US$1.52B market alone, 7.1% CAGR), plus vinegars, chili-bean pastes and specialty items — and the branded premiumisation proven by Fly By Jing extends across the aisle. The addressable market is larger than one SKU, though still a specialty slice of grocery.",
+          "sources": [
+            "https://growthmarketreports.com/report/chili-crisp-market",
+            "https://www.shopify.com/blog/fly-by-jing-recipe-for-success"
+          ]
+        },
+        "entry": {
+          "score": 5,
+          "confidence": "med",
+          "why": "Harder than a single-product launch: multiple SKUs mean more sourcing relationships, more co-packing, more compliance and more inventory complexity from day one. The upside is a fuller shelf presence and cross-sell once established.",
+          "sources": []
+        },
+        "cost": {
+          "score": 5,
+          "confidence": "med",
+          "why": "Higher working capital than a single hero jar — more inventory across more SKUs — though still no heavy capex. Spreading launch spend across a portfolio raises the cost to reach critical mass in any one line.",
+          "sources": []
+        },
+        "saturation": {
+          "score": 4,
+          "confidence": "med",
+          "why": "The broad Asian-condiment aisle has entrenched players (Lee Kum Kee, S&B, Lao Gan Ma), but a single premium, Western-facing brand that unifies several authentic staples is less contested than chili crisp alone — the whitespace is the coherent premium portfolio, not any one product.",
+          "sources": []
+        },
+        "moat": {
+          "score": 5,
+          "confidence": "med",
+          "why": "Modestly better than a single SKU: a portfolio brand plus potential exclusive supply across several items is harder to copy wholesale than one recipe, and cross-SKU loyalty compounds. Still fundamentally a brand-and-supply moat rather than a structural one.",
+          "sources": []
+        },
+        "margins": {
+          "score": 6,
+          "confidence": "med",
+          "why": "Premium-condiment margins across a range, with cross-sell lowering blended acquisition cost per customer. Retail/distribution cuts and multi-SKU operational overhead temper it, but a portfolio can carry better lifetime value than a single jar.",
+          "sources": []
+        },
+        "founderFit": {
+          "score": 6,
+          "confidence": "med",
+          "why": "Squarely on the team's import-and-brand axis — direct China/Asia sourcing access plus marketing — and it connects to prior interest in authenticated Asian specialty foods. The gap remains multi-SKU CPG operations and grocery-distribution experience.",
+          "sources": []
+        },
+        "risk": {
+          "score": 5,
+          "confidence": "med",
+          "why": "Portfolio complexity is the added risk — spreading effort thin across SKUs before any one proves out — against a still-contained capital downside. Execution and focus, not capital, are the failure modes.",
+          "sources": []
+        }
+      },
+      "businessCase": {
+        "summary": "A single premium brand spanning several authentic Asian pantry staples — chili crisp, black vinegar, doubanjiang, real wasabi — sold as a coherent portfolio into DTC and grocery. It rides the same premiumisation wave as chili crisp (a US$1.5B+ category with proven branded economics) but aims at the broader pantry, where a unified Western-facing premium house is less contested than any single product. The trade-off is operational: multiple SKUs multiply sourcing, compliance and inventory complexity, so the risk is spreading too thin before a hero product lands.",
+        "customer": "Premium-pantry shoppers and home cooks exploring authentic Asian cooking, plus specialty grocers and — via a foodservice arm — restaurants wanting authenticated ingredients. Reached DTC first, then specialty and mainstream retail.",
+        "market": "Anchored by chili crisp (~US$1.52B in 2025 → ~US$2.82B by 2034, 7.1% CAGR) and extending across vinegars, chili-bean pastes and specialty items, the premium Asian-pantry opportunity is larger than any single SKU. Branded premiumisation is proven (Fly By Jing: eight-figure, 12,000 stores), and no Canadian house unifies these staples under one premium brand.",
+        "model": "A portfolio of premium jarred/bottled staples sold DTC and wholesale, with cross-sell and bundles lifting basket size and lifetime value; a foodservice channel supplies restaurants with authenticated product. Launch narrow (a hero SKU) and widen the range as the brand earns trust.",
+        "goToMarket": "Lead with one standout product to establish the brand DTC, then expand the range and move into specialty grocery and foodservice, using the portfolio to win shelf space a single SKU couldn't justify.",
+        "costs": "Multi-SKU sourcing/co-packing, broader inventory, packaging and compliance across items, plus marketing. Working-capital-intensive relative to a single product; no major capex.",
+        "risks": "Doing too much at once — diluting focus and capital across SKUs before proving the model; entrenched broad-line incumbents; thin brand/supply moat; and the DTC-to-retail graduation challenge. Supply consistency across several authentic products is an added operational risk.",
+        "nextSteps": "1) Pick the hero SKU to launch first and prove the brand. 2) Map sourcing/co-pack for the initial 3-4 items, prioritising any exclusive supply. 3) Design a portfolio brand that can stretch across the pantry. 4) Test cross-sell/bundle economics on DTC. 5) Scope the foodservice channel as a second demand source."
+      },
+      "clarifyingQuestions": [
+        "Which single hero SKU do we launch first to establish the brand before widening the range?",
+        "Can we secure exclusive or preferential supply across several staples — the difference between a portfolio brand and a reseller?",
+        "Is the foodservice/restaurant channel part of the plan from the start, or a later expansion?"
+      ]
+    },
+    {
+      "id": "heated-workwear-for-outdoor-trades",
+      "title": "Heated workwear for outdoor trades",
+      "owner": "Dave",
+      "status": "analyzed",
+      "oneLiner": "A B2B safety-and-comfort line of heated jackets, gloves and insoles for construction, utility and energy crews working outdoors all winter.",
+      "tags": [
+        "apparel",
+        "B2B",
+        "industrial",
+        "import"
+      ],
+      "scores": {
+        "market": {
+          "score": 5,
+          "confidence": "med",
+          "why": "The heated-clothing market is ~US$383M in 2025 and ~US$416M in 2026 (9.17% CAGR to ~US$840M by 2034), with industrial/workwear a core demand segment alongside recreation. It's a modest market overall, but the B2B trades slice carries higher per-unit value and clear cold-climate pull.",
+          "sources": [
+            "https://www.fortunebusinessinsights.com/heated-clothing-market-103861"
+          ]
+        },
+        "entry": {
+          "score": 4,
+          "confidence": "med",
+          "why": "Sourcing product from China is easy; the hard part is competing where tradespeople already buy — inside tool-brand battery ecosystems — and meeting industrial/FR safety requirements for regulated worksites. Credibility with safety buyers, not manufacturing, is the barrier.",
+          "sources": [
+            "https://www.protoolreviews.com/best-heated-jacket-reviews/"
+          ]
+        },
+        "cost": {
+          "score": 5,
+          "confidence": "med",
+          "why": "Moderate: sourced product, inventory, and the cost of building a B2B sales motion into procurement and safety departments. Certification for any FR/industrial-rated lines adds expense but is a one-time gate.",
+          "sources": []
+        },
+        "saturation": {
+          "score": 3,
+          "confidence": "high",
+          "why": "The trades segment is owned by entrenched brands — Milwaukee (M12-battery heated gear), Bosch (12V), plus Ororo, ActionHeat and Fieldsheer — several of which lock buyers in through their power-tool battery systems. A standalone entrant fights uphill against that ecosystem lock-in.",
+          "sources": [
+            "https://www.protoolreviews.com/best-heated-jacket-reviews/"
+          ]
+        },
+        "moat": {
+          "score": 3,
+          "confidence": "med",
+          "why": "Weak. A China-sourced rebrand has little defensibility against incumbents that own battery ecosystems and jobsite brand trust. The one credible edge is a direct channel into specific industrial/energy employers — a relationship moat, not a product one.",
+          "sources": []
+        },
+        "margins": {
+          "score": 5,
+          "confidence": "med",
+          "why": "B2B workwear margins are reasonable, and bulk employer orders reduce per-sale acquisition cost — but incumbents compete hard on price and ecosystem value, capping pricing power for a new brand.",
+          "sources": []
+        },
+        "founderFit": {
+          "score": 6,
+          "confidence": "med",
+          "why": "One of the better fits: China sourcing plus marketing, and an industrial/energy background that is a genuine channel into the outdoor-trades and energy-crew buyer. Offset by entrenched tool-brand incumbents and no apparel-industry experience.",
+          "sources": []
+        },
+        "risk": {
+          "score": 4,
+          "confidence": "med",
+          "why": "Elevated: entrenched, ecosystem-locked incumbents, safety-certification requirements, and thin product differentiation. Downside capital is contained, but winning share from Milwaukee-class brands in their core segment is genuinely hard.",
+          "sources": [
+            "https://www.protoolreviews.com/best-heated-jacket-reviews/"
+          ]
+        }
+      },
+      "businessCase": {
+        "summary": "A B2B heated-workwear line — jackets, gloves, insoles — sold to construction, utility and energy employers whose crews work outdoors through deep winters. The category is China-manufactured and growing (~US$416M in 2026, 9.17% CAGR), and the cold-climate, occupational-safety angle is a real, budgeted purchase. But the trades segment is exactly where incumbents are strongest — Milwaukee and Bosch tie heated gear to their power-tool battery ecosystems, and Ororo/ActionHeat/Fieldsheer hold the rest — so differentiation is thin and the credible edge is a direct relationship channel into industrial/energy employers rather than the product itself.",
+        "customer": "Procurement and safety managers at construction firms, utilities and energy/industrial operators buying winter gear for outdoor crews in bulk — a B2B, budgeted, repeat purchase rather than a consumer impulse.",
+        "market": "Heated clothing is ~US$383M (2025) and ~US$416M (2026), growing 9.17% to ~US$840M by 2034, with industrial/workwear a core segment. The trades slice is higher-value per unit, and cold-climate regions with large outdoor workforces are the natural beachhead.",
+        "model": "Bulk B2B sales of heated garments and accessories to employers, with replacement/consumable cycles (batteries, gloves, insoles) and potential managed-supply or rental arrangements for larger fleets.",
+        "goToMarket": "Sell directly into industrial/energy employers through safety and procurement channels, using a cold-climate, productivity-and-safety pitch and pilot deployments with a few crews to prove comfort, uptime and cost. Expand by reference within the sector.",
+        "costs": "Sourced inventory, any FR/industrial certification, and the cost of a B2B field-sales motion. Working capital for inventory; no major capex.",
+        "risks": "Ecosystem-locked incumbents (tool-battery brands) owning the exact buyer; certification hurdles for regulated worksites; thin product differentiation against cheaper marketplace options; and the challenge of unseating trusted jobsite brands. The relationship channel is the whole thesis — without it, this is a commodity rebrand.",
+        "nextSteps": "1) Validate the buyer: interview safety/procurement leads at a few industrial/energy employers on current gear, spend and pain. 2) Confirm which lines need FR/industrial certification and the cost/time to get it. 3) Pilot with 1-2 crews to prove uptime and comfort in deep cold. 4) Secure a reliable China supply/OEM partner with the required quality. 5) Decide whether the wedge is a specific sector (e.g. energy) rather than trades broadly."
+      },
+      "clarifyingQuestions": [
+        "What is the wedge against Milwaukee/Bosch battery-ecosystem lock-in — a specific industrial/energy employer channel, or a product edge they lack?",
+        "Which lines require FR/industrial safety certification, and are we prepared to fund that gate?",
+        "Is the beachhead one sector (e.g. energy crews) where we have a direct route in, rather than 'outdoor trades' broadly?"
+      ]
+    },
+    {
+      "id": "cold-rated-heated-apparel-brand",
+      "title": "Cold-rated heated-apparel brand",
+      "owner": "Dave",
+      "status": "analyzed",
+      "oneLiner": "A Canadian brand engineering and marketing heated layers for genuine -30 C conditions, sold DTC and through outdoor retail.",
+      "tags": [
+        "apparel",
+        "DTC",
+        "consumer",
+        "import"
+      ],
+      "scores": {
+        "market": {
+          "score": 5,
+          "confidence": "med",
+          "why": "The heated-clothing market is ~US$416M in 2026 (9.17% CAGR to ~US$840M by 2034), spanning recreation, commuting and winter sport. A real, growing consumer category, but modest in size and the cold-rated consumer slice is a niche within it.",
+          "sources": [
+            "https://www.fortunebusinessinsights.com/heated-clothing-market-103861"
+          ]
+        },
+        "entry": {
+          "score": 5,
+          "confidence": "med",
+          "why": "Easy to start — source from China, build a DTC brand — but consumer apparel is marketing-cost-heavy and standing out requires real brand and product credibility, not just a listing.",
+          "sources": []
+        },
+        "cost": {
+          "score": 5,
+          "confidence": "med",
+          "why": "Moderate: sourced product, inventory and packaging, with customer-acquisition spend the dominant and ongoing cost of a consumer DTC play. Seasonality concentrates both sales and cash needs.",
+          "sources": []
+        },
+        "saturation": {
+          "score": 2,
+          "confidence": "high",
+          "why": "Very crowded. Ororo, ActionHeat and a flood of marketplace brands already serve consumer heated apparel, and price competition on generic China-OEM product is fierce. A new consumer brand enters a noisy, discount-prone field.",
+          "sources": [
+            "https://www.protoolreviews.com/best-heated-jacket-reviews/"
+          ]
+        },
+        "moat": {
+          "score": 3,
+          "confidence": "med",
+          "why": "Thin. A '-30 C cold-rated' positioning is a marketing angle more than a defensible one — the underlying product is China-OEM and copyable. Brand and a genuine cold-performance reputation are the only durable differentiators.",
+          "sources": []
+        },
+        "margins": {
+          "score": 5,
+          "confidence": "med",
+          "why": "DTC apparel margins can be healthy, but high customer-acquisition cost in a crowded, discount-driven category and seasonal inventory risk pull blended margins down to moderate.",
+          "sources": []
+        },
+        "founderFit": {
+          "score": 5,
+          "confidence": "med",
+          "why": "Partial. China sourcing and marketing strength help, but consumer apparel DTC is a brutal, CAC-driven discipline outside the team's experience, and there is no in-house apparel or outdoor-brand background.",
+          "sources": []
+        },
+        "risk": {
+          "score": 4,
+          "confidence": "med",
+          "why": "Elevated by a crowded field, high acquisition costs, seasonality and thin differentiation. Capital downside is contained, but consumer-brand failure-to-stand-out is the likely outcome without a sharp wedge.",
+          "sources": []
+        }
+      },
+      "businessCase": {
+        "summary": "A Canadian consumer brand for battery-heated layers engineered and marketed specifically for genuine extreme cold (-30 C), sold DTC and through outdoor retail. The category is China-manufactured and growing (~US$416M in 2026, 9.17% CAGR), and a credibly cold-rated Canadian identity is a plausible angle. But consumer heated apparel is already crowded with Ororo, ActionHeat and a flood of marketplace brands, the product is copyable China-OEM, and success depends on standing out through brand and marketing in a discount-prone field — a hard, CAC-heavy game outside the team's experience.",
+        "customer": "Canadians facing real winter — winter commuters, outdoor-recreation and cold-weather-sport enthusiasts, and gift buyers — reached DTC and through outdoor/sporting retail.",
+        "market": "Heated clothing is ~US$416M in 2026, growing 9.17% to ~US$840M by 2034, across recreation, commuting and sport. The cold-rated consumer niche is a slice of that, with a Canadian extreme-cold identity as the differentiator.",
+        "model": "DTC-led sales of heated jackets, vests and accessories with a seasonal peak, plus outdoor-retail wholesale; accessories and batteries provide some repeat revenue. Brand and content marketing drive acquisition.",
+        "goToMarket": "Launch DTC with a credible cold-performance story (real -30 C testing, Canadian identity), seed through winter-sport and outdoor creators, then expand into outdoor/sporting retail. Manage the seasonal demand curve with pre-season and gifting pushes.",
+        "costs": "Sourced product, seasonal inventory, packaging and — dominant — customer-acquisition and brand marketing. Working capital is concentrated ahead of winter.",
+        "risks": "A crowded, discount-prone category; high CAC; strong seasonality and inventory risk; and thin, copyable differentiation. Without a sharp, believable wedge, a new consumer brand struggles to be seen.",
+        "nextSteps": "1) Define the wedge — is '-30 C, Canadian-tested' enough, and can we prove it? 2) Source OEM product that genuinely performs in extreme cold. 3) Test DTC demand and CAC with a small pre-season campaign. 4) Line up a few outdoor-retail accounts as a second channel. 5) Model the seasonal cash cycle before committing inventory."
+      },
+      "clarifyingQuestions": [
+        "Is a '-30 C Canadian-tested' identity a strong enough wedge against Ororo/ActionHeat, and can we substantiate the cold-performance claim?",
+        "DTC-first or outdoor-retail-first — where do we anchor given heavy seasonality and CAC?",
+        "What repeat-purchase mechanic (accessories, batteries, refresh cycle) offsets a once-a-season consumer buy?"
+      ]
+    },
+    {
+      "id": "prairie-robotic-mower-dealer-install-network",
+      "title": "Prairie robotic-mower dealer & install network",
+      "owner": "Dave",
+      "status": "analyzed",
+      "oneLiner": "Become the regional sales-plus-install-plus-winterization channel for a leading wire-free brand across Canadian suburban and acreage markets, where robots need setup and seasonal storage.",
+      "tags": [
+        "robotics",
+        "distribution",
+        "services",
+        "import"
+      ],
+      "scores": {
+        "market": {
+          "score": 6,
+          "confidence": "med",
+          "why": "The North-American robotic-mower market is ~US$1.28B in 2025, growing to ~US$2.02B by 2034 (5.2% CAGR), and North America holds only ~30% of the global market to Europe's ~43% despite far larger lawns — headroom rather than a ceiling. Dealers with install and service are exactly what this uptime-dependent product needs.",
+          "sources": [
+            "https://www.gminsights.com/industry-analysis/north-america-robotic-lawn-mower-market",
+            "https://www.persistencemarketresearch.com/market-research/robotic-lawn-mower-market.asp"
+          ]
+        },
+        "entry": {
+          "score": 6,
+          "confidence": "med",
+          "why": "Low barrier to becoming an authorized dealer/installer: the capital needs are demo/inventory stock, service vans and technicians, not technology, and the work is operational rather than requiring a product to be built.",
+          "sources": []
+        },
+        "cost": {
+          "score": 5,
+          "confidence": "med",
+          "why": "Moderate: demo/inventory stock, install and service capability, and seasonal storage handling. Capital scales with coverage area; the season is short in the Prairies, concentrating revenue and utilisation.",
+          "sources": []
+        },
+        "saturation": {
+          "score": 5,
+          "confidence": "med",
+          "why": "Dealer and service networks in North America still appear to be forming, and thin on the Prairies specifically — relatively open ground compared with the crowded product-brand layer, so first movers can build local coverage before it fills in.",
+          "sources": []
+        },
+        "moat": {
+          "score": 3,
+          "confidence": "med",
+          "why": "A dealership has weak structural defensibility — it depends on the OEM brand, which can add or reassign channel — and local service relationships plus install density are the only real stickiness. Exclusive territory rights, if obtainable, would help.",
+          "sources": []
+        },
+        "margins": {
+          "score": 4,
+          "confidence": "med",
+          "why": "Distribution and service margins are thinner than product or software; hardware resale is low-margin and the recurring value sits in install, service contracts and winterization. Blended margins are modest and labour-bound.",
+          "sources": []
+        },
+        "founderFit": {
+          "score": 5,
+          "confidence": "med",
+          "why": "Moderate. China sourcing/import relationships aid OEM access and supply, and general business management applies — but a dealer/install/service operation is a local field-operations play, with hands-on seasonal service outside the team's background.",
+          "sources": []
+        },
+        "risk": {
+          "score": 5,
+          "confidence": "med",
+          "why": "Contained but real: a short Prairie mowing season, dependence on the chosen OEM, and the operational drag of install/service/storage. Downside is limited to inventory and setup capital; the model is proven elsewhere, lowering execution risk.",
+          "sources": []
+        }
+      },
+      "businessCase": {
+        "summary": "A regional dealer-and-service business for wire-free robotic mowers across the Prairies — selling, installing, servicing and winter-storing robots for suburban and acreage homeowners. North America is an under-penetrated, growing market (~US$1.28B in 2025 → ~US$2.02B by 2034) versus a far more mature Europe, and these uptime-dependent products genuinely need local install and service that dealer networks provide. The catch: a dealership's moat is weak (OEM-dependent, thin margins), and a short Prairie season concentrates revenue — so the play is to lock up local coverage early and build service density before the channel fills in.",
+        "customer": "Suburban and acreage homeowners (and small commercial/estate lots) in Prairie markets who want hands-free lawn care but need setup, service and seasonal storage — plus, over time, landscapers reselling installs.",
+        "market": "North-American robotic mowers are ~US$1.28B in 2025 heading to ~US$2.02B by 2034 (5.2% CAGR); North America holds ~30% of the global market to Europe's ~43% despite larger lawns. Install/service coverage appears thin on the Prairies specifically, leaving open channel ground.",
+        "model": "Hardware sales margin plus higher-value recurring revenue: professional install, service/maintenance contracts, seasonal winterization and storage, and spares. Territory exclusivity with an OEM, if secured, strengthens the position.",
+        "goToMarket": "Partner with a leading wire-free OEM as an authorized dealer, target affluent suburban/acreage neighbourhoods with demo-led selling, and build a reputation for reliable install and service that drives referrals and repeat/upgrade sales.",
+        "costs": "Demo and inventory stock, service vans, technicians, and storage/winterization capacity — capital that scales with coverage. Utilisation is seasonal in the Prairies.",
+        "risks": "OEM dependence (the brand controls the channel and can dilute it), thin distribution/service margins, and a short mowing season that limits utilisation. Weak service coverage would drive returns; strong service is the whole differentiator.",
+        "nextSteps": "1) Secure an authorized-dealer (ideally territory-exclusive) agreement with a leading wire-free OEM. 2) Model unit economics of hardware + install + service + storage against the short season. 3) Pilot install/service with a first cohort in one affluent market. 4) Build the service and winterization workflow that becomes the moat. 5) Test a landscaper-reseller channel to extend reach."
+      },
+      "clarifyingQuestions": [
+        "Can we secure territory-exclusive dealer rights with a leading OEM — the difference between a defensible position and a replaceable reseller?",
+        "Do the unit economics work against a short Prairie season, with service/storage carrying the margin?",
+        "Do we build direct-to-homeowner, or sell installs through existing landscapers as the channel?"
+      ]
+    },
+    {
+      "id": "robot-mowing-as-a-service-for-estates-hoas",
+      "title": "Robot-mowing-as-a-service for estates & HOAs",
+      "owner": "Dave",
+      "status": "analyzed",
+      "oneLiner": "Own the robots and sell a flat-fee 'always-cut lawn' subscription to large-lot homeowners, condo boards and HOAs instead of selling hardware.",
+      "tags": [
+        "robotics",
+        "services",
+        "subscription",
+        "import"
+      ],
+      "scores": {
+        "market": {
+          "score": 6,
+          "confidence": "med",
+          "why": "Piggybacks a growing robotic-mower market (North America ~US$1.28B in 2025 → ~US$2.02B by 2034) but sells into the far larger lawn-maintenance services spend by replacing labour with owned robots. The robot-enabled service slice is new and largely unserved.",
+          "sources": [
+            "https://www.gminsights.com/industry-analysis/north-america-robotic-lawn-mower-market"
+          ]
+        },
+        "entry": {
+          "score": 4,
+          "confidence": "med",
+          "why": "Operationally demanding: deploying, monitoring and maintaining robot fleets across many sites, guaranteeing reliability, and handling exceptions. It's a field-operations business to stand up, not a product to sell.",
+          "sources": []
+        },
+        "cost": {
+          "score": 4,
+          "confidence": "med",
+          "why": "Capital-heavy up front — you buy and own the robot fleet — with payback spread over multi-season subscriptions, plus service and monitoring overhead. Cash needs precede recurring revenue.",
+          "sources": []
+        },
+        "saturation": {
+          "score": 6,
+          "confidence": "med",
+          "why": "Few dedicated robot-mowing-service operators exist in Canada, and landscaping is fragmented — open ground for a reliability-led subscription, provided the operating model works.",
+          "sources": []
+        },
+        "moat": {
+          "score": 4,
+          "confidence": "med",
+          "why": "Route density, multi-season contracts and a reliability reputation create some stickiness, but traditional landscapers can adopt the same robots — the advantage is operational execution and being early, not a structural barrier.",
+          "sources": []
+        },
+        "margins": {
+          "score": 5,
+          "confidence": "med",
+          "why": "Recurring subscription revenue is higher-quality than one-off hardware sales, but robot depreciation, maintenance, monitoring and exception-handling labour temper it. Margins improve with route density and fleet utilisation.",
+          "sources": []
+        },
+        "founderFit": {
+          "score": 4,
+          "confidence": "med",
+          "why": "Limited. A fleet-service operation is ops-heavy and outside the team's experience, and China sourcing matters far less to a service model than to an import one. General business management applies, but the core competency required isn't on the team.",
+          "sources": []
+        },
+        "risk": {
+          "score": 4,
+          "confidence": "med",
+          "why": "Capital tied up in depreciating robots before demand is proven, reliability/liability exposure across many sites, a short mowing season, and unproven unit economics for the service model. Higher risk than a capital-light dealer or brand play.",
+          "sources": []
+        }
+      },
+      "businessCase": {
+        "summary": "A robot-mowing service that owns the robots and sells a flat-fee 'always-cut lawn' subscription to large-lot homeowners, condo boards and HOAs — attacking the large lawn-maintenance services spend by swapping labour for owned automation. Few dedicated operators exist and landscaping is fragmented, so the whitespace is real. But it is a capital-heavy, operationally demanding field business — you fund and maintain the fleet before recurring revenue matures — the unit economics are unproven, the season is short, and the required field-operations competency sits outside the team.",
+        "customer": "Large-lot and estate homeowners, condo boards and HOAs that value a maintained lawn without managing equipment or crews, and will pay a recurring flat fee for guaranteed results.",
+        "market": "Built on the growing robotic-mower market (North America ~US$1.28B in 2025 → ~US$2.02B by 2034, 5.2% CAGR) but monetising the much larger lawn-care services spend. Robot-enabled mowing-as-a-service is an early, largely unserved model in Canada.",
+        "model": "Recurring monthly/seasonal subscription per property, with the operator owning and maintaining the robots; margin improves with route density and multi-season retention. Upsell adjacent services (edging, snow) to raise per-customer value.",
+        "goToMarket": "Target dense pockets of large-lot properties and HOA/condo clusters to build route density fast, lead with reliability and a flat 'never-mow-again' promise, and expand by neighbourhood reference.",
+        "costs": "Up-front fleet purchase, ongoing maintenance, monitoring and exception-handling labour, plus seasonal storage. Capital precedes recurring revenue, so financing the fleet is central.",
+        "risks": "Unproven service unit economics, capital sunk in depreciating robots, reliability/liability across many sites, a short season, and the ease with which incumbent landscapers can adopt the same robots. Execution and route density decide it.",
+        "nextSteps": "1) Model fleet unit economics — robot cost, sites per robot, retention, season length — before buying anything. 2) Pilot a single dense cluster (one HOA or neighbourhood) to test reliability and cost-to-serve. 3) Validate willingness to pay a recurring flat fee versus buying a robot outright. 4) Decide the fleet-financing approach. 5) Identify which adjacent services (e.g. snow) extend the contract to year-round."
+      },
+      "clarifyingQuestions": [
+        "Do the fleet unit economics (robot cost, sites served per robot, retention, short season) actually pencil versus just selling homeowners a robot?",
+        "Can we build enough route density in one cluster to make service cost-to-serve work?",
+        "What stops an incumbent landscaper from adopting the same robots and out-executing on local relationships?"
+      ]
+    },
+    {
+      "id": "four-season-yard-robot-bundle",
+      "title": "Four-season yard-robot bundle",
+      "owner": "Dave",
+      "status": "analyzed",
+      "oneLiner": "One robot base with seasonal attachments — mowing in summer, leaf/snow tools in winter — sold as a single year-round subscription.",
+      "tags": [
+        "robotics",
+        "subscription",
+        "services",
+        "import"
+      ],
+      "scores": {
+        "market": {
+          "score": 6,
+          "confidence": "med",
+          "why": "Combines the robotic-mower market (North America ~US$1.28B in 2025 → ~US$2.02B by 2034) with the emerging autonomous snow-clearing category, and the year-round framing directly answers the short-season problem that limits mower-only economics in Canada. Multi-function robot platforms already exist to build on.",
+          "sources": [
+            "https://www.gminsights.com/industry-analysis/north-america-robotic-lawn-mower-market"
+          ]
+        },
+        "entry": {
+          "score": 4,
+          "confidence": "med",
+          "why": "Depends on a capable multi-function robot platform (mow plus snow/leaf), which today means a narrow set of premium, largely single-vendor hardware — or integrating multiple products into one offer. Technically and operationally demanding to assemble.",
+          "sources": []
+        },
+        "cost": {
+          "score": 4,
+          "confidence": "med",
+          "why": "Capital-heavy: multi-function robots are expensive (premium autonomous snow-capable units run into the thousands), and a fleet-or-inventory model plus service ties up cash before subscription revenue matures.",
+          "sources": []
+        },
+        "saturation": {
+          "score": 6,
+          "confidence": "med",
+          "why": "Essentially no one offers a bundled four-season robotic yard-care subscription in Canada — genuinely novel ground. The components exist; the integrated, year-round Canadian offer does not.",
+          "sources": []
+        },
+        "moat": {
+          "score": 4,
+          "confidence": "med",
+          "why": "The bundle, the year-round subscription relationship and service create some stickiness, but the underlying robots come from OEMs and the concept is replicable. Being first and owning the customer relationship is the edge, not a structural barrier.",
+          "sources": []
+        },
+        "margins": {
+          "score": 5,
+          "confidence": "med",
+          "why": "A year-round subscription smooths revenue and lifts lifetime value versus a single-season product, but hardware cost, depreciation and service overhead keep blended margins moderate.",
+          "sources": []
+        },
+        "founderFit": {
+          "score": 5,
+          "confidence": "med",
+          "why": "Mixed. China sourcing helps procure the robots and general business/ops management applies, and the smart year-round Canadian framing plays to a market the team understands — but the hands-on field-service operation is outside the team's experience.",
+          "sources": []
+        },
+        "risk": {
+          "score": 3,
+          "confidence": "med",
+          "why": "Bleeding-edge hardware reliability, high per-unit cost, capital ahead of revenue, and dependence on immature multi-function robot platforms. Novel and appealing, but unproven — the execution and hardware risk are real.",
+          "sources": []
+        }
+      },
+      "businessCase": {
+        "summary": "A four-season robotic yard-care offer: one robot base with seasonal attachments (mowing in summer, leaf and snow clearing in winter) sold as a single year-round subscription. The framing is smart for Canada — it directly solves the short-mowing-season economics that limit mower-only plays by adding winter revenue — and no one offers an integrated four-season robotic yard subscription here. But it leans on immature, expensive multi-function robot platforms (premium autonomous snow-capable units cost thousands), is capital- and operations-heavy, and the field-service competency sits outside the team, so it is novel and appealing but unproven.",
+        "customer": "Suburban and acreage homeowners (and condo/estate lots) who want hands-free yard care all year — mowing in summer, snow and leaves in winter — and will pay a single recurring fee to never think about it.",
+        "market": "Bridges the growing robotic-mower market (North America ~US$1.28B in 2025 → ~US$2.02B by 2034, 5.2% CAGR) and the emerging autonomous snow-clearing category. The year-round bundle turns a seasonal product into a continuous relationship, uniquely suited to cold, snowy markets.",
+        "model": "A single year-round subscription covering hardware, seasonal attachments and service, with the operator owning or financing the robots; year-round billing smooths cash flow and raises lifetime value versus a single-season sale.",
+        "goToMarket": "Lead with the year-round 'set-and-forget yard' promise in snowy suburban/acreage markets, prove reliability across a first cohort in both mowing and snow seasons, and expand by neighbourhood reference once the multi-season experience is validated.",
+        "costs": "Expensive multi-function robots (fleet or inventory), seasonal attachments, and service/monitoring capacity — significant capital ahead of subscription revenue, plus the support burden of early-generation hardware.",
+        "risks": "Immature, single-vendor multi-function hardware and its reliability; high per-unit cost; capital sunk before revenue; and the operational drag of year-round field service. The concept is novel but rests on hardware that is only just becoming capable.",
+        "nextSteps": "1) Assess whether a capable multi-function platform (mow + snow) is reliable and available enough to build on today. 2) Model the year-round subscription economics including expensive hardware and depreciation. 3) Pilot one cohort across both a mowing and a snow season to prove reliability. 4) Test willingness to pay a single year-round fee. 5) Decide own-fleet versus financed-hardware structure."
+      },
+      "clarifyingQuestions": [
+        "Is there a multi-function robot platform reliable and available enough to build a four-season offer on now, or is this a year or two early?",
+        "Does the year-round subscription economics work given expensive, fast-depreciating hardware?",
+        "Own-and-operate the fleet, or sell/finance the hardware to homeowners with a service wrap?"
       ]
     }
   ]
