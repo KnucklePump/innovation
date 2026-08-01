@@ -820,6 +820,11 @@ function myRoleScore(roleId) {
   const mine = arr.find(v => v.name === state.voter && v.score > 0);
   return mine ? mine.score : null;
 }
+// Team totals stay hidden until the current voter has set their own interest
+// (at least one saved rating) — same anchoring guard as the Idea Board.
+function hasSetInterest() {
+  return !!state.voter && state.roles.some(r => myRoleScore(r.id) != null);
+}
 
 function renderTeam() {
   const view = $("#view");
@@ -889,17 +894,27 @@ function renderTeam() {
       </tbody>
     </table></div>`;
 
+  // The team totals + breakdown reveal only once the current voter has rated,
+  // so nobody anchors their own interest on what the group already picked.
+  const revealed = hasSetInterest();
+  const aggregates = revealed
+    ? `<div class="quad" style="margin-top:26px">
+         <h3>Total interest by role <span class="muted">— sum of everyone's 1–10 ratings (max ${nVoters * 10})</span></h3>
+         <div class="card" style="margin-bottom:0">${rankBars}</div>
+       </div>
+       <h3 class="board-section" style="margin-top:26px">Who's interested in what</h3>
+       ${matrix}`
+    : `<div class="card locked-reveal" style="margin-top:26px">
+         <h3>Team totals & who's interested</h3>
+         <p class="muted" style="margin-bottom:0">🔒 Set and save your own interest above to reveal the group's totals and the full breakdown. You rate before you see how everyone else did — that keeps the interest levels honest.</p>
+       </div>`;
+
   view.innerHTML = `
     <div class="list-head">
       <div><h2>Team & Roles</h2><p class="muted">${esc(state.roleMeta.subtitle || "Rate your interest in each role; the board totals everyone's scores to show where the group's interest is concentrated.")}</p></div>
     </div>
-    <div class="quad">
-      <h3>Total interest by role <span class="muted">— sum of everyone's 1–10 ratings (max ${nVoters * 10})</span></h3>
-      <div class="card" style="margin-bottom:0">${rankBars}</div>
-    </div>
     ${mineCard}
-    <h3 class="board-section" style="margin-top:26px">Who's interested in what</h3>
-    ${matrix}`;
+    ${aggregates}`;
 
   // ----- Slider wiring: moving a slider marks the role as rated -----
   view.querySelectorAll(".role-set").forEach(el => {
