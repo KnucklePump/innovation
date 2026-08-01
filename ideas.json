@@ -2558,6 +2558,96 @@
         "Does the year-round subscription economics work given expensive, fast-depreciating hardware?",
         "Own-and-operate the fleet, or sell/finance the hardware to homeowners with a service wrap?"
       ]
+    },
+    {
+      "id": "local-scene-music-membership",
+      "title": "Local-Scene Music Membership",
+      "owner": "Dave",
+      "status": "analyzed",
+      "oneLiner": "A membership platform for local music scenes: fans discover new and unsigned bands in their own city through free streaming, then pay to become members of the bands they love — unlocking downloads, early releases, direct messages and real-world perks like presale tickets and guest lists, with bands keeping the overwhelming majority of the money.",
+      "tags": [
+        "music",
+        "marketplace",
+        "creator-economy",
+        "live-events",
+        "app"
+      ],
+      "scores": {
+        "market": {
+          "score": 6,
+          "confidence": "med",
+          "why": "Direct-to-fan is a proven, growing behaviour: the fan-funding platforms market is put at ~US$2.38B in 2024 rising to ~US$7.22B by 2033 (13.2% CAGR), and Bandcamp alone has paid artists and labels ~US$1.5B to date on a fair split. The live-music adjacency is large (global ~US$38.6B in 2025, ~8.8% CAGR). The reachable local artist-to-fan slice is far smaller than those headlines, but the direction and growth are real.",
+          "sources": [
+            "https://growthmarketreports.com/report/fan-funding-platforms-market",
+            "https://www.musicbusinessworldwide.com/bandcamp-fridays-hit-154m-in-payouts-since-2020-with-19m-paid-in-2025-alone/",
+            "https://www.custommarketinsights.com/report/live-music-market/"
+          ]
+        },
+        "entry": {
+          "score": 5,
+          "confidence": "med",
+          "why": "Barriers are commercial, not regulatory: because unsigned bands own their own masters, streaming their original catalogue avoids the major-label licensing wall that blocks a general music service. The real hurdle is a two-sided network with a cold-start — you need bands and fans in the same city at once — plus a software-plus-payments build. The local wedge (each band brings its own fanbase) is a credible way to break that start.",
+          "sources": []
+        },
+        "cost": {
+          "score": 5,
+          "confidence": "med",
+          "why": "This is a software marketplace rather than a capital-heavy hardware or venue play, so upfront cost is moderate: app build, streaming and payments infrastructure, and per-city boots-on-ground work to sign the first bands. Time-to-revenue is slow — supply and demand must both be seeded in a beachhead city before membership income is meaningful — which lengthens the runway even though the capital bet stays contained.",
+          "sources": []
+        },
+        "saturation": {
+          "score": 4,
+          "confidence": "med",
+          "why": "Music fan-attention and wallet share are fiercely contested, and adjacent players already hold pieces of the model: Bandcamp (fair-split direct sales), Patreon (paid membership and perks), Sofar Sounds (curated local live shows), Bandsintown (gig discovery and alerts) and Audius (decentralised streaming). No single incumbent owns the specific bundle of local streaming discovery plus band membership plus live perks, but the neighbourhood is crowded.",
+          "sources": [
+            "https://canvasbusinessmodel.com/blogs/competitors/sofar-sounds-competitive-landscape"
+          ]
+        },
+        "moat": {
+          "score": 5,
+          "confidence": "med",
+          "why": "The durable defensibility is local network density — the compounding of bands, fans and venues within a single city — which is genuinely hard for a global incumbent to replicate scene by scene once it exists. Early on, though, the moat is thin: individual features (memberships, downloads, gig alerts) are copyable, so the platform has to reach community critical mass in a beachhead before that density becomes a real barrier.",
+          "sources": []
+        },
+        "margins": {
+          "score": 6,
+          "confidence": "med",
+          "why": "The take-rate model is healthy in shape — a ~10–15% cut of band memberships (comparable to Patreon's 10% standard fee) plus ticketing and merch commission — with software-marketplace economics. The drag is that absolute revenue per niche city is small, payment processing eats into thin memberships, and scaling is city-by-city seeding rather than zero-marginal-cost software, so blended margins improve only as each scene matures.",
+          "sources": [
+            "https://support.patreon.com/hc/en-us/articles/36426991446797-A-standard-platform-fee-for-new-creators-effective-after-August-4-2025"
+          ]
+        },
+        "founderFit": {
+          "score": 7,
+          "confidence": "med",
+          "why": "A strong fit for this team: genuine music-domain depth (an advanced music-and-psychology academic background on the team, directly relevant to why fans attach to and pay for artists), in-house software build capability to ship a two-sided app and payments without outsourcing the core, and marketing/creative strength for the supply-and-demand seeding a beachhead city needs. The main gap is no stated music-industry operator or local-promoter network among the founders.",
+          "sources": []
+        },
+        "risk": {
+          "score": 4,
+          "confidence": "med",
+          "why": "The downside is contained — this is low-capex software, not a hardware or lease commitment — but the probability of stall is high. It is a two-sided cold-start against entrenched incumbents, and there is direct precedent of failure: Ampled, a musician-focused direct fan-funding platform, launched in 2020 and shut down at the end of 2023 citing burnout and lack of resources. Monetisation ramps slowly, which strains a small team's runway.",
+          "sources": [
+            "https://musically.com/2023/10/23/indie-fan-funding-platform-ampled-will-close-by-end-of-2023/"
+          ]
+        }
+      },
+      "businessCase": {
+        "summary": "A membership platform that reconnects new and unsigned bands directly with the fans in their own city. Listeners discover local artists through free streaming, then pay to become members of the bands they love, unlocking downloads, early releases, direct messages and real-world perks — presale tickets, guest lists and merch. Bands keep the overwhelming majority of the revenue and own the fan relationship outright, replacing the pennies-per-stream economics of the big platforms with fair, direct support.",
+        "customer": "Two sides in one local scene. On the supply side, new, unsigned and emerging bands with an existing pocket of local fans who feel underpaid and disconnected from their audience on Spotify. On the demand side, engaged local-music fans — gig-goers who want to discover bands near them, get closer to the artists, and feel their money actually supports the music.",
+        "market": "Direct-to-fan support is proven and growing. The fan-funding platforms market is estimated at ~US$2.38B in 2024, rising to ~US$7.22B by 2033 (13.2% CAGR), inside a creator economy worth ~US$254B in 2025. Bandcamp has paid artists and labels ~US$1.5B on a fair ~82–85% artist split, showing fans will pay when the cut is right. The real-world half — live music — is large and resurgent: ~US$38.6B globally in 2025 (~8.8% CAGR), with grassroots venues explicitly the layer where emerging talent is discovered. The serviceable slice is the local artist-to-fan segment within these, city by city.",
+        "model": "A marketplace take-rate. The platform keeps ~10–15% of band memberships (in line with Patreon's 10% standard creator fee) and passes the rest to the band, plus commission on ticketing and merch sold through the real-world perks. An optional listener subscription for city-wide streaming access adds a second revenue line. Revenue compounds as each city's roster and fanbase grow.",
+        "goToMarket": "Win one city at a time. Sign a dense cluster of local bands in a single beachhead scene on the model's central bet — that each band brings its own fanbase, seeding demand without competing against a global catalogue. Anchor discovery to the live scene ('bands playing near you') and convert gig-goers with perks they cannot get elsewhere: presales and guest lists. Use the team's marketing strength and artist credibility to recruit the first roster, then let band-to-fan invitations drive organic growth before expanding to the next city. Whether that cross-side pull actually overcomes the two-sided cold-start is the first thing to prove, not assume.",
+        "costs": "Moderate and software-shaped rather than capital-heavy: a two-sided app, streaming and payments infrastructure, and per-city field effort to sign and onboard bands. Ongoing costs are hosting, payment processing, support and local scene development. The larger cost is time — both sides of each city must be seeded before membership revenue becomes meaningful.",
+        "risks": "A two-sided cold-start is the central risk: too few bands and fans won't join, too few fans and bands won't. The space is crowded (Bandcamp, Patreon, Sofar, Bandsintown, Audius) and has a direct failure precedent — Ampled, a musician fan-funding platform, shut down in 2023 after burnout and funding shortfall. Monetisation per niche city is small and ramps slowly, and incumbents could copy individual features before local network density becomes a moat.",
+        "nextSteps": "Validate cheaply before building. (1) Pick one beachhead city and confirm 15–20 local bands will commit to a membership offer at a set price. (2) Pre-sell memberships for a handful of those bands via a no-code page to test fan willingness-to-pay and conversion from a free follow. (3) Run one live-gig tie-in (presale + guest list) to measure whether the real-world perk drives sign-ups. (4) Only then scope the minimum app — streaming, membership, and gig alerts — for that single city."
+      },
+      "clarifyingQuestions": [
+        "Which single city is the beachhead, and do you have an existing route to its local bands and venues (a promoter, a scene contact, a genre community) to seed the first roster?",
+        "Is the core habit streaming-first (compete for listening time) or membership-first (a fan-club people pay for and rarely open) — which one is the product you build around, with the other as support?",
+        "What is the anchor perk that makes a fan pay: the exclusive early music, the direct line to the band, or the live-gig presales and guest lists?",
+        "Do bands sign an exclusive relationship (only reachable to these fans through you) or is the platform additive to their Spotify/Bandcamp presence — and which will bands actually agree to?"
+      ]
     }
   ]
 }
