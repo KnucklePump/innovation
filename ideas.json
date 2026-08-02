@@ -468,6 +468,7 @@
     },
     {
       "id": "asian-flavours",
+      "hasPlan": true,
       "title": "Asian Flavours",
       "owner": "Dave",
       "status": "analyzed",
