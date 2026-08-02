@@ -214,6 +214,8 @@ ul.examples a { font-weight: 700; }
 .voter-pick:focus { outline: none; border-color: var(--accent); }
 .voter-select { max-width: 280px; padding: 11px 13px; border: 1px solid var(--line); border-radius: var(--radius-sm); background: var(--bg); color: var(--ink); font: inherit; cursor: pointer; }
 .voter-select:focus { outline: none; border-color: var(--accent); }
+.join-slack { background: var(--accent); color: #0a0c10; border-color: var(--accent); }
+.join-slack:hover { background: #fb8536; color: #0a0c10; }
 .whoami { font-size: 13px; color: var(--muted); white-space: nowrap; }
 .voter-fixed { display: inline-block; font-weight: 700; color: var(--ink); }
 .team-score { color: var(--team); }
