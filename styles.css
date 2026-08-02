@@ -105,6 +105,7 @@ button.ghost:hover, .ghost:hover { color: var(--ink); border-color: var(--accent
   border-radius: 999px; color: var(--accent); white-space: nowrap; transition: all var(--ease);
 }
 .pill-link:hover { background: var(--accent); color: #0a0c10; text-decoration: none; }
+.plan-link { display: inline-block; margin-top: 12px; background: var(--accent-soft); }
 #signout { font-size: 13px; }
 
 .view { max-width: 1080px; margin: 0 auto; padding: 30px 24px 70px; }
@@ -213,6 +214,8 @@ ul.examples a { font-weight: 700; }
 .voter-pick:focus { outline: none; border-color: var(--accent); }
 .voter-select { max-width: 280px; padding: 11px 13px; border: 1px solid var(--line); border-radius: var(--radius-sm); background: var(--bg); color: var(--ink); font: inherit; cursor: pointer; }
 .voter-select:focus { outline: none; border-color: var(--accent); }
+.whoami { font-size: 13px; color: var(--muted); white-space: nowrap; }
+.voter-fixed { display: inline-block; font-weight: 700; color: var(--ink); }
 .team-score { color: var(--team); }
 .vote-now { display: inline-block; font-size: 11px; font-weight: 800; letter-spacing: .04em; padding: 3px 10px; border-radius: 999px; border: 1px solid var(--accent); color: var(--accent); background: var(--accent-soft); white-space: nowrap; }
 tr:hover .vote-now { background: var(--accent); color: #0a0c10; }

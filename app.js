@@ -1,20 +1,17 @@
 /* Innovation idea board — client-side app.
-   NOTE ON SECURITY: this password gate hides the UI only. The data in ideas.json
-   is still fetchable by anyone who reaches this URL, so ideas.json must never
-   contain the group's private founder descriptions. Keep those in /analysis
-   (which is never deployed). Casual protection only — good enough for a friends group. */
-
-// SHA-256 hex of the group password (the plaintext is never stored here).
-// To change it: run  printf '%s' 'YOUR-PASSWORD' | shasum -a 256  and paste the hash here.
-const PASSWORD_HASH = "2ecfd1b8a9c8e6f2f97748fd28ab531c0491e152108690abab45421d68c35551";
+   NOTE ON SECURITY: the site is authenticated upstream by Cloudflare Access (only the
+   founders' emails can reach it). There is no client-side password gate. ideas.json is
+   still fetchable by anyone who gets THROUGH Access, so keep the group's private founder
+   descriptions out of it — those live in /analysis (never deployed). */
 
 const $ = (s, el = document) => el.querySelector(s);
 const state = { ideas: [], rubric: {}, votes: {}, voters: [], voter: "", sort: { key: "composite", asc: false }, trends: [], trendMeta: {}, trendSort: { key: "created", asc: false }, roles: [], roleMeta: {} };
 let voteCbSeq = 0;
 
-/* ---------- Password gate ----------
-   Self-contained SHA-256 (works on file://, IP, localhost or https alike — no
-   dependency on crypto.subtle, which only exists in a "secure context"). */
+/* ---------- SHA-256 ----------
+   Self-contained (works on file://, IP, localhost or https alike — no dependency on
+   crypto.subtle, which only exists in a "secure context"). Used to match the Cloudflare
+   Access identity email against the founder allow-list without storing plaintext emails. */
 function sha256(ascii) {
   function rightRotate(value, amount) { return (value >>> amount) | (value << (32 - amount)); }
   var mathPow = Math.pow, maxWord = mathPow(2, 32), i, j, result = "", words = [];
@@ -69,54 +66,45 @@ function sha256(ascii) {
 }
 const utf8 = s => unescape(encodeURIComponent(s));
 
-function unlock() {
-  $("#gate").hidden = true;
-  $("#app").hidden = false;
-  boot();
-}
-$("#signout").addEventListener("click", () => {
-  sessionStorage.removeItem("unlocked");
-  location.reload();
-});
-$("#gate-form").addEventListener("submit", (e) => {
-  e.preventDefault();
-  const err = $("#gate-error");
-  const name = $("#gate-voter").value;
-  if (!name) {
-    err.textContent = "Please select your name.";
-    err.hidden = false;
-    return;
-  }
+/* ---------- Identity via Cloudflare Access ----------
+   The site sits behind Cloudflare Access, which authenticates the visitor and exposes their
+   identity at /cdn-cgi/access/get-identity. We map that email to a founder so the board knows
+   "who am I" automatically — no name picker anywhere. Only SHA-256 hashes of the founder emails
+   live here (this repo is public); the plaintext addresses never do. To add/rotate a founder:
+   run  printf '%s' 'their.email@x.com' | shasum -a 256  and add the hash below (lowercase email). */
+const VOTER_BY_EMAIL_HASH = {
+  "3ee516e5ae18201a990b88185b40eeef130a5e8fce79186aba972352c0284e20": "Dave",
+  "e58a8d5f0359593989194666cb9a81c867b9b5c981568c5ed3d222e7971ac98c": "Matt",
+  "93a80fa8e4e00b8a6c2cf51661a14b822fb2a194c21fd99babd5d774ee58ee64": "Graeme",
+  "1430fc986a4954158c76fa5a93e048d4d785a2d22b49558b093049f5726b91a5": "Rick",
+  "2a11040687f87099b8ee6021aca51748083b23fe6a95589ad62a6c7b39ce2e8a": "Nik",
+  "f2b8b429458d2d65ad504a3c09f380cb4ecc19d44562938a4b0455ddccfb2c44": "Kapil",
+};
+async function detectUser() {
+  // Local-preview escape hatch (no Access in front): append ?as=Dave to the URL.
+  const asParam = new URLSearchParams(location.search).get("as");
+  if (asParam) { setVoter(asParam); return; }
   try {
-    if (sha256(utf8($("#gate-input").value)) === PASSWORD_HASH) {
-      setVoter(name);
-      sessionStorage.setItem("unlocked", "1");
-      unlock();
-    } else {
-      err.textContent = "Incorrect password.";
-      err.hidden = false;
+    const id = await fetch("/cdn-cgi/access/get-identity", { credentials: "same-origin" })
+      .then(r => r.ok ? r.json() : null);
+    const email = id && (id.email || (id.identity && id.identity.email));
+    if (email) {
+      state.voterEmail = email;
+      const name = VOTER_BY_EMAIL_HASH[sha256(utf8(email.trim().toLowerCase()))];
+      if (name) { setVoter(name); return; }
     }
-  } catch (ex) {
-    err.textContent = "Something went wrong checking the password: " + ex.message;
-    err.hidden = false;
-  }
-});
-// Populate the gate's name selector from config before unlock (config isn't loaded until boot()).
-async function loadGateVoters() {
-  const sel = $("#gate-voter");
-  if (!sel) return;
-  try {
-    const cfg = await fetch("config.json").then(r => r.json());
-    const remembered = localStorage.getItem("voterName") || "";
-    sel.innerHTML = `<option value="">Select your name…</option>` +
-      (cfg.voters || []).map(n => `<option value="${esc(n)}"${n === remembered ? " selected" : ""}>${esc(n)}</option>`).join("");
   } catch {}
+  // Fallback (local dev / unrecognised login): last remembered name, if any.
+  const remembered = localStorage.getItem("voterName");
+  if (remembered) setVoter(remembered);
 }
-loadGateVoters();
-if (sessionStorage.getItem("unlocked") === "1") unlock();
+// Sign out = drop the Cloudflare Access session (bounces back to the login screen).
+$("#signout").addEventListener("click", () => { location.href = "/cdn-cgi/access/logout"; });
+boot();
 
 /* ---------- Data + scoring ---------- */
 async function boot() {
+  await detectUser(); // resolve "who am I" from Cloudflare Access before first render
   const [ideasRes, cfgRes, trendsRes, rolesRes] = await Promise.all([
     fetch("ideas.json").then(r => r.json()),
     fetch("config.json").then(r => r.json()),
@@ -135,7 +123,7 @@ async function boot() {
   state.roles = (rolesRes && rolesRes.roles) || [];
   state.roleMeta = (rolesRes && rolesRes.meta) || {};
   $("#brand-sub").textContent = (ideasRes.meta && ideasRes.meta.subtitle) || "";
-  setupVoter();
+  renderWhoAmI();
   route();
   loadVotes().then(route); // fill in live tallies without blocking first paint
 }
@@ -146,18 +134,21 @@ window.addEventListener("hashchange", route);
 function setVoter(name) {
   state.voter = name || "";
   localStorage.setItem("voterName", state.voter);
-  const top = $("#voter-pick"); if (top && top.value !== state.voter) top.value = state.voter;
+  renderWhoAmI();
 }
-function voterOptions(placeholder) {
-  const cur = state.voter || "";
-  return `<option value="">${esc(placeholder || "Select your name…")}</option>` +
-    state.voters.map(n => `<option value="${esc(n)}"${n === cur ? " selected" : ""}>${esc(n)}</option>`).join("");
+// Show who Cloudflare Access says you are (replaces the old name picker).
+function renderWhoAmI() {
+  const el = $("#whoami");
+  if (!el) return;
+  el.textContent = state.voter ? `Signed in as ${state.voter}`
+    : (state.voterEmail ? state.voterEmail : "");
 }
-function setupVoter() {
-  const sel = $("#voter-pick");
-  state.voter = localStorage.getItem("voterName") || "";
-  sel.innerHTML = voterOptions("Who are you?");
-  sel.addEventListener("change", () => { setVoter(sel.value); route(); });
+// A fixed, read-only "your name" field — identity comes from Access, so there's nothing to pick.
+// Renders a visible name plus a hidden input so existing form code can still read `.value`.
+function voterFieldHtml(cls, attrs) {
+  const n = state.voter || "";
+  return `<span class="voter-fixed">${esc(n || "not recognised")}</span>` +
+    `<input type="hidden" class="voter-select ${cls || ""}"${attrs || ""} value="${esc(n)}">`;
 }
 // Read live vote tallies from the Apps Script via JSONP (bypasses CORS on a static site).
 function loadVotes() {
@@ -211,7 +202,7 @@ function teamCardHtml(idea) {
          <textarea id="vote-comment" rows="2" placeholder="Why? (optional)">${esc(mine ? mine.comment : "")}</textarea>
          <div class="ans-actions"><button type="button" id="vote-save">${mine ? "Update my rating" : "Save my rating"}</button><span id="vote-note" class="muted"></span></div>
        </form>`
-    : `<p class="muted" style="margin-bottom:0">Pick your name (top-right) to add your rating.</p>`;
+    : `<p class="muted" style="margin-bottom:0">Your login isn't recognised as a founder, so rating is disabled.</p>`;
   return `<div class="card"><h3>Team rating</h3>${summary}${list}${mineForm}</div>`;
 }
 
@@ -441,6 +432,7 @@ function renderDetail(idea) {
         <span>·</span><span>Composite <strong>${c.toFixed(1)}</strong>/10</span>
         ${idea.status ? `<span>·</span><span class="badge">${esc(idea.status)}</span>` : ""}
       </div>
+      ${idea.hasPlan ? `<a class="pill-link plan-link" href="plans/${encodeURIComponent(idea.id)}/index.html">Business Plan →</a>` : ""}
     </div>
     <div class="card prop"><h3>Proposition</h3><p>${esc(idea.oneLiner || "")}</p></div>
     <div class="grid2">
@@ -465,7 +457,7 @@ function renderDetail(idea) {
       <p class="muted" style="margin-top:0">Add detail, answer any open questions, or push back — it goes to the group to sharpen the analysis. Your typing is kept in this browser.</p>
       ${qs.length ? `<ul class="qs">${qs.map(q => `<li>${esc(q)}</li>`).join("")}</ul>` : ""}
       <form id="answers-form">
-        <div class="ans-q"><label>Your name</label><select class="ans-name voter-select">${voterOptions()}</select></div>
+        <div class="ans-q"><label>Your name</label>${voterFieldHtml("ans-name")}</div>
         <div class="ans-q"><label>Clarify / expand the idea</label><textarea id="ans-response" rows="6" placeholder="Add anything useful — context, answers to the questions above, corrections…"></textarea></div>
         <div class="ans-actions">
           <button type="button" id="send-answers">Send</button>
@@ -771,7 +763,7 @@ function renderTrendDetail(t) {
     <div class="card"><h3>Why now</h3><p>${esc(t.why || "")} ${conf}</p>${drivers ? `<p class="drivers">${drivers}</p>` : ""}${src}</div>
     <div class="card"><h3>Business ideas</h3>
       <p class="muted" style="margin-top:0">Concrete plays this trend opens up. Send any to the Idea Board to have it researched and scored.</p>
-      <div class="ans-q"><label>Your name</label><select class="trend-name voter-select">${voterOptions()}</select></div>
+      <div class="ans-q"><label>Your name</label>${voterFieldHtml("trend-name")}</div>
       <div class="trend-ideas">${ideas || '<p class="muted">No ideas listed.</p>'}</div>
     </div>`;
 
@@ -872,7 +864,7 @@ function renderTeam() {
          </div>
          <div class="ans-actions"><button type="button" id="roles-save">Save my interest</button><span id="roles-note" class="muted"></span></div>
        </div>`
-    : `<div class="card"><h3>Your interest</h3><p class="muted" style="margin-bottom:0">Pick your name (top-right) to add your interest levels.</p></div>`;
+    : `<div class="card"><h3>Your interest</h3><p class="muted" style="margin-bottom:0">Your login isn't recognised as a founder, so rating is disabled.</p></div>`;
 
   // ----- Breakdown: who's interested in what (read-only matrix) -----
   const matrix = `
@@ -996,7 +988,7 @@ function renderSubmit() {
       <form id="submit-form">
         ${SUBMIT_FIELDS.map(f => `<div class="ans-q"><label>${esc(f.label)}</label>${
           f.type === "voter"
-            ? `<select data-k="${f.k}" class="voter-select voter-field">${voterOptions()}</select>`
+            ? voterFieldHtml("voter-field", ` data-k="${f.k}"`)
             : f.type === "textarea"
             ? `<textarea data-k="${f.k}" rows="${f.rows || 3}" placeholder="${esc(f.ph || "")}"></textarea>`
             : `<input data-k="${f.k}" type="text" placeholder="${esc(f.ph || "")}" />`}</div>`).join("")}

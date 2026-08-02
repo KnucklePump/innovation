@@ -1,6 +1,6 @@
 {
   "contactEmail": "dave.j.wright@me.com",
-  "voters": ["Rick", "Matt", "Graeme", "Dave"],
+  "voters": ["Rick", "Matt", "Graeme", "Dave", "Nik", "Kapil"],
   "endpoint": "https://script.google.com/macros/s/AKfycbz-ZPFQ9Xexu0yO-9haqAIHoCqLPkTFRvZHTiTwTW1MaGVQI4XWycBBRHFE_GL0AOU_zw/exec",
   "_endpoint_help": "Paste your Google Apps Script Web App URL here (ends in /exec). While blank, the Submit / Send buttons fall back to opening a pre-filled email.",
   "rubric": {
