@@ -263,12 +263,12 @@ function renderList() {
   });
 
   const cols = Object.keys(state.rubric); // all scorecard metrics
-  const th = k => `<th data-key="${k}" class="num ${key === k ? "sorted " + (asc ? "asc" : "") : ""}" title="${esc(state.rubric[k]?.label || k)}">${esc(state.rubric[k]?.short || state.rubric[k]?.label || k)}</th>`;
+  const th = k => `<th data-key="${k}" class="num rot ${key === k ? "sorted " + (asc ? "asc" : "") : ""}" title="${esc(state.rubric[k]?.label || k)}"><span class="rot-h">${esc(state.rubric[k]?.short || state.rubric[k]?.label || k)}</span></th>`;
   const thead = `<thead><tr>
         <th class="num">#</th>
         <th data-key="_title">Idea</th>
-        <th data-key="composite" class="num ${key === "composite" ? "sorted " + (asc ? "asc" : "") : ""}">Composite</th>
-        <th data-key="team" class="num ${key === "team" ? "sorted " + (asc ? "asc" : "") : ""}" title="Team rating (1–10 average)">Team</th>
+        <th data-key="composite" class="num rot ${key === "composite" ? "sorted " + (asc ? "asc" : "") : ""}"><span class="rot-h">Composite</span></th>
+        <th data-key="team" class="num rot ${key === "team" ? "sorted " + (asc ? "asc" : "") : ""}" title="Team rating (1–10 average)"><span class="rot-h">Team</span></th>
         <th title="Open the idea's prospectus (full business case)">Prospectus</th>
         <th title="Open the bankable business plan (if built)">Plan</th>
         ${cols.map(th).join("")}

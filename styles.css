@@ -129,6 +129,13 @@ th.sorted { color: var(--accent); }
 th.sorted::after { content: " ▾"; }
 th.asc::after { content: " ▴"; }
 th.num, td.num { text-align: center; padding-left: 9px; padding-right: 9px; }
+/* Score-column headers (rubric metrics + Composite + Team) render vertically, bottom-up,
+   so the numeric columns stay narrow and the Idea column keeps the width. */
+th.num.rot { vertical-align: bottom; padding: 10px 4px; }
+th.num.rot .rot-h { display: inline-block; writing-mode: vertical-rl; transform: rotate(180deg); white-space: nowrap; letter-spacing: .05em; }
+th.num.rot.sorted::after, th.num.rot.asc::after { content: none; }
+th.num.rot.sorted .rot-h::after { content: " ▾"; }
+th.num.rot.asc .rot-h::after { content: " ▴"; }
 tbody tr { cursor: pointer; transition: background var(--ease); }
 tbody tr:hover { background: var(--panel2); }
 tbody tr:last-child td { border-bottom: none; }
