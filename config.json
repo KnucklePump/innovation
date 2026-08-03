@@ -7,7 +7,7 @@
     "market":     { "label": "Market size & growth",           "short": "Market",  "weight": 1.2 },
     "entry":      { "label": "Ease of entry",                  "short": "Entry",   "weight": 1.0 },
     "cost":       { "label": "Startup cost & time-to-revenue", "short": "Cost",    "weight": 1.0 },
-    "saturation": { "label": "Low saturation",                 "short": "Low sat.", "weight": 0.8 },
+    "saturation": { "label": "Low saturation",                 "short": "Low saturation", "weight": 0.8 },
     "moat":       { "label": "Differentiation / moat",         "short": "Moat",    "weight": 1.0 },
     "margins":    { "label": "Margins & scalability",          "short": "Margins", "weight": 1.1 },
     "founderFit": { "label": "Founder-fit",                    "short": "Fit",     "weight": 1.4 },

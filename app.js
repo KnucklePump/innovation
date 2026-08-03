@@ -269,8 +269,8 @@ function renderList() {
         <th data-key="_title">Idea</th>
         <th data-key="composite" class="num rot ${key === "composite" ? "sorted " + (asc ? "asc" : "") : ""}"><span class="rot-h">Composite</span></th>
         <th data-key="team" class="num rot ${key === "team" ? "sorted " + (asc ? "asc" : "") : ""}" title="Team rating (1–10 average)"><span class="rot-h">Team</span></th>
-        <th title="Open the idea's prospectus (full business case)">Prospectus</th>
-        <th title="Open the bankable business plan (if built)">Plan</th>
+        <th class="num rot" title="Open the idea's prospectus (full business case)"><span class="rot-h">Prospectus</span></th>
+        <th class="num rot" title="Open the bankable business plan (if built)"><span class="rot-h">Plan</span></th>
         ${cols.map(th).join("")}
       </tr></thead>`;
   // Row renderer. `muted` = a discarded row (plain number, not keyed to a chart bubble).
@@ -283,9 +283,9 @@ function renderList() {
             <td class="num">${hasVoted(idea.id)
               ? (teamVotes(idea.id).avg == null ? '<span class="muted">—</span>' : `<span class="composite team-score">${teamVotes(idea.id).avg.toFixed(1)}</span>`)
               : '<span class="vote-now">VOTE NOW</span>'}</td>
-            <td class="num"><a class="row-link" href="#/idea/${encodeURIComponent(idea.id)}" onclick="event.stopPropagation()">View →</a></td>
+            <td class="num"><a class="link-pill prospect" href="#/idea/${encodeURIComponent(idea.id)}" onclick="event.stopPropagation()">PROSPECT</a></td>
             <td class="num">${idea.hasPlan
-              ? `<a class="row-link plan" href="plans/${encodeURIComponent(idea.id)}/index.html" onclick="event.stopPropagation()">Plan →</a>`
+              ? `<a class="link-pill plan" href="plans/${encodeURIComponent(idea.id)}/index.html" onclick="event.stopPropagation()">BUSINESS PLAN</a>`
               : '<span class="muted">—</span>'}</td>
             ${cols.map(k => {
               const s = idea.scores?.[k]?.score;
