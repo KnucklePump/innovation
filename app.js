@@ -269,6 +269,8 @@ function renderList() {
         <th data-key="_title">Idea</th>
         <th data-key="composite" class="num ${key === "composite" ? "sorted " + (asc ? "asc" : "") : ""}">Composite</th>
         <th data-key="team" class="num ${key === "team" ? "sorted " + (asc ? "asc" : "") : ""}" title="Team rating (1–10 average)">Team</th>
+        <th title="Open the idea's prospectus (full business case)">Prospectus</th>
+        <th title="Open the bankable business plan (if built)">Plan</th>
         ${cols.map(th).join("")}
       </tr></thead>`;
   // Row renderer. `muted` = a discarded row (plain number, not keyed to a chart bubble).
@@ -281,6 +283,10 @@ function renderList() {
             <td class="num">${hasVoted(idea.id)
               ? (teamVotes(idea.id).avg == null ? '<span class="muted">—</span>' : `<span class="composite team-score">${teamVotes(idea.id).avg.toFixed(1)}</span>`)
               : '<span class="vote-now">VOTE NOW</span>'}</td>
+            <td class="num"><a class="row-link" href="#/idea/${encodeURIComponent(idea.id)}" onclick="event.stopPropagation()">View →</a></td>
+            <td class="num">${idea.hasPlan
+              ? `<a class="row-link plan" href="plans/${encodeURIComponent(idea.id)}/index.html" onclick="event.stopPropagation()">Plan →</a>`
+              : '<span class="muted">—</span>'}</td>
             ${cols.map(k => {
               const s = idea.scores?.[k]?.score;
               return `<td class="num">${s == null ? "—" : `<span class="score-pill ${scoreClass(s)}">${s}</span>`}</td>`;
@@ -300,7 +306,7 @@ function renderList() {
     <div class="table-wrap"><table>
       ${thead}
       <tbody>
-        ${kept.length ? kept.map((r, i) => rowHtml(r, i + 1, false)).join("") : `<tr><td colspan="${cols.length + 4}" class="muted" style="padding:14px">No ideas 5.0 or above yet.</td></tr>`}
+        ${kept.length ? kept.map((r, i) => rowHtml(r, i + 1, false)).join("") : `<tr><td colspan="${cols.length + 6}" class="muted" style="padding:14px">No ideas 5.0 or above yet.</td></tr>`}
       </tbody>
     </table></div>
     ${discarded.length ? `
@@ -378,13 +384,18 @@ function quadrant(rows) {
     }
     if (!moved) break;
   }
-  const dots = pts.map(p => `<g class="dot" data-id="${esc(p.idea.id)}">
-      <circle cx="${p.cx.toFixed(1)}" cy="${p.cy.toFixed(1)}" r="${p.r}" fill="var(--team)" fill-opacity="0.28" stroke="var(--team)"></circle>
+  // Bubbles turn ORANGE (the brand accent) once an idea has a bankable business plan; the rest
+  // stay in the team colour. Size still encodes the team's average vote.
+  const dots = pts.map(p => {
+    const col = p.idea.hasPlan ? "var(--accent)" : "var(--team)";
+    return `<g class="dot" data-id="${esc(p.idea.id)}">
+      <circle cx="${p.cx.toFixed(1)}" cy="${p.cy.toFixed(1)}" r="${p.r}" fill="${col}" fill-opacity="0.28" stroke="${col}"></circle>
       <text class="dot-num" x="${p.cx.toFixed(1)}" y="${p.cy.toFixed(1)}" text-anchor="middle" dominant-baseline="central">${p.i + 1}</text>
-    </g>`).join("");
+    </g>`;
+  }).join("");
 
   return `<div class="quad">
-    <h3>Attractiveness vs. ease of entry <span class="muted">— bubble size = team's average vote</span></h3>
+    <h3>Attractiveness vs. ease of entry <span class="muted">— bubble size = team's average vote · <span style="color:var(--accent)">orange</span> = has a business plan</span></h3>
     <div class="quad-box"><svg viewBox="0 0 ${W} ${H}" role="img">
       <line x1="${W/2}" y1="${pad}" x2="${W/2}" y2="${H-pad}" stroke="var(--line)"></line>
       <line x1="${pad}" y1="${H/2}" x2="${W-pad}" y2="${H/2}" stroke="var(--line)"></line>
