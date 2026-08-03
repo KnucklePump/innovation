@@ -1811,6 +1811,7 @@
       "title": "Locality Game",
       "owner": "Dave",
       "status": "refined",
+      "hasPlan": true,
       "oneLiner": "A venue-bounded social icebreaker game for events: attendees' phones prompt quick real-world interactions with nearby participants, turning a conference, festival or team offsite into a networking game — sold B2B to the organiser.",
       "tags": [
         "events",
