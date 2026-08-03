@@ -433,6 +433,7 @@ function renderDetail(idea) {
         ${idea.status ? `<span>·</span><span class="badge">${esc(idea.status)}</span>` : ""}
       </div>
       ${idea.hasPlan ? `<a class="pill-link plan-link" href="plans/${encodeURIComponent(idea.id)}/index.html">Business Plan →</a>` : ""}
+      ${idea.hasPitch && idea.pitchUrl ? `<a class="pill-link pitch-link" href="${idea.pitchUrl}" target="_blank" rel="noopener">Pitch ▶</a>` : ""}
     </div>
     <div class="card prop"><h3>Proposition</h3><p>${esc(idea.oneLiner || "")}</p></div>
     <div class="grid2">
