@@ -2757,6 +2757,99 @@
         "The film itself is a crowded, commoditised supply — many Chinese OEMs sell it directly — so what's the wedge: creative/experiential quality, install/integration, a specific vertical (retail, events, museums), or exclusive product?",
         "Which beachhead — retail window displays, brand/event activations, or showrooms/museums — and do we have a route to those buyers?"
       ]
+    },
+    {
+      "id": "cake-photo-food-printer",
+      "title": "Cake Photo Food Printer",
+      "owner": "Dave",
+      "status": "analyzed",
+      "oneLiner": "Import edible-image ('food') printers that print photos onto cakes and sell them to bakeries across Canada, with edible ink and frosting sheets as the recurring-revenue tail.",
+      "tags": [
+        "import",
+        "B2B",
+        "food-service",
+        "hardware",
+        "consumables"
+      ],
+      "scores": {
+        "market": {
+          "score": 5,
+          "confidence": "med",
+          "why": "Real but modest, and hard to size precisely. The edible-printing category is a small niche where market-report estimates vary widely (from tens of millions to a few hundred million USD in 2024) at mid-single to low-double-digit CAGR - directional at best. Canada has roughly 3,900 bakery and tortilla-manufacturing establishments (Ontario ~1,700 and BC ~640 lead), plus a larger tail of retail and grocery in-store bakeries; only a fraction do photo cakes and many already own a printer, so the addressable slice is a small subset of an already-small category.",
+          "sources": [
+            "https://ised-isde.canada.ca/app/ixb/cis/businesses-entreprises/3118",
+            "https://www.cognitivemarketresearch.com/edible-inkjet-ink-market-report"
+          ]
+        },
+        "entry": {
+          "score": 6,
+          "confidence": "med",
+          "why": "Low capital and skill barriers to import and resell, and no licence is needed to sell the hardware. But the edible ink and sheets are food-contact consumables that must meet Health Canada food-additive rules and food-grade certification, which adds compliance overhead, and the market is already served, so getting in is easy while winning customers is not.",
+          "sources": [
+            "https://www.icinginks.com/blog/2023/12/22/edible-ink-safety-what-you-need-to-know-before-decorating"
+          ]
+        },
+        "cost": {
+          "score": 7,
+          "confidence": "high",
+          "why": "Cheap and fast to first revenue. The machines are inexpensive - consumer-grade converted inkjets sell as bundles around $329-465, and a dedicated commercial direct-to-food unit is roughly $2,900 - so a small first import order is low capital at risk with no facility build.",
+          "sources": [
+            "https://www.icinginks.com/edible-cake-printers"
+          ]
+        },
+        "saturation": {
+          "score": 2,
+          "confidence": "high",
+          "why": "Heavily saturated. Established North-American suppliers already ship to Canadian bakeries - Icinginks, Icingimages, Ink4Cakes and Primera (the 'Eddie' printer) - and a Canadian-domiciled seller (Inkedibles.ca) serves the market directly. There is little room for an undifferentiated new importer.",
+          "sources": [
+            "https://www.icinginks.com/shipping-information",
+            "https://inkedibles.ca/"
+          ]
+        },
+        "moat": {
+          "score": 2,
+          "confidence": "high",
+          "why": "Near-zero defensibility. Most 'food printers' are rebranded Canon/Epson inkjets fitted with edible cartridges - commodity hardware with no IP, trivially sourced by anyone, and incumbents already own the consumables channel where the recurring margin sits. Nothing here is hard to copy.",
+          "sources": [
+            "https://www.icinginks.com/edible-cake-printers"
+          ]
+        },
+        "margins": {
+          "score": 4,
+          "confidence": "med",
+          "why": "Thin hardware margins on commodity printers. The genuine margin is the recurring consumables tail - edible ink, cartridges and frosting sheets - but that lane is occupied and price-competitive against domestic and cross-border sellers, so pricing power is limited.",
+          "sources": [
+            "https://www.icinginks.com/edible-cake-printers"
+          ]
+        },
+        "founderFit": {
+          "score": 5,
+          "confidence": "med",
+          "why": "Partial. Strong China-market sourcing access suits the import-and-resell angle and marketing strength helps a B2B brand, but this is bakery-facing consumer-hardware distribution far from the team's core strengths, with no food-service or hardware-distribution operating experience, and the space is already contested.",
+          "sources": []
+        },
+        "risk": {
+          "score": 5,
+          "confidence": "med",
+          "why": "Contained downside - a small first import order keeps capital at risk low - but a commoditised, saturated, low-margin niche with food-safety compliance on the consumables and entrenched incumbents. Little can go badly wrong financially, and little is defensible either.",
+          "sources": []
+        }
+      },
+      "businessCase": {
+        "summary": "Import edible-image 'food' printers - machines that print photographs in edible ink onto icing or frosting sheets applied to cakes - and sell them to bakeries across Canada, with edible ink, cartridges and frosting sheets as a recurring consumables tail. The catch: most of these machines are rebranded consumer Canon/Epson inkjets fitted with edible cartridges (bundles sell for roughly $329-465; a dedicated commercial direct-to-food unit is about $2,900), and the Canadian market is already served by several established North-American suppliers plus a domestic seller. It is cheap and low-risk to start but commoditised, saturated and hard to differentiate.",
+        "customer": "Retail and custom-cake bakeries, grocery in-store bakeries, and cake-decorating / dessert businesses in Canada that offer (or want to offer) photo cakes - plus, on the consumables side, the installed base of bakeries already running edible printers who buy ink and frosting sheets repeatedly.",
+        "market": "Canada has roughly 3,900 bakery and tortilla-manufacturing establishments per ISED (Ontario ~1,700 and BC ~640 lead), plus a larger tail of retail and grocery in-store bakeries, with the category growing low-single-digit percent. The edible-printing niche itself is small and hard to size - market-report estimates for edible inks/printers vary widely (from tens of millions to a few hundred million USD in 2024) at mid-single to low-double-digit CAGR, so treat them as directional. Only a minority of bakeries do photo cakes and many already own a printer, so the addressable slice is a small subset of an already-small category.",
+        "model": "Two linked revenue lines: (1) one-time hardware sales - resell imported edible printers (entry-level converted inkjets through to commercial direct-to-food units) at a hardware margin; (2) the more durable line, recurring consumables - edible ink, cartridges and frosting/wafer sheets sold to the installed base. A managed-service or bundled ink-subscription framing is the only real way to lift it above commodity box-shifting.",
+        "goToMarket": "Direct B2B outreach to independent and grocery bakeries, cake-decorating suppliers and culinary distributors, likely starting in one province (Ontario or BC by bakery density). Trade channels - baking-supply wholesalers, cake-decorating shows, and social proof from a few flagship bakery accounts - reach customers faster than a cold DTC storefront competing on search against incumbents.",
+        "costs": "Low. A small first import order of machines (units are cheap - roughly $329-465 for converted-inkjet bundles up to about $2,900 for a commercial direct-to-food unit), plus working capital for a consumables stock of ink and frosting sheets, food-grade certification/compliance checks, and marketing/sales effort. No facility build and no heavy capex; the main ongoing cost is sales effort and holding consumables inventory.",
+        "risks": "The market is saturated and the product is commoditised - the machines are rebranded consumer inkjets with no IP, and established suppliers (including a Canadian one) already serve bakeries, so differentiation is the core problem and hardware margins are thin. Edible ink and sheets carry Health Canada food-additive/food-grade compliance. Import tariffs, FX and shipping add cost, and the recurring-consumables margin - the only attractive part - is exactly where incumbents are strongest.",
+        "nextSteps": "1) Pin down a real wedge before buying stock - an exclusive or preferential machine-supply line, a bundled ink-subscription/service model, or a specific underserved segment (e.g. grocery in-store bakeries) rather than generic box-shifting. 2) Validate demand cheaply: pre-sell or LOI a handful of bakeries before importing. 3) Confirm the food-grade/Health Canada compliance path for imported edible ink and sheets. 4) Model unit economics split between one-time hardware and recurring consumables - the consumables tail, not the machine, has to carry the business. 5) Lock a reliable Asian supplier and landed-cost (tariff, FX, freight) picture."
+      },
+      "clarifyingQuestions": [
+        "The machines are largely rebranded consumer inkjets and the Canadian market is already served by several North-American suppliers plus a domestic seller - what's the specific wedge (exclusive machine line, ink-subscription/service bundle, or an underserved segment) that isn't trivially copyable?",
+        "Is the real target the one-time hardware sale or the recurring consumables tail (ink, cartridges, frosting sheets)? The consumables are where the durable margin is - and where incumbents are strongest.",
+        "Do we have a route to an exclusive or preferential supply deal from an Asian manufacturer, or are we reselling the same machines any bakery can already buy online?"
+      ]
     }
   ]
 }
