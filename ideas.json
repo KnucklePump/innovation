@@ -2855,7 +2855,7 @@
       "id": "electric-underfloor-heating-strips",
       "title": "Electric Underfloor Heating Strips",
       "owner": "Dave",
-      "status": "analyzed",
+      "status": "refined",
       "oneLiner": "Import dry electric underfloor heating film/mats (no water pipes) that lay under wood and laminate floors, and sell + install them turnkey for Canadian homes.",
       "tags": [
         "import",
@@ -2874,9 +2874,9 @@
           ]
         },
         "entry": {
-          "score": 5,
+          "score": 4,
           "confidence": "med",
-          "why": "Mixed barriers. The product itself is commodity and easily sourced overseas, but selling electrical product in Canada requires CSA/cUL certification, every job needs a licensed electrician for the final connection under electrical code, and you enter against entrenched brands with retail shelf space (Home Depot). Standing up a compliant supply-and-install operation is more than a trivial import play.",
+          "why": "Squeezed on entry. The product is commodity and easy to source, but a new entrant arrives between two established fronts — cheap DIY/retail kits customers can buy and self-install (Home Depot and similar), and incumbent brands plus existing floor installers who already offer heated-floor supply-and-install. Add mandatory CSA/cUL certification and a licensed-electrician connection, and there is little uncontested room to enter.",
           "sources": [
             "https://www.homedepot.ca/en/home/categories/floors/underfloor-heating.html",
             "https://www.warmup.ca/blog/electric-floor-heating-installation"
@@ -2891,24 +2891,24 @@
           ]
         },
         "saturation": {
-          "score": 3,
+          "score": 2,
           "confidence": "high",
-          "why": "A crowded, well-established category. Home Depot Canada stocks kits and multiple specialists already serve Canada (WarmlyYours, Warmup Canada, Nuheat/nVent, ThermoSphere, Canada Mats) across both DIY-retail and pro-install channels. Little open whitespace — you'd be a new entrant in a contested market.",
+          "why": "Highly contested from both sides. On the DIY end, homeowners buy off-the-shelf kits and install them themselves; on the pro end, established brands (WarmlyYours, Warmup, Nuheat/nVent, ThermoSphere, Canada Mats) and existing flooring installers already cover supply-and-install. There is essentially no open lane between the two.",
           "sources": [
             "https://www.homedepot.ca/en/home/categories/floors/underfloor-heating/underfloor-warming-mats-and-kits.html",
             "https://www.warmlyyours.com/en-US/floor-heating/laminate"
           ]
         },
         "moat": {
-          "score": 3,
+          "score": 2,
           "confidence": "med",
-          "why": "Structurally weak. The heating film is commodity, competitors are established, and there's no proprietary technology. A defensible position would have to be built from a local install-and-service reputation plus a sustained overseas cost advantage, not from the product itself.",
+          "why": "No defensible position. The heating film is commodity, incumbents hold the brand and channel, and DIY kits undercut on price — a new supply-and-install entrant has nothing durable to protect it between the homemade and installer options.",
           "sources": []
         },
         "margins": {
-          "score": 5,
+          "score": 4,
           "confidence": "low",
-          "why": "Mixed. Imported film/thermostats can carry healthy product margin and scale through distribution, but the installation half is labour-bound and doesn't scale without adding crews. Blended margin is moderate and partly capped by the labour component.",
+          "why": "Pressured. Cheap DIY kits cap what customers will pay for product, and installer competition compresses the labour margin, while the install half remains labour-bound and non-scalable. Blended margin is thin in a market that competes largely on price.",
           "sources": [
             "https://canadamats.ca/pages/foil-heater-system"
           ]
@@ -2920,28 +2920,26 @@
           "sources": []
         },
         "risk": {
-          "score": 4,
+          "score": 3,
           "confidence": "med",
-          "why": "Elevated-but-contained. A heating element under a customer's floor carries genuine safety, warranty and liability exposure; imported electrical product must be CSA/cUL-certified to be sold or installed legally; the category is crowded; and it's a discretionary renovation purchase that softens in downturns. Downside is bounded by a low-fixed-capital, per-job model, but the competitive and compliance risks are real.",
+          "why": "The competitive squeeze is the dominant failure mode: caught between homemade DIY kits and established floor installers/incumbent brands, the business has no clear wedge, on top of CSA/cUL certification and electrical-liability exposure and a discretionary, cyclical reno purchase. Low fixed capital contains the financial downside, but the path to a viable, differentiated position is not evident.",
           "sources": [
             "https://www.warmup.ca/blog/electric-floor-heating-installation"
           ]
         }
       },
       "businessCase": {
-        "summary": "Electric radiant underfloor heating that needs no water pipes — thin foil/film heating mats laid dry under floating wood and laminate floors — imported and installed turnkey for Canadian homes. Canada's long heating season and a growing electric radiant-heating market (~US$1.6-2.1B globally, ~4% CAGR) give real demand, but the category is already served by entrenched brands (Home Depot kits, WarmlyYours, Warmup, Nuheat) and every job needs a licensed electrician for the final connection, so any edge must come from an overseas cost advantage plus a trusted, code-compliant local supply-and-install offer.",
+        "summary": "Electric radiant underfloor heating that needs no water pipes — thin foil/film heating mats laid dry under floating wood and laminate floors — imported and installed for Canadian homes. The market is real and the import side is cheap, but the category is squeezed from both ends: homeowners can buy DIY/retail kits and install them themselves, while incumbent brands (WarmlyYours, Warmup, Nuheat) and existing floor installers already own supply-and-install. With mandatory CSA/cUL certification and a licensed-electrician connection on every job, there is no defensible lane between the homemade and installer options, which makes a differentiated, viable entry hard to see.",
         "customer": "Canadian homeowners doing a floor renovation or new floating-floor install (wood, laminate, engineered), especially in cold-climate provinces, who want warm floors in bathrooms, basements, kitchens or whole rooms without a hydronic (water) system. Secondary customers are flooring contractors and renovators wanting a supply-and-install partner, plus light-commercial fit-outs.",
         "market": "The global electric radiant floor-heating market is roughly US$1.6B (2024) growing toward US$2.1B by 2031 (~3.8% CAGR); Europe is the largest region and North America second. Canadian demand rides a long, cold heating season, energy-efficiency awareness and steady renovation activity. The specific addressable slice is electric film/foil systems for floating-floor retrofits — a growing sub-segment, and Canada is a modest share of the North-American total.",
         "model": "Two revenue lines: (1) product margin on imported foil/film heating mats and thermostats (retail-referenced pricing around C$11/sq ft), and (2) installation labour, including the licensed-electrician connection. Sold as turnkey supply-and-install per room or project, with an option to wholesale certified kits to flooring contractors.",
-        "goToMarket": "Start where floor renos already happen: partner with flooring retailers, installers and renovators to be their heated-floor supply-and-install option, backed by targeted local search/social for 'warm floors / heated bathroom floor' retrofit demand. Lead with a cost-competitive imported kit and a clean, code-compliant install (electrician included), then use the first jobs to build reviews and referral flow.",
+        "goToMarket": "Any entry would have to find a lane between two entrenched fronts — DIY/retail kits on one side and established installers/brands on the other — which is the core difficulty. A partner-led route (supplying certified kits to flooring contractors) or a niche the incumbents underserve would be the only plausible angles, but neither clearly escapes the price competition from homemade kits.",
         "costs": "Modest: import inventory of film/mats and thermostats, a subcontracted or in-house licensed electrician and installer, a vehicle and marketing. Per-job revenue arrives quickly, so working capital is mostly inventory and labour. The main cost risks are securing CSA/cUL certification for the imported electrical product and building reliable install capacity.",
-        "risks": "A crowded, low-moat category with entrenched brands and retail (Home Depot) distribution; a hard requirement for a licensed-electrician connection and electrical-code/CSA compliance, with a heating element under a customer's floor carrying real safety, warranty and liability exposure; imported electrical product must be certified for the Canadian market before sale; and it is a discretionary renovation purchase that softens in downturns. The offsetting upside is a genuine climate-driven market and a possible overseas cost edge.",
-        "nextSteps": "1) Confirm a source of CSA/cUL-certified (or certifiable) film/mats overseas — certification is the gating item for selling electrical product in Canada. 2) Price a turnkey room install (product plus electrician) against WarmlyYours/Warmup/Home Depot to find the cost edge. 3) Line up one or two licensed electricians and flooring installers as install partners. 4) Run 2-3 pilot installs to validate margin, install time and demand before committing to inventory."
+        "risks": "The dominant risk is competitive: the offer is caught between cheap DIY/homemade kits and established floor installers and incumbent brands, leaving no defensible position or pricing power. On top of that sit mandatory CSA/cUL certification for imported electrical product, real safety/warranty/liability exposure from a heating element under a customer's floor, and a discretionary renovation purchase that softens in downturns. The financial downside is bounded by a low-capital, per-job model, but a viable differentiated position is not evident.",
+        "nextSteps": "Because the competitive squeeze is the killer, the only worthwhile test is a differentiation one: find a niche or channel the DIY kits and incumbent installers do not already serve (e.g. a specific underserved retrofit segment or a certified-kit wholesale angle to contractors), and confirm a real price/cost edge there before any spend. Absent a credible wedge, the idea does not warrant further investment."
       },
       "clarifyingQuestions": [
-        "Can we secure CSA/cUL-certified film/mats from an overseas supplier (or fund certification) — since uncertified electrical product can't be legally sold or installed in Canada?",
-        "Is the plan supply-and-install with our own crews/electricians, or wholesaling certified kits to flooring contractors? The two imply very different operations and margins.",
-        "What's the beachhead — which city and channel (flooring-retailer partnerships vs. direct-to-homeowner) do we win first?"
+        "Is there any specific niche or channel — one the DIY kits and established installers do not already serve — where a differentiated, defensible position could exist? Without one, the idea stays parked."
       ]
     }
   ]
