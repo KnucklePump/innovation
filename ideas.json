@@ -2949,7 +2949,7 @@
       "id": "ai-stock-picks-subscription",
       "title": "AI Stock-Picks Subscription",
       "owner": "Graeme",
-      "status": "analyzed",
+      "status": "refined",
       "oneLiner": "A subscription stock-market service where AI agents generate the stock picks, research and articles and push them to subscribers by email/SMS.",
       "tags": [
         "fintech",
@@ -2997,7 +2997,7 @@
         "moat": {
           "score": 2,
           "confidence": "med",
-          "why": "Structurally weak. Stock commentary is commoditized and AI-generated content especially so — the same tools are available to everyone. The only durable moat is a verifiable, years-long performance track record and brand trust (the incumbents' real advantage), which a new AI newsletter does not have and AI erodes further.",
+          "why": "Structurally weak, and with a built-in trap: commentary is commoditized and AI-generated content especially so, while the only durable moat — a verifiable, trusted, years-long track record — is precisely what a real edge would make more valuable to trade than to publish. A new AI newsletter has neither the track record nor a reason the best signals wouldn't be kept in-house.",
           "sources": []
         },
         "margins": {
@@ -3015,23 +3015,23 @@
           "sources": []
         },
         "risk": {
-          "score": 4,
+          "score": 3,
           "confidence": "med",
-          "why": "Elevated. Even under the newsletter exemption, wrong or AI-hallucinated picks create reputational and misrepresentation exposure; credibility rests on a track record that takes years to build against entrenched, trusted brands; the category is crowded and being commoditized by AI; and crossing into personalized advice would trigger securities-adviser registration. The financial downside is contained by low capital, but the trust and competitive risks are real.",
+          "why": "Elevated, with a value-proposition paradox at the core: a service can only charge for stock picks once it has proven, credible calls — yet if the calls genuinely carry an edge, that edge is worth more traded directly than sold by subscription, so the best version of the product tends to cannibalise itself. Absent a real edge it is just another undifferentiated newsletter. On top of that sit reputational/misrepresentation exposure from wrong or AI-hallucinated picks, a track record that takes years to build against trusted incumbents, an AI-commoditised field, and registration risk the moment advice becomes personalized. Low capital contains the financial downside, but the path to a credible, chargeable, defensible offering is genuinely hard.",
           "sources": [
             "https://www.mltaikins.com/insights/investor-protection-in-the-age-of-finfluencers-guidance-from-canadian-securities-regulators/"
           ]
         }
       },
       "businessCase": {
-        "summary": "A subscription stock-market service that uses AI agents to do the work — generating stock picks, research and articles and pushing them to subscribers by email and SMS. The paid investing-newsletter market is large and proven (Motley Fool and Seeking Alpha charge roughly US$200-500/year), and AI automation makes production near-costless with high margins. The catch is a crowded, low-moat category where AI lowers the barrier for everyone and credibility depends on a track record that takes years to build; the model works cleanly as an impersonal newsletter (which avoids adviser registration in Canada) but must stay clear of personalized advice and misrepresentation.",
+        "summary": "A subscription stock-market service that uses AI agents to do the work — generating stock picks, research and articles and pushing them to subscribers by email and SMS. The economics are attractive (AI-cheap production, high margins, a proven paid-newsletter market where Motley Fool and Seeking Alpha charge ~US$200-500/year), but the business faces a hard credibility trap: you can only charge once you've proven good calls, and if the calls are genuinely that good the edge is worth more traded than sold — so without a trusted track record or outside credibility it's just another undifferentiated, AI-commoditised newsletter. It works cleanly as an impersonal newsletter (which avoids adviser registration in Canada) but must stay clear of personalized advice and misrepresentation.",
         "customer": "Retail investors and self-directed traders who want curated stock ideas and market research without doing their own analysis — the same audience Motley Fool and Seeking Alpha serve — across a free lead tier and paid subscription tiers. The submission also floats 'AI agents' as consumers, a niche machine-readable-feed angle worth testing separately.",
         "market": "The paid investing-newsletter and research-subscription market is large, established and growing with retail investing. Incumbents price between roughly US$199/year (Motley Fool Stock Advisor) and US$499/year (Seeking Alpha Alpha Picks), and the field spans Motley Fool, Seeking Alpha, Zacks, Morningstar and TheStreet plus thousands of independent Substack/newsletter operators — evidence of strong, monetizable demand alongside heavy competition.",
         "model": "Recurring subscription (monthly/annual) for AI-generated stock picks, research and articles delivered by email/SMS — typically a free tier for acquisition and one or more paid tiers around incumbent price points (~US$200-500/year). Possible add-ons include premium alerts, model portfolios, or a machine-readable feed.",
         "goToMarket": "Build a free newsletter to grow an audience and prove a track record, then convert a share to paid. Reach the first users through content/SEO, social and finance communities, and lean on a transparent, publicly-tracked performance record to earn trust. Keep the advice impersonal (newsletter format) to stay within the general-advice exemption and avoid triggering adviser registration.",
         "costs": "Low startup and ongoing cost: AI generation, an email/SMS platform, and a creator/newsletter platform plus payments for billing. Near-zero marginal cost per subscriber. The real ongoing investment is editorial oversight and compliance, plus the marketing needed to stand out and build trust.",
-        "risks": "A crowded, low-moat category where AI lets anyone launch a similar product, so differentiation and trust are hard to win; AI-generated picks risk being wrong or hallucinated, creating reputational and misrepresentation exposure even under the newsletter exemption; credibility depends on a verifiable track record that takes years; and moving from an impersonal newsletter to personalized recommendations would trigger securities-adviser registration. The financial downside is contained by low capital, but the competitive and trust risks are significant.",
-        "nextSteps": "1) Confirm the compliance line — keep advice impersonal/general to rely on the newsletter general-advice exemption, and get a quick legal read on disclaimers and the personalization boundary. 2) Launch a free AI-written newsletter and start a public, timestamped performance record. 3) Test willingness-to-pay against incumbent price points after a few months of tracked results. 4) Find a differentiation wedge — a niche, a transparency angle, or a data edge — since generic AI picks won't stand out."
+        "risks": "The central risk is a value-proposition paradox: charging requires proven, credible calls, yet a genuine edge is worth more traded directly than sold by subscription — so the strongest version self-cannibalises, and the weak version is an undifferentiated newsletter in a crowded, AI-commoditised field. Add reputational/misrepresentation exposure from wrong or AI-hallucinated picks, a trusted track record that takes years to build, and registration triggered the moment advice becomes personalized. The financial downside is contained by low capital, but a credible, chargeable, defensible position is hard to reach.",
+        "nextSteps": "1) Resolve the credibility question first — decide what earns trust without an existing track record (a transparent, publicly-timestamped call record; a named expert; a data or niche edge) or accept that the idea needs a differentiation wedge to work. 2) Confirm the compliance line — keep advice impersonal/general to rely on the newsletter exemption. 3) Launch a free AI-written newsletter and start a public performance record. 4) Only test willingness-to-pay once there's a credible, tracked history to sell against."
       },
       "clarifyingQuestions": [
         "Compliance path: do we keep it strictly impersonal (relying on the newsletter general-advice exemption) or offer any tailored/personalized recommendations — which would trigger securities-adviser registration?",
