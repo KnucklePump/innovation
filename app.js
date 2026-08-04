@@ -223,8 +223,7 @@ const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "
 function route() {
   const hash = location.hash;
   let page = "board";
-  if (hash === "#/submit") { renderSubmit(); }
-  else if (hash === "#/trends") { page = "trends"; renderTrends(); }
+  if (hash === "#/trends") { page = "trends"; renderTrends(); }
   else if (hash === "#/team") { page = "team"; renderTeam(); }
   else {
     const tm = hash.match(/^#\/trend\/(.+)$/);
@@ -250,7 +249,7 @@ function route() {
 function renderList() {
   const view = $("#view");
   if (!state.ideas.length) {
-    view.innerHTML = `<div class="empty"><h2>No ideas yet</h2><p>Ideas will appear here once they're submitted and analysed.</p><p><a href="#/submit" class="btn-primary">+ Submit an idea</a></p></div>`;
+    view.innerHTML = `<div class="empty"><h2>No ideas yet</h2><p>Ideas will appear here once they're shared in Slack and analysed. Drop yours in <strong>#all-ideas-discussion</strong>.</p></div>`;
     return;
   }
   // `withdrawn` ideas (owner asked for theirs to be pulled) are hidden from the board entirely —
@@ -302,7 +301,7 @@ function renderList() {
   view.innerHTML = `
     <div class="list-head">
       <div><h2>Idea Board</h2><p class="muted">Ideas scoring <strong>5.0 or above</strong> stay on the board and are plotted below; lower-scoring ideas drop to <strong>Discarded</strong>. The chart plots each kept idea by <strong>attractiveness</strong> (higher up) against <strong>ease of entry</strong> (further right); <strong>bubble size</strong> is the team's average vote. Click any bubble or row for the full business case.</p></div>
-      <a href="#/submit" class="btn-primary">+ Submit an idea</a>
+      <a href="https://join.slack.com/t/donatien-group/shared_invite/zt-460f4yu4w-j7HEp1bdJXTStJI9MJyxlQ" class="btn-primary" target="_blank" rel="noopener">Share an idea in Slack →</a>
     </div>
     ${quadrant(kept)}
     <h3 class="board-section" style="margin-top:22px">Ideas on the board <span class="muted">— composite 5.0 or above</span></h3>
@@ -468,80 +467,12 @@ function renderDetail(idea) {
         ${examplesCard}
       </div>
     </div>
-    <div class="card"><h3>Clarify or expand this idea</h3>
-      <p class="muted" style="margin-top:0">Add detail, answer any open questions, or push back — it goes to the group to sharpen the analysis. Your typing is kept in this browser.</p>
-      ${qs.length ? `<ul class="qs">${qs.map(q => `<li>${esc(q)}</li>`).join("")}</ul>` : ""}
-      <form id="answers-form">
-        <div class="ans-q"><label>Your name</label>${voterFieldHtml("ans-name")}</div>
-        <div class="ans-q"><label>Clarify / expand the idea</label><textarea id="ans-response" rows="6" placeholder="Add anything useful — context, answers to the questions above, corrections…"></textarea></div>
-        <div class="ans-actions">
-          <button type="button" id="send-answers">Send</button>
-          <button type="button" id="copy-answers" class="ghost">Copy</button>
-          <span id="ans-note" class="muted"></span>
-        </div>
-      </form>
-    </div>
+    ${qs.length ? `<div class="card"><h3>Open questions</h3>
+      <p class="muted" style="margin-top:0">Questions the group is chewing on to sharpen this idea — discuss them in the <strong>#all-ideas-discussion</strong> Slack channel.</p>
+      <ul class="qs">${qs.map(q => `<li>${esc(q)}</li>`).join("")}</ul>
+    </div>` : ""}
     ${teamCardHtml(idea)}`;
 
-  // ----- Clarify / expand form wiring -----
-  const form = $("#answers-form");
-  if (form) {
-    const nameEl = form.querySelector(".ans-name");
-    const respEl = $("#ans-response");
-    const K = s => `ans:${idea.id}:${s}`;
-    // name is the shared identity; the response is drafted per-idea in this browser
-    nameEl.value = state.voter || "";
-    respEl.value = localStorage.getItem(K("response")) || "";
-    nameEl.addEventListener("change", () => setVoter(nameEl.value));
-    respEl.addEventListener("input", () => localStorage.setItem(K("response"), respEl.value));
-
-    const questionsAsked = qs.length ? qs.map((q, i) => `${i + 1}. ${q}`).join("  •  ") : "(none)";
-    const buildText = () => {
-      let out = `Clarify / expand — ${idea.title}\n`;
-      const nm = nameEl.value.trim();
-      if (nm) out += `From: ${nm}\n`;
-      if (qs.length) out += `\nQuestions asked:\n${qs.map((q, i) => `${i + 1}. ${q}`).join("\n")}\n`;
-      out += `\nResponse:\n${respEl.value.trim() || "(blank)"}\n`;
-      return out;
-    };
-    const note = (msg) => { const n = $("#ans-note"); n.textContent = msg; setTimeout(() => { n.textContent = ""; }, 3000); };
-
-    $("#send-answers").addEventListener("click", async () => {
-      if (!respEl.value.trim()) { note("Add a note first."); return; }
-      const btn = $("#send-answers");
-      if (state.endpoint) {
-        setBusy(btn, true, "Sending…");
-        try {
-          await postToStore({
-            type: "answer",
-            submittedAt: new Date().toISOString(),
-            ideaId: idea.id,
-            ideaTitle: idea.title,
-            name: nameEl.value.trim(),
-            answers: [
-              { q: "Questions asked", a: questionsAsked },
-              { q: "Response", a: respEl.value.trim() },
-            ],
-          });
-          localStorage.removeItem(K("response"));
-          respEl.value = "";
-          note("Sent! Thanks — we'll fold this into the analysis.");
-        } catch {
-          note("Couldn't send — check your connection, or use Copy as a fallback.");
-        } finally { setBusy(btn, false); }
-      } else {
-        const subject = encodeURIComponent(`Clarify: ${idea.title}`);
-        location.href = `mailto:${state.contactEmail}?subject=${subject}&body=${encodeURIComponent(buildText())}`;
-      }
-    });
-    $("#copy-answers").addEventListener("click", () => {
-      const text = buildText();
-      const done = () => note("Copied — paste it into an email or message.");
-      if (navigator.clipboard && navigator.clipboard.writeText) {
-        navigator.clipboard.writeText(text).then(done, () => fallbackCopy(text, done));
-      } else { fallbackCopy(text, done); }
-    });
-  }
 
   // ----- Team vote wiring -----
   const voteScore = $("#vote-score");
@@ -687,7 +618,7 @@ function renderTrends() {
   view.innerHTML = `
     <div class="list-head">
       <div><h2>Trends & Markets</h2><p class="muted">Emerging trends across sectors, viewed through different lenses — a scan of where opportunity is building. <strong>Broad</strong> picks span the whole economy; <strong>adjacent</strong> ones grow out of ideas your group has already posted. Click any bubble or row for the trend and its business ideas.</p></div>
-      <a href="#/submit" class="btn-primary">+ Submit an idea</a>
+      <a href="https://join.slack.com/t/donatien-group/shared_invite/zt-460f4yu4w-j7HEp1bdJXTStJI9MJyxlQ" class="btn-primary" target="_blank" rel="noopener">Share an idea in Slack →</a>
     </div>
     ${trendMap(rows, creationNum)}
     <div class="table-wrap trends-table"><table>
@@ -753,13 +684,12 @@ function renderTrendDetail(t) {
     ? `<p class="score-why">Sources: ${t.sources.map(u => `<a href="${esc(u)}" target="_blank" rel="noopener">${esc(hostname(u))}</a>`).join(", ")}</p>` : "";
   const seedChip = t.seededBy
     ? `<a class="inspired" href="#/idea/${encodeURIComponent(t.seededBy)}">💡 Inspired by your idea: <strong>${esc(seed ? seed.title : titleize(t.seededBy))}</strong></a>` : "";
-  const ideas = (t.ideas || []).map((idea, idx) => `
+  const ideas = (t.ideas || []).map((idea) => `
     <div class="trend-idea">
       <div class="trend-idea-main">
         <div class="trend-idea-head"><span class="trend-idea-title">${esc(idea.title)}</span>${idea.pattern ? `<span class="badge pat">${esc(titleize(idea.pattern))}</span>` : ""}</div>
         <p class="score-why">${esc(idea.oneLiner || "")}</p>
       </div>
-      <button type="button" class="ghost send-idea" data-idx="${idx}">Send to Idea Board</button>
     </div>`).join("");
 
   view.innerHTML = `
@@ -777,37 +707,9 @@ function renderTrendDetail(t) {
     <div class="card prop"><h3>The trend</h3><p>${esc(t.oneLiner || "")}</p></div>
     <div class="card"><h3>Why now</h3><p>${esc(t.why || "")} ${conf}</p>${drivers ? `<p class="drivers">${drivers}</p>` : ""}${src}</div>
     <div class="card"><h3>Business ideas</h3>
-      <p class="muted" style="margin-top:0">Concrete plays this trend opens up. Send any to the Idea Board to have it researched and scored.</p>
-      <div class="ans-q"><label>Your name</label>${voterFieldHtml("trend-name")}</div>
+      <p class="muted" style="margin-top:0">Concrete plays this trend opens up. Like one? Pitch it in <strong>#all-ideas-discussion</strong> on Slack to have it researched and scored.</p>
       <div class="trend-ideas">${ideas || '<p class="muted">No ideas listed.</p>'}</div>
     </div>`;
-
-  const nameEl = view.querySelector(".trend-name");
-  if (nameEl) { nameEl.value = state.voter || ""; nameEl.addEventListener("change", () => setVoter(nameEl.value)); }
-
-  view.querySelectorAll(".send-idea").forEach(btn => btn.addEventListener("click", async () => {
-    const idea = (t.ideas || [])[Number(btn.dataset.idx)];
-    if (!idea) return;
-    const name = (state.voter || "").trim();
-    const title = idea.title;
-    const pitch = idea.oneLiner || "";
-    const description = `From the Trends board — trend "${t.title}" (${sectorLabel(t.sector)} · ${lensLabel(t.lens)}). ${idea.oneLiner || ""}${idea.pattern ? ` [pattern: ${titleize(idea.pattern)}]` : ""}`;
-    if (state.endpoint) {
-      setBusy(btn, true, "Sending…");
-      try {
-        await postToStore({ type: "idea", submittedAt: new Date().toISOString(), name, title, pitch, description });
-        setBusy(btn, false);
-        btn.textContent = "Sent ✓"; btn.disabled = true; btn.classList.add("sent");
-      } catch {
-        setBusy(btn, false);
-        btn.textContent = "Try again";
-      }
-    } else {
-      const subject = encodeURIComponent(`New idea: ${title}`);
-      const body = `New business idea\n\nYour name: ${name || "(blank)"}\n\nIdea title: ${title}\n\nOne-line pitch: ${pitch}\n\nIdea description: ${description}\n`;
-      location.href = `mailto:${state.contactEmail}?subject=${subject}&body=${encodeURIComponent(body)}`;
-    }
-  }));
 }
 
 /* ---------- Team roles: interest voting ----------
@@ -984,82 +886,6 @@ function renderTeam() {
       if (location.hash === "#/team") renderTeam();
     });
   }
-}
-
-/* ---------- Submit-an-idea view ---------- */
-const SUBMIT_FIELDS = [
-  { k: "name",        label: "Your name",       type: "voter" },
-  { k: "title",       label: "Idea title",      type: "input",    ph: "e.g. Alpine Mind — coaching for amateur athletes" },
-  { k: "pitch",       label: "One-line pitch",  type: "input",    ph: "the idea in a single sentence" },
-  { k: "description", label: "Idea description", type: "textarea", rows: 7, ph: "Describe the idea in as much detail as you like — who it's for, why now, how it might make money, and what it would take to get started." },
-];
-function renderSubmit() {
-  const view = $("#view");
-  view.innerHTML = `
-    <a class="back" href="#/">← All ideas</a>
-    <div class="detail-head"><h2>Submit a new idea</h2></div>
-    <p class="one-liner muted">Fill this in and send — your idea goes to the group to be researched and scored. Your answers are saved in this browser so you won't lose them.</p>
-    <div class="card">
-      <form id="submit-form">
-        ${SUBMIT_FIELDS.map(f => `<div class="ans-q"><label>${esc(f.label)}</label>${
-          f.type === "voter"
-            ? voterFieldHtml("voter-field", ` data-k="${f.k}"`)
-            : f.type === "textarea"
-            ? `<textarea data-k="${f.k}" rows="${f.rows || 3}" placeholder="${esc(f.ph || "")}"></textarea>`
-            : `<input data-k="${f.k}" type="text" placeholder="${esc(f.ph || "")}" />`}</div>`).join("")}
-        <div class="ans-actions">
-          <button type="button" id="send-idea">Submit idea</button>
-          <button type="button" id="copy-idea" class="ghost">Copy</button>
-          <span id="idea-note" class="muted"></span>
-        </div>
-      </form>
-    </div>`;
-
-  const form = $("#submit-form");
-  const els = [...form.querySelectorAll("[data-k]")];
-  const K = k => `newidea:${k}`;
-  els.forEach(e => {
-    if (e.classList.contains("voter-field")) {
-      e.value = state.voter || "";
-      e.addEventListener("change", () => setVoter(e.value));
-    } else {
-      e.value = localStorage.getItem(K(e.dataset.k)) || "";
-      e.addEventListener("input", () => localStorage.setItem(K(e.dataset.k), e.value));
-    }
-  });
-  const val = k => (form.querySelector(`[data-k="${k}"]`).value || "").trim();
-  const buildText = () => "New business idea\n\n" + SUBMIT_FIELDS.map(f => `${f.label}: ${val(f.k) || "(blank)"}`).join("\n\n") + "\n";
-  const note = msg => { const n = $("#idea-note"); n.textContent = msg; setTimeout(() => { n.textContent = ""; }, 4000); };
-
-  $("#send-idea").addEventListener("click", async () => {
-    if (!val("title")) { note("Add an idea title first."); return; }
-    const btn = $("#send-idea");
-    if (state.endpoint) {
-      setBusy(btn, true, "Sending…");
-      try {
-        await postToStore({
-          type: "idea",
-          submittedAt: new Date().toISOString(),
-          ...Object.fromEntries(SUBMIT_FIELDS.map(f => [f.k, val(f.k)])),
-        });
-        SUBMIT_FIELDS.forEach(f => localStorage.removeItem(K(f.k)));
-        els.forEach(e => { if (!e.classList.contains("voter-field")) e.value = ""; });
-        note("Sent! The group will review it. Thank you.");
-      } catch {
-        note("Couldn't send — check your connection, or use Copy as a fallback.");
-      } finally { setBusy(btn, false); }
-    } else {
-      const subject = encodeURIComponent(`New idea: ${val("title")}`);
-      location.href = `mailto:${state.contactEmail}?subject=${subject}&body=${encodeURIComponent(buildText())}`;
-    }
-  });
-  $("#copy-idea").addEventListener("click", () => {
-    const text = buildText();
-    const done = () => note("Copied — paste it into an email or message.");
-    if (navigator.clipboard && navigator.clipboard.writeText) {
-      navigator.clipboard.writeText(text).then(done, () => fallbackCopy(text, done));
-    } else { fallbackCopy(text, done); }
-  });
 }
 
 /* POST a submission to the Google Apps Script store.
