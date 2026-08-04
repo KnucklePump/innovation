@@ -235,7 +235,8 @@ function route() {
       t ? renderTrendDetail(t) : renderTrends();
     } else if (im) {
       const idea = state.ideas.find(i => i.id === decodeURIComponent(im[1]));
-      idea ? renderDetail(idea) : renderList();
+      // A withdrawn idea is treated as gone even via its old direct link — fall back to the board.
+      (idea && !idea.withdrawn) ? renderDetail(idea) : renderList();
     } else {
       renderList();
     }
@@ -252,7 +253,9 @@ function renderList() {
     view.innerHTML = `<div class="empty"><h2>No ideas yet</h2><p>Ideas will appear here once they're submitted and analysed.</p><p><a href="#/submit" class="btn-primary">+ Submit an idea</a></p></div>`;
     return;
   }
-  const rows = state.ideas.map(i => ({ idea: i, composite: composite(i) }));
+  // `withdrawn` ideas (owner asked for theirs to be pulled) are hidden from the board entirely —
+  // not shown as discarded. The entry stays in ideas.json (soft-withdraw), so it's git-recoverable.
+  const rows = state.ideas.filter(i => !i.withdrawn).map(i => ({ idea: i, composite: composite(i) }));
   const { key, asc } = state.sort;
   rows.sort((a, b) => {
     let av, bv;
