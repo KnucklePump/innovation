@@ -3038,6 +3038,100 @@
         "Differentiation & track record: how do we build verifiable, trustworthy performance that stands out when AI lets anyone publish stock picks?",
         "Buyer & price point: a broad retail free-to-paid funnel like Motley Fool, a niche vertical, or the machine-readable 'AI agent' feed the idea mentions?"
       ]
+    },
+    {
+      "id": "shared-home-maintenance-log",
+      "title": "Shared Home Maintenance Log",
+      "owner": "Nik",
+      "status": "analyzed",
+      "oneLiner": "A shared household log of when each recurring job — chores and home maintenance alike — was last done, so anyone in the house can see what's overdue without having to ask.",
+      "tags": [
+        "app",
+        "consumer",
+        "home",
+        "subscription",
+        "SaaS"
+      ],
+      "scores": {
+        "market": {
+          "score": 4,
+          "confidence": "med",
+          "why": "The household base is large and stable — 10.0 million Canadian households owned their home in 2021, 66.5% of all households — but user count is not market size here. The product sells a record, not a repair, and the money in home maintenance sits in the services and consumables around it rather than in the tracking layer. A realistic paid base is a low single-digit percentage of installs at $20-30 a year, which puts the ceiling on a pure consumer subscription below what the household numbers suggest, even with excellent execution.",
+          "sources": [
+            "https://www150.statcan.gc.ca/n1/daily-quotidien/220921/dq220921b-eng.htm",
+            "https://www.tenantcloud.com/pricing",
+            "https://techcrunch.com/2020/03/25/secondnature-raises-16-4m-for-healthy-home-subscription-products-like-air-and-water-filters/"
+          ]
+        },
+        "entry": {
+          "score": 9,
+          "confidence": "high",
+          "why": "Close to zero barriers. No licensing, no regulation, no inventory, no physical footprint, and no data the product cannot generate itself from its own users. The first version is a shared list with dates and a notification schedule — buildable in weeks by one competent developer and shippable to both app stores without gatekeepers. Nothing here needs permission from anyone.",
+          "sources": []
+        },
+        "cost": {
+          "score": 6,
+          "confidence": "high",
+          "why": "Startup cost is minimal — developer time, roughly $100-200 a year in store fees, and hosting under $100 a month well past the first thousand users. Time to revenue is the weak half of this metric: consumer subscription apps monetise slowly, and only about 20% of apps reach $1,000 in cumulative revenue and 5% reach $10,000 within their first two years. Cheap to start, slow to pay.",
+          "sources": [
+            "https://www.revenuecat.com/state-of-subscription-apps-2025"
+          ]
+        },
+        "saturation": {
+          "score": 3,
+          "confidence": "high",
+          "why": "Contested from both directions. Paid incumbents already cover this ground — HomeZada runs a free tier alongside Premium at $99 a year and Deluxe at $189 a year — beside a long tail of chore, cleaning and home-inventory apps. The more dangerous competition is free: a shared Apple Reminders or Google Tasks list is pre-installed on every phone and does a crude version of this at zero cost and zero adoption friction.",
+          "sources": [
+            "https://www.homezada.com/homeowners/pricing"
+          ]
+        },
+        "moat": {
+          "score": 3,
+          "confidence": "med",
+          "why": "The shared last-completed record is a genuine insight but a thin one to defend — a competitor can copy the mechanic in a sprint, and a platform owner could fold it into an existing reminders app. Network effects stop at the boundary of a single household, so nothing compounds across users. The only real switching cost is accumulated history, which takes years to become painful to abandon and does nothing to protect the first two.",
+          "sources": []
+        },
+        "margins": {
+          "score": 7,
+          "confidence": "med",
+          "why": "Software economics apply: near-zero marginal cost per user, no inventory and no fulfilment, giving gross margins of roughly 70-85% depending on whether the 15% small-business app store commission or the standard 30% rate applies. The drag sits on the revenue side rather than the cost side — freemium apps convert downloads to paid at a median of about 2.18% within 35 days versus 12.11% for hard paywalls, and monthly plans retain only around 17% of subscribers after a year. High margin on a small and leaky revenue base.",
+          "sources": [
+            "https://www.revenuecat.com/state-of-subscription-apps-2025",
+            "https://developer.apple.com/app-store/small-business-program/"
+          ]
+        },
+        "founderFit": {
+          "score": 5,
+          "confidence": "med",
+          "why": "The team can design and ship this in-house without hiring developers, which removes the largest line item and keeps the downside genuinely small. That advantage is real but narrow: the group's strongest commercial edges lie in overseas sourcing, industrial and energy channels, and none of them help sell a consumer app. Distribution would be built from scratch rather than borrowed from existing relationships — and customer acquisition, not build capability, is the constraint that decides whether this works.",
+          "sources": []
+        },
+        "risk": {
+          "score": 6,
+          "confidence": "med",
+          "why": "The downside is well contained — a few thousand dollars and some months of build time, with no debt, leases, inventory or staff at stake, and the work is salvageable as a portfolio piece if it fails. The probability of commercial failure is nevertheless high: free substitutes ship on every phone, an app in this category shut down at the end of January 2026, deleting all user accounts and data, and consumer subscription churn is punishing. Small loss, but the likely outcome.",
+          "sources": [
+            "https://www.revenuecat.com/state-of-subscription-apps-2025",
+            "https://realestateledger.io/comparisons/centriq-alternative"
+          ]
+        }
+      },
+      "businessCase": {
+        "summary": "A shared household log of when each recurring job was last completed — the chores that rotate weekly as much as the maintenance that comes round once or twice a year, from furnace filters and gutters to smoke-alarm batteries. The insight is that the hard question in a shared house is not what needs doing but when it was last done, and that answer usually lives in one person's memory. Making it visible to everyone removes both the nagging and the duplicated work. The build is cheap and the mechanic is sound; the open commercial question is whether a record-keeping layer can be charged for when the money in this category sits in the services and consumables around it.",
+        "customer": "Any household where responsibility is genuinely shared and currently tracked by one person's memory — couples, families with older children, roommates and multi-generational households alike. The shared-visibility feature earns its keep wherever more than one person is meant to be doing the jobs. Canada had 10.0 million owner households in 2021, though only a fraction feel the pain sharply enough to pay for a fix. A second and possibly better-monetising segment is small landlords and property managers, where a missed furnace service has direct financial consequences and software budgets already exist.",
+        "market": "10.0 million Canadian households owned their home in 2021, representing 66.5% of all households. The relevant caution is that this sizes the potential user base, not the market: a tracking layer captures none of the repair or consumable spend it sits above. The adjacent landlord software market has demonstrably established willingness to pay — TenantCloud, one of the mainstream small-landlord platforms, charges from $15 a month on annual billing up to $50 for its top published self-serve tier, with custom enterprise pricing above that — which is why the B2B route deserves testing.",
+        "model": "Freemium consumer subscription — unlimited items and one household free, with a paid tier around $20-30 a year for multi-property use, history export, photo attachments and service-record storage. A second and entirely untested line may be worth more per user: affiliate or referral revenue on the consumables the app is already reminding people to buy, since a user told their filter is due is a uniquely qualified buyer at that exact moment. Second Nature, the filter-subscription business formerly known as FilterEasy, raised a $16.4 million Series C and reached hundreds of thousands of customers selling that consumable through direct, HVAC, realtor and utility channels — evidence that demand for the consumable is real, but not evidence of what commission a tracking app could command, which remains unestablished. A per-seat or per-portfolio tier for small landlords is the third route and the least crowded.",
+        "goToMarket": "Content and search look like the cheapest wedge, on the hypothesis that maintenance schedules by home age and climate are high-intent evergreen search terms and that Canadian seasonal content — furnace before winter, humidifiers, ice damming — is thinner than the US-focused equivalent. That hypothesis is cheap to test with a keyword study before any content is commissioned, and should be tested rather than assumed. The stronger distribution is borrowed: home inspectors and realtors handing new owners a pre-populated schedule at closing, when motivation peaks and the house is a blank slate, and HVAC dealers or utilities co-marketing alongside service plans. Paid consumer acquisition should be a last resort — at realistic conversion rates the arithmetic rarely closes.",
+        "costs": "Startup cost is dominated by developer time rather than cash: with the build done in-house, the outlay is a few hundred dollars in store fees and design assets, plausibly under $5,000 all-in including a modest content budget. Ongoing costs stay low — hosting and notification delivery under $100 a month into the low thousands of users — with app store commission, 15% under the small-business programme and 30% above it, the largest structural cost. The genuine cost risk is customer acquisition: any meaningful paid-marketing spend would dwarf every other line, which is why organic and partnership channels decide viability.",
+        "risks": "The category has already lost a player: Centriq, an appliance-tracking app, shut down at the end of January 2026, deleting all user accounts and data on that date — a signal that consumer home-tracking apps struggle to convert affection into revenue. Free substitutes are the second threat, since a shared Reminders list is already installed, already free, and good enough for many households. Third is the engagement paradox at the heart of the idea: the most valuable items are the least frequent, so the app is most useful precisely when nobody has opened it in five months, against monthly subscription retention of roughly 17% after a year. Fourth, the mechanic is easily copied and could be absorbed into an existing platform. Underneath all of it sits the possibility that this is a feature rather than a company.",
+        "nextSteps": "Test willingness to pay before writing production code. Stand up a landing page describing the shared log with a price on it and drive a small volume of search traffic to measure email capture against a stated price — a week's work and under $200. In parallel, run twenty households on a deliberately crude shared spreadsheet for six weeks; the decisive question is not whether they like it in week one but whether anyone logs a completion in week five, because that behaviour is the entire product. Third, approach one filter or water-treatment supplier to establish real affiliate economics, since no commission rate has been established and that number determines whether the consumable line can carry the business. Fourth, interview five small landlords on what they would pay, to see whether the B2B route is stronger than the consumer one. Build only once one of those three revenue lines shows a pulse."
+      },
+      "clarifyingQuestions": [
+        "Do you see this as a consumer app for households, or would you rather aim it at small landlords and property managers, where budgets already exist and a missed service costs real money?",
+        "How wide should the scope be — everyday chores as well as the once-a-year maintenance jobs, or is the infrequent stuff where the real value sits?",
+        "What is your view on charging? A paid tier is the obvious route, but affiliate revenue on the consumables the app already reminds people to buy may earn more per user — would you be comfortable with a product that makes most of its money that way?",
+        "The hardest problem is that the most valuable reminders are the least frequent, so people forget the app exists between them. What would keep someone opening it in month five — and would you have used this yourself with a free shared list already on your phone?"
+      ]
     }
   ]
 }
