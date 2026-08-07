@@ -1,0 +1,73 @@
+name: Pages deploy health
+
+# Alerts Slack when the GitHub Pages deploy for innovation.donatien.ca is not
+# healthy, so the live site can never silently freeze again (it did 2026-08-06 →
+# 08-07: two builds failed/stuck and the site served a 3-day-old version for a day
+# with no alarm). Runs on GitHub's infra — independent of the innovation-agent loop,
+# so it fires even when the laptop / loop is off.
+#
+# Covers all three failure modes:
+#   • build ERRORED            (page_build event → instant; and the scheduled check)
+#   • build STUCK "building"    (scheduled check — no completion event ever fires)
+#   • live site BEHIND the branch head (scheduled check — push didn't build)
+#
+# SETUP (one-time): create a Slack Incoming Webhook and store it as the repo secret
+# SLACK_DEPLOY_WEBHOOK. Without it the job fails loudly (a visible signal to add it).
+
+on:
+  page_build:            # fires when a Pages build finishes (success or failure)
+  schedule:
+    - cron: '*/30 * * * *'   # every 30 min — catches stuck/behind that emit no event
+  workflow_dispatch: {}      # manual "Run workflow" button, for testing
+
+permissions:
+  contents: read
+  pages: read
+
+jobs:
+  health:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check Pages build health; alert Slack if broken
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPO: ${{ github.repository }}
+          SLACK_WEBHOOK: ${{ secrets.SLACK_DEPLOY_WEBHOOK }}
+        run: |
+          set -uo pipefail
+
+          branch="$(gh api "repos/$REPO/pages" --jq '.source.branch' 2>/dev/null || echo main)"
+          headsha="$(gh api "repos/$REPO/branches/$branch" --jq '.commit.sha' 2>/dev/null || echo '')"
+          build="$(gh api "repos/$REPO/pages/builds/latest" 2>/dev/null || echo '{}')"
+          status="$(jq -r '.status // "unknown"'      <<<"$build")"
+          bsha="$(jq -r  '.commit // ""'              <<<"$build")"
+          err="$(jq -r   '.error.message // ""'       <<<"$build")"
+          created="$(jq -r '.created_at // ""'        <<<"$build")"
+
+          problem=""
+          if [ "$status" = "errored" ]; then
+            problem="build ERRORED on ${bsha:0:7}${err:+ — $err}"
+          elif [ "$status" = "building" ]; then
+            age=$(( $(date -u +%s) - $(date -u -d "$created" +%s 2>/dev/null || echo "$(date -u +%s)") ))
+            if [ "$age" -gt 1200 ]; then          # stuck > 20 min
+              problem="build STUCK in 'building' for $((age/60))m on ${bsha:0:7}"
+            fi
+          elif [ "$status" = "built" ] && [ -n "$headsha" ] && [ "$bsha" != "$headsha" ]; then
+            problem="live site is BEHIND — built ${bsha:0:7} but $branch is at ${headsha:0:7} (push didn't deploy)"
+          fi
+
+          if [ -z "$problem" ]; then
+            echo "healthy: status=$status commit=${bsha:0:7}"
+            exit 0
+          fi
+
+          echo "PROBLEM: $problem"
+          if [ -z "${SLACK_WEBHOOK:-}" ]; then
+            echo "::error::SLACK_DEPLOY_WEBHOOK secret is not set — cannot send the alert. Add it in repo Settings → Secrets → Actions." >&2
+            exit 1
+          fi
+          text=":rotating_light: *innovation.donatien.ca — deploy problem*: ${problem}. The live site is NOT current. Fix: push any commit, or re-trigger (repo Settings → Pages), then re-check."
+          payload="$(jq -nc --arg t "$text" '{text:$t}')"
+          curl -sS -X POST -H 'Content-type: application/json' --data "$payload" "$SLACK_WEBHOOK" \
+            && echo "alert sent to Slack" \
+            || { echo "::error::failed to POST to Slack webhook" >&2; exit 1; }
