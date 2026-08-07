@@ -105,13 +105,18 @@ boot();
 /* ---------- Data + scoring ---------- */
 async function boot() {
   await detectUser(); // resolve "who am I" from Cloudflare Access before first render
+  // Cache-buster on the DATA files: they change independently of app.js (the agent
+  // commits ideas.json/trends.json on its own), and are fetched with no version query,
+  // so a browser (or CDN) can serve a stale board. `?v=<now>` forces the current data
+  // every load — freshness matters more than caching these small files.
+  const cb = `?v=${Date.now()}`;
   const [ideasRes, cfgRes, trendsRes, rolesRes] = await Promise.all([
-    fetch("ideas.json").then(r => r.json()),
-    fetch("config.json").then(r => r.json()),
+    fetch("ideas.json" + cb).then(r => r.json()),
+    fetch("config.json" + cb).then(r => r.json()),
     // trends.json is optional — a missing/empty file just yields no trends.
-    fetch("trends.json").then(r => r.ok ? r.json() : {}).catch(() => ({})),
+    fetch("trends.json" + cb).then(r => r.ok ? r.json() : {}).catch(() => ({})),
     // roles.json is optional too — a missing/empty file just yields no team roles.
-    fetch("roles.json").then(r => r.ok ? r.json() : {}).catch(() => ({})),
+    fetch("roles.json" + cb).then(r => r.ok ? r.json() : {}).catch(() => ({})),
   ]);
   state.ideas = ideasRes.ideas || [];
   state.rubric = cfgRes.rubric || {};
