@@ -689,12 +689,13 @@ function renderTrendDetail(t) {
     ? `<p class="score-why">Sources: ${t.sources.map(u => `<a href="${esc(u)}" target="_blank" rel="noopener">${esc(hostname(u))}</a>`).join(", ")}</p>` : "";
   const seedChip = t.seededBy
     ? `<a class="inspired" href="#/idea/${encodeURIComponent(t.seededBy)}">💡 Inspired by your idea: <strong>${esc(seed ? seed.title : titleize(t.seededBy))}</strong></a>` : "";
-  const ideas = (t.ideas || []).map((idea) => `
+  const ideas = (t.ideas || []).map((idea, idx) => `
     <div class="trend-idea">
       <div class="trend-idea-main">
         <div class="trend-idea-head"><span class="trend-idea-title">${esc(idea.title)}</span>${idea.pattern ? `<span class="badge pat">${esc(titleize(idea.pattern))}</span>` : ""}</div>
         <p class="score-why">${esc(idea.oneLiner || "")}</p>
       </div>
+      <button type="button" class="ghost send-idea" data-idx="${idx}">Send to Idea Board</button>
     </div>`).join("");
 
   view.innerHTML = `
@@ -712,9 +713,34 @@ function renderTrendDetail(t) {
     <div class="card prop"><h3>The trend</h3><p>${esc(t.oneLiner || "")}</p></div>
     <div class="card"><h3>Why now</h3><p>${esc(t.why || "")} ${conf}</p>${drivers ? `<p class="drivers">${drivers}</p>` : ""}${src}</div>
     <div class="card"><h3>Business ideas</h3>
-      <p class="muted" style="margin-top:0">Concrete plays this trend opens up. Like one? Pitch it in <strong>#all-ideas-discussion</strong> on Slack to have it researched and scored.</p>
+      <p class="muted" style="margin-top:0">Concrete plays this trend opens up. Send any of them to the Idea Board to have it researched and scored.</p>
       <div class="trend-ideas">${ideas || '<p class="muted">No ideas listed.</p>'}</div>
+      <p class="muted" id="trend-send-note" style="margin-bottom:0"></p>
     </div>`;
+
+  /* "Send to Idea Board" — ideas reach the board through Slack now (the website→Sheet
+     intake was retired 2026-08-04), so this copies a ready-to-send pitch and points at
+     the channel rather than POSTing into a store nothing reads. */
+  const sendNote = view.querySelector("#trend-send-note");
+  view.querySelectorAll(".send-idea").forEach(btn => btn.addEventListener("click", () => {
+    const idea = (t.ideas || [])[Number(btn.dataset.idx)];
+    if (!idea) return;
+    const lines = [
+      `Title: ${idea.title}`,
+      `Pitch: ${idea.oneLiner || ""}`,
+      `From the trend: ${t.title} (${sectorLabel(t.sector)} · ${lensLabel(t.lens)}, ${horizonLabel(t.horizon)})`
+    ];
+    if (idea.pattern) lines.push(`Pattern: ${titleize(idea.pattern)}`);
+    const text = `New idea from the Trends page — please research and score it for the board.\n\n${lines.join("\n")}`;
+    const done = () => {
+      btn.textContent = "Copied ✓"; btn.classList.add("sent");
+      if (sendNote) sendNote.innerHTML = `Copied. Paste it to <strong>Donatien</strong> in Slack and it'll be researched and scored — <a href="https://donatien-group.slack.com/archives/C0BMH3LU9U4" target="_blank" rel="noopener">open #all-ideas-discussion →</a>`;
+      setTimeout(() => { btn.textContent = "Send to Idea Board"; btn.classList.remove("sent"); }, 5000);
+    };
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(text).then(done, () => fallbackCopy(text, done));
+    } else { fallbackCopy(text, done); }
+  }));
 }
 
 /* ---------- Team roles: interest voting ----------
