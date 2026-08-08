@@ -194,6 +194,29 @@
         "seed": "niche-brands",
         "run": "2026-07-31",
         "theme": "china-import"
+      },
+      {
+        "sector": "work-enterprise",
+        "lens": "social",
+        "run": "2026-08-08"
+      },
+      {
+        "sector": "security-defence",
+        "lens": "social",
+        "run": "2026-08-08"
+      },
+      {
+        "sector": "health-longevity",
+        "lens": "contrarian",
+        "run": "2026-08-08"
+      },
+      {
+        "seed": "locality-game",
+        "run": "2026-08-08"
+      },
+      {
+        "seed": "ai-stock-picks-subscription",
+        "run": "2026-08-08"
       }
     ]
   },
@@ -1781,6 +1804,211 @@
         }
       ],
       "createdRun": "2026-07-31"
+    },
+    {
+      "id": "deskless-frontline-software-gap",
+      "title": "Software Built for the 80% Who Don't Sit at a Desk",
+      "sector": "work-enterprise",
+      "lens": "social",
+      "source": "broad",
+      "horizon": "near",
+      "signal": 6,
+      "oneLiner": "Around 2.7 billion people — roughly 80% of the global workforce — do their jobs away from a desk, and most workplace software was designed for the other 20%.",
+      "why": "The imbalance is structural rather than new, which is exactly why the opening is specific rather than broad. Emergence Capital's widely cited estimate puts the deskless workforce at about 2.7 billion people, close to 80% of workers globally, spanning retail floors, care homes, warehouses, vehicles and job sites, while most workplace software was designed for people at a desk. Gallup's State of the Global Workplace 2025 found global employee engagement fell to 21%, which it associates with roughly US$438 billion in lost productivity in a year, and recorded manager engagement dropping from 30% to 27%. SafetyCulture's Feedback from the Field study of more than 10,000 frontline employees across six countries found 78% dissatisfied with at least one aspect of their job. A well-funded field of frontline platforms already exists, so the opportunity is not another all-in-one suite. It is the specific, high-frequency job those suites handle badly for one trade or one shift pattern — narrow enough that a generalist will not build it and the buyer can recognise it immediately.",
+      "drivers": [
+        "social",
+        "economic"
+      ],
+      "sources": [
+        "https://www.gallup.com/workplace/659279/global-engagement-falls-second-time-2009.aspx",
+        "https://safetyculture.com/media-releases/dissatisfied-workers-cost-frontline-businesses-approx-usd-196-billion-a-year-in-lost-productivity",
+        "https://www.getflip.com/blog/frontline-worker-app/"
+      ],
+      "confidence": "med",
+      "ideas": [
+        {
+          "title": "Shift-Swap for One Trade",
+          "oneLiner": "A single-purpose shift-swap and cover tool built around one industry's actual rules — seniority, certification, overtime thresholds — instead of a generic calendar.",
+          "pattern": "verticalisation"
+        },
+        {
+          "title": "Voice-First Job Logging",
+          "oneLiner": "Hands-and-gloves-free reporting where a worker speaks a job update into a phone and it becomes a structured, timestamped record for the office.",
+          "pattern": "unbundling"
+        },
+        {
+          "title": "Offline-First Field Capture",
+          "oneLiner": "Tools that assume no signal — capture on site, reconcile later — for work that happens beyond reliable coverage.",
+          "pattern": "picks-and-shovels"
+        }
+      ],
+      "createdRun": "2026-08-08"
+    },
+    {
+      "id": "lone-worker-safety-compliance-tech",
+      "title": "Working Alone: Compliance-Grade Safety Monitoring",
+      "sector": "security-defence",
+      "lens": "social",
+      "source": "broad",
+      "horizon": "near",
+      "signal": 5,
+      "oneLiner": "A minority of Canadian jurisdictions require documented, timed check-ins on workers who work alone — and where the duty bites, what an employer must produce is a record, not an intention.",
+      "why": "The obligation is real but distributed unevenly, and the unevenness is the market. Prince Edward Island is the clearest case: Part 53 of the Occupational Health and Safety Act General Regulations requires written working-alone procedures that specify the time intervals for checking on the worker, name the person responsible for contacting the worker and recording the results of that contact, set out what happens if the worker cannot be reached including emergency rescue, and require a check at the end of the shift. British Columbia's OHS Regulation section 4.21 similarly requires procedures for checking a lone worker's wellbeing at time intervals, and Newfoundland and Labrador requires written procedures specifying check-in intervals. Elsewhere the duty is lighter or differently shaped: Alberta requires an effective means of communication and treats working alone as a hazard; Quebec's Regulation respecting occupational health and safety (S-2.1, r. 13) section 322 requires an efficient means of surveillance, continuous or intermittent, but only for solitary work in an isolated location where the worker cannot summon assistance; Saskatchewan, Manitoba and the Northwest Territories require communication systems and risk assessment. Ontario, Nova Scotia and Yukon have no dedicated working-alone regulation and rely on general duty provisions. The Canadian Centre for Occupational Health and Safety puts it plainly — some jurisdictions have specific laws concerning working alone, and employers are told to check their own. Above all of it sits Criminal Code section 217.1, which places a legal duty on everyone who undertakes or has the authority to direct how another person does work to take reasonable steps to prevent bodily harm. This is a standing condition rather than a new one, and the category already has scaled suppliers — lone-worker monitoring is an established Canadian industry. The unserved edge is the small employer that carries the duty and has no safety department to discharge it.",
+      "drivers": [
+        "political",
+        "social",
+        "economic"
+      ],
+      "sources": [
+        "https://ohsguide.wcb.pe.ca/topic/working_alone.html",
+        "https://www.princeedwardisland.ca/sites/default/files/legislation/o1-01g-occupational_health_and_safety_act_general_regulations.pdf",
+        "https://www.worksafebc.com/en/law-policy/occupational-health-safety/searchable-ohs-regulation/ohs-regulation/part-04-general-conditions",
+        "https://www.legisquebec.gouv.qc.ca/en/document/cr/s-2.1,%20r.%2013",
+        "https://laws-lois.justice.gc.ca/eng/acts/C-46/section-217.1.html",
+        "https://www.ccohs.ca/oshanswers/legisl/billc45.html",
+        "https://www.ccohs.ca/oshanswers/hsprograms/workingalone.html"
+      ],
+      "confidence": "med",
+      "ideas": [
+        {
+          "title": "Working-Alone Compliance for Small Employers",
+          "oneLiner": "The written procedure, risk assessment and matching check-in service sold together to businesses that have the legal duty but no safety function.",
+          "pattern": "rebundling"
+        },
+        {
+          "title": "Audit-Trail Check-In Service",
+          "oneLiner": "Monitoring sold on the record it produces — exportable evidence of every scheduled check, who made it and what happened when contact failed.",
+          "pattern": "service-izing"
+        },
+        {
+          "title": "Cold-and-Remote Escalation",
+          "oneLiner": "Lone-worker monitoring engineered for poor connectivity and extreme cold, where handsets die and cell coverage is intermittent.",
+          "pattern": "verticalisation"
+        }
+      ],
+      "createdRun": "2026-08-08"
+    },
+    {
+      "id": "family-caregiver-coordination-stack",
+      "title": "The Unpaid Care Workforce Nobody Built Tools For",
+      "sector": "health-longevity",
+      "lens": "contrarian",
+      "source": "broad",
+      "horizon": "near",
+      "signal": 7,
+      "oneLiner": "In the United States 63 million adults — nearly one in four — now provide ongoing care for an adult or a child with complex needs, coordinating it largely through group chats, paper and memory.",
+      "why": "The scale moved sharply and recently. Caregiving in the US 2025, published in July 2025 by AARP and the National Alliance for Caregiving, counts 63 million family caregivers, nearly one in four American adults and an increase of 20 million since 2015. The profile itself is steady — the average caregiver is 51, three in five are women, and nearly a third are caring for both children and adults at once — what has moved is scale and intensity. Among those caring for an adult, 44% are in high-intensity situations, and nearly 30% have been in the role five years or more, up from 24% in 2015. The strain shows in the carers: one in five rate their own health as fair or poor, and nearly a quarter say caregiving makes it hard to look after themselves. AARP's Valuing the Invaluable 2026 update, released in March 2026, values what 59 million caregivers of adults contribute at $1.01 trillion for 2024 across 49.5 billion hours — more than private businesses spent on health care that year ($967 billion) and more than Medicaid ($932 billion) — equivalent to roughly 24 million full-time workers. A population this large, growing this fast and carrying this much unpaid administrative load is a genuine underserved audience. The hard commercial question is who pays: the coordinator is time-poor and already spending on care itself, which points at employers, insurers or health systems as the buyer rather than the family.",
+      "drivers": [
+        "social",
+        "economic"
+      ],
+      "sources": [
+        "https://www.aarp.org/press/releases/2025-07-24-new-report-reveals-crisis-point-for-americas-63-million-family-caregivers.html",
+        "https://www.aarp.org/pri/topics/ltss/family-caregiving/caregiving-in-the-us-2025/",
+        "https://www.aarp.org/press/releases/2026-03-26-AARP-Economic-Value-Of-Family-Caregiving-Report.html",
+        "https://www.aarp.org/pri/topics/ltss/family-caregiving/valuing-the-invaluable-2026-update/"
+      ],
+      "confidence": "med",
+      "ideas": [
+        {
+          "title": "First-90-Days Care Navigator",
+          "oneLiner": "A guided service for the moment care begins — hospital discharge into home care — rather than an app the family must remember to open months later.",
+          "pattern": "service-izing"
+        },
+        {
+          "title": "Caregiving as an Employer Benefit",
+          "oneLiner": "Sell coordination to employers as retention for staff around the average caregiver age of 51, a third of whom are managing children and adults at the same time.",
+          "pattern": "category-creation"
+        },
+        {
+          "title": "Shared Care Record for Siblings",
+          "oneLiner": "One dated record of appointments, medications and decisions that distributed family members can all see, replacing the group chat that loses everything.",
+          "pattern": "unbundling"
+        }
+      ],
+      "createdRun": "2026-08-08"
+    },
+    {
+      "id": "intent-based-event-matchmaking",
+      "title": "Event Matchmaking That Knows Why You Came",
+      "sector": "travel-hospitality",
+      "lens": "technological",
+      "source": "adjacency",
+      "seededBy": "locality-game",
+      "horizon": "near",
+      "signal": 6,
+      "oneLiner": "Business events are a trillion-dollar-plus category, yet most matchmaking still pairs people from a handful of checkboxes rather than what they actually came to do.",
+      "why": "The Events Industry Council puts direct spending on business events at more than $1 trillion annually, so the surrounding software category is well funded and crowded with networking platforms. The weakness is not availability but depth: typical matchmaking builds a profile from a handful of checkboxes filled in under two minutes and then asks an algorithm to infer who should meet whom, and a run of poor matches teaches attendees to stop accepting meetings at all. Language models change the input problem rather than the matching problem — capturing a genuine goal, offer and ask in natural language is now cheap, where previously only a checkbox was affordable. The opportunity sits in the capture layer and in accountability for match quality rather than in another directory. Evidence here is drawn from vendor and industry commentary rather than independent research, so the read is directional.",
+      "drivers": [
+        "technological",
+        "social",
+        "economic"
+      ],
+      "sources": [
+        "https://news.eventscouncil.org/2026-global-economic-impact-of-business-events-report/",
+        "https://getperspective.ai/blog/best-conference-networking-matchmaking-software-2026-compared",
+        "https://www.converve.com/event-networking-blog/event-networking-vs-matchmaking/"
+      ],
+      "confidence": "low",
+      "ideas": [
+        {
+          "title": "Goal Capture at Registration",
+          "oneLiner": "Replace the interest checkboxes with a two-minute conversational intake that records what each attendee actually wants from the event.",
+          "pattern": "unbundling"
+        },
+        {
+          "title": "Matchmaking Paid on Outcomes",
+          "oneLiner": "Charge organisers on meetings that both sides rate as worthwhile rather than on seats or licences.",
+          "pattern": "service-izing"
+        },
+        {
+          "title": "Small-Format Curation",
+          "oneLiner": "Serve trade associations and regional conferences too small for enterprise event platforms but large enough that nobody knows everyone.",
+          "pattern": "verticalisation"
+        }
+      ],
+      "createdRun": "2026-08-08"
+    },
+    {
+      "id": "regulated-retail-investor-content",
+      "title": "Regulators Push Investment Content Back Onto Licensed Platforms",
+      "sector": "money-finance",
+      "lens": "social",
+      "source": "adjacency",
+      "seededBy": "ai-stock-picks-subscription",
+      "horizon": "near",
+      "signal": 7,
+      "oneLiner": "Canadian regulators are loosening what self-directed brokerages may tell customers, explicitly to pull DIY investors away from unregulated social-media advice.",
+      "why": "Self-directed investing has grown quickly, and regulators concluded that restricting what order-execution-only platforms could say was pushing retail investors toward social media, forums and financial influencers instead. The Canadian Investment Regulatory Organization made updating that guidance a 2026 priority and has finalised changes allowing execution-only dealers to offer more support, framed as a way to mitigate reliance on unregulated online sources by supplying high-quality regulated information. Separately, CIRO and the Canadian Securities Administrators published joint guidance in December 2025 for dealers entering arrangements with finfluencers, requiring due diligence and written agreements, and examination procedures now review those controls. The direction of travel matters commercially: demand for investment guidance is not shrinking, but the licensed channel is being widened while the unlicensed one is being tightened. Anything sold in this space now has a compliance surface that did not previously apply.",
+      "drivers": [
+        "political",
+        "social",
+        "technological"
+      ],
+      "sources": [
+        "https://www.ciro.ca/newsroom/publications/ciro-compliance-report-2026-helping-dealers-compliance",
+        "https://www.blg.com/insights/2026/04/diy-with-oeo-but-first-read-the-updated-ciro-guidance",
+        "https://www.investmentexecutive.com/news/csa-ciro-post-finfluencer-guidance/"
+      ],
+      "confidence": "med",
+      "ideas": [
+        {
+          "title": "Compliance Layer for Investment Content",
+          "oneLiner": "Tooling that lets a brokerage or publisher produce research and education inside the widened guidance, with the review trail regulators expect.",
+          "pattern": "picks-and-shovels"
+        },
+        {
+          "title": "Finfluencer Due-Diligence Service",
+          "oneLiner": "Vetting, written agreements and monitoring for dealers who work with online creators, packaged for firms with no in-house capacity.",
+          "pattern": "service-izing"
+        },
+        {
+          "title": "Education Built for Execution-Only Platforms",
+          "oneLiner": "White-label investor education that self-directed brokerages can place in-product now that the rules allow more support.",
+          "pattern": "platform"
+        }
+      ],
+      "createdRun": "2026-08-08"
     }
   ]
 }
